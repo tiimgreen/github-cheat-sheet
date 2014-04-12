@@ -277,7 +277,7 @@ is Alias of:
 ```bash
 $ git commit
 ```
-
+<br><br>
 ```bash
 $ git ac
 ```
@@ -286,7 +286,7 @@ is Alias of:
 $ git add .
 $ git commit
 ```
-
+<br><br>
 ```bash
 $ git st
 ```
