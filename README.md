@@ -139,6 +139,18 @@ Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_
 
 The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/).
 
+## Images/GIFs
+
+Images and GIFs can be added to comments, READMEs etc.:
+
+```
+![Alt Text](http://image_url.com/image.jpg)
+```
+
+![Jim Carrey](http://wac.450f.edgecastcdn.net/80450F/thefw.com/files/2013/05/Irene.gif)
+
+All images are cached on GitHub, so if your host goes down, the image will remain available.
+
 ## Syled Git Status
 
 ```bash
