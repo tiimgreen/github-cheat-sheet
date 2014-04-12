@@ -75,12 +75,12 @@ To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `ti
 
 To add syntax highlighting to code in README:
 
-```
+```ruby
 ```ruby
 require 'tabbit'
 table = Tabbit.new('Name', 'Email')
 table.add_row('Tim Green', 'tiimgreen@gmail.com')
-```
+\`\`\`
 ```
 
 ## Emojis
