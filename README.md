@@ -235,3 +235,62 @@ $ git branch --no-merged
 ```
 
 Will give you a list of branches that have not been merged into your current branch.
+
+## .gitconfig Recommendations
+
+Your `.gitconfig` is the file that contains all your preferences.
+
+### Aliases
+
+Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
+
+To add an alias, either navigate to `~/.gitconfig` and fill it out in the following format:
+
+```
+[alias]
+	co = checkout
+	cm = commit
+	p = push
+```
+
+or type in the command line:
+
+```bash
+$ git config alias.new_alias git_function
+```
+e.g.
+```bash
+$ git config alias.cm commit
+```
+
+NOTE: for an alias with multiple functions use speech marks:
+```bash
+$ git config alias.ac 'add -A . && commit'
+```
+
+Some recommendations include:
+
+```bash
+$ git cm
+```
+is Alias of:
+```bash
+$ git commit
+```
+
+```bash
+$ git ac
+```
+is Alias of:
+```bash
+$ git add .
+$ git commit
+```
+
+```bash
+$ git st
+```
+is Alias of:
+```bash
+$ git status -sb
+```
