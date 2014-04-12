@@ -109,6 +109,16 @@ To view all commits on a repo by author add `?author=username` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
+## Empty Commits
+
+Commits can be pushed with no code changes by adding `--allow-empty`
+
+```bash
+$ git commit -m "Big-ass commit" --allow-empty
+```
+
+![Trololol](http://img4.wikia.nocookie.net/__cb20130701113425/theamazingworldofgumball/images/f/f9/Famous-characters-Troll-face-Troll-face-poker-45046.png)
+
 ## Comparing Branches
 
 In GitHub to compare branches, the URL will look something like this:
@@ -124,9 +134,10 @@ e.g.:
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-`{range}` is smart and can be changed to things like:
+`{range}` can be changed to things like:
 ```
 https://github.com/rails/rails/compare/master@{1.day.ago}...master
+https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 which allows you to see the difference on the master branch up to one day ago.
 
