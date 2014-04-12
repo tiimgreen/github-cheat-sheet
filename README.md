@@ -71,6 +71,18 @@ If you want to link to another issue in the same repo, simple type hash `#` then
 
 To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
+## Syntax Highlighting in README
+
+To add syntax highlighting to code in README:
+
+```
+```ruby
+require 'tabbit'
+table = Tabbit.new('Name', 'Email')
+table.add_row('Tim Green', 'tiimgreen@gmail.com')
+```
+```
+
 ## Emojis
 
 Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_emoji:`
