@@ -138,3 +138,19 @@ Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_
 :+1:
 
 The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/).
+
+## Syled Git Status
+
+```bash
+$ git status
+```
+
+![git status](http://i.imgur.com/o3PEHAA.png)
+
+Can be changed to:
+
+```bash
+$ git status -sb
+```
+
+![git status -sb](http://i.imgur.com/xNI1bT0.png)
