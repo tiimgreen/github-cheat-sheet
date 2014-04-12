@@ -34,6 +34,17 @@ $ git clone git://github.com/tiimgreen/toc.git
 
 [git.io](http://git.io) is a simple URL shortner for GitHub.
 
+## Gists
+
+[Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repo.
+
+Gists are also full repos so can be cloned like any other:
+```bash
+$ git clone https://gist.github.com/tiimgreen/10545817
+```
+
+![Gists](http://i.imgur.com/dULZXXo.png)
+
 ## Emojis
 
 Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_emoji:`
