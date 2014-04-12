@@ -1,6 +1,6 @@
 # Github Cheat Sheet
 
-All the hidden and not hidden features of GitHub. Taken from Zach Holmans [talk](https://www.youtube.com/watch?v=Foz9yvMkvlA) at Aloha Ruby Conference 2012.
+All the hidden and not hidden features of GitHub and Git. Taken from Zach Holman's [talk](https://www.youtube.com/watch?v=Foz9yvMkvlA) at Aloha Ruby Conference 2012.
 
 ## Ignore Whitespace
 
@@ -81,6 +81,10 @@ If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
 ```
+
+This closes the issue and references the closing commit.
+
+![Closing Repo](http://i.imgur.com/URXFprQ.png)
 
 ## Cross-link issues
 
