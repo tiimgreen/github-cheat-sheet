@@ -55,7 +55,7 @@ Pressing `w` will bring up the branch selector.
 
 Pressing `s` will select the search bar.
 
-To see all of the sortcuts for given page type `shift+?`
+To see all of the shortcuts for given page type `shift+?`
 
 ## Closing issues with commits
 
@@ -75,12 +75,13 @@ To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `ti
 
 To add syntax highlighting to code in README:
 
-```ruby
+![Syntax Highlighting](http://i.imgur.com/RE9AMus.png)
+
 ```ruby
 require 'tabbit'
 table = Tabbit.new('Name', 'Email')
 table.add_row('Tim Green', 'tiimgreen@gmail.com')
-\`\`\`
+puts table.to_s
 ```
 
 ## Emojis
