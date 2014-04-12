@@ -30,6 +30,21 @@ Which translates to:
 $ git clone git://github.com/tiimgreen/toc.git
 ```
 
+## Changing Directories
+
+To move to the previous directory in the command line:
+
+```bash
+$ cd -
+```
+
+Similarly, to move to the last branch in git:
+
+```bash
+$ git checkout -
+# Switched to branch 'master'
+```
+
 ## git.io
 
 [git.io](http://git.io) is a simple URL shortener for GitHub.
@@ -94,9 +109,11 @@ To view all commits on a repo by author add `?author=username` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
-## Line highlighting in repos
+## Line Highlighting in Repos
 
 Adding `#L52` to the end of a code file URL will highlight that line number.
+
+It also works with ranges, e.g. `#L53-L60`:
 
 ```
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
