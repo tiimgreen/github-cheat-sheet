@@ -146,7 +146,7 @@ https://github.com/rails/rails/compare/master...4-1-stable
 https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
-which allows you to see the difference on the master branch up to one day ago.
+which allows you to see the difference on the master branch up a set time ago or a specified date.
 
 ## Line Highlighting in Repos
 
