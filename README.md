@@ -65,6 +65,12 @@ If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or 
 $ git commit -m "Refactor code, fixes #12"
 ```
 
+## Cross-link issues
+
+If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
+
+To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
+
 ## Emojis
 
 Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_emoji:`
