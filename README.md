@@ -55,7 +55,7 @@ $ git checkout -
 
 [Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repo.
 
-Gists are also full repos so can be cloned like any other:
+Although, Gists can be treated full repos so can be cloned like any other:
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
