@@ -219,3 +219,19 @@ Where `query` is the term you want to search, this then finds the last one and g
 ![git show :/query](http://i.imgur.com/SA0oZbE.png)
 
 NOTE: Press `q` to quit.
+
+## Merged Branches
+
+```bash
+$ git branch --merged
+```
+
+Will give you a list of all branches that have been merged into your current branch.
+
+Conversely:
+
+```bash
+$ git branch --no-merged
+```
+
+Will give you a list of branches that have not been merged into your current branch.
