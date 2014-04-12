@@ -75,7 +75,7 @@ To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `ti
 
 To add syntax highlighting to code in README:
 
-![Syntax Highlighting](http://i.imgur.com/RE9AMus.png)
+![Syntax Highlighting](http://i.imgur.com/V9YteWf.png
 
 ```ruby
 require 'tabbit'
