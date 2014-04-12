@@ -49,7 +49,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ## Keyboard Shortcuts
 
-When on a repo page keyboard shortcust allow you to navigate easily.
+When on a repo page keyboard shortcuts allow you to navigate easily.
 
 Pressing `t` will bring up a file explorer.
 
@@ -64,7 +64,7 @@ To see all of the shortcuts for given page type `shift+?`
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue.
 
 ```bash
-$ git commit -m "Refactor code, fixes #12"
+$ git commit -m "Fix cock up, fixes #12"
 ```
 
 ## Cross-link issues
@@ -94,6 +94,16 @@ To view all commits on a repo by author add `?author=username` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
+## Line highlighting in repos
+
+Adding `#L52` to the end of a code file URL will highlight that line number.
+
+```
+https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
+```
+
+![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+
 ## Emojis
 
 Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_emoji:`
@@ -101,9 +111,13 @@ Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_
 ```
 :smile:
 :poop:
+:shipit:
+:+1:
 ```
 
 :smile:
 :poop:
+:shipit:
+:+1:
 
 The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/).
