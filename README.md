@@ -109,6 +109,27 @@ To view all commits on a repo by author add `?author=username` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
+## Comparing Branches
+
+In GitHub to compare branches, the URL will look something like this:
+
+```
+https://github.com/user/repo/compare/{range}
+```
+
+Where `{range} = master...4-1-stable`
+
+e.g.:
+```
+https://github.com/rails/rails/compare/master...4-1-stable
+```
+
+`{range}` is smart and can be changed to things like:
+```
+https://github.com/rails/rails/compare/master@{1.day.ago}...master
+```
+which allows you to see the difference on the master branch up to one day ago.
+
 ## Line Highlighting in Repos
 
 Adding `#L52` to the end of a code file URL will highlight that line number.
