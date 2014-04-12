@@ -30,7 +30,7 @@ Which translates to:
 $ git clone git://github.com/tiimgreen/toc.git
 ```
 
-## Changing Directories
+## Previous Branch
 
 To move to the previous directory in the command line:
 
@@ -43,6 +43,9 @@ Similarly, to move to the last branch in git:
 ```bash
 $ git checkout -
 # Switched to branch 'master'
+
+$ git checkout -
+# Switched to branch 'next'
 ```
 
 ## git.io
