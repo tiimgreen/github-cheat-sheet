@@ -32,7 +32,9 @@ $ git clone git://github.com/tiimgreen/toc.git
 
 ## git.io
 
-[git.io](http://git.io) is a simple URL shortner for GitHub.
+[git.io](http://git.io) is a simple URL shortener for GitHub.
+
+[http://git.io/wO0xUg](http://git.io/wO0xUg)
 
 ## Gists
 
@@ -82,6 +84,14 @@ require 'tabbit'
 table = Tabbit.new('Name', 'Email')
 table.add_row('Tim Green', 'tiimgreen@gmail.com')
 puts table.to_s
+```
+
+## Commit History by Author
+
+To view all commits on a repo by author add `?author=username` to the URL.
+
+```
+https://github.com/rails/rails/commits/master?author=dhh
 ```
 
 ## Emojis
