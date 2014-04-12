@@ -202,3 +202,17 @@ $ git status -sb
 ```
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
+
+## Git Query
+
+A git query allows you to search all your previous commit messages and finds the most recent one matching the query.
+
+```bash
+$ git show :/query
+```
+
+Where `query` is the term you want to search, this then finds the last one and gives details on the lines that were changed.
+
+![git show :/query](http://i.imgur.com/SA0oZbE.png)
+
+NOTE: Press `q` to quit.
