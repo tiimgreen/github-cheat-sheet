@@ -122,7 +122,7 @@ This closes the issue and references the closing commit.
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
 
-## Checking out pull requests
+## Checking out Pull Requests
 
 If you want to check out pull request locally, you can fetch it using that command:
 
