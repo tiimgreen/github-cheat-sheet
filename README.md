@@ -190,7 +190,7 @@ Images and GIFs can be added to comments, READMEs etc.:
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
 
-## Syled Git Status
+## Styled Git Status
 
 ```bash
 $ git status
