@@ -91,6 +91,48 @@ This closes the issue and references the closing commit.
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
 
+## Checking out pull requests
+
+If you want to check out pull request locally, you can fetch it using that command:
+
+```bash
+$ git fetch origin '+refs/pull/*/head:refs/pull/*'
+```
+
+then, checkout pr (i.e. 42) using 
+
+```bash
+$ git checkout refs/pull/42
+```
+
+Alternatively, you can fetch them as remote branches:
+
+```bash
+$ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
+```
+
+and checkout as 
+
+```bash
+$ git checkout origin/pr/42
+```
+
+and even fetch them automatically, if you add corresponding lines in your .git/config:
+
+
+```
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+```
+
+```
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+```
+
 ## Cross-link issues
 
 If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
