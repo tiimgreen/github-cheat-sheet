@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Merged Branches](https://github.com/tiimgreen/github-cheat-sheet#merged-branches)
 - [Quick Licensing](https://github.com/tiimgreen/github-cheat-sheet#quick-licensing)
 - [.gitconfig Recommendations](https://github.com/tiimgreen/github-cheat-sheet#gitconfig-recommendations)
+- [TODO Lists](https://github.com/tiimgreen/github-cheat-sheet#todo-lists)
     - [Aliases](https://github.com/tiimgreen/github-cheat-sheet#aliases)
     - [Auto-correct](https://github.com/tiimgreen/github-cheat-sheet#auto-correct)
     - [Color](https://github.com/tiimgreen/github-cheat-sheet#color)
@@ -357,6 +358,25 @@ You can also add them to existing repos by creating a new file through the web i
 ![License](http://i.imgur.com/fTjQict.png)
 
 Also works for `.gitignore`.
+
+## TODO Lists
+
+In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
+```
+- [ ] Be awesome
+- [ ] Do stuff
+- [ ] Sleep
+```
+
+![TODO List](http://i.imgur.com/k2qZi56.png)
+
+When they are clicked, they will be updated in the pure Markdown:
+
+```
+- [x] Be awesome
+- [x] Do stuff
+- [ ] Sleep
+```
 
 ## .gitconfig Recommendations
 
