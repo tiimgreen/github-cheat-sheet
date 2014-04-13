@@ -263,7 +263,7 @@ e.g.
 $ git config alias.cm commit
 ```
 
-NOTE: for an alias with multiple functions use speech marks:
+NOTE: for an alias with multiple functions use quotes:
 ```bash
 $ git config alias.ac 'add -A . && commit'
 ```
@@ -293,4 +293,30 @@ $ git st
 is Alias of:
 ```bash
 $ git status -sb
+```
+
+### Auto-correct
+
+Currently if you type `git comit` you will get this result:
+```bash
+$ git comit -m "Message"
+# git: 'comit' is not a git command. See 'git --help'.
+
+# Did you mean this?
+# 	commit
+```
+
+To call `commit` when `comit` is typed, just enable autocorrect:
+
+```bash
+$ git config --global help.autocorrect 1
+```
+
+So now you will get this result:
+
+```bash
+$ git comit -m "Message"
+# WARNING: You called a Git command named 'comit', which does not exist.
+# Continuing under the assumption that you meant 'commit'
+# in 0.1 seconds automatically...
 ```
