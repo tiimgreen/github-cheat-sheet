@@ -356,6 +356,8 @@ You can also add them to existing repos by creating a new file through the web i
 
 ![License](http://i.imgur.com/fTjQict.png)
 
+Also works for `.gitignore`.
+
 ## .gitconfig Recommendations
 
 Your `.gitconfig` is the file that contains all your preferences.
