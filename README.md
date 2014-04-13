@@ -281,6 +281,8 @@ $ git log --all --graph --decorate --oneline --abbrev-commit
 
 ![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
 
+NOTE: This can be added into an Alias (shorter command) using the instructions [here](https://github.com/tiimgreen/github-cheat-sheet#aliases)
+
 ## Git Query
 
 A git query allows you to search all your previous commit messages and finds the most recent one matching the query.
