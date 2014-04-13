@@ -2,6 +2,35 @@
 
 All the hidden and not hidden features of Git and GitHub. This cheat sheet was inspired by Zach Holman's [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012. Also see Zach's [slides](https://speakerdeck.com/holman/git-and-github-secrets).
 
+# Contents
+
+- [Ignore Whitespace](https://github.com/tiimgreen/github-cheat-sheet#ignore-whitespace)
+- [Cloning a Repo](https://github.com/tiimgreen/github-cheat-sheet#cloning-a-repo)
+- [Hub - Git Wrapper](https://github.com/tiimgreen/github-cheat-sheet#hub---git-wrapper)
+- [Previous Branch](https://github.com/tiimgreen/github-cheat-sheet#previous-branch)
+- [git.io](https://github.com/tiimgreen/github-cheat-sheet#gitio)
+- [Gists](https://github.com/tiimgreen/github-cheat-sheet#gists)
+- [Keyboard Shortcuts](https://github.com/tiimgreen/github-cheat-sheet#keyboard-shortcuts)
+- [Closing Issues with Commits](https://github.com/tiimgreen/github-cheat-sheet#closing-issues-with-commits)
+- [Checking out Pull Requests](https://github.com/tiimgreen/github-cheat-sheet#checking-out-pull-requests)
+- [Cross-Link Issues](https://github.com/tiimgreen/github-cheat-sheet#cross-link-issues)
+- [Syntax Highlighting in Markdown Files](https://github.com/tiimgreen/github-cheat-sheet#syntax-highlighting-in-markdown-files)
+- [Commit History by Author](https://github.com/tiimgreen/github-cheat-sheet#commit-history-by-author)
+- [Empty Commits](https://github.com/tiimgreen/github-cheat-sheet#empty-commits)
+- [Comparing Branches](https://github.com/tiimgreen/github-cheat-sheet#comparing-branches)
+- [Line Highlighting in Repos](https://github.com/tiimgreen/github-cheat-sheet#line-highlighting-in-repos)
+- [Emojis](https://github.com/tiimgreen/github-cheat-sheet#emojis)
+- [Images/GIFs](https://github.com/tiimgreen/github-cheat-sheet#imagesgifs)
+- [Quick Quoting](https://github.com/tiimgreen/github-cheat-sheet#quick-quoting)
+- [Styled Git Status](https://github.com/tiimgreen/github-cheat-sheet#styled-git-status)
+- [Styled Git Log](https://github.com/tiimgreen/github-cheat-sheet#styled-git-log)
+- [Git Query](https://github.com/tiimgreen/github-cheat-sheet#git-query)
+- [Merged Branches](https://github.com/tiimgreen/github-cheat-sheet#merged-branches)
+- [.gitconfig Recommendations](https://github.com/tiimgreen/github-cheat-sheet#gitconfig-recommendations)
+    - [Aliases](https://github.com/tiimgreen/github-cheat-sheet#aliases)
+    - [Auto-correct](https://github.com/tiimgreen/github-cheat-sheet#auto-correct)
+    - [Color](https://github.com/tiimgreen/github-cheat-sheet#color)
+
 ## Ignore Whitespace
 
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
@@ -14,7 +43,7 @@ When cloning a repo the `.git` can be left off the edge.
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
-## Hub - Git wrapper
+## Hub - Git Wrapper
 
 [Hub](https://github.com/github/hub) is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
 
@@ -79,7 +108,7 @@ Pressing `y` __when looking at a file__ (e.g. `https://github.com/tiimgreen/gith
 
 To see all of the shortcuts for given page type `shift+?`
 
-## Closing issues with commits
+## Closing Issues with Commits
 
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue.
 
@@ -133,7 +162,7 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 ```
 
-## Cross-link issues
+## Cross-link Issues
 
 If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
 
