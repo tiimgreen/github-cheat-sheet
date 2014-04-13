@@ -1,6 +1,6 @@
-# Github Cheat Sheet
+# GitHub Cheat Sheet
 
-All the hidden and not hidden features of GitHub and Git. Taken from Zach Holman's [talk](https://www.youtube.com/watch?v=Foz9yvMkvlA) at Aloha Ruby Conference 2012.
+All the hidden and not hidden features of Git and GitHub. This cheat sheet was inspired by Zach Holman's [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012. Also see Zach's [slides](https://speakerdeck.com/holman/git-and-github-secrets).
 
 ## Ignore Whitespace
 
