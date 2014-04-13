@@ -279,30 +279,11 @@ $ git config alias.ac 'add -A . && commit'
 
 Some recommendations include:
 
-```bash
-$ git cm
-```
-is Alias of:
-```bash
-$ git commit
-```
-<br>
-```bash
-$ git ac
-```
-is Alias of:
-```bash
-$ git add .
-$ git commit
-```
-<br>
-```bash
-$ git st
-```
-is Alias of:
-```bash
-$ git status -sb
-```
+| Alias | Current Command | What to Type |
+| --- | --- | --- |
+| `git cm` | `git commit` | `git config --global alias.cm commit` |
+| `git ac` | `git add . -A` `git commit` | `git config --global alias.ac '!git add -A && git commit'` |
+| `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 
 ### Auto-correct
 
