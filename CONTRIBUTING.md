@@ -8,9 +8,10 @@
 ## Styling
 
 - Use h2 for header:
-```markdown
+```
 ## New Feature
 ```
+- Add new feature in Contents Menu in correct position
 - Add examples wherever possible
 - Use `bash` styling for all git commands:
 ```bash
