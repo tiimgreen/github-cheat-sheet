@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Merged Branches](#merged-branches)
 - [Quick Licensing](#quick-licensing)
 - [TODO Lists](#todo-lists)
+- [Relative Links](#relative-links)
 - [.gitconfig Recommendations](#gitconfig-recommendations)
     - [Aliases](#aliases)
     - [Auto-correct](#auto-correct)
@@ -380,6 +381,19 @@ When they are clicked, they will be updated in the pure Markdown:
 - [x] Do stuff
 - [ ] Sleep
 ```
+
+## Relative Links
+
+[Relative links](https://help.github.com/articles/relative-links-in-readmes) are recommended in your Markdown files when linking to internal content.
+
+```markdown
+[Link to a header](#awesome-section)
+
+[Link to a file](docs/readme)
+```
+
+Absolute links have to be updated whenever the URL changes (e.g. repo renamed, username changed, project forked).  
+Using relative links makes your documentation easily stand on its own.
 
 ## .gitconfig Recommendations
 
