@@ -418,6 +418,7 @@ Some recommendations include:
 | Alias | Current Command | What to Type |
 | --- | --- | --- |
 | `git cm` | `git commit` | `git config --global alias.cm commit` |
+| `git co` | `git checkout` | `git config --global alias.co checkout` |
 | `git ac` | `git add . -A` `git commit` | `git config --global alias.ac '!git add -A && git commit'` |
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 
