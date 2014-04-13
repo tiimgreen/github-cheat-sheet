@@ -26,6 +26,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Styled Git Log](https://github.com/tiimgreen/github-cheat-sheet#styled-git-log)
 - [Git Query](https://github.com/tiimgreen/github-cheat-sheet#git-query)
 - [Merged Branches](https://github.com/tiimgreen/github-cheat-sheet#merged-branches)
+- [Quick Licensing](https://github.com/tiimgreen/github-cheat-sheet#quick-licensing)
 - [.gitconfig Recommendations](https://github.com/tiimgreen/github-cheat-sheet#gitconfig-recommendations)
     - [Aliases](https://github.com/tiimgreen/github-cheat-sheet#aliases)
     - [Auto-correct](https://github.com/tiimgreen/github-cheat-sheet#auto-correct)
@@ -344,6 +345,16 @@ $ git branch --no-merged
 ```
 
 Will give you a list of branches that have not been merged into your current branch.
+
+## Quick Licensing
+
+When creating a repo GitHub gives you the options of adding in a pre-made license:
+
+![Licese](http://i.imgur.com/Chqj4Fg.png)
+
+You can also add them to existing repos by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
+
+![License](http://i.imgur.com/fTjQict.png)
 
 ## .gitconfig Recommendations
 
