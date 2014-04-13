@@ -320,3 +320,11 @@ $ git comit -m "Message"
 # Continuing under the assumption that you meant 'commit'
 # in 0.1 seconds automatically...
 ```
+
+### Color
+
+To add more colour to your git command line:
+
+```bash
+$ git config --global color.ui 1
+```
