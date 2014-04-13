@@ -75,6 +75,8 @@ Pressing `w` will bring up the branch selector.
 
 Pressing `s` will select the search bar.
 
+Pressing `y` will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+
 To see all of the shortcuts for given page type `shift+?`
 
 ## Closing issues with commits
@@ -187,6 +189,14 @@ Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_
 
 The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/).
 
+The top 5 used Ejmojis on GitHub are:
+
+1. :shipit: `:shipit:`
+2. :sparkles: `:sparkles:`
+3. :-1: `:-1:`
+4. :+1: `:+1:`
+5. :clap: `:clap:`
+
 ## Images/GIFs
 
 Images and GIFs can be added to comments, READMEs etc.:
@@ -198,6 +208,12 @@ Images and GIFs can be added to comments, READMEs etc.:
 ![Jim Carrey](http://wac.450f.edgecastcdn.net/80450F/thefw.com/files/2013/05/Irene.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
+
+## Quick Quoting
+
+When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
+
+![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
 ## Styled Git Status
 
