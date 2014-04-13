@@ -12,6 +12,14 @@
 ## New Feature
 ```
 - Add new feature in Contents Menu in correct position
+- For internal links e.g. Contents use relative links:
+```
+- [Ignore Whitespace](#ignore-whitespace)
+```
+Not:
+```
+- [Ignore Whitespace](https://github.com/tiimgreen/github-cheat-sheet#ignore-whitespace)
+```
 - Add examples wherever possible
 - Use `bash` styling for all git commands:
 ```bash
