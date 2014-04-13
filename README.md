@@ -215,7 +215,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ## Emojis
 
-Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_emoji:`
+Emojis can be generated on Pull Requests, Issues, Commit Messages, READMEs, etc. using `:name_of_emoji:`
 
 ```
 :smile:
