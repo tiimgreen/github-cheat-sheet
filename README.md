@@ -278,7 +278,7 @@ Images and GIFs can be added to comments, READMEs etc.:
 ![Alt Text](http://image_url.com/image.jpg)
 ```
 
-![Jim Carrey](http://wac.450f.edgecastcdn.net/80450F/thefw.com/files/2013/05/Irene.gif)
+![Chuck Norris](http://gifs.joelglovier.com/chuck-norris/chuck-norris.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
 
