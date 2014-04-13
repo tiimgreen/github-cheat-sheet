@@ -58,7 +58,7 @@ $ git checkout -
 
 [Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repo.
 
-Although, Gists can be treated full repos so can be cloned like any other:
+Although, Gists can be treated as a full repo so they can be cloned like any other:
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
@@ -128,7 +128,7 @@ $ git commit -m "Big-ass commit" --allow-empty
 
 ## Comparing Branches
 
-In GitHub to compare branches, the URL will look something like this:
+To use GitHub to compare branches, change the URL to look like this:
 
 ```
 https://github.com/user/repo/compare/{range}
