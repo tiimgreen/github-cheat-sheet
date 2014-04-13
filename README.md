@@ -99,7 +99,7 @@ If you want to check out pull request locally, you can fetch it using that comma
 $ git fetch origin '+refs/pull/*/head:refs/pull/*'
 ```
 
-then, checkout pr (i.e. 42) using 
+then, checkout Pull Request (i.e. 42) using
 
 ```bash
 $ git checkout refs/pull/42
@@ -111,7 +111,7 @@ Alternatively, you can fetch them as remote branches:
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-and checkout as 
+and checkout as:
 
 ```bash
 $ git checkout origin/pr/42
@@ -283,6 +283,9 @@ $ git show :/query
 
 Where `query` is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
+```bash
+$ git show :/typo
+```
 ![git show :/query](http://i.imgur.com/SA0oZbE.png)
 
 NOTE: Press `q` to quit.
