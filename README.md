@@ -229,7 +229,7 @@ Emojis can be generated on Pull Requests, Issues, READMEs, etc. using `:name_of_
 :shipit:
 :+1:
 
-The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/).
+The full list of supported Emojis on GitHub can be found [here](http://www.emoji-cheat-sheet.com/) or [here](https://github.com/scotch-io/All-Github-Emoji-Icons).
 
 The top 5 used Ejmojis on GitHub are:
 
