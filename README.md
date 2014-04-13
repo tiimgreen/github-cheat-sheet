@@ -39,7 +39,7 @@ Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabli
 
 ## Cloning a Repo
 
-When cloning a repo the `.git` can be left off the edge.
+When cloning a repo the `.git` can be left off the end.
 
 ```bash
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
@@ -47,7 +47,7 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 ## Hub - Git Wrapper
 
-[Hub](https://github.com/github/hub) is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
+[Hub](https://github.com/github/hub) is a command line git wrapper that gives extra features and commands that make working with GitHub easier.
 
 This allows you to do things like:
 
@@ -55,10 +55,10 @@ This allows you to do things like:
 $ hub clone tiimgreen/toc
 ```
 
-Which translates to:
+instead of:
 
 ```bash
-$ git clone git://github.com/tiimgreen/toc.git
+$ git clone https://github.com/tiimgreen/toc.git
 ```
 
 ## Previous Branch
@@ -77,6 +77,9 @@ $ git checkout -
 
 $ git checkout -
 # Switched to branch 'next'
+
+$ git checkout -
+# Switched to branch 'master'
 ```
 
 ## git.io
