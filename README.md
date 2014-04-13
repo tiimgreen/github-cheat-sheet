@@ -273,6 +273,14 @@ $ git status -sb
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
 
+## Styled Git Log
+
+```bash
+$ git log --all --graph --decorate --oneline --abbrev-commit
+```
+
+![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
+
 ## Git Query
 
 A git query allows you to search all your previous commit messages and finds the most recent one matching the query.
