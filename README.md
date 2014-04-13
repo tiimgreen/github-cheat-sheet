@@ -95,11 +95,18 @@ If you want to link to another issue in the same repo, simple type hash `#` then
 
 To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
-## Syntax Highlighting in README
+## Syntax Highlighting in Markdown Files
 
-To add syntax highlighting to code in README:
+For example, to syntax highlight Ruby code in your Markdown files write:
 
-![Syntax Highlighting](http://i.imgur.com/ZRgjcWt.png)
+    ```ruby
+    require 'tabbit'
+    table = Tabbit.new('Name', 'Email')
+    table.add_row('Tim Green', 'tiimgreen@gmail.com')
+    puts table.to_s
+    ```
+
+This will produce:
 
 ```ruby
 require 'tabbit'
@@ -107,6 +114,8 @@ table = Tabbit.new('Name', 'Email')
 table.add_row('Tim Green', 'tiimgreen@gmail.com')
 puts table.to_s
 ```
+
+GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
 ## Commit History by Author
 
