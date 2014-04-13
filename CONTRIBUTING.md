@@ -25,4 +25,7 @@ Not:
 ```bash
 $ git commit -m "Message"
 ```
+    ```bash
+    $ git commit -m "Message"
+    ```
 - Add links to Git docs or GitHub docs wherever possible
