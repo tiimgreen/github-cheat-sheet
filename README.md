@@ -94,7 +94,7 @@ This closes the issue and references the closing commit.
 If you want to check out pull request locally, you can fetch it using that command:
 
 ```bash
-$ git fetch origin +refs/pull/*/head:refs/pull/*
+$ git fetch origin '+refs/pull/*/head:refs/pull/*'
 ```
 
 then, checkout pr (i.e. 42) using 
@@ -106,7 +106,7 @@ $ git checkout refs/pull/42
 Alternatively, you can fetch them as remote branches:
 
 ```bash
-$ git fetch origin +refs/pull/*/head:refs/remotes/origin/pr/*
+$ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
 and checkout as 
