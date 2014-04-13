@@ -13,7 +13,7 @@
 ```
 - Add examples wherever possible
 - Use `bash` styling for all git commands:
-    ```bash
-    $ git commit -m "Message"
-    ```
+```bash
+$ git commit -m "Message"
+```
 - Add links to Git docs or GitHub docs wherever possible
