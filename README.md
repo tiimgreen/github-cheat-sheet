@@ -235,6 +235,19 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 which allows you to see the difference on the master branch up a set time ago or a specified date.
 
+### Compare branches cross forked repositories
+
+To use GitHub to compare branches across forked repositories, change the URL to look like this:
+
+```
+https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+```
+
+eg.:
+```
+https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
+```
+
 ## Line Highlighting in Repos
 
 Either adding `#L52` to the end of a code file URL or simply clicking the lin number will highlight that line number.
