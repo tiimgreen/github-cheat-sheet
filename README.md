@@ -17,7 +17,6 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Cross-Link Issues](#cross-link-issues)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
-- [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
 - [Commit History by Author](#commit-history-by-author)
 - [Empty Commits :trollface:](#empty-commits-trollface)
 - [Comparing Branches](#comparing-branches)
@@ -29,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
   - [Expanding Context in Diffs](#expanding-context-in-diffs)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
+  - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
 - [Quick Quoting](#quick-quoting)
 - [Styled Git Status](#styled-git-status)
 - [Styled Git Log](#styled-git-log)
@@ -251,27 +251,6 @@ GitHub uses [Linguist](https://github.com/github/linguist) to perform language d
 
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
-## Embedding Images in GitHub Wiki
-There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax:
-
-```markdown
-![Description here](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
-```
-
-Which produces:
-
-![](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
-
-But there's also a syntax that allows things like specifying the height or width of the image:
-
-```markdown
-[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
-```
-
-Which produces:
-
-![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
-
 ## Commit History by Author
 
 To view all commits on a repo by author add `?author=username` to the URL.
@@ -399,12 +378,23 @@ The top 5 used Ejmojis on GitHub are:
 Images and GIFs can be added to comments, READMEs etc.:
 
 ```
-![Alt Text](http://image_url.com/image.jpg)
+![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
-![Cat and Rabbit](http://i.imgur.com/PoBmL0W.gif)
+![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
+
+### Embedding Images in GitHub Wiki
+There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax (shown above). But there's also a syntax that allows things like specifying the height or width of the image:
+
+```markdown
+[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
+```
+
+Which produces:
+
+![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
 ## Quick Quoting
 
