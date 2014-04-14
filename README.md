@@ -427,6 +427,12 @@ Commits can be pushed with no code changes by adding `--allow-empty`:
 $ git commit -m "Big-ass commit" --allow-empty
 ```
 
+Some use-cases for this (that make sense), include:
+
+ - Annotating the start of a new bulk of work or a new feature.
+ - Documenting when you make changes to the project that aren't code related.
+ - Communicating with people using your repository.
+
 ### Styled Git Status
 Running:
 
