@@ -235,7 +235,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 which allows you to see the difference on the master branch up a set time ago or a specified date.
 
-### Compare branches cross forked repositories
+### Compare branches across forked repositories
 
 To use GitHub to compare branches across forked repositories, change the URL to look like this:
 
