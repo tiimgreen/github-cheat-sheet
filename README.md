@@ -317,6 +317,8 @@ Any time you view a commit or pull request on GitHub that includes geodata, GitH
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
+[*Read more about diffable maps.*](https://github.com/blog/1772-diffable-more-customizable-maps)
+
 ## Emojis
 
 Emojis can be generated on Pull Requests, Issues, Commit Messages, READMEs, etc. using `:name_of_emoji:`
