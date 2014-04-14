@@ -396,6 +396,10 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 	co = checkout
 	cm = commit
 	p = push
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
 ```
 
 or type in the command line:
@@ -421,6 +425,9 @@ Some recommendations include:
 | `git co` | `git checkout` | `git config --global alias.co checkout` |
 | `git ac` | `git add . -A` `git commit` | `git config --global alias.ac '!git add -A && git commit'` |
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
+| `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
+| `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
+| `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
 ### Auto-correct
 
