@@ -67,6 +67,8 @@ instead of:
 $ git clone https://github.com/tiimgreen/toc.git
 ```
 
+[*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
+
 ## Decreasing Contributor Friction
 If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
 
