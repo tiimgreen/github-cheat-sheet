@@ -141,7 +141,7 @@ Pressing `t` will bring up a file explorer.
 
 Pressing `w` will bring up the branch selector.
 
-Pressing `s` will select the search bar.
+Pressing `s` will select the Command Bar.
 
 Pressing `l` will edit labels on existing issues.
 
