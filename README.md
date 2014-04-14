@@ -28,7 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Git Query](#git-query)
 - [Merged Branches](#merged-branches)
 - [Quick Licensing](#quick-licensing)
-- [TODO Lists](#todo-lists)
+- [Task Lists](#task-lists)
 - [Relative Links](#relative-links)
 - [.gitconfig Recommendations](#gitconfig-recommendations)
     - [Aliases](#aliases)
@@ -420,7 +420,7 @@ Also works for `.gitignore`.
 
 [*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
 
-## TODO Lists
+## Task Lists
 
 In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
 ```
@@ -429,7 +429,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 - [ ] Sleep
 ```
 
-![TODO List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/k2qZi56.png)
 
 When they are clicked, they will be updated in the pure Markdown:
 
