@@ -24,6 +24,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Diffs](#diffs)
   - [Rendered Prose Diffs](#rendered-prose-diffs)
   - [Diffable Maps](#diffable-maps)
+  - [Expanding Context in Diffs](#expanding-context-in-diffs)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -320,6 +321,13 @@ Any time you view a commit or pull request on GitHub that includes geodata, GitH
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
 [*Read more about diffable maps.*](https://github.com/blog/1772-diffable-more-customizable-maps)
+
+### Expanding Context in Diffs
+Using the *unfold* button in the gutter of a diff, you can reveal additional lines of context with a click. You can keep clicking *unfold* until you've revealed the whole file, and the feature is available anywhere GitHub renders diffs.
+
+![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
+
+[*Read more about expanding context in diffs.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
 ## Emojis
 
