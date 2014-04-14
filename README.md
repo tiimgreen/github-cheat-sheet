@@ -22,6 +22,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
 - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
 - [Rendered Prose Diffs](#rendered-prose-diffs)
+- [Diffable Maps](#diffable-maps)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -310,6 +311,11 @@ Commits and pull requests including prose files feature *source* and *rendered* 
 ![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
 
 [*Read more about rendered prose diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
+
+## Diffable Maps
+Any time you view a commit or pull request on GitHub that includes geodata, GitHub will render a visual representation of what was changed.
+
+[![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
 ## Emojis
 
