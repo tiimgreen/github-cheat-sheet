@@ -18,7 +18,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Contributing Guidelines](#contributing-guidelines)
 - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
 - [Commit History by Author](#commit-history-by-author)
-- [Empty Commits](#empty-commits)
+- [Empty Commits :trollface:](#empty-commits-trollface)
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
 - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
@@ -259,9 +259,9 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 [*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views)
 
-## Empty Commits
+## Empty Commits :trollface:
 
-Commits can be pushed with no code changes by adding `--allow-empty` — :trollface: :
+Commits can be pushed with no code changes by adding `--allow-empty`:
 
 ```bash
 $ git commit -m "Big-ass commit" --allow-empty
