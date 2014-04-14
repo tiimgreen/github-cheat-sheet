@@ -21,8 +21,9 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
 - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
-- [Rendered Prose Diffs](#rendered-prose-diffs)
-- [Diffable Maps](#diffable-maps)
+- [Diffs](#diffs)
+  - [Rendered Prose Diffs](#rendered-prose-diffs)
+  - [Diffable Maps](#diffable-maps)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -305,14 +306,15 @@ The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](h
 
 [*Read more about repository metadata and plugin support for GitHub Pages.*](Repository metadata and plugin support for GitHub Pages)
 
-## Rendered Prose Diffs
+## Diffs
+### Rendered Prose Diffs
 Commits and pull requests including prose files feature *source* and *rendered* views. Click the "rendered" button to see the changes as they'll appear in the rendered document. Rendered prose view is handy when you're adding, removing, and editing text:
 
 ![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
 
 [*Read more about rendered prose diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
-## Diffable Maps
+### Diffable Maps
 Any time you view a commit or pull request on GitHub that includes geodata, GitHub will render a visual representation of what was changed.
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
