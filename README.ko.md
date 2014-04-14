@@ -9,7 +9,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Hub - Git Wrapper](#hub---git-wrapper)
 - [Decreasing Contributor Friction](#decreasing-contributor-friction)
 - [Previous Branch](#previous-branch)
-- [git.io](#gitio)
+- [Git.io](#gitio)
 - [Gists](#gists)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Closing Issues with Commits](#closing-issues-with-commits)
@@ -21,6 +21,10 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
 - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+- [Diffs](#diffs)
+  - [Rendered Prose Diffs](#rendered-prose-diffs)
+  - [Diffable Maps](#diffable-maps)
+  - [Expanding Context in Diffs](#expanding-context-in-diffs)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -31,7 +35,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Quick Licensing](#quick-licensing)
 - [Task Lists](#task-lists)
 - [Relative Links](#relative-links)
-- [.gitconfig Recommendations](#gitconfig-recommendations)
+- [`.gitconfig` Recommendations](#gitconfig-recommendations)
     - [Aliases](#aliases)
     - [Auto-correct](#auto-correct)
     - [Color](#color)
@@ -74,7 +78,7 @@ $ hub clone tiimgreen/toc
 
 사람들이 사용하고 기여할 수 있는 프로젝트를 만드려면, 가장 기본적인 질문에 대답할 수 있어야합니다. 이 프로젝트는 무엇입니까? 어떻게 사용합니까? 어디까지 허용됩니까? 어떻게 기여합니까? 어떻게 개발하고 실행해야 합니까? 어떻게 새로운 기능이 이전 기능을 손상되지 않았는지 확인해야 합니까?
 
-[Friction](https://github.com/rafalchmiel/friction)은 이러한 일반적인 질문들의 답이 프로젝트 안에 있는지 확인하는 커맨드 라인 스크립트 입니다. 다음은 샘플 출력 입니다.
+[Friction](https://github.com/rafalchmiel/friction)은 이러한 일반적인 [질문들의 답](https://github.com/rafalchmiel/friction/wiki)이 프로젝트 안에 있는지 확인하는 커맨드 라인 스크립트 입니다. 다음은 샘플 출력 입니다.
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
@@ -101,11 +105,19 @@ $ git checkout -
 
 [*깃 브랜치에 대해 더 읽어 보세요.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
-## git.io
+## Git.io
 
-[git.io](http://git.io)는 깃허브를 위한 간단한 URL 단축기입니다.
+[Git.io](http://git.io)는 깃허브를 위한 간단한 URL 단축기입니다. 순수 HTTP에서 Curl으로 사용하실 수도 있습니다.
 
-[http://git.io/wO0xUg](http://git.io/wO0xUg)
+```bash
+$ curl -i http://git.io -F "url=https://github.com/..."
+HTTP/1.1 201 Created
+Location: http://git.io/abc123
+
+$ curl -i http://git.io/abc123
+HTTP/1.1 302 Found
+Location: https://github.com/...
+```
 
 [*Git.io에 대해 더 읽어 보세요.*](https://github.com/blog/985-git-io-github-url-shortener)
 
@@ -198,11 +210,13 @@ $ git checkout origin/pr/42
 
 [*풀 리퀘스트를 로컬로 체크아웃 하는 방법에 대해 더 읽어 보세요.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-## Cross-link Issues
+## Cross-Link Issues
 
 같은 저장소의 다른 이슈를 링크하기 원한다면, `#`뒤에 이슈 번호만 입력하시면 자동으로 링크됩니다.
 
 다른 저장소의 이슈를 링크하고 싶다면 `사람_이름/저장소_이름#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
+
+![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
 ## Syntax Highlighting in Markdown Files
 
@@ -307,6 +321,32 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis)와 [@mentions](https://github.com/blog/821)을 지킬 포스트와 페이지에서 사용하게 합니다.
 
 [*저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](Repository metadata and plugin support for GitHub Pages)
+
+## Diffs
+
+### Rendered Prose Diffs
+
+산문(prose) 파일이 있는 커밋과 풀 리퀘스트는 *source*와 *rendered* 뷰 기능을 사용할 수 있습니다. "rendered" 버튼을 클릭하시면 렌더된 문서에서 변경을 확인하실 수 있습니다. 렌더된 산문(prose) 뷰는 문장을 추가, 삭제, 변경했을때 유용합니다.
+
+![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
+
+[*렌더된 산문(prose) diff에 대해 더 읽어 보세요.*](https://github.com/blog/1784-rendered-prose-diffs)
+
+### Diffable Maps
+
+지오데이타가 포함된 커밋이나 풀 리퀘스트를 볼 때마다 깃허브는 무엇이 변경 되었는지 시각적으로 보여줍니다.
+
+[![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
+
+[*diff 가능한 맵에 대해 더 읽어 보세요.*](https://github.com/blog/1772-diffable-more-customizable-maps)
+
+### Expanding Context in Diffs
+
+Using the *unfold* button in the gutter of a diff, you can reveal additional lines of context with a click. You can keep clicking *unfold* until you've revealed the whole file, and the feature is available anywhere GitHub renders diffs.
+
+![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
+
+[*diff에서의 문맥 확장에 대해 더 읽어 보세요.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
 ## Emojis
 
@@ -472,7 +512,7 @@ $ git branch --no-merged
 
 [*상대 경로 링크에 대해 더 읽어 보세요.*](https://help.github.com/articles/relative-links-in-readmes)
 
-## .gitconfig Recommendations
+## `.gitconfig` Recommendations
 
 `.gitconfig`는 모든 설정이 들어있는 파일입니다.
 
