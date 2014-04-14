@@ -110,6 +110,8 @@ Pressing `w` will bring up the branch selector.
 
 Pressing `s` will select the search bar.
 
+Pressing `l` will edit labels on existing issues.
+
 Pressing `y` __when looking at a file__ (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`.
