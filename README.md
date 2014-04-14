@@ -21,6 +21,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
 - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+- [Rendered Prose Diffs](#rendered-prose-diffs)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -302,6 +303,13 @@ Within Jekyll pages and posts, repository information is available within the `s
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
 
 [*Read more about repository metadata and plugin support for GitHub Pages.*](Repository metadata and plugin support for GitHub Pages)
+
+## Rendered Prose Diffs
+Commits and pull requests including prose files feature *source* and *rendered* views. Click the "rendered" button to see the changes as they'll appear in the rendered document. Rendered prose view is handy when you're adding, removing, and editing text:
+
+![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
+
+[*Read more about rendered prose diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
 ## Emojis
 
