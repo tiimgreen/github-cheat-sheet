@@ -38,6 +38,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
   - [Merged Branches](#merged-branches)
+  - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
   - [Git Configurations](#git-configurations)
     - [Aliases](#aliases)
     - [Auto-Correct](#auto-correct)
@@ -505,6 +506,19 @@ $ git branch --no-merged
 Will give you a list of branches that have not been merged into your current branch.
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
+
+### Web Server for Browsing Local Repositories
+Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
+
+```bash
+$ git instaweb
+```
+
+Opens:
+
+![Git instaweb](http://i.imgur.com/Dxekmqc.png)
+
+[*Read more about the Git `instaweb` command.*](http://git-scm.com/docs/git-instaweb)
 
 ### Git Configurations
 Your `.gitconfig` file contains all your Git configurations.
