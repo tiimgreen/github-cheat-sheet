@@ -261,13 +261,11 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 ## Empty Commits
 
-Commits can be pushed with no code changes by adding `--allow-empty`
+Commits can be pushed with no code changes by adding `--allow-empty` — :trollface: :
 
 ```bash
 $ git commit -m "Big-ass commit" --allow-empty
 ```
-
-![Trololol](http://img1.wikia.nocookie.net/__cb20130905205853/flylikeabird3/images/0/0c/Mexican_troll_face_by_mariodude12312-d5mtl9z.png)
 
 ## Comparing Branches
 
