@@ -118,7 +118,7 @@ To see all of the shortcuts for the current page press `?`.
 
 ## Closing Issues with Commits
 
-If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue once it is commited to the master branch.
+If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue once it is committed to the master branch.
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
