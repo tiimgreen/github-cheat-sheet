@@ -77,7 +77,7 @@ $ git clone https://github.com/tiimgreen/toc.git
 ## Decreasing Contributor Friction
 If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
 
-[Friction](https://github.com/rafalchmiel/friction) is a command line script that will check your project for common answers to these questions. This is some example output:
+[Friction](https://github.com/rafalchmiel/friction) is a command line script that will check your project for common [answers to these questions](https://github.com/rafalchmiel/friction/wiki). This is some example output:
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
