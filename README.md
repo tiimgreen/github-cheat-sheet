@@ -209,11 +209,13 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
 
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-## Cross-link Issues
+## Cross-Link Issues
 
 If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
 
 To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
+
+![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
 ## Syntax Highlighting in Markdown Files
 
