@@ -20,6 +20,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Empty Commits](#empty-commits)
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
+- [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -294,6 +295,13 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ```
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+
+## Metadata and Plugin Support for GitHub Pages
+Within Jekyll pages and posts, repository information is available within the `site.github` namespace, and can be displayed, for example, using `{{ site.github.project_title }}`.
+
+The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
+
+[*Read more about repository metadata and plugin support for GitHub Pages.*](Repository metadata and plugin support for GitHub Pages)
 
 ## Emojis
 
