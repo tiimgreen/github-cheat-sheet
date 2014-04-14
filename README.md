@@ -337,7 +337,7 @@ All images are cached on GitHub, so if your host goes down, the image will remai
 
 When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
 
-![Quick Quote](http://i.imgur.com/TzpMIOA.png)
+![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
 [*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
 
