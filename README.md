@@ -365,11 +365,11 @@ The full list of supported Emojis on GitHub can be found [here](http://www.emoji
 
 The top 5 used Ejmojis on GitHub are:
 
-1. :shipit: `:shipit:`
-2. :sparkles: `:sparkles:`
-3. :-1: `:-1:`
-4. :+1: `:+1:`
-5. :clap: `:clap:`
+1. :shipit: - `:shipit:`
+2. :sparkles: - `:sparkles:`
+3. :-1: - `:-1:`
+4. :+1: - `:+1:`
+5. :clap: - `:clap:`
 
 ## Images/GIFs
 
