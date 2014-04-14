@@ -38,6 +38,8 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
 
+[*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
+
 ## Cloning a Repo
 
 When cloning a repo the `.git` can be left off the end.
@@ -45,6 +47,8 @@ When cloning a repo the `.git` can be left off the end.
 ```bash
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
+
+[*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
 
 ## Hub - Git Wrapper
 
@@ -83,11 +87,15 @@ $ git checkout -
 # Switched to branch 'master'
 ```
 
+[*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+
 ## git.io
 
 [git.io](http://git.io) is a simple URL shortener for GitHub.
 
 [http://git.io/wO0xUg](http://git.io/wO0xUg)
+
+[*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ## Gists
 
@@ -99,6 +107,8 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
+
+[*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
 
 ## Keyboard Shortcuts
 
@@ -116,6 +126,8 @@ Pressing `y` __when looking at a file__ (e.g. `https://github.com/tiimgreen/gith
 
 To see all of the shortcuts for the current page press `?`.
 
+[*Read more about using the Command Bar.*](https://help.github.com/articles/using-the-command-bar)
+
 ## Closing Issues with Commits
 
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue once it is committed to the master branch.
@@ -127,6 +139,8 @@ $ git commit -m "Fix cock up, fixes #12"
 This closes the issue and references the closing commit.
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
+
+[*Read more about closing issues via commit messages.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
 ## Checking out Pull Requests
 
@@ -170,6 +184,8 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 ```
 
+[*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
+
 ## Cross-link Issues
 
 If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
@@ -198,6 +214,8 @@ puts table.to_s
 
 GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
+[*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
+
 ## Commit History by Author
 
 To view all commits on a repo by author add `?author=username` to the URL.
@@ -205,6 +223,8 @@ To view all commits on a repo by author add `?author=username` to the URL.
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
+
+[*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views)
 
 ## Empty Commits
 
@@ -237,6 +257,8 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 which allows you to see the difference on the master branch up a set time ago or a specified date.
+
+[*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time)
 
 ### Compare branches across forked repositories
 
@@ -307,6 +329,8 @@ When on a comment thread and you want to quote something someone previously said
 
 ![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
+[*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
+
 ## Styled Git Status
 
 ```bash
@@ -323,6 +347,8 @@ $ git status -sb
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
 
+[*Read more about the Git `status` command.*](http://git-scm.com/docs/git-status)
+
 ## Styled Git Log
 
 ```bash
@@ -332,6 +358,8 @@ $ git log --all --graph --decorate --oneline --abbrev-commit
 ![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
 
 NOTE: This can be added into an Alias (shorter command) using the instructions [here](https://github.com/tiimgreen/github-cheat-sheet#aliases)
+
+[*Read more about the Git `log` command.*](http://git-scm.com/docs/git-log)
 
 ## Git Query
 
@@ -366,6 +394,8 @@ $ git branch --no-merged
 
 Will give you a list of branches that have not been merged into your current branch.
 
+[*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
+
 ## Quick Licensing
 
 When creating a repo GitHub gives you the options of adding in a pre-made license:
@@ -377,6 +407,8 @@ You can also add them to existing repos by creating a new file through the web i
 ![License](http://i.imgur.com/fTjQict.png)
 
 Also works for `.gitignore`.
+
+[*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
 
 ## TODO Lists
 
@@ -397,9 +429,11 @@ When they are clicked, they will be updated in the pure Markdown:
 - [ ] Sleep
 ```
 
+[*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+
 ## Relative Links
 
-[Relative links](https://help.github.com/articles/relative-links-in-readmes) are recommended in your Markdown files when linking to internal content.
+Relative links are recommended in your Markdown files when linking to internal content.
 
 ```markdown
 [Link to a header](#awesome-section)
@@ -409,6 +443,8 @@ When they are clicked, they will be updated in the pure Markdown:
 
 Absolute links have to be updated whenever the URL changes (e.g. repo renamed, username changed, project forked).  
 Using relative links makes your documentation easily stand on its own.
+
+[*Read more about relative links.*](https://help.github.com/articles/relative-links-in-readmes)
 
 ## .gitconfig Recommendations
 
@@ -491,6 +527,8 @@ To add more colour to your git command line:
 ```bash
 $ git config --global color.ui 1
 ```
+
+[*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
 
 # Sharing
 
