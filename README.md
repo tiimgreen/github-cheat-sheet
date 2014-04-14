@@ -382,7 +382,7 @@ Where `query` is the term you want to search, this then finds the last one and g
 ```bash
 $ git show :/typo
 ```
-![git show :/query](http://i.imgur.com/SA0oZbE.png)
+![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 NOTE: Press `q` to quit.
 
