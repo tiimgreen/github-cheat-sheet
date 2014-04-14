@@ -17,6 +17,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Cross-Link Issues](#cross-link-issues)
 - [Contributing Guidelines](#contributing-guidelines)
 - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
+- [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
 - [Commit History by Author](#commit-history-by-author)
 - [Empty Commits :trollface:](#empty-commits-trollface)
 - [Comparing Branches](#comparing-branches)
@@ -249,6 +250,27 @@ puts table.to_s
 GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
+
+## Embedding Images in GitHub Wiki
+There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax:
+
+```markdown
+![Description here](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+```
+
+Which produces:
+
+![](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+
+But there's also a syntax that allows things like specifying the height or width of the image:
+
+```markdown
+[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
+```
+
+Which produces:
+
+![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
 ## Commit History by Author
 
