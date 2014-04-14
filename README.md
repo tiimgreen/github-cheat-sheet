@@ -7,6 +7,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Ignore Whitespace](#ignore-whitespace)
 - [Cloning a Repo](#cloning-a-repo)
 - [Hub - Git Wrapper](#hub---git-wrapper)
+- [Decreasing Contributor Friction](#decreasing-contributor-friction)
 - [Previous Branch](#previous-branch)
 - [git.io](#gitio)
 - [Gists](#gists)
@@ -19,6 +20,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Empty Commits](#empty-commits)
 - [Comparing Branches](#comparing-branches)
 - [Line Highlighting in Repos](#line-highlighting-in-repos)
+- [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
 - [Emojis](#emojis)
 - [Images/GIFs](#imagesgifs)
 - [Quick Quoting](#quick-quoting)
@@ -27,7 +29,8 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Git Query](#git-query)
 - [Merged Branches](#merged-branches)
 - [Quick Licensing](#quick-licensing)
-- [TODO Lists](#todo-lists)
+- [Task Lists](#task-lists)
+- [Relative Links](#relative-links)
 - [.gitconfig Recommendations](#gitconfig-recommendations)
     - [Aliases](#aliases)
     - [Auto-correct](#auto-correct)
@@ -37,6 +40,8 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
 
+[*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
+
 ## Cloning a Repo
 
 When cloning a repo the `.git` can be left off the end.
@@ -44,6 +49,8 @@ When cloning a repo the `.git` can be left off the end.
 ```bash
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
+
+[*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
 
 ## Hub - Git Wrapper
 
@@ -60,6 +67,15 @@ instead of:
 ```bash
 $ git clone https://github.com/tiimgreen/toc.git
 ```
+
+[*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
+
+## Decreasing Contributor Friction
+If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
+
+[Friction](https://github.com/rafalchmiel/friction) is a command line script that will check your project for common answers to these questions. This is some example output:
+
+[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
 ## Previous Branch
 
@@ -82,11 +98,15 @@ $ git checkout -
 # Switched to branch 'master'
 ```
 
+[*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+
 ## git.io
 
 [git.io](http://git.io) is a simple URL shortener for GitHub.
 
 [http://git.io/wO0xUg](http://git.io/wO0xUg)
+
+[*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ## Gists
 
@@ -99,6 +119,8 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
+[*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
+
 ## Keyboard Shortcuts
 
 When on a repo page keyboard shortcuts allow you to navigate easily.
@@ -109,13 +131,17 @@ Pressing `w` will bring up the branch selector.
 
 Pressing `s` will select the search bar.
 
+Pressing `l` will edit labels on existing issues.
+
 Pressing `y` __when looking at a file__ (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`.
 
+[*Read more about using the Command Bar.*](https://help.github.com/articles/using-the-command-bar)
+
 ## Closing Issues with Commits
 
-If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue.
+If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue once it is committed to the master branch.
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
@@ -124,6 +150,8 @@ $ git commit -m "Fix cock up, fixes #12"
 This closes the issue and references the closing commit.
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
+
+[*Read more about closing issues via commit messages.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
 ## Checking out Pull Requests
 
@@ -167,6 +195,8 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 ```
 
+[*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
+
 ## Cross-link Issues
 
 If you want to link to another issue in the same repo, simple type hash `#` then the issue number, it will be auto-linked.
@@ -195,6 +225,8 @@ puts table.to_s
 
 GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
+[*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
+
 ## Commit History by Author
 
 To view all commits on a repo by author add `?author=username` to the URL.
@@ -202,6 +234,8 @@ To view all commits on a repo by author add `?author=username` to the URL.
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
+
+[*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views)
 
 ## Empty Commits
 
@@ -235,6 +269,21 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 which allows you to see the difference on the master branch up a set time ago or a specified date.
 
+[*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time)
+
+### Compare branches across forked repositories
+
+To use GitHub to compare branches across forked repositories, change the URL to look like this:
+
+```
+https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+```
+
+eg.:
+```
+https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
+```
+
 ## Line Highlighting in Repos
 
 Either adding `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
@@ -246,6 +295,13 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ```
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+
+## Metadata and Plugin Support for GitHub Pages
+Within Jekyll pages and posts, repository information is available within the `site.github` namespace, and can be displayed, for example, using `{{ site.github.project_title }}`.
+
+The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
+
+[*Read more about repository metadata and plugin support for GitHub Pages.*](Repository metadata and plugin support for GitHub Pages)
 
 ## Emojis
 
@@ -281,7 +337,7 @@ Images and GIFs can be added to comments, READMEs etc.:
 ![Alt Text](http://image_url.com/image.jpg)
 ```
 
-![Chuck Norris](http://gifs.joelglovier.com/chuck-norris/chuck-norris.gif)
+![Cat and Rabbit](http://i.imgur.com/PoBmL0W.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
 
@@ -289,7 +345,9 @@ All images are cached on GitHub, so if your host goes down, the image will remai
 
 When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
 
-![Quick Quote](http://i.imgur.com/TzpMIOA.png)
+![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
+
+[*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
 
 ## Styled Git Status
 
@@ -307,6 +365,8 @@ $ git status -sb
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
 
+[*Read more about the Git `status` command.*](http://git-scm.com/docs/git-status)
+
 ## Styled Git Log
 
 ```bash
@@ -316,6 +376,8 @@ $ git log --all --graph --decorate --oneline --abbrev-commit
 ![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
 
 NOTE: This can be added into an Alias (shorter command) using the instructions [here](https://github.com/tiimgreen/github-cheat-sheet#aliases)
+
+[*Read more about the Git `log` command.*](http://git-scm.com/docs/git-log)
 
 ## Git Query
 
@@ -330,7 +392,7 @@ Where `query` is the term you want to search, this then finds the last one and g
 ```bash
 $ git show :/typo
 ```
-![git show :/query](http://i.imgur.com/SA0oZbE.png)
+![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 NOTE: Press `q` to quit.
 
@@ -350,6 +412,8 @@ $ git branch --no-merged
 
 Will give you a list of branches that have not been merged into your current branch.
 
+[*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
+
 ## Quick Licensing
 
 When creating a repo GitHub gives you the options of adding in a pre-made license:
@@ -362,7 +426,9 @@ You can also add them to existing repos by creating a new file through the web i
 
 Also works for `.gitignore`.
 
-## TODO Lists
+[*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
+
+## Task Lists
 
 In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
 ```
@@ -371,7 +437,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 - [ ] Sleep
 ```
 
-![TODO List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/k2qZi56.png)
 
 When they are clicked, they will be updated in the pure Markdown:
 
@@ -380,6 +446,23 @@ When they are clicked, they will be updated in the pure Markdown:
 - [x] Do stuff
 - [ ] Sleep
 ```
+
+[*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+
+## Relative Links
+
+Relative links are recommended in your Markdown files when linking to internal content.
+
+```markdown
+[Link to a header](#awesome-section)
+
+[Link to a file](docs/readme)
+```
+
+Absolute links have to be updated whenever the URL changes (e.g. repo renamed, username changed, project forked).  
+Using relative links makes your documentation easily stand on its own.
+
+[*Read more about relative links.*](https://help.github.com/articles/relative-links-in-readmes)
 
 ## .gitconfig Recommendations
 
@@ -396,6 +479,10 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 	co = checkout
 	cm = commit
 	p = push
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
 ```
 
 or type in the command line:
@@ -421,6 +508,9 @@ Some recommendations include:
 | `git co` | `git checkout` | `git config --global alias.co checkout` |
 | `git ac` | `git add . -A` `git commit` | `git config --global alias.ac '!git add -A && git commit'` |
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
+| `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
+| `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
+| `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
 ### Auto-correct
 
@@ -455,6 +545,8 @@ To add more colour to your git command line:
 ```bash
 $ git config --global color.ui 1
 ```
+
+[*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
 
 # Sharing
 
