@@ -9,7 +9,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Hub - Git Wrapper](#hub---git-wrapper)
 - [Decreasing Contributor Friction](#decreasing-contributor-friction)
 - [Previous Branch](#previous-branch)
-- [git.io](#gitio)
+- [Git.io](#gitio)
 - [Gists](#gists)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Closing Issues with Commits](#closing-issues-with-commits)
@@ -35,7 +35,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Quick Licensing](#quick-licensing)
 - [Task Lists](#task-lists)
 - [Relative Links](#relative-links)
-- [.gitconfig Recommendations](#gitconfig-recommendations)
+- [`.gitconfig` Recommendations](#gitconfig-recommendations)
     - [Aliases](#aliases)
     - [Auto-correct](#auto-correct)
     - [Color](#color)
@@ -104,11 +104,19 @@ $ git checkout -
 
 [*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
-## git.io
+## Git.io
 
-[git.io](http://git.io) is a simple URL shortener for GitHub.
+[Git.io](http://git.io) is a simple URL shortener for GitHub. You can also use it via pure HTTP using Curl:
 
-[http://git.io/wO0xUg](http://git.io/wO0xUg)
+```bash
+$ curl -i http://git.io -F "url=https://github.com/..."
+HTTP/1.1 201 Created
+Location: http://git.io/abc123
+
+$ curl -i http://git.io/abc123
+HTTP/1.1 302 Found
+Location: https://github.com/...
+```
 
 [*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
@@ -490,7 +498,7 @@ Using relative links makes your documentation easily stand on its own.
 
 [*Read more about relative links.*](https://help.github.com/articles/relative-links-in-readmes)
 
-## .gitconfig Recommendations
+## `.gitconfig` Recommendations
 
 Your `.gitconfig` is the file that contains all your preferences.
 
