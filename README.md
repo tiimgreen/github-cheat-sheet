@@ -15,6 +15,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
 - [Closing Issues with Commits](#closing-issues-with-commits)
 - [Checking out Pull Requests](#checking-out-pull-requests)
 - [Cross-Link Issues](#cross-link-issues)
+- [Contributing Guidelines](#contributing-guidelines)
 - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
 - [Commit History by Author](#commit-history-by-author)
 - [Empty Commits](#empty-commits)
@@ -216,6 +217,13 @@ If you want to link to another issue in the same repo, simple type hash `#` then
 To link to an issue in another repo, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
+
+## Contributing Guidelines
+Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
+
+![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
+
+[*Read more about contributing guidelines.*](https://github.com/blog/1184-contributing-guidelines)
 
 ## Syntax Highlighting in Markdown Files
 
