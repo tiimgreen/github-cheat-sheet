@@ -254,7 +254,7 @@ When on a comment thread and you want to quote something someone previously said
 ### Quick Licensing
 When creating a repository GitHub gives you the options of adding in a pre-made license:
 
-![Licese](http://i.imgur.com/Chqj4Fg.png)
+![License](http://i.imgur.com/Chqj4Fg.png)
 
 You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
 
