@@ -330,6 +330,18 @@ Using the *unfold* button in the gutter of a diff, you can reveal additional lin
 
 [*Read more about expanding context in diffs.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
+#### Getting content of Pull Request in Diff or Patch format
+
+You can get the diff of viewed pull request by adding `.diff` or `.patch`
+to the end of URL. For example:
+
+*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15>
+*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff> - the pull
+    request in DIFF format
+*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch> - the pull
+    request as PATCH
+
+
 ### Hub
 [Hub](https://github.com/github/hub) is a command line Git wrapper that gives you extra features and commands that make working with GitHub easier.
 
