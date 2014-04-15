@@ -27,6 +27,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
+    - [Getting content of Pull Request in Diff or Patch format](#getting-content-of-pull-request-in-diff-or-patch-format)
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
