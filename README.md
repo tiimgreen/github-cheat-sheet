@@ -61,6 +61,8 @@ To view all commits on a repo by author add `?author=username` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
+![DHH commit history](http://i.imgur.com/mDWwuaY.png)
+
 [*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views)
 
 ### Cloning a Repository
