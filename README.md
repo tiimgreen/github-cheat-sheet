@@ -471,7 +471,7 @@ A file must be passed when calling the command, e.g.:
 $ git stripspace < README.md
 ```
 
-[*Read more about the Git `stripspace` command.*](https://www.kernel.org/pub/software/scm/git/docs/git-stripspace.html)
+[*Read more about the Git `stripspace` command.*](http://git-scm.com/docs/git-stripspace)
 
 ### Checking out Pull Requests
 If you want to check out pull request locally, you can fetch it using that command:
