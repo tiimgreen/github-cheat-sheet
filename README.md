@@ -27,7 +27,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
-    - [Getting content of Pull Request in Diff or Patch format](#getting-content-of-pull-request-in-diff-or-patch-format)
+    - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
@@ -354,7 +354,7 @@ Using the *unfold* button in the gutter of a diff, you can reveal additional lin
 
 [*Read more about expanding context in diffs.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
-#### Getting content of Pull Request in Diff or Patch format
+#### Diff or Patch of Pull Request
 You can get the diff of a Pull Request by adding a `.diff` or `.patch`
 extension to the end of the URL. For example:
 
