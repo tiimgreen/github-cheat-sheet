@@ -43,6 +43,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Aliases](#aliases)
     - [Auto-Correct](#auto-correct)
     - [Color](#color)
+  - [Git Resources](#git-resources)
+    - [Git Books](#git-books)
 
 ## GitHub
 ### Ignore Whitespace
@@ -603,3 +605,29 @@ $ git config --global color.ui 1
 ```
 
 [*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
+
+### Git Resources
+| Title | Link |
+| ----- | ---- |
+| Official Git Site | http://git-scm.com/ |
+| Official Git Video Tutorials | http://git-scm.com/videos |
+| Code School Try Git | http://try.github.com/ |
+| Introductory Reference & Tutorial for Git | http://gitref.org/ |
+| Official Git Tutorial | http://git-scm.com/docs/gittutorial |
+| Everyday Git | http://git-scm.com/docs/everyday |
+| Git Immersion | http://gitimmersion.com/ |
+| Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
+| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
+| Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
+| Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
+
+#### Git Books
+| Title | Link |
+| ----- | ---- |
+| Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
+| Pro Git | http://git-scm.com/book |
+| Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
+| Git in the Trenches | http://cbx33.github.com/gitt/ |
+| Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
+| Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
+| Git: Version Control for Everyone | http://www.packtpub.com/git-version-control-for-everyone/book |
