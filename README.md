@@ -98,6 +98,8 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
+![Another compare example](http://i.imgur.com/5dtzESz.png)
+
 ...which allows you to see the difference on the master branch up a set time ago or a specified date.
 
 [*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time)
