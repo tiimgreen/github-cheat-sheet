@@ -82,9 +82,12 @@ https://github.com/user/repo/compare/{range}
 Where `{range} = master...4-1-stable`
 
 For example:
+
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
+
+![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
 
 `{range}` can be changed to things like:
 
