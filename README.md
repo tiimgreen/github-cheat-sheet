@@ -128,7 +128,11 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 [*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
-[Git.io](http://git.io) is a simple URL shortener for GitHub. You can also use it via pure HTTP using Curl:
+[Git.io](http://git.io) is a simple URL shortener for GitHub.
+
+![Git.io](http://i.imgur.com/6JUfbcG.png?1)
+
+You can also use it via pure HTTP using Curl:
 
 ```bash
 $ curl -i http://git.io -F "url=https://github.com/..."
