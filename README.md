@@ -334,7 +334,7 @@ Within Jekyll pages and posts, repository information is available within the `s
 
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
 
-[*Read more about repository metadata and plugin support for GitHub Pages.*](Repository metadata and plugin support for GitHub Pages)
+[*Read more about repository metadata and plugin support for GitHub Pages.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
 ### Diffs
 #### Rendered Prose Diffs
