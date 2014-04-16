@@ -16,6 +16,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
   - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
+  - [CI Status on Pull Requests](#ci-status-on-pull-requests)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
   - [Images/GIFs](#imagesgifs)
@@ -29,11 +30,15 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
+    - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
+  - [GitHub Resources](#github-resources)
+    - [GitHub Talks](#github-talks)
  - [Git](#git)
   - [Previous Branch](#previous-branch)
+  - [Stripspace](#stripspace)
   - [Checking out Pull Requests](#checking-out-pull-requests)
   - [Empty Commits :trollface:](#empty-commits-trollface)
   - [Styled Git Status](#styled-git-status)
@@ -45,12 +50,16 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Aliases](#aliases)
     - [Auto-Correct](#auto-correct)
     - [Color](#color)
+  - [Git Resources](#git-resources)
+    - [Git Books](#git-books)
 
 ## GitHub
 
 ### Ignore Whitespace
 
 `?w=1`를 diff URL에 추가하면 변경된 코드만 볼 수 있도록, 공백만 바뀐 수정을 제거할 수 있습니다.
+
+![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
 [*깃허브의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
 
@@ -61,6 +70,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
+
+![DHH commit history](http://i.imgur.com/mDWwuaY.png)
 
 [*커밋 뷰간의 차이에 대해 더 읽어보세요.*](https://help.github.com/articles/differences-between-commit-views)
 
@@ -84,10 +95,13 @@ https://github.com/user/repo/compare/{range}
 
 `{range}`는 `master...4-1-stable`식으로 적습니다.
 
-예를 들어:
+예를 들어
+
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
+
+![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
 
 `{range}` 는 이렇게 적을 수도 있습니다.
 
@@ -95,6 +109,10 @@ https://github.com/rails/rails/compare/master...4-1-stable
 https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
+
+*날짜는 `YYYY-DD-MM`형식으로 적습니다*
+
+![Another compare example](http://i.imgur.com/5dtzESz.png)
 
 이렇게 하면 특정 날짜나 한 시간 전의 마스터 브랜치의 차이를 확인할 수 있습니다.
 
@@ -114,9 +132,15 @@ https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
 https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
 ```
 
+![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
+
 ### Gists
 
-[Gists](https://gist.github.com/)는 본격적인 저장소를 만들지 않고, 작은 코드 조각과 일할 수 있는 쉬운 방법입니다. [이렇게](https://gist.github.com/tiimgreen/10545817.pibb) Gist URL뒤에 `.pibb`를 넣으면 다른 사이트에 넣을수 있는 *HTML 온리* 버전을 넣을 수 있습니다.
+[Gists](https://gist.github.com/)는 본격적인 저장소를 만들지 않고, 작은 코드 조각과 일할 수 있는 쉬운 방법입니다.
+
+![Gist](http://i.imgur.com/VkKI1LC.png?1)
+
+[이렇게](https://gist.github.com/tiimgreen/10545817.pibb) Gist URL뒤에 `.pibb`를 넣으면 다른 사이트에 넣을수 있는 *HTML 온리* 버전을 만들 수 있습니다.
 
 Gists는 본격적인 저장소처럼 취급할 수 있고 클론도 됩니다.
 
@@ -130,7 +154,11 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ### Git.io
 
-[Git.io](http://git.io)는 깃허브를 위한 간단한 URL 단축기입니다. 순수 HTTP에서 Curl으로 사용하실 수도 있습니다.
+[Git.io](http://git.io)는 깃허브를 위한 간단한 URL 단축기입니다.
+
+![Git.io](http://i.imgur.com/6JUfbcG.png?1)
+
+순수 HTTP에서 Curl으로 사용하실 수도 있습니다.
 
 ```bash
 $ curl -i http://git.io -F "url=https://github.com/..."
@@ -155,6 +183,8 @@ Location: https://github.com/...
  - __파일을 보고 있을 때__ (예를 들어 `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) `y`를 누르면 URL을 지금 보고 있는 페이지를 사실상 고정하도록 합니다. 코드가 바뀐다고 해도 이번에 본 내용을 다시 볼 수 있습니다.
 
 지금 페이지에서 쓸 수 있는 모든 단축키를 보시려면 `?`를 누르세요.
+
+![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
 [*커맨드 바의 사용법을 더 읽어 보세요.*](https://help.github.com/articles/using-the-command-bar)
 
@@ -191,6 +221,14 @@ $ git commit -m "Fix cock up, fixes #12"
 다른 저장소의 이슈를 링크하고 싶다면 `사람_이름/저장소_이름#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
+
+### CI Status on Pull Requests
+
+정확히 설정되었다면, 풀 리퀘스트를 받거나 풀 리퀘스트에 새로운 커밋을 할 때 마다, [Travis CI](https://travis-ci.org/)가 풀 리퀘스트를 빌드 할 것입니다. [Travis CI 시작하기](http://docs.travis-ci.com/user/getting-started/)를 좀 더 읽어보세요.
+
+[![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
+
+[*커밋 상태 API에 대해 좀 더 읽어보세요.*](https://github.com/blog/1227-commit-status-api)
 
 ### Syntax Highlighting in Markdown Files
 
@@ -232,7 +270,7 @@ puts table.to_s
 :shipit:
 :+1:
 
-깃허브에서 사용 가능한 에모지의 전 목록은 [여기](http://www.emoji-cheat-sheet.com/) 나 [여기](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
+깃허브에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
 
 깃허브에서 많이 사용하는 에모지 탑 5위는 이렇습니다.
 
@@ -332,7 +370,7 @@ puts table.to_s
 
 Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis)와 [@mentions](https://github.com/blog/821)을 지킬 포스트와 페이지에서 사용하게 합니다.
 
-[*저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](Repository metadata and plugin support for GitHub Pages)
+[*저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
 ### Diffs
 
@@ -364,15 +402,41 @@ diff의 닫아둔 곳의 *펼침* 버튼을 클릭하면, 문맥을 더 볼 수 
 
 [*diff에서의 문맥 확장에 대해 더 읽어 보세요.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
+#### Diff or Patch of Pull Request
+
+URL뒤에 `.diff` 나 `.patch`를 붙이면 풀 리퀘스트의 diff를 얻을 수 있습니다.
+예를 들면
+
+```
+https://github.com/tiimgreen/github-cheat-sheet/pull/15
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+```
+
+`.diff` 확장자는 이런 내용의 평범한(plain) 텍스트를 줍니다.
+
+```
+diff --git a/README.md b/README.md
+index 88fcf69..8614873 100644
+--- a/README.md
++++ b/README.md
+@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
+ - [Merged Branches](#merged-branches)
+ - [Quick Licensing](#quick-licensing)
+ - [TODO Lists](#todo-lists)
++- [Relative Links](#relative-links)
+ - [.gitconfig Recommendations](#gitconfig-recommendations)
+     - [Aliases](#aliases)
+     - [Auto-correct](#auto-correct)
+@@ -381,6 +382,19 @@ When they are clicked, they will be updated in the pure Markdown:
+ - [ ] Sleep
+
+(...)
+```
+
 ### Hub - Git Wrapper
 
 [Hub](https://github.com/github/hub)는 깃허브를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.
-
-이런 명령 대신에
-
-```bash
-$ git clone https://github.com/tiimgreen/toc.git
-```
 
 이렇게 할 수 있습니다.
 
@@ -398,6 +462,26 @@ $ hub clone tiimgreen/toc
 
 [*기여하기에 대해 더 읽어 보세요.*](https://github.com/blog/1184-contributing-guidelines)
 
+### GitHub Resources
+
+| Title | Link |
+| ----- | ---- |
+| GitHub Explore | https://github.com/explore |
+| GitHub Blog | https://github.com/blog |
+| GitHub Help | https://help.github.com/ |
+| GitHub Training | http://training.github.com/ |
+| GitHub Developer | https://developer.github.com/ |
+
+#### GitHub Talks
+
+| Title | Link |
+| ----- | ---- |
+| How GitHub Uses GitHub to Build GitHub | https://www.youtube.com/watch?v=qyz3jkOBbQY |
+| Introduction to Git with Scott Chacon of GitHub | https://www.youtube.com/watch?v=ZDR433b0HJY |
+| How GitHub No Longer Works | https://www.youtube.com/watch?v=gXD1ITW7iZI |
+| Git and GitHub Secrets | https://www.youtube.com/watch?v=Foz9yvMkvlA |
+| More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
+
 ## Git
 
 ### Previous Branch
@@ -422,6 +506,22 @@ $ git checkout -
 ```
 
 [*깃 브랜치에 대해 더 읽어 보세요.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+
+### Stripspace
+
+깃 Stripspace는 이런 일을 합니다.
+
+- 줄 끝의 공백을 제거
+- 빈줄을 줄임
+- 파일 끝에 빈 줄을 추가
+
+커맨드를 실행 할 때 파일을 반드시 이런식으로 넘겨줘야 합니다.
+
+```bash
+$ git stripspace < README.md
+```
+
+[*깃 `stripspace` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-stripspace)
 
 ### Checking out Pull Requests
 
@@ -648,3 +748,31 @@ $ git config --global color.ui 1
 ```
 
 [*깃 `config` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-config)
+
+### Git Resources
+
+| Title | Link |
+| ----- | ---- |
+| Official Git Site | http://git-scm.com/ |
+| Official Git Video Tutorials | http://git-scm.com/videos |
+| Code School Try Git | http://try.github.com/ |
+| Introductory Reference & Tutorial for Git | http://gitref.org/ |
+| Official Git Tutorial | http://git-scm.com/docs/gittutorial |
+| Everyday Git | http://git-scm.com/docs/everyday |
+| Git Immersion | http://gitimmersion.com/ |
+| Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
+| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
+| Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
+| Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
+
+#### Git Books
+
+| Title | Link |
+| ----- | ---- |
+| Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
+| Pro Git | http://git-scm.com/book |
+| Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
+| Git in the Trenches | http://cbx33.github.com/gitt/ |
+| Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
+| Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
+| Git: Version Control for Everyone | http://www.packtpub.com/git-version-control-for-everyone/book |
