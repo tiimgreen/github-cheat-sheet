@@ -406,12 +406,6 @@ This allows you to do things like:
 $ hub clone tiimgreen/toc
 ```
 
-...instead of:
-
-```bash
-$ git clone https://github.com/tiimgreen/toc.git
-```
-
 [*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
 
 ### Decreasing Contributor Friction
