@@ -155,7 +155,9 @@ When on a repository page, keyboard shortcuts allow you to navigate easily.
  - Pressing `l` will edit labels on existing Issues.
  - Pressing `y` **when looking at a file** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
-To see all of the shortcuts for the current page press `?`.
+To see all of the shortcuts for the current page press `?`:
+
+![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
 [*Read more about using the Command Bar.*](https://help.github.com/articles/using-the-command-bar)
 
