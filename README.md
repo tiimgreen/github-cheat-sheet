@@ -36,6 +36,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [GitHub Talks](#github-talks)
  - [Git](#git)
   - [Previous Branch](#previous-branch)
+  - [Stripspace](#stripspace)
   - [Checking out Pull Requests](#checking-out-pull-requests)
   - [Empty Commits :trollface:](#empty-commits-trollface)
   - [Styled Git Status](#styled-git-status)
@@ -456,6 +457,21 @@ $ git checkout -
 ```
 
 [*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+
+### Stripspace
+
+Git Stripspace:
+
+- Strips trailing whitespace
+- Collapses newlines
+- Adds newline to end of file
+
+A file must be passed when calling the command, e.g.:
+```bash
+$ git stripspace < README.md
+```
+
+[*Read more about the Git `stripspace` command.*](https://www.kernel.org/pub/software/scm/git/docs/git-stripspace.html)
 
 ### Checking out Pull Requests
 If you want to check out pull request locally, you can fetch it using that command:
