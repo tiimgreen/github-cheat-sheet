@@ -355,16 +355,35 @@ Using the *unfold* button in the gutter of a diff, you can reveal additional lin
 [*Read more about expanding context in diffs.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
 #### Getting content of Pull Request in Diff or Patch format
+You can get the diff of a Pull Request by adding a `.diff` or `.patch`
+extension to the end of the URL. For example:
 
-You can get the diff of viewed pull request by adding `.diff` or `.patch`
-to the end of URL. For example:
+```
+https://github.com/tiimgreen/github-cheat-sheet/pull/15
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+```
 
-*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15>
-*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff> - the pull
-    request in DIFF format
-*   <https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch> - the pull
-    request as PATCH
+The `.diff` extension would give you this in plain text:
 
+```
+diff --git a/README.md b/README.md
+index 88fcf69..8614873 100644
+--- a/README.md
++++ b/README.md
+@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
+ - [Merged Branches](#merged-branches)
+ - [Quick Licensing](#quick-licensing)
+ - [TODO Lists](#todo-lists)
++- [Relative Links](#relative-links)
+ - [.gitconfig Recommendations](#gitconfig-recommendations)
+     - [Aliases](#aliases)
+     - [Auto-correct](#auto-correct)
+@@ -381,6 +382,19 @@ When they are clicked, they will be updated in the pure Markdown:
+ - [ ] Sleep
+
+(...)
+```
 
 ### Hub
 [Hub](https://github.com/github/hub) is a command line Git wrapper that gives you extra features and commands that make working with GitHub easier.
