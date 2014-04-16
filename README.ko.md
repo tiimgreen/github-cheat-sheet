@@ -278,7 +278,7 @@ puts table.to_s
 
 저장소를 만들 때, 깃허브는 만들어진 저작권을 추가할 수 있는 옵션을 제공합니다.
 
-![Licese](http://i.imgur.com/Chqj4Fg.png)
+![License](http://i.imgur.com/Chqj4Fg.png)
 
 이미 있는 저장소에도 웹 인터페이스에서 새 파일을 만들어 추가할 수 있습니다.
 이름에 `LICENSE`를 입력하면 옵션으로 템플릿을 사용할 수 있습니다.
