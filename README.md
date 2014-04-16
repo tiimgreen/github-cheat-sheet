@@ -30,6 +30,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
+  - [GitHub Resources](#github-resources)
  - [Git](#git)
   - [Previous Branch](#previous-branch)
   - [Checking out Pull Requests](#checking-out-pull-requests)
@@ -362,6 +363,15 @@ Adding a `CONTRIBUTING` file to the root of your repository will add a link to y
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
 [*Read more about contributing guidelines.*](https://github.com/blog/1184-contributing-guidelines)
+
+### GitHub Resources
+| Title | Link |
+| ----- | ---- |
+| GitHub Explore | https://github.com/explore |
+| GitHub Blog | https://github.com/blog |
+| GitHub Help | https://help.github.com/ |
+| GitHub Training | http://training.github.com/ |
+| GitHub Developer | https://developer.github.com/ |
 
 ## Git
 ### Previous Branch
