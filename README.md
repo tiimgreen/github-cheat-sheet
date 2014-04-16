@@ -111,7 +111,11 @@ https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
 ```
 
 ### Gists
-[Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository. Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
+[Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository.
+
+![Gist](http://i.imgur.com/VkKI1LC.png?1)
+
+Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
 
 Gists can be treated as a full repository so they can be cloned like any other:
 
