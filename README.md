@@ -112,8 +112,10 @@ https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
 For example:
 
 ```
-https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
+https://github.com/rails/rails/compare/byroot:master...master
 ```
+
+![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
 
 ### Gists
 [Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository.
