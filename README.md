@@ -380,6 +380,8 @@ Adding a `CONTRIBUTING` file to the root of your repository will add a link to y
 | How GitHub Uses GitHub to Build GitHub | https://www.youtube.com/watch?v=qyz3jkOBbQY |
 | Introduction to Git with Scott Chacon of GitHub | https://www.youtube.com/watch?v=ZDR433b0HJY |
 | How GitHub No Longer Works | https://www.youtube.com/watch?v=gXD1ITW7iZI |
+| Git and GitHub Secrets | https://www.youtube.com/watch?v=Foz9yvMkvlA |
+| More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
 ### Previous Branch
