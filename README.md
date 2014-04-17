@@ -416,6 +416,8 @@ If you want people to use and contribute to your project, you need to start by a
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
+*Friction supports MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.*
+
 ### Contributing Guidelines
 Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
 
