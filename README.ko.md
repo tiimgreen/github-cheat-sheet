@@ -202,7 +202,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ### Closing Issues with Commits
 
-어떤 커밋이 이슈를 고쳤다면, `fix/fixes/fixed`나 `close/closes/closed`를 키워드로 해당 이슈가 마스터 브랜치에 커밋 될 때 닫을 수 있습니다.
+어떤 커밋이 이슈를 고쳤다면, `fix/fixes/fixed`, `close/closes/closed`, `resolve/resolves/resolved`를 키워드로 해당 이슈가 마스터 브랜치에 커밋 될 때 닫을 수 있습니다.
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
@@ -454,6 +454,8 @@ $ hub clone tiimgreen/toc
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
+*Friction 은 MRI 2.1.0, MRI 2.0.0, MRI 1.9.3을 지원합니다.*
+
 ### Contributing Guidelines
 
 저장소의 제일 위에 `CONTRIBUTING` 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.
@@ -601,10 +603,12 @@ $ git status -sb
 ### Styled Git Log
 
 ```bash
-$ git log --all --graph --decorate --oneline --abbrev-commit
+$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
-![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/R2z8l7c.png)
+
+[Palesz](http://stackoverflow.com/users/88355/palesz)님 고맙습니다.
 
 NOTE: 이 명령을 알리아스 (단축 명령)으로 넣을 수 있습니다. [여기](#aliases)의 소개를 보세요.
 
