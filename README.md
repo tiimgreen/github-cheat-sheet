@@ -24,6 +24,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Task Lists](#task-lists)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+  - [Rendering Tabular Data](#rendering-tabular-data)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
@@ -340,6 +341,13 @@ Within Jekyll pages and posts, repository information is available within the `s
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
 
 [*Read more about repository metadata and plugin support for GitHub Pages.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
+
+### Rendering Tabular Data
+GitHub supports rendering tabular data in the form of `.csv` (comma-separated) and `.tsv` (tab-separated) files.
+
+![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
+
+[*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
 
 ### Diffs
 #### Rendered Prose Diffs
