@@ -189,7 +189,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
 ### Closing Issues via Commit Messages
-If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed` or `close/closes/closed`, followed by the issue number, will close the issue once it is committed to the master branch.
+If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the master branch.
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
@@ -416,6 +416,8 @@ If you want people to use and contribute to your project, you need to start by a
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
+*Friction supports MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.*
+
 ### Contributing Guidelines
 Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
 
@@ -556,12 +558,14 @@ This is produced:
 Running:
 
 ```bash
-$ git log --all --graph --decorate --oneline --abbrev-commit
+$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
 Produces:
 
-![git log --all --graph --decorate --oneline --abbrev-commit](http://i.imgur.com/RUPycwI.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/R2z8l7c.png)
+
+Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
 
 *This can be aliased using the instructions found [here](https://github.com/tiimgreen/github-cheat-sheet#aliases).*
 
