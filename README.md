@@ -24,6 +24,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Task Lists](#task-lists)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+  - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
@@ -341,6 +342,13 @@ Within Jekyll pages and posts, repository information is available within the `s
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
 
 [*Read more about repository metadata and plugin support for GitHub Pages.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
+
+### Viewing YAML Metadata in your Documents
+Many blogging websites, like [Jekyll](http://jekyllrb.com/) with [GitHub Pages](http://pages.github.com/), depend on some YAML-formatted metadata at the beginning of your post. GitHub will render this metadata as a horizontal table, for easier reading
+
+![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
+
+[*Read more about viewing YAML metadata in your documents.*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
 
 ### Rendering Tabular Data
 GitHub supports rendering tabular data in the form of `.csv` (comma-separated) and `.tsv` (tab-separated) files.
