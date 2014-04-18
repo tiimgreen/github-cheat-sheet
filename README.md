@@ -657,19 +657,19 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 ...or type in the command-line:
 
 ```bash
-$ git config alias.new_alias git_function
+$ git config --global alias.new_alias git_function
 ```
 
 For example:
 
 ```bash
-$ git config alias.cm commit
+$ git config --global alias.cm commit
 ```
 
 For an alias with multiple functions use quotes:
 
 ```bash
-$ git config alias.ac 'add -A . && commit'
+$ git config --global alias.ac 'add -A . && commit'
 ```
 
 Some useful aliases include:
