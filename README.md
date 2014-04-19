@@ -65,11 +65,11 @@ Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabli
 ### Adjust Tab Space
 Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views.
 
-Here is a Go source file beofre adding `?ts=4`:
+Here is a Go source file [before](https://github.com/pengwynn/flint/blob/master/flint/flint.go) adding `?ts=4`:
 
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
-...and this is after adding `?ts=4`:
+...and this is [after](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) adding `?ts=4`:
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
