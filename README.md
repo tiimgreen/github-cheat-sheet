@@ -508,11 +508,11 @@ If you want people to use and contribute to your project, you need to start by a
 *Friction supports MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.*
 
 ### Contributing Guidelines
-Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
+`CONTRIBUTING` ファイルをレポジトリのルートに追加することによって、協力してくれる方がissueを作くる時やプルリクエストを送る際に際に以下の画像のように`CONTRIBUTING`ファイルへのリンクが表示されます。
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
-[*Read more about contributing guidelines.*](https://github.com/blog/1184-contributing-guidelines)
+[*Contributing Guidelinesに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1184-contributing-guidelines)
 
 ### GitHub Resources
 | Title | Link |
