@@ -26,6 +26,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Task Lists](#task-lists)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+  - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
+  - [Rendering Tabular Data](#rendering-tabular-data)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
@@ -372,6 +374,22 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 [*저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
+### Viewing YAML Metadata in your Documents
+
+[Jekyll](http://jekyllrb.com/)이나 [GitHub Pages](http://pages.github.com/)같은 많은 블로그에서 포스트의 처음에 YAML 포멧의 메타데이터를 필요로 합니다. 깃허브는 이 메타 정보를 읽기 편하게 테이블로 표시해 줍니다.
+
+![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
+
+[*문서에서 YAML 메타데이터 보기에 대해 더 읽어 보세요.*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
+
+### Rendering Tabular Data
+
+깃허브는 `.csv` (comma-separated) 와 `.tsv` (tab-separated)파일에 대해 표(tabular) 데이터 보기를 지원합니다.
+
+![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
+
+[*표 데이타 표시에 대해 더 읽어 보세요.*](https://github.com/blog/1601-see-your-csvs)
+
 ### Diffs
 
 #### Rendered Prose Diffs
@@ -689,19 +707,19 @@ Opens:
 커맨드 라인에서 다음 명령을 입력합니다.
 
 ```bash
-$ git config alias.new_alias git_function
+$ git config --global alias.new_alias git_function
 ```
 
 예를들면
 
 ```bash
-$ git config alias.cm commit
+$ git config --global alias.cm commit
 ```
 
 NOTE: 여러 함수를 알리아스하려면 따옴표를 이용하세요.
 
 ```bash
-$ git config alias.ac 'add -A . && commit'
+$ git config --global alias.ac 'add -A . && commit'
 ```
 
 여기 몇 가지 권장 알리아스가 있습니다.
