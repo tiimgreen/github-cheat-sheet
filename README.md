@@ -1,7 +1,7 @@
 # GitHub Cheat Sheet（日本語訳）
 
 ## 日本語翻訳に関するノート 
-GitやGtihubの便利な使い方をまとめたられた、[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。もっと分かりやすくしたいので翻訳に関するダメ出しは歓迎です。
+GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。もっと分かりやすくしたいので翻訳に関するダメ出しは歓迎です。
 
 - 元のレポジトリ
  - [tiimgreen/github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet)
