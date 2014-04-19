@@ -606,7 +606,7 @@ A Git query allows you to search all your previous commit messages and find the 
 $ git show :/query
 ```
 
-Where `query` is the term you want to search, this then finds the last one and gives details on the lines that were changed.
+Where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
 ```bash
 $ git show :/typo
