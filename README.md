@@ -24,6 +24,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Task Lists](#task-lists)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+  - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
+  - [Rendering Tabular Data](#rendering-tabular-data)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
@@ -341,6 +343,20 @@ The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](h
 
 [*Read more about repository metadata and plugin support for GitHub Pages.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
+### Viewing YAML Metadata in your Documents
+Many blogging websites, like [Jekyll](http://jekyllrb.com/) with [GitHub Pages](http://pages.github.com/), depend on some YAML-formatted metadata at the beginning of your post. GitHub will render this metadata as a horizontal table, for easier reading
+
+![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
+
+[*Read more about viewing YAML metadata in your documents.*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
+
+### Rendering Tabular Data
+GitHub supports rendering tabular data in the form of `.csv` (comma-separated) and `.tsv` (tab-separated) files.
+
+![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
+
+[*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
+
 ### Diffs
 #### Rendered Prose Diffs
 Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views.
@@ -641,19 +657,19 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 ...or type in the command-line:
 
 ```bash
-$ git config alias.new_alias git_function
+$ git config --global alias.new_alias git_function
 ```
 
 For example:
 
 ```bash
-$ git config alias.cm commit
+$ git config --global alias.cm commit
 ```
 
 For an alias with multiple functions use quotes:
 
 ```bash
-$ git config alias.ac 'add -A . && commit'
+$ git config --global alias.ac 'add -A . && commit'
 ```
 
 Some useful aliases include:
