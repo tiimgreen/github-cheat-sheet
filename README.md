@@ -22,11 +22,11 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [Gists](#gists)
   - [Git.io](#gitio)
   - [ショットカットキー](#keyboard-shortcuts)
-  - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
+  - [レポジトリ内のコードをハイライト](#line-highlighting-in-repositories)
   - [コミットメッセージによるissueのクローズ](#closing-issues-via-commit-messages)
-  - [Cross-Link Issues](#cross-link-issues)
+  - [issue同士のリンク](#cross-link-issues)
   - [プルリクエストにCIステータスを表示](#ci-status-on-pull-requests)
-  - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
+  - [マークダウンファイル内でのコードのハイライト](#syntax-highlighting-in-markdown-files)
   - [絵文字](#絵文字)
   - [画像（GIF）](#imagesgifs)
     - [Github Wikiに画像を埋め込む](#embedding-images-in-github-wiki)
@@ -37,7 +37,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
-  - [Diffs](#diffs)
+  - [差分](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
@@ -59,7 +59,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
   - [Git 設定](#git-configurations)
     - [エイリアス](#aliases)
-    - [自動補完](#auto-correct)
+    - [コマンドの自動補完](#auto-correct)
     - [色](#color)
   - [Git リソース](#git-resources)
     - [Git 本](#git-books)
@@ -204,7 +204,7 @@ Location: https://github.com/...
 
 [*ショートカットキーに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/using-the-command-bar)
 
-### Line Highlighting in Repositories
+### レポジトリ内のコードをハイライト
 Either adding `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
 
 It also works with ranges, e.g. `#L53-L60`, to select ranges, hold `shift` and click two lines:
@@ -236,10 +236,11 @@ $ git commit -m "Fix cock up, fixes #12"
 
 [*Commitメッセージによる既存のissue閉じ方に関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
-### Cross-Link Issues
+### issue同士のリンク
+同じレポジトリ内のissueに他のissueを紐付けたい場合には、`#`でissueの番号をつけると自動的にリンクを張ってくれます
 If you want to link to another issue in the same repository, simple type hash `#` then the issue number, it will be auto-linked.
 
-To link to an issue in another repository, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
+別のレポジトリのissueと紐付けたい場合には `user_name/repo_name#ISSUE_NUMBER` 例えば `tiimgreen/toc#12` とします
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -254,7 +255,7 @@ If set up correctly, every time you receive a Pull Request, [Travis CI](https://
 
 [*commit statusのAPIに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1227-commit-status-api)
 
-### Syntax Highlighting in Markdown Files
+### マークダウンファイル内でのコードのハイライト
 例えば、Rubyのコードをマークダウンのファイルでハイライトする場合には以下のようにします：
 
     ```ruby
@@ -426,7 +427,7 @@ GitHub supports rendering tabular data in the form of `.csv` (comma-separated) a
 
 [*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
 
-### Diffs
+### 差分
 #### Rendered Prose Diffs
 Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views.
 
@@ -484,15 +485,18 @@ index 88fcf69..8614873 100644
 ```
 
 ### Hub
+[Hub](https://github.com/github/hub)はGitのラッパーでさらに便利な機能やGithubと一緒に使うとと便利なコマンドなどが追加されています。
+<!--
 [Hub](https://github.com/github/hub) is a command line Git wrapper that gives you extra features and commands that make working with GitHub easier.
+-->
 
-This allows you to do things like:
+以下のコマンドでこれまでの`$ git clone`と同様のことができます：
 
 ```bash
 $ hub clone tiimgreen/toc
 ```
 
-[*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
+[*Hubのコマンドに関してのクールな機能についてのより詳しい内容はこちらを参照してください*](https://github.com/github/hub#commands)
 
 ### Decreasing Contributor Friction
 If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
@@ -672,22 +676,22 @@ $ git show :/typo
 
 *Press `q` to quit.*
 
-### Merged Branches
-Running:
+### マージされたブランチ
+実行：
 
 ```bash
 $ git branch --merged
 ```
+これまでに現在のブランチに**マージされたブランチ**の一覧が表示されます。
 
-Will give you a list of all branches that have been merged into your current branch.
-
-Conversely:
+逆の場合：
 
 ```bash
 $ git branch --no-merged
 ```
 
-Will give you a list of branches that have not been merged into your current branch.
+これまでに現在のブランチに**マージされていないブランチ**の一覧が表示されます。
+
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
 
@@ -704,10 +708,10 @@ Opens:
 
 [*Read more about the Git `instaweb` command.*](http://git-scm.com/docs/git-instaweb)
 
-### Git Configurations
-Your `.gitconfig` file contains all your Git configurations.
+### Gitの設定
+`.gitconfig`にはGitの設定のすべてが含まれています。
 
-#### Aliases
+#### エイリアス
 Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
 
 To add an alias, either navigate to `~/.gitconfig` and fill it out in the following format:
@@ -729,7 +733,7 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 $ git config --global alias.new_alias git_function
 ```
 
-For example:
+例：
 
 ```bash
 $ git config --global alias.cm commit
@@ -741,7 +745,7 @@ For an alias with multiple functions use quotes:
 $ git config --global alias.ac 'add -A . && commit'
 ```
 
-Some useful aliases include:
+いくつかの便利なエイリアス一覧：
 
 | Alias | Command | What to Type |
 | --- | --- | --- |
@@ -753,7 +757,7 @@ Some useful aliases include:
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
-#### コマンド自動補完機能
+#### コマンドの自動補完機能
 もし間違って、`$ git comt` と打ってしまうと以下のようになります：
 If you type `git comit` you will get this:
 
@@ -782,7 +786,8 @@ $ git comit -m "Message"
 ```
 
 #### Color
-To add more color to your Git output:
+Gitコマンドに関するアウトプットに色をつけるために：
+
 
 ```bash
 $ git config --global color.ui 1
