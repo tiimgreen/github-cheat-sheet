@@ -1,6 +1,14 @@
 # GitHub Cheat Sheet（日本語訳）
-GitやGtihubの便利な使い方をまとめたられた、[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。
 
+## 日本語翻訳に関するノート 
+GitやGtihubの便利な使い方をまとめたられた、[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。もっと分かりやすくしたいので翻訳に関するダメ出しは歓迎です。その際に是非、issueを立ててください。
+
+- 元のレポジトリ
+ - [tiimgreen/github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet)
+- 日本語翻訳レポジトリ
+ - [sota0805/github-cheat-sheet](https://github.com/sota0805/github-cheat-sheet/tree/feature-japanese)
+
+## 概要
 このチートシートは、[Zach Holman](https://github.com/holman)さんがAloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets))で発表された[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) と WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))で発表された彼の[More Git and GitHub Secrets](https://vimeo.com/72955426)に触発されまとめました。
 
 
