@@ -1,28 +1,31 @@
-# GitHub Cheat Sheet
-A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by [Zach Holman](https://github.com/holman)'s [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets)) and his [More Git and GitHub Secrets](https://vimeo.com/72955426) talk at WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets)).
+# GitHub Cheat Sheet（日本語訳）
+GitやGtihubの便利な使い方をまとめたられた、[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。
 
-## Table of Contents
+このチートシートは、[Zach Holman](https://github.com/holman)さんがAloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets))で発表された[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) と WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))で発表された彼の[More Git and GitHub Secrets](https://vimeo.com/72955426)に触発されまとめました。
+
+
+## 目次
  - [GitHub](#github)
-  - [Ignore Whitespace](#ignore-whitespace)
-  - [Commit History by Author](#commit-history-by-author)
-  - [Cloning a Repository](#cloning-a-repository)
-  - [Comparing Branches](#comparing-branches)
-  - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+  - [空行を無視](#ignore-whitespace)
+  - [ユーザー別のコミットヒストリー表示](#commit-history-by-author)
+  - [レポジトリのクローン](#cloning-a-repository)
+  - [ブランチの比較](#comparing-branches)
+  - [フォークされたブランチとの比較](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
   - [Git.io](#gitio)
-  - [Keyboard Shortcuts](#keyboard-shortcuts)
+  - [ショットカットキー](#keyboard-shortcuts)
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
-  - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
+  - [コミットメッセージによるissueのクローズ](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
-  - [CI Status on Pull Requests](#ci-status-on-pull-requests)
+  - [プルリクエストにCIステータスを表示](#ci-status-on-pull-requests)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
-  - [Emojis](#emojis)
-  - [Images/GIFs](#imagesgifs)
-    - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
-  - [Quick Quoting](#quick-quoting)
-  - [Quick Licensing](#quick-licensing)
-  - [Task Lists](#task-lists)
-  - [Relative Links](#relative-links)
+  - [絵文字](#絵文字)
+  - [画像（GIF）](#imagesgifs)
+    - [Github Wikiに画像を埋め込む](#embedding-images-in-github-wiki)
+  - [素早く引用（Quick Quoting）](#quick-quoting)
+  - [ライセンスを簡単に表示（Quick Licensing）](#quick-licensing)
+  - [タスクリスト](#task-lists)
+  - [相対リンク](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
@@ -46,23 +49,23 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Git Query](#git-query)
   - [Merged Branches](#merged-branches)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
-  - [Git Configurations](#git-configurations)
-    - [Aliases](#aliases)
-    - [Auto-Correct](#auto-correct)
-    - [Color](#color)
-  - [Git Resources](#git-resources)
-    - [Git Books](#git-books)
+  - [Git 設定](#git-configurations)
+    - [エイリアス](#aliases)
+    - [自動補完](#auto-correct)
+    - [色](#color)
+  - [Git リソース](#git-resources)
+    - [Git 本](#git-books)
 
 ## GitHub
-### Ignore Whitespace
-Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
+### 空行を無視
+`?w=1`をdiff URLにつけることによって空白行が削除されるので、変わったところだけを見ることができます
 
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
-[*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
+[*より詳しいGtihubの秘密についてはこちらを参照してください。*](https://github.com/blog/967-github-secrets)
 
-### Commit History by Author
-To view all commits on a repo by author add `?author=username` to the URL.
+### ユーザー別のコミットヒストリー表示
+URLに`?author=username`を加えることでユーザーごとのコミットを見ることができます。
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -70,27 +73,27 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 ![DHH commit history](http://i.imgur.com/mDWwuaY.png)
 
-[*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views)
+[*commit viewに関してのより詳しい内容はこちらを参照してください。*](https://help.github.com/articles/differences-between-commit-views)
 
-### Cloning a Repository
-When cloning a repository the `.git` can be left off the end.
+### レポジトリのクローン
+レポジトリのクローンは以下のコマンドを使用することでできます
 
 ```bash
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
-[*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
+[*Gitの `clone` コマンドに関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-clone)
 
-### Comparing Branches
-To use GitHub to compare branches, change the URL to look like this:
+### ブランチの比較
+ブランチの比較をGtihubを使ってやるためには以下のようにURLを変更します：
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/user/repo/compare/{範囲}
 ```
 
-Where `{range} = master...4-1-stable`
+ 範囲の指定方法、`{範囲} = master...4-1-stable`
 
-For example:
+例：
 
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
@@ -98,29 +101,32 @@ https://github.com/rails/rails/compare/master...4-1-stable
 
 ![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
 
-`{range}` can be changed to things like:
+`{範囲}` は以下のようにも指定することもできます：
 
 ```
 https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*Dates are in the format `YYYY-DD-MM`*
+*日付の指定は `YYYY-DD-MM` のようにします*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-...which allows you to see the difference on the master branch up a set time ago or a specified date.
+日付を指定るすることによって、何日前のものや特定のmasterブランチと比較をすることができます
 
-[*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time)
+[*時間によってcommitメッセージを比較することに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/comparing-commits-across-time)
 
-### Compare Branches across Forked Repositories
-To use GitHub to compare branches across forked repositories, change the URL to look like this:
+<!-- TODO Consider it again later -->
+<!-- ### Compare Branches across Forked Repositories -->
+
+### forkされたbranchとの比較
+Githubを使ってforkされたbranchとの比較をする際には以下のようにURLを変更します：
 
 ```
 https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
 ```
 
-For example:
+例：
 
 ```
 https://github.com/rails/rails/compare/byroot:master...master
@@ -129,13 +135,15 @@ https://github.com/rails/rails/compare/byroot:master...master
 ![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
 
 ### Gists
-[Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository.
+[Gists](https://gist.github.com/) はわざわざrepositroryを作るまでもないちょっとしたコードを扱う際に便利です
 
 ![Gist](http://i.imgur.com/VkKI1LC.png?1)
 
 Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
 
-Gists can be treated as a full repository so they can be cloned like any other:
+<!-- TODO: Consider it again later -->
+<!-- Gists can be treated as a full repository so they can be cloned like any other: -->
+Gistsはレポジトリと同じようにクローンをすることができます：
 
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
@@ -143,7 +151,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
-[*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
+[*Gistsに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
 [Git.io](http://git.io) is a simple URL shortener for GitHub.
@@ -162,22 +170,31 @@ HTTP/1.1 302 Found
 Location: https://github.com/...
 ```
 
-[*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
+[*Git.ioに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/985-git-io-github-url-shortener)
 
-### Keyboard Shortcuts
-When on a repository page, keyboard shortcuts allow you to navigate easily.
+### ショットカットキー
+ショットカットキーを使うことによって簡単に操作することができます
 
+ - `t` を押すとファイル一覧を表示します
+ - `w` を押すとブランチ一覧を表示します
+ - `s` を押すと検索部分にフォカースします
+ - `l` を押すと既存のissueでラベルを編集できます
+ - `y` を押すと例えば、(e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)をそのURLを固定します。なのでもしコードを変更しても、今見ているコードはそのままみることができます。
+
+<!-- 
  - Pressing `t` will bring up a file explorer.
  - Pressing `w` will bring up the branch selector.
  - Pressing `s` will select the Command Bar.
  - Pressing `l` will edit labels on existing Issues.
  - Pressing `y` **when looking at a file** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+-->
 
-To see all of the shortcuts for the current page press `?`:
+
+現在のページで使えるショートカットキーを知りたい場合はその画面で `?` を押してください：
 
 ![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
-[*Read more about using the Command Bar.*](https://help.github.com/articles/using-the-command-bar)
+[*ショートカットキーに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/using-the-command-bar)
 
 ### Line Highlighting in Repositories
 Either adding `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
@@ -190,18 +207,26 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
-### Closing Issues via Commit Messages
+### コミットメッセージによるissueのクローズ
+
+もしある issue を解決した際に、`fix/fixes/fixed`
+、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキワードをcommitメッセージに含めることでそのissueを閉じることができます
+
+<!-- TODO: Consider it again later -->
+<!--
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the master branch.
+-->
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
 ```
 
-This closes the issue and references the closing commit.
+<!-- This closes the issue and references the closing commit. -->
+
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
 
-[*Read more about closing Issues via commit messages.*](https://help.github.com/articles/closing-issues-via-commit-messages)
+[*Commitメッセージによる既存のissue閉じ方に関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
 ### Cross-Link Issues
 If you want to link to another issue in the same repository, simple type hash `#` then the issue number, it will be auto-linked.
@@ -210,15 +235,19 @@ To link to an issue in another repository, `user_name/repo_name#ISSUE_NUMBER` e.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
-### CI Status on Pull Requests
+### Pull RequestにCIステータスを表示
+プルリクエストを受け取った際に毎回、[Travis CI](https://travis-ci.org/) が毎回のコミットメッセージの際にテストを通すようにそのプルリクエストに対してテストをします。その方法についてはTravis CIの[get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).を参照してください。
+
+<!-- 
 If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
+-->
 
 [![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
-[*Read more about the commit status API.*](https://github.com/blog/1227-commit-status-api)
+[*commit statusのAPIに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1227-commit-status-api)
 
 ### Syntax Highlighting in Markdown Files
-For example, to syntax highlight Ruby code in your Markdown files write:
+例えば、Rubyのコードをマークダウンのファイルでハイライトする場合には以下のようにします：
 
     ```ruby
     require 'tabbit'
@@ -227,7 +256,7 @@ For example, to syntax highlight Ruby code in your Markdown files write:
     puts table.to_s
     ```
 
-This will produce:
+すると以下のようになります：
 
 ```ruby
 require 'tabbit'
@@ -236,24 +265,30 @@ table.add_row('Tim Green', 'tiimgreen@gmail.com')
 puts table.to_s
 ```
 
+Githubはコードの判定とそのシンタックスハイライトをするために [Linguist](https://github.com/github/linguist) を使用しています。どのキーワードが使えるかは [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) で見ることができます。
+
+<!-- 
 GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
+-->
 
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
-### Emojis
-Emojis can added to on Pull Requests, Issues, commit messages, Markdown files, etc. using `:name_of_emoji:`:
+### 絵文字
+絵文字を、プルリクエスト、issues、commitメッセージ、マークダウンファイルなどで使うことができます `:絵文字の名前:`：
+
+例：
 
 ```
 :smile:
 ```
 
-Would produce:
+すると以下のような絵文字が表示されます：
 
 :smile:
 
-The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
+Githubで使える絵文字のリストは [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) か [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)で見ることができます。
 
-The top 5 used Ejmojis on GitHub are:
+ちなみにGithubでよく使われる絵文字５つはこれです：
 
 1. :shipit: - `:shipit:`
 2. :sparkles: - `:sparkles:`
@@ -261,8 +296,8 @@ The top 5 used Ejmojis on GitHub are:
 4. :+1: - `:+1:`
 5. :clap: - `:clap:`
 
-### Images/GIFs
-Images and GIFs can be added to comments, READMEs etc.:
+### 画像（GIF）
+画像やGIFをcommnetsやREADMEファイルなどに使うことができます：
 
 ```
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -270,41 +305,56 @@ Images and GIFs can be added to comments, READMEs etc.:
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
-All images are cached on GitHub, so if your host goes down, the image will remain available.
+すべての画像はGithubでキャッシュされます。なので画像のホスト先が落ちても画像は消えません
 
-#### Embedding Images in GitHub Wiki
+#### Github Wikiに画像を埋め込む
+
+Wikiページに画像を埋め込む方法はいくつかあります。主な方法としては以下のような基本的なマークダウンの記法があります。画像の幅や高さを指定する方法があります。
+
+<!--
 There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax (shown above). But there's also a syntax that allows things like specifying the height or width of the image:
+-->
 
 ```markdown
 [[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
 ```
 
-Which produces:
+すると以下のようになります：
 
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
-### Quick Quoting
-When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
+### 素早く引用（Quick Quoting）
+コメントをする際に前のコメントを引用したいとき、まずそのテキストを選択して `r` を押すとその部分があなたのコメント部分に `>` がついた形で反映されます
 
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
-[*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
+[*素早く引用（quick quoting）に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1399-quick-quotes)
 
-### Quick Licensing
-When creating a repository GitHub gives you the options of adding in a pre-made license:
+### ライセンスを簡単に表示（Quick Licensing）
+レポジトリを作成した際にGithubが簡単にライセンスを表示できる選択肢があります：
+<!-- When creating a repository GitHub gives you the options of adding in a pre-made license: -->
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
+もちろん既存のレポジトリに対してライセンスを作成することができます。ファイル名に `LICENSE` と入力するとライセンスの選択肢が表示されます：
+
+<!-- 
 You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
+-->
 
 ![License](http://i.imgur.com/fTjQict.png)
 
-Also works for `.gitignore`.
+`.gitigonre`でも同様のことができます
 
-[*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
+[*オープンソースライセンスに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/open-source-licensing)
 
-### Task Lists
+### タスクリスト
+issueやプルリクエストの中に以下のような方法で書くとチェックボックスを追加することができます：
+
+<!-- TODO Consider it againg later -->
+<!--
 In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
+-->
 
 ```
 - [ ] Be awesome
@@ -314,7 +364,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 
 ![Task List](http://i.imgur.com/k2qZi56.png)
 
-When they are clicked, they will be updated in the pure Markdown:
+リストをクリックすると、自動的にマークダウンにも反映されます：
 
 ```
 - [x] Be awesome
@@ -322,22 +372,33 @@ When they are clicked, they will be updated in the pure Markdown:
 - [ ] Sleep
 ```
 
-[*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+[*タスクリストに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
 
-### Relative Links
+### 相対リンク
+マークダウンで相対リンクの使用は推奨されています
+<!--
 Relative links are recommended in your Markdown files when linking to internal content.
+-->
 
 ```markdown
 [Link to a header](#awesome-section)
 [Link to a file](docs/readme)
 ```
 
+絶対リンクはレポジトリ名やユーザー名が、フォーク先などが変更された際に必ずそれを変更しなければなりません。なので相対リンクを使うことによってドキュメントの保守性を高めることができます
+<!-- 
 Absolute links have to be updated whenever the URL changes (e.g. repository renamed, username changed, project forked). Using relative links makes your documentation easily stand on its own.
+--> 
 
-[*Read more about relative links.*](https://help.github.com/articles/relative-links-in-readmes)
+[*Githubでの相対リンクに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/relative-links-in-readmes)
 
-### Metadata and Plugin Support for GitHub Pages
+
+### Githubページで使えるメタデータやプラグイン
+Jekyllのpagesとpostsにレポジトリ情報を`site.github`で表示することができます。例えば、 `{{ site.github.project_title }}`このように使います。
+
+<!-- 
 Within Jekyll pages and posts, repository information is available within the `site.github` namespace, and can be displayed, for example, using `{{ site.github.project_title }}`.
+-->
 
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
 
@@ -684,7 +745,8 @@ Some useful aliases include:
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
-#### Auto-Correct
+#### コマンド自動補完機能
+もし間違って、`$ git comt` と打ってしまうと以下のようになります：
 If you type `git comit` you will get this:
 
 ```bash
@@ -695,6 +757,7 @@ $ git comit -m "Message"
 #   commit
 ```
 
+`comit` と打っても`commit` を自動的に補完させるためには以下のします：
 To call `commit` when `comit` is typed, just enable auto-correct:
 
 ```bash
@@ -719,8 +782,8 @@ $ git config --global color.ui 1
 
 [*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
 
-### Git Resources
-| Title | Link |
+### Gitに関するサイトなどの情報
+| タイトル | リンク |
 | ----- | ---- |
 | Official Git Site | http://git-scm.com/ |
 | Official Git Video Tutorials | http://git-scm.com/videos |
@@ -734,8 +797,8 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 
-#### Git Books
-| Title | Link |
+#### Gitに関する本の一覧
+| タイトル | リンク |
 | ----- | ---- |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
 | Pro Git | http://git-scm.com/book |
