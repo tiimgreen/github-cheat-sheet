@@ -160,7 +160,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 [*Gistsに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
-[Git.io](http://git.io) is a simple URL shortener for GitHub.
+[Git.io](http://git.io) はGithubのために短縮URLを生成します。
 
 ![Git.io](http://i.imgur.com/6JUfbcG.png?1)
 
@@ -222,7 +222,6 @@ $ git commit -m "Fix cock up, fixes #12"
 
 ### issue同士のリンク
 同じレポジトリ内のissueに他のissueを紐付けたい場合には、`#`でissueの番号をつけると自動的にリンクを張ってくれます
-If you want to link to another issue in the same repository, simple type hash `#` then the issue number, it will be auto-linked.
 
 別のレポジトリのissueと紐付けたい場合には `user_name/repo_name#ISSUE_NUMBER` 例えば `tiimgreen/toc#12` とします
 
