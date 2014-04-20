@@ -1,7 +1,8 @@
+# Git・Githubに隠された便利な機能 | GitHub Cheat Sheet（日本語訳）
 # GitHub Cheat Sheet（日本語訳）
 
 ## 日本語翻訳に関するノート 
-GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。もっと分かりやすくしたいので翻訳に関するダメ出しは歓迎です。
+GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](https://github.com/tiimgreen/github-cheat-sheet)の日本語訳です。Github Cheat Sheetには便利な機能がたくさんありせっかくなので日本語翻訳をしました。まだまだ途中ですが一旦公開いたします。もっと分かりやすくしたいので翻訳に関するダメ出しは歓迎です。
 
 - 元のレポジトリ
  - [tiimgreen/github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet)
@@ -21,7 +22,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [フォークされたブランチとの比較](#fork%E3%81%95%E3%82%8C%E3%81%9Fbranch%E3%81%A8%E3%81%AE%E6%AF%94%E8%BC%83)
   - [Gists](#gists)
   - [Git.io](#gitio)
-  - [ショットカットキー](#%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC)
+  - [ショートカットキー](#%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC)
   - [レポジトリ内のコードをハイライト](#%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E5%86%85%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88)
   - [コミットメッセージによるissueのクローズ](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%81%AB%E3%82%88%E3%82%8Bissue%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%BA)
   - [issue同士のリンク](#issue%E5%90%8C%E5%A3%AB%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF)
@@ -180,23 +181,14 @@ Location: https://github.com/...
 
 [*Git.ioに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/985-git-io-github-url-shortener)
 
-### ショットカットキー
-ショットカットキーを使うことによって簡単に操作することができます
+### ショートカットキー
+ショートカットキーを使うことによって簡単に操作することができます
 
  - `t` を押すとファイル一覧を表示します
  - `w` を押すとブランチ一覧を表示します
  - `s` を押すと検索部分にフォカースします
  - `l` を押すと既存のissueでラベルを編集できます
  - `y` を押すと例えば、(e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)をそのURLを固定します。なのでもしコードを変更しても、今見ているコードはそのままみることができます。
-
-<!-- 
- - Pressing `t` will bring up a file explorer.
- - Pressing `w` will bring up the branch selector.
- - Pressing `s` will select the Command Bar.
- - Pressing `l` will edit labels on existing Issues.
- - Pressing `y` **when looking at a file** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
--->
-
 
 現在のページで使えるショートカットキーを知りたい場合はその画面で `?` を押してください：
 
@@ -220,10 +212,6 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 もしある issue を解決した際に、`fix/fixes/fixed`
 、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキワードをcommitメッセージがmasterブランチにコミットされることでそのissueを閉じることができます
 
-<!-- TODO: Consider it again later -->
-<!--
-If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the master branch.
--->
 
 ```bash
 $ git commit -m "Fix cock up, fixes #12"
@@ -247,9 +235,6 @@ If you want to link to another issue in the same repository, simple type hash `#
 ### Pull RequestにCIステータスを表示
 プルリクエストを受け取った際に毎回、[Travis CI](https://travis-ci.org/) が毎回のコミットメッセージの際にテストを通すようにそのプルリクエストに対してテストをします。その方法についてはTravis CIの[get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).を参照してください。
 
-<!-- 
-If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
--->
 
 [![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
@@ -276,9 +261,6 @@ puts table.to_s
 
 Githubはコードの判定とそのシンタックスハイライトをするために [Linguist](https://github.com/github/linguist) を使用しています。どのキーワードが使えるかは [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) で見ることができます。
 
-<!-- 
-GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
--->
 
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
@@ -320,9 +302,6 @@ Githubで使える絵文字のリストは [emoji-cheat-sheet.com](http://www.em
 
 Wikiページに画像を埋め込む方法はいくつかあります。主な方法としては以下のような基本的なマークダウンの記法があります。画像の幅や高さを指定する方法があります。
 
-<!--
-There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax (shown above). But there's also a syntax that allows things like specifying the height or width of the image:
--->
 
 ```markdown
 [[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
@@ -341,15 +320,10 @@ There are multiple ways of embedding images in Wiki pages. There's the standard 
 
 ### ライセンスを簡単に表示（Quick Licensing）
 レポジトリを作成した際にGithubが簡単にライセンスを表示できる選択肢があります：
-<!-- When creating a repository GitHub gives you the options of adding in a pre-made license: -->
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
 もちろん既存のレポジトリに対してライセンスを作成することができます。ファイル名に `LICENSE` と入力するとライセンスの選択肢が表示されます：
-
-<!-- 
-You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
--->
 
 ![License](http://i.imgur.com/fTjQict.png)
 
@@ -359,11 +333,6 @@ You can also add them to existing repositories by creating a new file through th
 
 ### タスクリスト
 issueやプルリクエストの中に以下のような方法で書くとチェックボックスを追加することができます：
-
-<!-- TODO Consider it againg later -->
-<!--
-In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
--->
 
 ```
 - [ ] Be awesome
@@ -385,19 +354,13 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 
 ### 相対リンク
 マークダウンで相対リンクの使用は推奨されています
-<!--
-Relative links are recommended in your Markdown files when linking to internal content.
--->
 
 ```markdown
 [Link to a header](#awesome-section)
 [Link to a file](docs/readme)
 ```
 
-絶対リンクはレポジトリ名やユーザー名が、フォーク先などが変更された際に必ずそれを変更しなければなりません。なので相対リンクを使うことによってドキュメントの保守性を高めることができます
-<!-- 
-Absolute links have to be updated whenever the URL changes (e.g. repository renamed, username changed, project forked). Using relative links makes your documentation easily stand on its own.
---> 
+絶対リンクはレポジトリ名やユーザー名が、フォーク先などが変更された際に必ずそれを変更しなければなりません。なので相対リンクを使うことによってドキュメントの保守性を高めることができます 
 
 [*Githubでの相対リンクに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/relative-links-in-readmes)
 
@@ -405,14 +368,8 @@ Absolute links have to be updated whenever the URL changes (e.g. repository rena
 ### Githubページで使えるメタデータやプラグイン
 Jekyllのpagesとpostsにレポジトリ情報を`site.github`で表示することができます。例えば、 `{{ site.github.project_title }}`のように使います。
 
-<!-- 
-Within Jekyll pages and posts, repository information is available within the `site.github` namespace, and can be displayed, for example, using `{{ site.github.project_title }}`.
--->
 
 Jemojiとjekyll-mentionプラグインで[emoji](#emojis)や[@mentions](https://github.com/blog/821) をJekyllのpostsやpagesGtihub.comのレポジトリが変更されればそれにともなって動的に変わります。
-<!-- 
-The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
--->
 
 
 [*Githubページで使えるレポジトリのメタデータやプラグインに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
@@ -435,12 +392,10 @@ Githubは`.csv`や `.tsv` のファイルフォーマットを使用すること
 #### レンダリングされた差分
 
 マークダウンなどを含むコミットやプルリクエストでは *source* と *rendered* という選択肢が表示される機能があります。
-<!-- Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views. -->
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
 "rendered" ボタンを押すとドキュメントをレンダリングした状態での差分を表示してくれます：
-<!-- Rendered prose view is handy when you're adding, removing, and editing text: -->
 
 ![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
 
@@ -495,9 +450,6 @@ index 88fcf69..8614873 100644
 
 ### Hub
 [Hub](https://github.com/github/hub)はGitのラッパーでさらに便利な機能やGithubと一緒に使うとと便利なコマンドなどが追加されています。
-<!--
-[Hub](https://github.com/github/hub) is a command line Git wrapper that gives you extra features and commands that make working with GitHub easier.
--->
 
 以下のコマンドでこれまでの`$ git clone`と同様のことができます：
 
@@ -510,7 +462,6 @@ $ hub clone tiimgreen/toc
 ### Frictionと使ってコントリビューターとの衝突（Friction）を減らす
 もしも、あなたのプロジェクトを使ってそして開発に貢献して欲しい場合、まずは以下の基本的な質問に答える必要があります。このプロジェクトはなんなのか？・どう使うのか？・どのような場合に使えるのか？・どのように貢献すればいいのか？・どのように開発すればいいのか？・どのように開発すれば自分の新しい機能が既存のものを壊さずにでるのか？
 
-<!-- If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality? -->
 
 [Friction](https://github.com/rafalchmiel/friction)というコマンドラインツールが[基本的なこと](https://github.com/rafalchmiel/friction/wiki).に関して調べてくれます。
 
@@ -566,14 +517,11 @@ $ git checkout -
 
 Git Stripspace:
 
-<!-- - Strips trailing whitespace -->
 - 末尾のホワイトスペースの削除
 - 空白を詰める
 - ファイルの最後に空行を追加
-<!-- - Collapses newlines -->
 
 
-<!-- A file must be passed when calling the command, e.g.: -->
 ファイルはこのようなコマンドで呼ばれます
 
 例：
@@ -786,7 +734,6 @@ $ git config --global alias.ac 'add -A . && commit'
 
 #### コマンドの自動補完機能
 もし間違って、`$ git comt` と打ってしまうと以下のようになります：
-<!-- If you type `git comit` you will get this: -->
 
 ```bash
 $ git comit -m "Message"
@@ -797,13 +744,11 @@ $ git comit -m "Message"
 ```
 
 `comit` と打っても`commit` を自動的に補完させるためには以下のします：
-<!-- To call `commit` when `comit` is typed, just enable auto-correct: -->
 
 ```bash
 $ git config --global help.autocorrect 1
 ```
 
-<!-- So now you will get this: -->
 すると以下のようになります：
 
 ```bash
