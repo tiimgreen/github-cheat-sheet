@@ -218,7 +218,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ### コミットメッセージによるissueのクローズ
 
 もしある issue を解決した際に、`fix/fixes/fixed`
-、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキワードをcommitメッセージに含めることでそのissueを閉じることができます
+、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキワードをcommitメッセージがmasterブランチにコミットされることでそのissueを閉じることができます
 
 <!-- TODO: Consider it again later -->
 <!--
