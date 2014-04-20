@@ -38,7 +38,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [YAMLメタデータをドキュメントで表示](#yaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%A7%E8%A1%A8%E7%A4%BA)
   - [表形式データの表示](#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E8%A1%A8%E7%A4%BA)
   - [差分](#%E5%B7%AE%E5%88%86)
-    - [Rendered prose Diffs](#rendered-prose-diffs)
+    - [レンダリングされた差分](#rendered-prose-diffs)
     - [地図の差分](#%E5%9C%B0%E5%9B%B3%E3%81%AE%E5%B7%AE%E5%88%86)
     - [差分コンテンツの展開](#%E5%B7%AE%E5%88%86%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E5%B1%95%E9%96%8B)
     - [差分（Diff・Patch） of Pull Request](#%E5%B7%AE%E5%88%86diffpatch-of-pull-request)
@@ -432,16 +432,19 @@ Githubは`.csv`や `.tsv` のファイルフォーマットを使用すること
 [*表形式データの表示に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1601-see-your-csvs)
 
 ### 差分
-#### Rendered Prose Diffs
-Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views.
+#### レンダリングされた差分
+
+マークダウンなどを含むコミットやプルリクエストでは *source* と *rendered* という選択肢が表示される機能があります。
+<!-- Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views. -->
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
-Click the "rendered" button to see the changes as they'll appear in the rendered document. Rendered prose view is handy when you're adding, removing, and editing text:
+"rendered" ボタンを押すとドキュメントをレンダリングした状態での差分を表示してくれます：
+<!-- Rendered prose view is handy when you're adding, removing, and editing text: -->
 
 ![Rendered Prose Diffs](https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png)
 
-[*Read more about rendered prose diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
+[*レンダリングされた差分に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1784-rendered-prose-diffs)
 
 #### 地図の差分
 地図の情報を含むcommitやプルリクエストを見る際に、Githubはそれを視覚的にその差分を表示します
