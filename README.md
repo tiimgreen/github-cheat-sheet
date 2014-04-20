@@ -14,55 +14,55 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
 
 ## 目次
  - [GitHub](#github)
-  - [空行を無視](#ignore-whitespace)
-  - [ユーザー別のコミットヒストリー表示](#commit-history-by-author)
-  - [レポジトリのクローン](#cloning-a-repository)
-  - [ブランチの比較](#comparing-branches)
-  - [フォークされたブランチとの比較](#compare-branches-across-forked-repositories)
+  - [空行を無視](#%E7%A9%BA%E8%A1%8C%E3%82%92%E7%84%A1%E8%A6%96)
+  - [ユーザー別のコミットヒストリー表示](#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%88%A5%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%92%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E8%A1%A8%E7%A4%BA)
+  - [レポジトリのクローン](#%E7%A9%BA%E8%A1%8C%E3%82%92%E7%84%A1%E8%A6%96)
+  - [ブランチの比較](#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E6%AF%94%E8%BC%83)
+  - [フォークされたブランチとの比較](#fork%E3%81%95%E3%82%8C%E3%81%9Fbranch%E3%81%A8%E3%81%AE%E6%AF%94%E8%BC%83)
   - [Gists](#gists)
   - [Git.io](#gitio)
-  - [ショットカットキー](#keyboard-shortcuts)
-  - [レポジトリ内のコードをハイライト](#line-highlighting-in-repositories)
-  - [コミットメッセージによるissueのクローズ](#closing-issues-via-commit-messages)
-  - [issue同士のリンク](#cross-link-issues)
-  - [プルリクエストにCIステータスを表示](#ci-status-on-pull-requests)
-  - [マークダウンファイル内でのコードのハイライト](#syntax-highlighting-in-markdown-files)
-  - [絵文字](#絵文字)
-  - [画像（GIF）](#imagesgifs)
-    - [Github Wikiに画像を埋め込む](#embedding-images-in-github-wiki)
-  - [素早く引用（Quick Quoting）](#quick-quoting)
-  - [ライセンスを簡単に表示（Quick Licensing）](#quick-licensing)
-  - [タスクリスト](#task-lists)
-  - [相対リンク](#relative-links)
-  - [Githubページで使えるメタデータやプラグイン](#metadata-and-plugin-support-for-github-pages)
-  - [YAMLメタデータをドキュメントで表示](#viewing-yaml-metadata-in-your-documents)
-  - [表形式データの表示](#rendering-tabular-data)
-  - [差分](#diffs)
+  - [ショットカットキー](#%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC)
+  - [レポジトリ内のコードをハイライト](#%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E5%86%85%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88)
+  - [コミットメッセージによるissueのクローズ](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%81%AB%E3%82%88%E3%82%8Bissue%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%BA)
+  - [issue同士のリンク](#issue%E5%90%8C%E5%A3%AB%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [プルリクエストにCIステータスを表示](#pull-request%E3%81%ABci%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%92%E8%A1%A8%E7%A4%BA)
+  - [マークダウンファイル内でのコードのハイライト](#%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%86%85%E3%81%A7%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88)
+  - [絵文字](#%E7%B5%B5%E6%96%87%E5%AD%97)
+  - [画像（GIF）](#%E7%94%BB%E5%83%8Fgif)
+    - [Github Wikiに画像を埋め込む](#github-wiki%E3%81%AB%E7%94%BB%E5%83%8F%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80)
+  - [素早く引用（Quick Quoting）](#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8quick-quoting)
+  - [ライセンスを簡単に表示（Quick Licensing）](#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%82%92%E7%B0%A1%E5%8D%98%E3%81%AB%E8%A1%A8%E7%A4%BAquick-licensing)
+  - [タスクリスト](#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
+  - [相対リンク](#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [Githubページで使えるメタデータやプラグイン](#github%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%84%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
+  - [YAMLメタデータをドキュメントで表示](#yaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%A7%E8%A1%A8%E7%A4%BA)
+  - [表形式データの表示](#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E8%A1%A8%E7%A4%BA)
+  - [差分](#%E5%B7%AE%E5%88%86)
     - [Rendered prose Diffs](#rendered-prose-diffs)
-    - [地図の差分](#diffable-maps)
-    - [差分コンテンツの展開](#expanding-context-in-diffs)
-    - [差分（Diff・Patch） of Pull Request](#diff-or-patch-of-pull-request)
+    - [地図の差分](#%E5%9C%B0%E5%9B%B3%E3%81%AE%E5%B7%AE%E5%88%86)
+    - [差分コンテンツの展開](#%E5%B7%AE%E5%88%86%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E5%B1%95%E9%96%8B)
+    - [差分（Diff・Patch） of Pull Request](#%E5%B7%AE%E5%88%86diffpatch-of-pull-request)
   - [Hub](#hub)
-  - [Frictionと使ってコントリビューターとの衝突（Friction）を減らす](#decreasing-contributor-friction)
-  - [コントリビューティングガイドライン](#contributing-guidelines)
+  - [Frictionと使ってコントリビューターとの衝突（Friction）を減らす](##friction%E3%81%A8%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%A8%E3%81%AE%E8%A1%9D%E7%AA%81friction%E3%82%92%E6%B8%9B%E3%82%89%E3%81%99)
+  - [コントリビューティングガイドライン](#%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
   - [GitHubに関するサイトなどの情報](#github-resources)
     - [GitHub トーク](#github-talks)
  - [Git](#git)
-  - [前のBranchへ](#previous-branch)
+  - [前のBranchへ](#%E5%89%8D%E3%81%AEbranch%E3%81%B8)
   - [Stripspace](#stripspace)
   - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [空のコミット :trollface:](#empty-commits-trollface)
-  - [Git Statusのスタイル](#styled-git-status)
-  - [Git Logのスタイル](#styled-git-log)
+  - [空のコミット :trollface:](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface)
+  - [Git Statusのスタイル](#git-status%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB)
+  - [Git Logのスタイル](#git-log%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB)
   - [Git Query](#git-query)
-  - [マージされたブランチ](#merged-branches)
+  - [マージされたブランチ](#%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%95%E3%82%8C%E3%81%9F%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
   - [ローカルレポジトリを見るためのウェブサーバ](#web-server-for-browsing-local-repositories)
-  - [Gitの設定](#git-configurations)
-    - [エイリアス](#aliases)
-    - [コマンドの自動補完機能](#auto-correct)
+  - [Gitの設定](#git%E3%81%AE%E8%A8%AD%E5%AE%9A)
+    - [エイリアス](##%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9)
+    - [コマンドの自動補完機能](#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E8%87%AA%E5%8B%95%E8%A3%9C%E5%AE%8C%E6%A9%9F%E8%83%BD)
     - [色](#color)
-  - [Gitに関するサイトなどの情報](#git-resources)
-    - [Gitに関する本の一覧](#git-books)
+  - [Gitに関するサイトなどの情報](#git%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AA%E3%81%A9%E3%81%AE%E6%83%85%E5%A0%B1)
+    - [Gitに関する本の一覧](#git%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%9C%AC%E3%81%AE%E4%B8%80%E8%A6%A7)
 
 ## GitHub
 ### 空行を無視
@@ -451,8 +451,7 @@ Click the "rendered" button to see the changes as they'll appear in the rendered
 [*地図の差分に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1772-diffable-more-customizable-maps)
 
 #### 差分コンテンツの展開
-*unfold* ボタンを使用することによって
-Using the *unfold* button in the gutter of a diff, you can reveal additional lines of context with a click. You can keep clicking *unfold* until you've revealed the whole file, and the feature is available anywhere GitHub renders diffs.
+差分の展開ボタン（*unfold*）を使用すると、クリックするだけで、コンテキストの追加の行を明らかにすることができます。ファイル全体を明らかにしてきたまで展開クリック保つことができ、かつ機能がGitHubには、差分を表示することが可能です。
 
 ![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
 
@@ -525,7 +524,7 @@ $ hub clone tiimgreen/toc
 
 [*Contributing Guidelinesに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1184-contributing-guidelines)
 
-### GitHub　リソース
+### GitHubに関するサイトなどの情報
 | タイトル | リンク |
 | ----- | ---- |
 | GitHub Explore | https://github.com/explore |
@@ -534,7 +533,7 @@ $ hub clone tiimgreen/toc
 | GitHub Training | http://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 
-#### GitHub ドーク
+#### GitHub トーク
 | タイトル | リンク |
 | ----- | ---- |
 | How GitHub Uses GitHub to Build GitHub | https://www.youtube.com/watch?v=qyz3jkOBbQY |
