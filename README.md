@@ -841,7 +841,7 @@ $ git config --global color.ui 1
 #### Gitに関する本の一覧
 | タイトル | リンク |
 | ----- | ---- |
-| 開発効率をUPする Git逆引き入門 | http://www.amazon.co.jp/%E9%96%8B%E7%99%BA%E5%8A%B9%E7%8E%87%E3%82%92UP%E3%81%99%E3%82%8B-Git%E9%80%86%E5%BC%95%E3%81%8D%E5%85%A5%E9%96%80-%E6%9D%BE%E4%B8%8B-%E9%9B%85%E5%92%8C/dp/4863541465 |
+| 開発効率をUPする Git逆引き入門 | http://goo.gl/vHb8Sr |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
 | Pro Git | http://git-scm.com/book |
 | Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
