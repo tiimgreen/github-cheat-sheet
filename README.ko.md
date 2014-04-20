@@ -6,6 +6,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
  - [GitHub](#github)
   - [Ignore Whitespace](#ignore-whitespace)
+  - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
   - [Comparing Branches](#comparing-branches)
@@ -64,6 +65,18 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
 [*깃허브의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
+
+### Adjust Tab Space
+
+diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. `ts`뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일에는 적용 되지 않습니다.
+
+여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 [전에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go) 이렇습니다.
+
+![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+
+그리고 `?ts=4`를 붙인 [다음에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) 이렇게 됩니다.
+
+![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
 
@@ -640,7 +653,7 @@ NOTE: 이 명령을 알리아스 (단축 명령)으로 넣을 수 있습니다. 
 $ git show :/query
 ```
 
-`query`에는 검색하고 싶은 말을 넣으세요. 주어진 검색어가 있는 가장 마지막 커밋을 표시하고 변경된 라인을 보여줍니다.
+`query`에는 검색하고 싶은 말을 (대소문자를 구분해) 넣으세요. 주어진 검색어가 있는 가장 마지막 커밋을 표시하고 변경된 라인을 보여줍니다.
 
 ```bash
 $ git show :/typo
