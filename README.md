@@ -36,15 +36,15 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [相対リンク](#relative-links)
   - [Githubページで使えるメタデータやプラグイン](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
-  - [Rendering Tabular Data](#rendering-tabular-data)
+  - [表形式データの表示](#rendering-tabular-data)
   - [差分](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
-    - [Diffable Maps](#diffable-maps)
-    - [Expanding Context in Diffs](#expanding-context-in-diffs)
-    - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
+    - [地図の差分](#diffable-maps)
+    - [差分コンテンツの展開](#expanding-context-in-diffs)
+    - [差分（Diff・Patch） of Pull Request](#diff-or-patch-of-pull-request)
   - [Hub](#hub)
-  - [Decreasing Contributor Friction](#decreasing-contributor-friction)
-  - [Contributing Guidelines](#contributing-guidelines)
+  - [Frictionと使ってコントリビューターとの衝突（Friction）を減らす](#decreasing-contributor-friction)
+  - [コントリビューティングガイドライン](#contributing-guidelines)
   - [GitHubに関するサイトなどの情報](#github-resources)
     - [GitHub トーク](#github-talks)
  - [Git](#git)
@@ -56,7 +56,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
   - [Git Logのスタイル](#styled-git-log)
   - [Git Query](#git-query)
   - [マージされたブランチ](#merged-branches)
-  - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
+  - [ローカルレポジトリを見るためのウェブサーバ](#web-server-for-browsing-local-repositories)
   - [Gitの設定](#git-configurations)
     - [エイリアス](#aliases)
     - [コマンドの自動補完機能](#auto-correct)
@@ -417,19 +417,19 @@ The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](h
 
 [*Githubページで使えるレポジトリのメタデータやプラグインに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
-### Viewing YAML Metadata in your Documents
-Many blogging websites, like [Jekyll](http://jekyllrb.com/) with [GitHub Pages](http://pages.github.com/), depend on some YAML-formatted metadata at the beginning of your post. GitHub will render this metadata as a horizontal table, for easier reading
+### YAMLメタデータをドキュメントで表示
+[GitHub Pages](http://pages.github.com/)や[Jekyll](http://jekyllrb.com/)のような多くのブログサービスはその投稿にYAMLのメタデータの形式をとっています。Githubはこれらのデータを以下の画像のように見やすく表示してくれます。
 
 ![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
 
-[*Read more about viewing YAML metadata in your documents.*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
+[*YAMLメタデータをドキュメントで表示することに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
 
-### Rendering Tabular Data
-GitHub supports rendering tabular data in the form of `.csv` (comma-separated) and `.tsv` (tab-separated) files.
+### 表形式データの表示
+Githubは`.csv`や `.tsv` のファイルフォーマットを使用することで表形式データの表示を可能にします。
 
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
-[*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
+[*表形式データの表示に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1601-see-your-csvs)
 
 ### 差分
 #### Rendered Prose Diffs
@@ -443,23 +443,25 @@ Click the "rendered" button to see the changes as they'll appear in the rendered
 
 [*Read more about rendered prose diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
-#### Diffable Maps
-Any time you view a commit or pull request on GitHub that includes geodata, GitHub will render a visual representation of what was changed.
+#### 地図の差分
+地図の情報を含むcommitやプルリクエストを見る際に、Githubはそれを視覚的にその差分を表示します
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
-[*Read more about diffable maps.*](https://github.com/blog/1772-diffable-more-customizable-maps)
+[*地図の差分に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1772-diffable-more-customizable-maps)
 
-#### Expanding Context in Diffs
+#### 差分コンテンツの展開
+*unfold* ボタンを使用することによって
 Using the *unfold* button in the gutter of a diff, you can reveal additional lines of context with a click. You can keep clicking *unfold* until you've revealed the whole file, and the feature is available anywhere GitHub renders diffs.
 
 ![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
 
-[*Read more about expanding context in diffs.*](https://github.com/blog/1705-expanding-context-in-diffs)
+[*差分コンテンツの展開に関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1705-expanding-context-in-diffs)
 
-#### Diff or Patch of Pull Request
-You can get the diff of a Pull Request by adding a `.diff` or `.patch`
-extension to the end of the URL. For example:
+#### 差分（Diff・Patch） of Pull Request
+URLに `.diff` か `.patch` をURLに追加するこでプルリクエストの差分を見ることができます。
+
+例：
 
 ```
 https://github.com/tiimgreen/github-cheat-sheet/pull/15
@@ -467,7 +469,8 @@ https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
 https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
 ```
 
-The `.diff` extension would give you this in plain text:
+
+`.diff`をURLに追加すると以下のようになります：
 
 ```
 diff --git a/README.md b/README.md
@@ -502,16 +505,20 @@ $ hub clone tiimgreen/toc
 
 [*Hubのコマンドに関してのクールな機能についてのより詳しい内容はこちらを参照してください*](https://github.com/github/hub#commands)
 
-### Decreasing Contributor Friction
-If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
+### Frictionと使ってコントリビューターとの衝突（Friction）を減らす
+もしも、あなたのプロジェクトを使ってそして開発に貢献して欲しい場合、まずは以下の基本的な質問に答える必要があります。このプロジェクトはなんなのか？・どう使うのか？・どのような場合に使えるのか？・どのように貢献すればいいのか？・どのように開発すればいいのか？・どのように開発すれば自分の新しい機能が既存のものを壊さずにでるのか？
 
-[Friction](https://github.com/rafalchmiel/friction) is a command line script that will check your project for common [answers to these questions](https://github.com/rafalchmiel/friction/wiki). This is some example output:
+<!-- If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality? -->
+
+[Friction](https://github.com/rafalchmiel/friction)というコマンドラインツールが[基本的なこと](https://github.com/rafalchmiel/friction/wiki).に関して調べてくれます。
+
+例：
 
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
-*Friction supports MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.*
+*Friction MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.　をサポートしています*
 
-### Contributing Guidelines
+### コントリビューティングガイドライン
 `CONTRIBUTING` ファイルをレポジトリのルートに追加することによって、協力してくれる方がissueを作くる時やプルリクエストを送る際に際に以下の画像のように`CONTRIBUTING`ファイルへのリンクが表示されます。
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
@@ -557,16 +564,24 @@ $ git checkout -
 
 Git Stripspace:
 
-- Strips trailing whitespace
-- Collapses newlines
-- Adds newline to end of file
+<!-- - Strips trailing whitespace -->
+- 末尾のホワイトスペースの削除
+- 空白を詰める
+- ファイルの最後に空行を追加
+<!-- - Collapses newlines -->
 
-A file must be passed when calling the command, e.g.:
+
+<!-- A file must be passed when calling the command, e.g.: -->
+ファイルはこのようなコマンドで呼ばれます
+
+例：
+
+
 ```bash
 $ git stripspace < README.md
 ```
 
-[*Read more about the Git `stripspace` command.*](http://git-scm.com/docs/git-stripspace)
+[*Git `stripspace` に関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-stripspace)
 
 ### Checking out Pull Requests
 If you want to check out pull request locally, you can fetch it using that command:
@@ -700,7 +715,7 @@ $ git branch --no-merged
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
 
-### Web Server for Browsing Local Repositories
+### ローカルレポジトリを見るためのウェブサーバ]
 `gitweb`で`instaweb` コマンドを使うことによって現在のレポジトリを見ることができます。このコマンドは簡単に `gitweb` を立ち上げるためのものでこれはローカルレポジトリを見るためのウェブサーバーです。
 <!--
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
