@@ -403,15 +403,19 @@ Absolute links have to be updated whenever the URL changes (e.g. repository rena
 
 
 ### Githubページで使えるメタデータやプラグイン
-Jekyllのpagesとpostsにレポジトリ情報を`site.github`で表示することができます。例えば、 `{{ site.github.project_title }}`このように使います。
+Jekyllのpagesとpostsにレポジトリ情報を`site.github`で表示することができます。例えば、 `{{ site.github.project_title }}`のように使います。
 
 <!-- 
 Within Jekyll pages and posts, repository information is available within the `site.github` namespace, and can be displayed, for example, using `{{ site.github.project_title }}`.
 -->
 
+Jemojiとjekyll-mentionプラグインで[emoji](#emojis)や[@mentions](https://github.com/blog/821) をJekyllのpostsやpagesGtihub.comのレポジトリが変更されればそれにともなって動的に変わります。
+<!-- 
 The Jemoji and jekyll-mentions plugins enable [emoji](#emojis) and [@mentions](https://github.com/blog/821) in your Jekyll posts and pages to work just like you'd expect when interacting with a repository on GitHub.com.
+-->
 
-[*Read more about repository metadata and plugin support for GitHub Pages.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
+
+[*Githubページで使えるレポジトリのメタデータやプラグインに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
 ### Viewing YAML Metadata in your Documents
 Many blogging websites, like [Jekyll](http://jekyllrb.com/) with [GitHub Pages](http://pages.github.com/), depend on some YAML-formatted metadata at the beginning of your post. GitHub will render this metadata as a horizontal table, for easier reading
@@ -514,8 +518,8 @@ If you want people to use and contribute to your project, you need to start by a
 
 [*Contributing Guidelinesに関してのより詳しい内容はこちらを参照してください*](https://github.com/blog/1184-contributing-guidelines)
 
-### GitHub Resources
-| Title | Link |
+### GitHub　リソース
+| タイトル | リンク |
 | ----- | ---- |
 | GitHub Explore | https://github.com/explore |
 | GitHub Blog | https://github.com/blog |
@@ -523,8 +527,8 @@ If you want people to use and contribute to your project, you need to start by a
 | GitHub Training | http://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 
-#### GitHub Talks
-| Title | Link |
+#### GitHub ドーク
+| タイトル | リンク |
 | ----- | ---- |
 | How GitHub Uses GitHub to Build GitHub | https://www.youtube.com/watch?v=qyz3jkOBbQY |
 | Introduction to Git with Scott Chacon of GitHub | https://www.youtube.com/watch?v=ZDR433b0HJY |
@@ -533,8 +537,8 @@ If you want people to use and contribute to your project, you need to start by a
 | More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
-### Previous Branch
-To move to the previous branch in Git:
+### 前のBranchへ
+Gitで前のbranchに戻る：
 
 ```bash
 $ git checkout -
@@ -547,7 +551,7 @@ $ git checkout -
 # Switched to branch 'master'
 ```
 
-[*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+[*Git branchingに関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
 ### Stripspace
 
@@ -607,74 +611,75 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
 
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### Empty Commits :trollface:
-Commits can be pushed with no code changes by adding `--allow-empty`:
+### 空のコミット :trollface:
+`--allow-empty`を追加することによってコードに何も変更を加えてなくてもそのcommitメッセージをpushできます：
 
 ```bash
 $ git commit -m "Big-ass commit" --allow-empty
 ```
 
-Some use-cases for this (that make sense), include:
+例えば、以下のようなときに使います：
 
- - Annotating the start of a new bulk of work or a new feature.
- - Documenting when you make changes to the project that aren't code related.
- - Communicating with people using your repository.
+ - 新しい機能の追加などの始まりを明確かさせるために
+ - コードに関係ないドキュメントの変化をした場合
+ - レポジトリ上でのコミュニケーションをするために
 
-### Styled Git Status
-Running:
+### Git Statusのスタイル
+実行：
 
 ```bash
 $ git status
 ```
 
-Produces:
+すると以下のようになります：
 
 ![git status](http://i.imgur.com/o3PEHAA.png)
 
-By adding `-sb`:
+`-sb` を追加すると：
 
 ```bash
 $ git status -sb
 ```
 
-This is produced:
+すると以下のようになります：
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
 
-[*Read more about the Git `status` command.*](http://git-scm.com/docs/git-status)
+[* Git `status` コマンドに関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-status)
 
-### Styled Git Log
-Running:
+### Git Logのスタイル
+実行：
 
 ```bash
 $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
-Produces:
+すると以下のようになります：
 
 ![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/R2z8l7c.png)
 
 Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
 
-*This can be aliased using the instructions found [here](https://github.com/tiimgreen/github-cheat-sheet#aliases).*
+*[ここ](https://github.com/tiimgreen/github-cheat-sheet#aliases)にエイリアスの仕組みを参照されます*
 
-[*Read more about the Git `log` command.*](http://git-scm.com/docs/git-log)
+[* Git `log` コマンドに関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-log)
 
 ### Git Query
-A Git query allows you to search all your previous commit messages and find the most recent one matching the query.
+Git Queryを使うことによって今までのコミットメッセージの中の最も新しいものから**query**にマッチするものを検索することができます。
 
 ```bash
 $ git show :/query
 ```
 
-Where `query` is the term you want to search, this then finds the last one and gives details on the lines that were changed.
+`query` 部分には検索したい単語をいれます。そしてマッチする最も新しいものの詳細が表示されます。
+
 
 ```bash
 $ git show :/typo
 ```
 ![git show :/query](http://i.imgur.com/icaGiNt.png)
 
-*Press `q` to quit.*
+*`q` と押すと中断されます*
 
 ### マージされたブランチ
 実行：
@@ -696,25 +701,32 @@ $ git branch --no-merged
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
 
 ### Web Server for Browsing Local Repositories
+`gitweb`で`instaweb` コマンドを使うことによって現在のレポジトリを見ることができます。このコマンドは簡単に `gitweb` を立ち上げるためのものでこれはローカルレポジトリを見るためのウェブサーバーです。
+<!--
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
+-->
 
 ```bash
 $ git instaweb
 ```
 
-Opens:
+すると以下のような画面が開きます：
 
 ![Git instaweb](http://i.imgur.com/Dxekmqc.png)
 
-[*Read more about the Git `instaweb` command.*](http://git-scm.com/docs/git-instaweb)
+[*Git `instaweb`コマンドに関してのクールな機能についてのより詳しい内容はこちらを参照してください*](http://git-scm.com/docs/git-instaweb)
 
 ### Gitの設定
 `.gitconfig`にはGitの設定のすべてが含まれています。
 
 #### エイリアス
-Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
+エイリアスを使うことによってGitコマンドの呼び方を自分で設定することができます。例えば、`git a`を`git add --all`のエイリアスとして設定できます。
 
-To add an alias, either navigate to `~/.gitconfig` and fill it out in the following format:
+<!-- 
+Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
+-->
+エイリアスを設定する際には `~/.gitconfig` に以下のようになります：
+<!-- 　To add an alias, either navigate to `~/.gitconfig` and fill it out in the following format: -->
 
 ```
 [alias]
@@ -727,7 +739,7 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
   remotes = remote -v
 ```
 
-...or type in the command-line:
+もしくは以下のようなコマンドを打って `~/.gitconfig` に追加します：
 
 ```bash
 $ git config --global alias.new_alias git_function
@@ -739,7 +751,7 @@ $ git config --global alias.new_alias git_function
 $ git config --global alias.cm commit
 ```
 
-For an alias with multiple functions use quotes:
+複数のコマンドを合わせたものを設定したい場合は、シングルクォーテーションで囲みます：
 
 ```bash
 $ git config --global alias.ac 'add -A . && commit'
