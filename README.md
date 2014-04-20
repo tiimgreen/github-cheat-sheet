@@ -50,7 +50,7 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
  - [Git](#git)
   - [前のBranchへ](#%E5%89%8D%E3%81%AEbranch%E3%81%B8)
   - [Stripspace](#stripspace)
-  - [Checking out Pull Requests](#checking-out-pull-requests)
+  - [プルリクエストをチェックアウト](##%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
   - [空のコミット :trollface:](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface)
   - [Git Statusのスタイル](#git-status%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB)
   - [Git Logのスタイル](#git-log%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB)
