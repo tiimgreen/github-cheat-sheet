@@ -786,7 +786,7 @@ $ git config --global alias.ac 'add -A . && commit'
 
 #### コマンドの自動補完機能
 もし間違って、`$ git comt` と打ってしまうと以下のようになります：
-If you type `git comit` you will get this:
+<!-- If you type `git comit` you will get this: -->
 
 ```bash
 $ git comit -m "Message"
@@ -797,13 +797,14 @@ $ git comit -m "Message"
 ```
 
 `comit` と打っても`commit` を自動的に補完させるためには以下のします：
-To call `commit` when `comit` is typed, just enable auto-correct:
+<!-- To call `commit` when `comit` is typed, just enable auto-correct: -->
 
 ```bash
 $ git config --global help.autocorrect 1
 ```
 
-So now you will get this:
+<!-- So now you will get this: -->
+すると以下のようになります：
 
 ```bash
 $ git comit -m "Message"
