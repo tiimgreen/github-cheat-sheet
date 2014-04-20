@@ -4,6 +4,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 ## Table of Contents
  - [GitHub](#github)
   - [Ignore Whitespace](#ignore-whitespace)
+  - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
   - [Comparing Branches](#comparing-branches)
@@ -60,6 +61,17 @@ Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabli
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
 [*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
+
+### Adjust Tab Space
+Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views.
+
+Here is a Go source file [before](https://github.com/pengwynn/flint/blob/master/flint/flint.go) adding `?ts=4`:
+
+![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+
+...and this is [after](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) adding `?ts=4`:
+
+![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
 To view all commits on a repo by author add `?author=username` to the URL.
@@ -594,7 +606,7 @@ A Git query allows you to search all your previous commit messages and find the 
 $ git show :/query
 ```
 
-Where `query` is the term you want to search, this then finds the last one and gives details on the lines that were changed.
+Where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
 ```bash
 $ git show :/typo
