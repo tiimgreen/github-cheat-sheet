@@ -125,8 +125,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 [*時間によってcommitメッセージを比較することに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/comparing-commits-across-time)
 
-<!-- TODO Consider it again later -->
-<!-- ### Compare Branches across Forked Repositories -->
+
 
 ### forkされたbranchとの比較
 Githubを使ってforkされたbranchとの比較をする際には以下のようにURLを変更します：
@@ -150,8 +149,6 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
 
-<!-- TODO: Consider it again later -->
-<!-- Gists can be treated as a full repository so they can be cloned like any other: -->
 Gistsはレポジトリと同じようにクローンをすることができます：
 
 ```bash
@@ -217,7 +214,6 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 $ git commit -m "Fix cock up, fixes #12"
 ```
 
-<!-- This closes the issue and references the closing commit. -->
 
 
 ![Closing Repo](http://i.imgur.com/URXFprQ.png)
@@ -540,7 +536,6 @@ $ git stripspace < README.md
 $ git fetch origin '+refs/pull/*/head:refs/pull/*'
 ```
 そして、プルリクエストをチェックアウトできます：
-<!-- then, checkout Pull Request (i.e. 42) using -->
 
 ```bash
 $ git checkout refs/pull/42
@@ -665,9 +660,6 @@ $ git branch --no-merged
 
 ### ローカルレポジトリを見るためのウェブサーバ
 `gitweb`で`instaweb` コマンドを使うことによって現在のレポジトリを見ることができます。このコマンドは簡単に `gitweb` を立ち上げるためのものでこれはローカルレポジトリを見るためのウェブサーバーです。
-<!--
-Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
--->
 
 ```bash
 $ git instaweb
@@ -685,11 +677,9 @@ $ git instaweb
 #### エイリアス
 エイリアスを使うことによってGitコマンドの呼び方を自分で設定することができます。例えば、`git a`を`git add --all`のエイリアスとして設定できます。
 
-<!-- 
-Aliases are helpers that let you define your own git calls. For example you could set `git a` to run `git add --all`.
--->
+
 エイリアスを設定する際には `~/.gitconfig` に以下のようになります：
-<!-- 　To add an alias, either navigate to `~/.gitconfig` and fill it out in the following format: -->
+
 
 ```
 [alias]
