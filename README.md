@@ -714,7 +714,7 @@ $ git branch --no-merged
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
 
-### ローカルレポジトリを見るためのウェブサーバ]
+### ローカルレポジトリを見るためのウェブサーバ
 `gitweb`で`instaweb` コマンドを使うことによって現在のレポジトリを見ることができます。このコマンドは簡単に `gitweb` を立ち上げるためのものでこれはローカルレポジトリを見るためのウェブサーバーです。
 <!--
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
