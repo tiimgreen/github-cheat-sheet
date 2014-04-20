@@ -582,33 +582,31 @@ $ git stripspace < README.md
 
 [*Git `stripspace` に関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-stripspace)
 
-### Checking out Pull Requests
-If you want to check out pull request locally, you can fetch it using that command:
+### プルリクエストをチェックアウト
+プルリクエストをローカルにチャックアウトするシたい場合に、以下のコマンドを使ってフェッチすることがきます：
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/pull/*'
 ```
-
-then, checkout Pull Request (i.e. 42) using
+そして、プルリクエストをチェックアウトできます：
+<!-- then, checkout Pull Request (i.e. 42) using -->
 
 ```bash
 $ git checkout refs/pull/42
 ```
 
-Alternatively, you can fetch them as remote branches:
+他の方法としては、リモートブランチとしてフェッチすることもできます：
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-and checkout as:
+そしてこのようにチャックアウトします：
 
 ```bash
 $ git checkout origin/pr/42
 ```
-
-and even fetch them automatically, if you add corresponding lines in your .git/config:
-
+.git/configに以下のコードを追加すると自動的にフェッチすることもできます：
 
 ```
 [remote "origin"]
@@ -623,7 +621,7 @@ and even fetch them automatically, if you add corresponding lines in your .git/c
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 ```
 
-[*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
+[*ローカルにプルリクエストをチェックアウトすること関してのより詳しい内容はこちらを参照してください。*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### 空のコミット :trollface:
 `--allow-empty`を追加することによってコードに何も変更を加えてなくてもそのcommitメッセージをpushできます：
