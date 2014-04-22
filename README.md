@@ -206,7 +206,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the master branch.
 
 ```bash
-$ git commit -m "Fix cock up, fixes #12"
+$ git commit -m "Fix screwup, fixes #12"
 ```
 
 This closes the issue and references the closing commit.
