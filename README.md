@@ -211,7 +211,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 This closes the issue and references the closing commit.
 
-![Closing Repo](http://i.imgur.com/URXFprQ.png)
+![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
 
 [*Read more about closing Issues via commit messages.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
