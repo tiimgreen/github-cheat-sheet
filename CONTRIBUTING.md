@@ -14,3 +14,4 @@
 - Make sure to include examples wherever possible (preferably GIFs).
 - For command-line examples, wrap your commands in a `bash` code block. Ask [@rafalchmiel](https://github.com/rafalchmiel) or [@tiimgreen](https://github.com/tiimgreen) to take a screenshot (so that it is consistent with the rest) of the output if it has color, etc.
 - At the end of your section, add a `Read more about...` link. This should directly link to [Git's](http://git-scm.com/docs) or [GitHub's](https://help.github.com/) documentation.
+- If your contribution is a translation, add a (relative) link to the README above the [Table of Contents](README.md#table-of-contents).
