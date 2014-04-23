@@ -560,7 +560,7 @@ Some use-cases for this (that make sense), include:
  - Annotating the start of a new bulk of work or a new feature.
  - Documenting when you make changes to the project that aren't code related.
  - Communicating with people using your repository.
- - As the first commit of a repo as the first commit cannot be rebased later. `git commit -m "init repo" --allow-empty`
+ - The first commit of a repo, as the first commit cannot be rebased later: `git commit -m "init repo" --allow-empty`.
 
 ### Styled Git Status
 Running:
