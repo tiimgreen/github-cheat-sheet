@@ -1,7 +1,7 @@
 # GitHub Cheat Sheet
 A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by [Zach Holman](https://github.com/holman)'s [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets)) and his [More Git and GitHub Secrets](https://vimeo.com/72955426) talk at WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
-*Read this in [Korean](README.ko.md) or [Japanese](README.ja.md).*
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md).*
 
 ## Table of Contents
  - [GitHub](#github)

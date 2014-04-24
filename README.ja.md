@@ -1,6 +1,8 @@
 # GitHubカンニング・ペーパー
 これはGitやGitHubの隠された機能やよく知られていない機能の一覧だ。[Zach Holman](https://github.com/holman)によるAloha Ruby Conference 2012での[Git and GitHub Secrets](https://github.com/tiimgreen/github-cheat-sheet)（[スライド](https://github.com/tiimgreen/github-cheat-sheet)）とWDCNZ 2013での[More Git and GitHub Secrets](https://vimeo.com/72955426)（[スライド](https://speakerdeck.com/holman/more-git-and-github-secrets)）の二つのトークを元にしている。
 
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md).*
+
 # 目次
 - [GitHub](#github)
   - [空白の無視](#%E7%A9%BA%E7%99%BD%E3%81%AE%E7%84%A1%E8%A6%96)
