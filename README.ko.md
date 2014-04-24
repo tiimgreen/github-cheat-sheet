@@ -2,6 +2,8 @@
 
 A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by [Zach Holman](https://github.com/holman)'s [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets)) and his [More Git and GitHub Secrets](https://vimeo.com/72955426) talk at WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
+*Read this in other languages: [English](README.md) [한국어](README.ko.md) or [日本語](README.ja.md).*
+
 # 목록
 
  - [GitHub](#github)
@@ -75,7 +77,7 @@ diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값�
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
 그리고 `?ts=4`를 붙인 [다음에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) 이렇게 됩니다.
-
+ --allow-empty
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
@@ -220,12 +222,12 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 어떤 커밋이 이슈를 고쳤다면, `fix/fixes/fixed`, `close/closes/closed`, `resolve/resolves/resolved`를 키워드로 해당 이슈가 마스터 브랜치에 커밋 될 때 닫을 수 있습니다.
 
 ```bash
-$ git commit -m "Fix cock up, fixes #12"
+$ git commit -m "Fix screwup, fixes #12"
 ```
 
 이렇게 하면 이슈를 닫고 클로징 커맨트로 참조하게 합니다.
 
-![Closing Repo](http://i.imgur.com/URXFprQ.png)
+![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
 
 [*커밋 메세지로 이슈 닫기에 대해 더 읽어 보세요.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
@@ -612,6 +614,7 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 한 뭉치의 일을 시작하기 전에 주석으로 사용
  - 코드와 관련없는 프로젝트 수정을 할때 주석으로 사용
  - 저장소를 사용하는 사람과의 대화
+ - 나중에 리베이스하지 않을 저장소의 첫 커밋으로 사용 `git commit -m "init repo" --allow-empty`.
 
 ### Styled Git Status
 
