@@ -1,4 +1,3 @@
-# Git・Githubに隠された便利な機能 | GitHub Cheat Sheet（日本語訳）
 # GitHub Cheat Sheet（日本語訳）
 
 ## 日本語翻訳に関するノート 
