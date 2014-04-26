@@ -1,3 +1,4 @@
+# Git・Githubに隠された便利な機能 | GitHub Cheat Sheet（日本語訳）
 # GitHub Cheat Sheet（日本語訳）
 
 ## 日本語翻訳に関するノート 
@@ -206,7 +207,7 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 ### コミットメッセージによるissueのクローズ
 
 もしある issue を解決した際に、`fix/fixes/fixed`
-、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキワードをcommitメッセージがmasterブランチにコミットされることでそのissueを閉じることができます
+、`close/closes/closed`、`resolve/resolves/resolved`とそのissueの番号などのキーワードのcommitメッセージがmasterブランチにコミットされることでそのissueを閉じることができます
 
 
 ```bash
@@ -528,7 +529,7 @@ $ git stripspace < README.md
 [*Git `stripspace` に関してのより詳しい内容はこちらを参照してください。*](http://git-scm.com/docs/git-stripspace)
 
 ### プルリクエストをチェックアウト
-プルリクエストをローカルにチャックアウトするシたい場合に、以下のコマンドを使ってフェッチすることがきます：
+プルリクエストをローカルにチェックアウトしたい場合に、以下のコマンドを使ってフェッチすることがきます：
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/pull/*'
@@ -545,7 +546,7 @@ $ git checkout refs/pull/42
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-そしてこのようにチャックアウトします：
+そしてこのようにチェックアウトします：
 
 ```bash
 $ git checkout origin/pr/42
@@ -576,7 +577,7 @@ $ git commit -m "Big-ass commit" --allow-empty
 
 例えば、以下のようなときに使います：
 
- - 新しい機能の追加などの始まりを明確かさせるために
+ - 新しい機能の追加などの始まりを明確にするために
  - コードに関係ないドキュメントの変化をした場合
  - レポジトリ上でのコミュニケーションをするために
 
