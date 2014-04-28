@@ -344,14 +344,14 @@ In full Markdown documents **read-only** checklists can now be added using the f
 
 ```
 - [ ] Mercury
-- [ ] Venus
+- [x] Venus
 - [x] Earth
 - [x] Mars
 - [ ] Jupiter
 ```
 
 - [ ] Mercury
-- [ ] Venus
+- [x] Venus
 - [x] Earth
 - [x] Mars
 - [ ] Jupiter
