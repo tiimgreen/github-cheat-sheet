@@ -25,6 +25,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Quick Quoting](#quick-quoting)
   - [Quick Licensing](#quick-licensing)
   - [Task Lists](#task-lists)
+    - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
@@ -337,6 +338,25 @@ When they are clicked, they will be updated in the pure Markdown:
 ```
 
 [*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+
+### Task Lists in Markdown Documents
+In full Markdown documents **read-only** checklists can now be added using the following syntax:
+
+```
+- [ ] Mercury
+- [ ] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+```
+
+- [ ] Mercury
+- [ ] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+
+[*Read more about task lists in markdown documents.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
 ### Relative Links
 Relative links are recommended in your Markdown files when linking to internal content.
