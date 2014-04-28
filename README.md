@@ -339,7 +339,7 @@ When they are clicked, they will be updated in the pure Markdown:
 
 [*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
 
-### Task Lists in Markdown Documents
+#### Task Lists in Markdown Documents
 In full Markdown documents **read-only** checklists can now be added using the following syntax:
 
 ```
