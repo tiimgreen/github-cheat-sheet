@@ -27,6 +27,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Quick Quoting](#quick-quoting)
   - [Quick Licensing](#quick-licensing)
   - [Task Lists](#task-lists)
+    - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
   - [Relative Links](#relative-links)
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
@@ -366,6 +367,25 @@ puts table.to_s
 
 [*테스크 리스트에 대해 더 읽어 보세요.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
 
+#### Task Lists in Markdown Documents
+이제 마크다운 문서에서 **읽기 전용** 체크리스트를 넣을 수 있습니다.
+
+```
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+```
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+
+[*마크다운 문서에서의 테스크 리스트에 대해 더 읽어 보세요.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+
 ### Relative Links
 
 상대 경로 링크는 마크다운 파일이 내부 건탠츠로 링크될 때 추천합니다.
@@ -636,11 +656,15 @@ $ git status -sb
 
 ### Styled Git Log
 
+이 명령을 실행하면
+
 ```bash
-$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/R2z8l7c.png)
+이렇게 보입니다.
+
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
 
 [Palesz](http://stackoverflow.com/users/88355/palesz)님 고맙습니다.
 
@@ -802,6 +826,7 @@ $ git config --global color.ui 1
 | Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
+| GitHub Training Kit | http://training.github.com/kit |
 
 #### Git Books
 
