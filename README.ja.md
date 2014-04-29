@@ -25,6 +25,7 @@
   - [素早く引用](#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8)
   - [設定済みライセンスの追加](#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0)
   - [タスクリスト](#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
+    - [Markdownファイルでのタスクリスト](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
   - [相対リンク](#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF)
   - [GitHub Pagesでのメタデータとプラグインのサポート](#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88)
   - [文書内のYAMLメタデータ](#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF)
@@ -337,6 +338,25 @@ GitHub上でリポジトリを作成する時、あらかじめ設定されて�
 
 [*タスク・リストについてもっと詳しく*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
 
+#### Markdownファイルでのタスクリスト
+通常のMarkdownファイルでも**読み取り専用**のチェックリストを以下のような記法で追加することができる:
+
+```
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+```
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+
+[*Markdownファイルでのタスクリストについてもっと詳しく*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+
 ### 相対リンク
 Markdownファイルでリポジトリ内のコンテンツへ張る場合、相対リンクを利用することが推奨されている。
 
@@ -592,12 +612,12 @@ $ git status -sb
 以下のように実行すると:
 
 ```bash
-$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+$ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
 このように表示される:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/R2z8l7c.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
 
 この設定は[Palesz](http://stackoverflow.com/users/88355/palesz)が考えたものだ。
 
