@@ -131,7 +131,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 ### Compare Branches across Forked Repositories
 
-想要对派生仓库Forked Repository）之间的分支进行比较，可以像下面这样修改URL实现：
+想要对派生仓库（Forked Repository）之间的分支进行比较，可以像下面这样修改URL实现：
 
 ```
 https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
@@ -186,10 +186,10 @@ Location: https://github.com/...
 
 在仓库主页上提供了快捷键方便快速导航。
 
- - 按 `t` 键会打开一个文件浏览器。 Pressing `t` will bring up a file explorer.
- - 按 `w` 键会打开分支选择菜单。 Pressing `w` will bring up the branch selector.
- - 按 `s` 键会激活顶端的命令栏  (Command Bar)。Pressing `s` will select the Command Bar.
- - 按 `l` 键编辑Issue列表页的标签。 Pressing `l` will edit labels on existing Issues.
+ - 按 `t` 键会打开一个文件浏览器。
+ - 按 `w` 键会打开分支选择菜单。
+ - 按 `s` 键会激活顶端的命令栏  (Command Bar)。
+ - 按 `l` 键编辑Issue列表页的标签。
  - **查看文件内容时**（如：`https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`），按 `y` 键将会冻结这个页面，这样就算代码被修改了也不会影响你当前看到的。
 
 按`?`查看当前页面支持的快捷键列表：
