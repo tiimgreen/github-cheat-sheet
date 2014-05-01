@@ -227,7 +227,7 @@ $ git commit -m "Fix screwup, fixes #12"
 ### プルリクエストでのCI結果の表示
 適切に設定を行えばプルリクエストを受け取るたびに、通常のコミットと同じように[Travis CI](https://travis-ci.org/)がそのプルリクエストをビルドするだろう。どう設定するかは[Travis CI: Getting started](http://docs.travis-ci.com/user/getting-started/)を読むと良い。
 
-[![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
+[![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*コミット・ステータスAPIについてもっと詳しく*](https://github.com/blog/1227-commit-status-api)
 

@@ -244,7 +244,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 정확히 설정되었다면, 풀 리퀘스트를 받거나 풀 리퀘스트에 새로운 커밋을 할 때 마다, [Travis CI](https://travis-ci.org/)가 풀 리퀘스트를 빌드 할 것입니다. [Travis CI 시작하기](http://docs.travis-ci.com/user/getting-started/)를 좀 더 읽어보세요.
 
-[![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
+[![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*커밋 상태 API에 대해 좀 더 읽어보세요.*](https://github.com/blog/1227-commit-status-api)
 
