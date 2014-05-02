@@ -234,7 +234,7 @@ $ git commit -m "Fix screwup, fixes #12"
 ### CI Status on Pull Requests
 如果配置正确，[Travis CI](https://travis-ci.org/)会为每个你收到的Pull Request执行构建，就像每次提交也会触发构建一样。想了解更多关于Travis CI的信息，请看 [Travis CI入门](http://docs.travis-ci.com/user/getting-started/)。
 
-[![Travic CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
+[![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*进一步了解 Commit status API.*](https://github.com/blog/1227-commit-status-api)
 
