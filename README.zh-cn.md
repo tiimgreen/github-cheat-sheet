@@ -44,17 +44,17 @@
   - [Stripspace命令](#stripspace)
   - [检出Pull Requests](#checking-out-pull-requests)
   - [提交空改动 :trollface:](#empty-commits-trollface)
-  - [Styled Git Status](#styled-git-status)
-  - [Styled Git Log](#styled-git-log)
-  - [Git Query](#git-query)
-  - [Merged Branches](#merged-branches)
-  - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
-  - [Git Configurations](#git-configurations)
-    - [Aliases](#aliases)
-    - [Auto-Correct](#auto-correct)
-    - [Color](#color)
-  - [Git Resources](#git-resources)
-    - [Git Books](#git-books)
+  - [更直观的Git Status](#styled-git-status)
+  - [更直观的Git Log](#styled-git-log)
+  - [Git查询](#git-query)
+  - [合并分支](#merged-branches)
+  - [使用网页查看本地仓库](#web-server-for-browsing-local-repositories)
+  - [Git配置](#git-configurations)
+    - [Git命令自定义别名](#aliases)
+    - [自动更正](#auto-correct)
+    - [带颜色输出](#color)
+  - [Git资源](#git-resources)
+    - [Git参考书籍](#git-books)
 
 ## GitHub
 ### 忽略空白字符变化
@@ -731,7 +731,7 @@ $ git comit -m "Message"
 # in 0.1 seconds automatically...
 ```
 
-#### 带颜色输入
+#### 带颜色输出
 要在你的Git命令输出里加上颜色的话，可以用如下命令：
 
 ```bash
