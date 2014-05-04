@@ -5,7 +5,7 @@
 
 # 目录
  - [GitHub](#github)
-  - [忽略空白字符变化](#ignore-whitespace)
+  - [忽略空白字符变化](#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0)
   - [调整Tab字符所代表的空格数](#adjust-tab-space)
   - [查看某个用户的Commit历史](#commit-history-by-author)
   - [克隆某个仓库](#cloning-a-repository)
