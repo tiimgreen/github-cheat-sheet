@@ -5,45 +5,45 @@
 
 # 目录
  - [GitHub](#github)
-  - [Ignore Whitespace](#ignore-whitespace)
-  - [Adjust Tab Space](#adjust-tab-space)
-  - [Commit History by Author](#commit-history-by-author)
-  - [Cloning a Repository](#cloning-a-repository)
-  - [Comparing Branches](#comparing-branches)
-  - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+  - [忽略空白字符变化](#ignore-whitespace)
+  - [调整Tab字符所代表的空格数](#adjust-tab-space)
+  - [查看某个用户的Commit历史](#commit-history-by-author)
+  - [克隆某个仓库](#cloning-a-repository)
+  - [比较分支](#comparing-branches)
+  - [比较不同派生库的分支](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
   - [Git.io](#gitio)
-  - [Keyboard Shortcuts](#keyboard-shortcuts)
-  - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
-  - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
-  - [Cross-Link Issues](#cross-link-issues)
-  - [CI Status on Pull Requests](#ci-status-on-pull-requests)
-  - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
-  - [Emojis](#emojis)
-  - [Images/GIFs](#imagesgifs)
-    - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
-  - [Quick Quoting](#quick-quoting)
-  - [Quick Licensing](#quick-licensing)
-  - [Task Lists](#task-lists)
-  - [Relative Links](#relative-links)
-  - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
-  - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
-  - [Rendering Tabular Data](#rendering-tabular-data)
+  - [键盘快捷键](#keyboard-shortcuts)
+  - [整行高亮](#line-highlighting-in-repositories)
+  - [用commit信息关闭Issue](#closing-issues-via-commit-messages)
+  - [链接其他仓库的Issue](#cross-link-issues)
+  - [设置CI对每条Pull Request都进行构建](#ci-status-on-pull-requests)
+  - [Markdown文件高亮语法](#syntax-highlighting-in-markdown-files)
+  - [表情符](#emojis)
+  - [静态与动态图片](#imagesgifs)
+    - [在GitHub Wiki中嵌入图片](#embedding-images-in-github-wiki)
+  - [快速引用](#quick-quoting)
+  - [快速添加许可证](#quick-licensing)
+  - [任务列表](#task-lists)
+  - [相对链接](#relative-links)
+  - [GitHub Pages的元数据与插件支持](#metadata-and-plugin-support-for-github-pages)
+  - [查看YAML格式的元数据](#viewing-yaml-metadata-in-your-documents)
+  - [渲染表格数据](#rendering-tabular-data)
   - [Diffs](#diffs)
-    - [Rendered prose Diffs](#rendered-prose-diffs)
-    - [Diffable Maps](#diffable-maps)
-    - [Expanding Context in Diffs](#expanding-context-in-diffs)
-    - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
+    - [可渲染文档的Diffs](#rendered-prose-diffs)
+    - [可变化地图](#diffable-maps)
+    - [在diff中折叠与扩展代码](#expanding-context-in-diffs)
+    - [查看Pull Request的diff和patch](#diff-or-patch-of-pull-request)
   - [Hub](#hub)
-  - [Decreasing Contributor Friction](#decreasing-contributor-friction)
-  - [Contributing Guidelines](#contributing-guidelines)
-  - [GitHub Resources](#github-resources)
-    - [GitHub Talks](#github-talks)
+  - [贡献内容的自动检查](#decreasing-contributor-friction)
+  - [贡献者指南](#contributing-guidelines)
+  - [GitHub资源](#github-resources)
+    - [GitHub讨论](#github-talks)
  - [Git](#git)
-  - [Previous Branch](#previous-branch)
-  - [Stripspace](#stripspace)
-  - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [Empty Commits :trollface:](#empty-commits-trollface)
+  - [前一个分支](#previous-branch)
+  - [Stripspace命令](#stripspace)
+  - [检出Pull Requests](#checking-out-pull-requests)
+  - [提交空改动 :trollface:](#empty-commits-trollface)
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
@@ -57,7 +57,7 @@
     - [Git Books](#git-books)
 
 ## GitHub
-### Ignore Whitespace
+### 忽略空白字符变化
 
 在任意diff页面的URL后加上`?w=1`，可以去掉那些只是空白字符的变化，使你能更专注于代码的变化。
 
@@ -65,7 +65,7 @@
 
 [*详见 GitHub secrets.*](https://github.com/blog/967-github-secrets)
 
-### Adjust Tab Space
+### 调整Tab字符所代表的空格数
 在diff或者file页面的URL后面加上`?ts=4`，这样当显示tab字符的长度时就会是4个空格的长度，不再是默认的8个空格。`ts`后面的数字还可以根据你个人的偏好进行修改。不过，这个小诀窍在Gists页面和raw file页面不起作用。
 
 下面是我们在Go语言的source file页面URL后加`?ts=4`[前](https://github.com/pengwynn/flint/blob/master/flint/flint.go)的例子：
@@ -76,7 +76,7 @@
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
-### Commit History by Author
+### 查看某个用户的Commit历史
 查看某个用户的所有提交历史，只需在commits页面URL后加上`?author=username`。
 
 ```
@@ -87,7 +87,7 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 [*深入了解提交视图之间的区别*](https://help.github.com/articles/differences-between-commit-views)
 
-### Cloning Repository
+### 克隆某个仓库
 当我们克隆某一资源时，可以不要那个`.git`后缀。
 
 ```bash
@@ -96,7 +96,7 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*更多对 Git `clone` 命令的介绍.*](http://git-scm.com/docs/git-clone)
 
-### Comparing Branches
+### 比较分支
 
 如果我们想要比较两个分支，可以像下面一样修改URL：
 
@@ -129,7 +129,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 [*了解更多关于比较跨时间段的提交记录.*](https://help.github.com/articles/comparing-commits-across-time)
 
-### Compare Branches across Forked Repositories
+### 比较不同派生库的分支
 
 想要对派生仓库（Forked Repository）之间的分支进行比较，可以像下面这样修改URL实现：
 
@@ -182,7 +182,7 @@ Location: https://github.com/...
 
 [*进一步了解 Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
-### Keyboard Shortcuts
+### 键盘快捷键
 
 在仓库主页上提供了快捷键方便快速导航。
 
@@ -198,7 +198,7 @@ Location: https://github.com/...
 
 [*进一步了解如何使用 Command Bar.*](https://help.github.com/articles/using-the-command-bar)
 
-### Line Highlighting in Repositories
+### 整行高亮
 
 在代码文件地址后加上`#L52`或者单击行号52都会将第52行代码高亮显示。
 
@@ -208,9 +208,9 @@ Location: https://github.com/...
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
 ```
 
-![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+![整行高亮](http://i.imgur.com/8AhjrCz.png)
 
-### Closing Issues via Commit Messages
+### 用commit信息关闭Issue
 
 如果某个提交修复了一个Issue，当提交到master分支时，提交信息里可以使用`fix/fixes/fixed`, `close/closes/closed` 或者 `resolve/resolves/resolved`等关键词，后面再跟上Issue号，这样就会关闭这个Issue。
 
@@ -224,21 +224,21 @@ $ git commit -m "Fix screwup, fixes #12"
 
 [*进一步了解通过提交信息关闭Issue.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
-### Cross-Link Issues
+### 链接其他仓库的Issue
 如果你想引用到同一个仓库中的一个Issue，只需使用井号 `#` 加上Issue号，这样就会自动创建到此Issue的链接。
 
 要链接到其他仓库的Issue，就使用`user_name/repo_name#ISSUE_NUMBER`的方式，例如`tiimgreen/toc#12`。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
-### CI Status on Pull Requests
+### 设置CI对每条Pull Request都进行构建
 如果配置正确，[Travis CI](https://travis-ci.org/)会为每个你收到的Pull Request执行构建，就像每次提交也会触发构建一样。想了解更多关于Travis CI的信息，请看 [Travis CI入门](http://docs.travis-ci.com/user/getting-started/)。
 
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*进一步了解 Commit status API.*](https://github.com/blog/1227-commit-status-api)
 
-### Syntax Highlighting in Markdown Files
+### Markdown文件高亮语法
 例如，可以像下面这样在你的Markdown文件里为Ruby代码添加语法高亮：
 
     ```ruby
@@ -261,7 +261,7 @@ Github使用 [Linguist](https://github.com/github/linguist) 做语言识别和�
 
 [*进一步了解 GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
-### Emojis
+### 表情符
 
 可以在Pull Requests, Issues, 提交消息, Markdown文件里加入表情符。使用方法`:name_of_emoji:`
 
@@ -282,7 +282,7 @@ Github上使用最多的5个表情符号是：
 4. :+1: - `:+1:`
 5. :clap: - `:clap:`
 
-### Images/GIFS
+### 静态与动态图片
 注释和README等文件里也可以使用图片和GIF动画：
 
 ```
@@ -293,7 +293,7 @@ Github上使用最多的5个表情符号是：
 
 所有图片都缓存在Gitub，不用担心你的站点不能访问时就看不到图片了。
 
-#### Embedding Images in GitHub Wiki
+#### 在GitHub Wiki中嵌入图片
 有多种方法可以在Wiki页面里嵌入图片。既可以像上一条里那样使用标准的Markdown语法，也可以像下面这样指定图片的高度或宽度：
 
 ```markdown
@@ -303,14 +303,14 @@ Github上使用最多的5个表情符号是：
 
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
-### Quick Quoting
+### 快速引用
 在注释话题里引用之前某个人所说的，只需选中文本，然后按 `r`键，想要的就会以引用的形式复制到你的输入框里。
 
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
 [*进一步了解快速引用.*](https://github.com/blog/1399-quick-quotes)
 
-### Quick Licensing
+### 快速添加许可证
 创建一个仓库时，Github会为你提供一个预置的软件许可列表：
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
@@ -323,7 +323,7 @@ Github上使用最多的5个表情符号是：
 
 [*进一步了解 open source licensing.*](https://help.github.com/articles/open-source-licensing)
 
-### Task Lists
+### 任务列表
 Issues和Pull requests里可以添加复选框，语法如下（注意空白符）：
 
 ```
@@ -344,7 +344,7 @@ Issues和Pull requests里可以添加复选框，语法如下（注意空白符�
 
 [*进一步了解任务列表.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
 
-### Relative Links
+### 相对链接
 Markdown文件里链接到内部内容时推荐使用相对链接。
 
 ```markdown
@@ -355,21 +355,21 @@ Markdown文件里链接到内部内容时推荐使用相对链接。
 
 [*进一步了解相对链接.*](https://help.github.com/articles/relative-links-in-readmes)
 
-### Metadata and Plugin Support for GitHub Pages
+### GitHub Pages的元数据与插件支持
 在Jekyll页面和文章里，仓库信息可在 `site.github` 命名空间下找到，也可以显示出来，例如，使用 `{{ site.github.project_title }}`显示项目标题。
 
 Jemoji和jekyll-mentions插件为你的Jekyll文章和页面增加了[emoji](#emojis)和[@mentions](https://github.com/blog/821)功能。
 
 [*了解更多 GitHub Pages的元数据和插件支持.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
-### Viewing YAML Metadata in your Documents
+### 查看YAML格式的元数据
 许多博客站点，比如基于[Jekyll](http://jekyllrb.com/)的[GitHub Pages](http://pages.github.com/)，都依赖于一些文章头部的YAML格式的元数据。Github会将其渲染成一个水平表格，方便阅读。
 
 ![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
 
 [*进一步了解 在文档里查看YAML元数据.*](https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents)
 
-### Rendering Tabular Data
+### 渲染表格数据
 
 GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染成表格数据。
 
@@ -378,7 +378,7 @@ GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染�
 [*进一步了解渲染表格数据.*](https://github.com/blog/1601-see-your-csvs)
 
 ### Diffs
-#### Rendered prose Diffs
+#### 可渲染文档的Diffs
 
 提交和Pull Requests里包含有Github支持的可渲染文档（比如Markdown）会提供*source* 和 *rendered* 两个视图功能。
 
@@ -390,21 +390,21 @@ GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染�
 
 [*进一步了解渲染纯文本视图Diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
-#### Diffable Maps
+#### 可变化地图
 当你在GitHub上查看一个包含地理数据的提交或pull request时，Github可以显示数据变动的视觉表示。
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
 [*进一步了解可比较地图.*](https://github.com/blog/1772-diffable-more-customizable-maps)
 
-#### Expanding Context in Diffs
+#### 在diff中折叠与扩展代码
 你可以通过点击diff边栏里的 *unfold* 按钮来多显示几行上下文。你可以一直点击 *unfold* 按钮直到显示了文件的全部内容。这个功能在所有GitHub产生的diff界面都可以使用。
 
 ![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
 
 [*进一步了解扩展Diff上下文.*](https://github.com/blog/1705-expanding-context-in-diffs)
 
-#### Diff or Patch of Pull Request
+#### 查看Pull Request的diff和patch
 在Pull Request的URL后面加上 `.diff` 或 `.patch` 的扩展名就可以得到它的diff或patch文件，例如：
 
 ```
@@ -444,7 +444,7 @@ $ hub clone tiimgreen/toc
 
 [*查看更多Hub提供的超酷命令.*](https://github.com/github/hub#commands)
 
-### Decreasing Contributor Friction
+### 贡献内容的自动检查
 假设你想人们使用你的项目并给你的项目做出贡献，你往往需要回答他们常见问题。这个项目是干什么用的？我如何使用它？允许我怎样使用？我如何为项目出力？我怎样配置开发环境？我怎么能保证新功能不会破坏已有的功能？
 
 [Friction](https://github.com/rafalchmiel/friction)是一个命令行脚本，用来检查你的项目是否[回答了这些问题](https://github.com/rafalchmiel/friction/wiki)。下面是示例输出：
@@ -453,7 +453,7 @@ $ hub clone tiimgreen/toc
 
 *Friction 支持 MRI 2.1.0, MRI 2.0.0 和 MRI 1.9.3.*
 
-### Contributing Guidelines
+### 贡献者指南
 
 在你的仓库的根目录添加一个名为 `CONTRIBUTING` 的文件后，贡献者在新建Issue或Pull Request时会看到这个文件的链接。
 
@@ -461,7 +461,7 @@ $ hub clone tiimgreen/toc
 
 [*进一步了解贡献者指南.*](https://github.com/blog/1184-contributing-guidelines)
 
-### GitHub Resources
+### GitHub资源
 | Title | Link |
 | ----- | ---- |
 | GitHub Explore | https://github.com/explore |
@@ -470,7 +470,7 @@ $ hub clone tiimgreen/toc
 | GitHub Training | http://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 
-#### Github Talks
+#### GitHub讨论
 | Title | Link |
 | ----- | ---- |
 | How GitHub Uses GitHub to Build GitHub | https://www.youtube.com/watch?v=qyz3jkOBbQY |
@@ -480,7 +480,7 @@ $ hub clone tiimgreen/toc
 | More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
-### Previous Branch
+### 前一个分支
 快速检出上一个分支：
 
 ```bash
@@ -496,7 +496,7 @@ $ git checkout -
 
 [*进一步了解 Git 分支.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
-### Stripspace
+### Stripspace命令
 
 Git Stripspace命令可以:
 
@@ -512,7 +512,7 @@ $ git stripspace < README.md
 
 [*进一步了解 Git `stripspace` 命令.*](http://git-scm.com/docs/git-stripspace)
 
-### Checking out Pull Requests
+### 检出Pull Requests
 如果想检出pull requests到本地，可以先用下面的fetch命令：
 
 ```bash
@@ -554,7 +554,7 @@ $ git checkout origin/pr/42
 
 [*进一步了解如何检出pull request到本地.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### Empty Commits :trollface: 
+### 提交空改动 :trollface: 
 可以使用`--allow-empty`选项强制创建一个没有任何改动的提交：
 
 ```bash
@@ -568,7 +568,7 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 跟使用你仓库的其他人交流。
  - 作为仓库的第一次提交，因为第一次提交日后是不能被rebase的： `git commit -m "init repo" --allow-empty`.
 
-### Styled Git Status
+### 更直观的Git Status
 在命令行输入如下命令:
 
 ```bash
@@ -591,7 +591,7 @@ $ git status -sb
 
 [*进一步了解 Git `status` 命令.*](http://git-scm.com/docs/git-status)
 
-### Styled Git Log
+### 更直观的Git Log
 输入如下命令:
 
 ```bash
@@ -608,7 +608,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
 
 [*进一步了解 Git `log` 命令.*](http://git-scm.com/docs/git-log)
 
-### Git Query
+### Git查询
 Git查询运行你在之前的所有提交信息里进行搜索，找到其中和搜索条件相匹配的最近的一条。
 
 ```bash
@@ -624,7 +624,7 @@ $ git show :/typo
 
 * 按 `q` 键退出命令。*
 
-### Merged Branches
+### 合并分支
 输入命令:
 
 ```bash
@@ -643,7 +643,7 @@ $ git branch --no-merged
 
 [*进一步了解 Git `branch` 命令.*](http://git-scm.com/docs/git-branch)
 
-### Web Server for Browsing Local Repositories
+### 使用网页查看本地仓库
 使用Git的 `instaweb` 可以立即在 `gitweb`中浏览你的工作仓库。这个命令是个简单的脚步，配置了`gitweb`和用来浏览本地仓库的Web服务器。*（译者注：默认需要lighttpd支持）*
 
 ```bash
@@ -656,10 +656,10 @@ $ git instaweb
 
 [*进一步了解 Git `instaweb` 命令.*](http://git-scm.com/docs/git-instaweb)
 
-### Git Configurations
+### Git配置
 所有Git配置都保存在你的`.gitconfig` 文件中。
 
-#### Aliases
+#### Git命令自定义别名
 别名用来帮助你定义自己的git命令。比如你可以定义 `git a` 来运行 `git add --all`。
 
 要添加一个别名， 一种方法是打开 `~/.gitconfig` 文件并添加如下内容：
@@ -705,7 +705,7 @@ $ git config --global alias.ac 'add -A . && commit'
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
-#### Auto-Correct
+#### 自动更正
 如果键入 `git comit` 你会看到如下输出：
 
 ```bash
@@ -731,7 +731,7 @@ $ git comit -m "Message"
 # in 0.1 seconds automatically...
 ```
 
-#### Color
+#### 带颜色输入
 要在你的Git命令输出里加上颜色的话，可以用如下命令：
 
 ```bash
@@ -740,7 +740,7 @@ $ git config --global color.ui 1
 
 [*进一步了解 Git `config` 命令.*](http://git-scm.com/docs/git-config)
 
-### Git Resources
+### Git资源
 | Title | Link |
 | ----- | ---- |
 | Official Git Site | http://git-scm.com/ |
@@ -755,7 +755,7 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 
-#### Git Books
+#### Git参考书籍
 | Title | Link |
 | ----- | ---- |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
