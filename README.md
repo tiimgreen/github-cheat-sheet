@@ -719,6 +719,8 @@ Some useful aliases include:
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 
+*Some Aliases are taken from [@mathiasbynens](https://github.com/mathiasbynens) dotfiles: https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*
+
 #### Auto-Correct
 If you type `git comit` you will get this:
 
