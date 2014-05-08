@@ -319,7 +319,7 @@ Github上使用最多的5个表情符号是：
 
 ![License](http://i.imgur.com/fTjQict.png)
 
-这个技巧也使用于 `.gitignore` 文件。
+这个技巧也适用于 `.gitignore` 文件。
 
 [*进一步了解 open source licensing.*](https://help.github.com/articles/open-source-licensing)
 
