@@ -11,6 +11,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
+  - [Compare all branches to another branch](#compare-all-branches-to-another-branch)
   - [Comparing Branches](#comparing-branches)
   - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
@@ -97,6 +98,34 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
 [*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
+
+### Compare all branches to another branch
+
+If you go to (click the branches link next to commits):
+
+```
+https://github.com/{user}/{repo}/branches
+```
+
+You would see a list of all branches which are not merged into the main branch (e.g. `master`).
+
+You could go to the compare page or delete a branch with a click of a button.
+
+![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
+
+However often you need to compare branches to a branch other than `master` (e.g. `development`). Just append the name of the branch to the URL like so:
+
+```
+https://github.com/{user}/{repo}/branches/{branch}
+```
+
+![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
+
+If you want to see the merged branches you need to append `?merged=1` to the URL. There is a link of that on top.
+
+![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
+
+This view is very nice if you want to find yout which branches to delete (and delete them right from the page) right on GitHub.com.
 
 ### Comparing Branches
 To use GitHub to compare branches, change the URL to look like this:
