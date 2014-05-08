@@ -101,19 +101,19 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 ### Compare all Branches to Another Branch
 
-If you go to (click the branches link next to commits):
+If you go to the repo's [Branches](https://github.com/tiimgreen/github-cheat-sheet/branches) page, next to the Commits button:
 
 ```
 https://github.com/{user}/{repo}/branches
 ```
 
-You would see a list of all branches which are not merged into the main branch (e.g. `master`).
+... you would see a list of all branches which are not merged into the main branch.
 
-You could go to the compare page or delete a branch with a click of a button.
+From here you can access the compare page or delete a branch with a click of a button.
 
 ![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
 
-However often you need to compare branches to a branch other than `master` (e.g. `development`). Just append the name of the branch to the URL like so:
+However, often you need to compare branches to a branch other than `master` (e.g. `development`). To do this, append the URL with the name of the branch like so:
 
 ```
 https://github.com/{user}/{repo}/branches/{branch}
@@ -121,11 +121,11 @@ https://github.com/{user}/{repo}/branches/{branch}
 
 ![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
 
-If you want to see the merged branches you need to append `?merged=1` to the URL. There is a link of that on top.
+To see the merged branches, append `?merged=1` to the URL.
 
 ![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
 
-This view is very nice if you want to find out which branches to delete (and delete them right from the page) right on GitHub.com.
+This view allows you to delete branches easily from the page, without using the command-line.
 
 ### Comparing Branches
 To use GitHub to compare branches, change the URL to look like this:
