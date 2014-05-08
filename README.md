@@ -11,7 +11,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Compare all branches to another branch](#compare-all-branches-to-another-branch)
+  - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
   - [Comparing Branches](#comparing-branches)
   - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
@@ -99,7 +99,7 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
 
-### Compare all branches to another branch
+### Compare all Branches to Another Branch
 
 If you go to (click the branches link next to commits):
 
