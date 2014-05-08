@@ -9,6 +9,7 @@
   - [タブ幅の調節](#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80)
   - [特定のユーザーによるコミット履歴](#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4)
   - [リポジトリのクローン](#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3)
+  - [全ブランチを別のブランチと比較](#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83)
   - [ブランチ同士の比較](#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83)
   - [フォークされたリポジトリ間でのブランチ比較](#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83)
   - [Gists](#gists)
@@ -95,6 +96,33 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
 [*Gitの`clone`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-clone)
+
+### 全ブランチを別のブランチと比較
+コミット一覧ボタンの隣から[ブランチ一覧](https://github.com/tiimgreen/github-cheat-sheet/branches)ページに行くと:
+
+```
+https://github.com/{user}/{repo}/branches
+```
+
+メイン・ブランチにマージされていないブランチの一覧が表示される。
+
+このページからボタンをクリックしてブランチ比較ページへ移動したりブランチを削除することができる。
+
+![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
+
+しかしながら`master`以外(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
+
+```
+https://github.com/{user}/{repo}/branches/{branch}
+```
+
+![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
+
+マージ済みのブランチを表示するには`?merged=1`をURLに追加する。
+
+![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
+
+このビューでは、コマンドラインを使うことなく簡単にページ上でブランチを削除することができるだろう。
 
 ### ブランチ同士の比較
 GitHubのブランチ比較は以下のようなURLで提供されている:
