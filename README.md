@@ -125,7 +125,7 @@ If you want to see the merged branches you need to append `?merged=1` to the URL
 
 ![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
 
-This view is very nice if you want to find yout which branches to delete (and delete them right from the page) right on GitHub.com.
+This view is very nice if you want to find out which branches to delete (and delete them right from the page) right on GitHub.com.
 
 ### Comparing Branches
 To use GitHub to compare branches, change the URL to look like this:
