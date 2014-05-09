@@ -11,6 +11,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
+  - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
   - [Comparing Branches](#comparing-branches)
   - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
@@ -102,6 +103,34 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
 [*깃 `clone` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-clone)
+
+### Compare all Branches to Another Branch
+
+저장소의 [브랜치](https://github.com/tiimgreen/github-cheat-sheet/branches) 페이지는, 커밋 버튼의 뒤에 있습니다.
+
+```
+https://github.com/{user}/{repo}/branches
+```
+
+... 메인 브랜치에 머지되지 않은 모든 브랜치의 리스트를 볼 수 있습니다.
+
+여기에서 버튼 클릭으로 비교 페이지나 브랜치 삭제를 하실 수 있습니다.
+
+![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
+
+하지만, 보통 `master`보다는 다른브랜치(예를 들어 `development`)를 더 자주 비교 합니다. 이렇게 하려면 URL에 브랜치 이름을 붙여줄 필요가 있습니다.
+
+```
+https://github.com/{user}/{repo}/branches/{branch}
+```
+
+![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
+
+머지된 브랜치들을 보려면 URL에 `?merged=1`를 붙이세요.
+
+![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
+
+이 것을 확인함으로써 커맨드 라인을 사용하지 않은 페이지에서의 브랜치 삭제가 더 쉬워집니다.
 
 ### Comparing Branches
 
