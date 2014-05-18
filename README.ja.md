@@ -557,32 +557,21 @@ $ git stripspace < README.md
 [*Gitの`stripspace`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-stripspace)
 
 ### プルリクエストのチェックアウト
-プルリクエストをローカル・リポジトリへチェックアウトするには、まず以下のようにコマンドを実行しその変更を取り込む:
+プルリクエストはGitHubのリポジトリでは特別なブランチであり、様々な方法でローカルに取り込むことができる:
+
+特定のプルリクエストを取り込み、一時的に`FETCH_HEAD`として保存すると、素早く差分を確認してマージすることが可能だ:
 
 ```bash
-$ git fetch origin '+refs/pull/*/head:refs/pull/*'
+git fetch origin refs/pull/[PR-Number]
 ```
 
-そして、プルリクエストを番号（例: 42）を指定してチェックアウトする:
-
-```bash
-$ git checkout refs/pull/42
-```
-
-別の方法としては、まずプルリクエストをリモート・ブランチとして取り込み:
+参照仕様を使うとすべてのプルリクエストをローカル・ブランチとして取り込むことができる:
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-それから番号を指定して取り込むこともできる:
-
-```bash
-$ git checkout origin/pr/42
-```
-
-またプルリクエストの取り込みは、.git/configに以下の行を追加すると自動化することができる:
-
+リポジトリの`.git/config`に以下の行を追加すれば自動的にプルリクエストを落とすようにもできるだろう:
 
 ```
 [remote "origin"]
@@ -595,6 +584,12 @@ $ git checkout origin/pr/42
     fetch = +refs/heads/*:refs/remotes/origin/*
     url = git@github.com:tiimgreen/github-cheat-sheet.git
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+```
+
+フォークされてから送られてきたプルリクエストに対しては、そのプルリクエストを参照するリモート・ブランチから直接ローカル・ブランチとしてチェックアウトすると便利だろう:
+
+```bash
+$ git checkout pr/42 pr-42
 ```
 
 [*プルリクエストのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
