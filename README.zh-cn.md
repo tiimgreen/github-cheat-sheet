@@ -513,32 +513,21 @@ $ git stripspace < README.md
 [*进一步了解 Git `stripspace` 命令.*](http://git-scm.com/docs/git-stripspace)
 
 ### 检出Pull Requests
-如果想检出pull requests到本地，可以先用下面的fetch命令：
+Pull Request是一种GitHub上可以通过以下多种方式在本地被检索的特别分支：
+
+检索某个分支并临时储存在本地的`FETCH_HEAD`中以便快速查看更改(diff)以及合并(merge)：
 
 ```bash
-$ git fetch origin '+refs/pull/*/head:refs/pull/*'
+$ git fetch origin refs/pull/[PR-Number]
 ```
 
-然后用checkout命令检查想要的Pull Request（比如42）
-
-```bash
-$ git checkout refs/pull/42
-```
-
-你也可以把它们当作远程分支来fetch：
+通过refspec获取所有的Pull Request为本地分支：
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-然后这样检出：
-
-```bash
-$ git checkout origin/pr/42
-```
-
-或者干脆在你的.git/config文件里添加如下内容，这样就可以自动获取它们了。
-
+或在仓库的`.git/config`中加入下列设置来自动获取远程仓库中的Pull Request
 ```
 [remote "origin"]
     fetch = +refs/heads/*:refs/remotes/origin/*
@@ -550,6 +539,12 @@ $ git checkout origin/pr/42
     fetch = +refs/heads/*:refs/remotes/origin/*
     url = git@github.com:tiimgreen/github-cheat-sheet.git
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+```
+
+对基于派生库的Pull Request，可以通过先`checkout`代表此Pull Request的远端分支再由此分支建立一个本地分支：
+
+```bash
+$ git checkout pr/42 pr-42
 ```
 
 [*进一步了解如何检出pull request到本地.*](https://help.github.com/articles/checking-out-pull-requests-locally)
