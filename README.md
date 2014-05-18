@@ -354,21 +354,27 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 
 ```
 - [ ] Be awesome
-- [ ] Do stuff
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/jJBXhsY.png)
 
 When they are clicked, they will be updated in the pure Markdown:
 
 ```
 - [x] Be awesome
-- [x] Do stuff
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-[*Read more about task lists.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+[*Read more about task lists.*](https://help.github.com/articles/writing-on-github#task-lists)
 
 #### Task Lists in Markdown Documents
 In full Markdown documents **read-only** checklists can now be added using the following syntax:
@@ -377,15 +383,19 @@ In full Markdown documents **read-only** checklists can now be added using the f
 - [ ] Mercury
 - [x] Venus
 - [x] Earth
+  - [x] Moon
 - [x] Mars
-- [ ] Jupiter
+  - [ ] Deimos
+  - [ ] Phobos
 ```
 
 - [ ] Mercury
 - [x] Venus
 - [x] Earth
+  - [x] Moon
 - [x] Mars
-- [ ] Jupiter
+  - [ ] Deimos
+  - [ ] Phobos
 
 [*Read more about task lists in markdown documents.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
