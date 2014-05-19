@@ -573,7 +573,7 @@ Pull Requests are special branches on the GitHub repository which can be retriev
 Retrieve a specific Pull Request and store it temporarily in `FETCH_HEAD` for quickly `diff`ing or `merge`ing:
 
 ```bash
-$ git fetch origin refs/pull/[PR-Number]
+$ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 Acquire all Pull Request branches as local remote branches by refspec:

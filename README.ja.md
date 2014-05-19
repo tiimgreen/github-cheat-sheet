@@ -568,7 +568,7 @@ $ git stripspace < README.md
 特定のプルリクエストを取り込み、一時的に`FETCH_HEAD`として保存すると、素早く差分を確認してマージすることが可能だ:
 
 ```bash
-$ git fetch origin refs/pull/[PR-Number]
+$ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 参照仕様を使うとすべてのプルリクエストをローカル・ブランチとして取り込むことができる:

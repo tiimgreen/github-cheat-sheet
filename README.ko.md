@@ -624,7 +624,7 @@ $ git stripspace < README.md
 가져오려면 이렇게 합니다.
 
 ```bash
-$ git fetch origin refs/pull/[PR-Number]
+$ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 모든 풀 리퀘스트 브랜치를 refspec에 의한 로컬 리모트 브랜치로 받을 수도

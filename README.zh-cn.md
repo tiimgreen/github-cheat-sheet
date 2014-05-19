@@ -524,7 +524,7 @@ Pull Request是一种GitHub上可以通过以下多种方式在本地被检索�
 检索某个分支并临时储存在本地的`FETCH_HEAD`中以便快速查看更改(diff)以及合并(merge)：
 
 ```bash
-$ git fetch origin refs/pull/[PR-Number]
+$ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 通过refspec获取所有的Pull Request为本地分支：
