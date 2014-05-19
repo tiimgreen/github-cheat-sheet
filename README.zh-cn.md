@@ -328,21 +328,27 @@ Issues和Pull requests里可以添加复选框，语法如下（注意空白符�
 
 ```
 - [ ] Be awesome
-- [ ] Do stuff
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/jJBXhsY.png)
 
 当项目被选中时，它对应的Markdown源码也被更新了：
 
 ```
 - [x] Be awesome
-- [x] Do stuff
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-[*进一步了解任务列表.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+[*进一步了解任务列表.*](https://help.github.com/articles/writing-on-github#task-lists)
 
 ### 相对链接
 Markdown文件里链接到内部内容时推荐使用相对链接。

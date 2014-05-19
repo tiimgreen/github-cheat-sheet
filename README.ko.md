@@ -382,21 +382,27 @@ puts table.to_s
 
 ```
 - [ ] Be awesome
-- [ ] Do stuff
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/jJBXhsY.png)
 
 체크박스가 클릭 되면, 순수 마크다운에서 갱신이 이루어집니다.
 
 ```
 - [x] Be awesome
-- [x] Do stuff
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-[*테스크 리스트에 대해 더 읽어 보세요.*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+[*테스크 리스트에 대해 더 읽어 보세요.*](https://help.github.com/articles/writing-on-github#task-lists)
 
 #### Task Lists in Markdown Documents
 이제 마크다운 문서에서 **읽기 전용** 체크리스트를 넣을 수 있습니다.

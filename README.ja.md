@@ -350,21 +350,27 @@ GitHub上でリポジトリを作成する時、あらかじめ設定されて�
 
 ```
 - [ ] Be awesome
-- [ ] Do stuff
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/k2qZi56.png)
+![Task List](http://i.imgur.com/jJBXhsY.png)
 
 これらチェックボックスにチェックが入れられると、同時にMarkdownソースも更新される:
 
 ```
 - [x] Be awesome
-- [x] Do stuff
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
 - [ ] Sleep
 ```
 
-[*タスク・リストについてもっと詳しく*](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments)
+[*タスク・リストについてもっと詳しく*](https://help.github.com/articles/writing-on-github#task-lists)
 
 #### Markdownファイルでのタスクリスト
 通常のMarkdownファイルでも**読み取り専用**のチェックリストを以下のような記法で追加することができる:
