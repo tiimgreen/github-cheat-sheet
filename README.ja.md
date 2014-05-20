@@ -16,9 +16,9 @@
   - [Git.io](#gitio)
   - [キーボード・ショートカット](#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88)
   - [コードの指定行の強調](#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF)
-  - [コミットからイシューを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
-  - [イシューの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
-  - [プルリクエストでのCI結果の表示](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
+  - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
+  - [issueの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [pull requestでのCI結果の表示](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
   - [Markdownファイルでの構文強調](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF)
   - [Emoji](#emoji)
   - [画像及びアニメーションGIF](#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif)
@@ -35,7 +35,7 @@
     - [レンダリング済みの差分](#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86)
     - [マップ差分の可視化](#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96)
     - [差分表示の前後を表示](#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA)
-    - [プルリクエストの内容をDIFFまたはPATCH形式で取得](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97)
+    - [pull requestの内容をDIFFまたはPATCH形式で取得](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97)
   - [Hub](#hub)
   - [共同開発者との摩擦の軽減](#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B)
   - [開発参加のガイドライン](#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
@@ -44,7 +44,7 @@
 - [Git](#git)
   - [直前のブランチ](#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
   - [空白の削除](#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4)
-  - [プルリクエストのチェックアウト](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
+  - [pull requestのチェックアウト](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
   - [空のコミット :trollface:](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface)
   - [Gitステータスのスタイリング](#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [Gitログのスタイリング](#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
@@ -68,7 +68,7 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 [*GitHubの秘密についてもっと詳しく*](https://github.com/blog/967-github-secrets)
 
 ### タブ幅の調節
-差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には効果を発揮しない。
+差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されない。
 
 例えば[Goのソースファイル](https://github.com/pengwynn/flint/blob/master/flint/flint.go)を表示している時、`?ts=4`を追加する前はこのように表示されるが:
 
@@ -110,7 +110,7 @@ https://github.com/{user}/{repo}/branches
 
 ![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
 
-しかしながら`master`以外(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
+しかしながら`master`以外、(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
 
 ```
 https://github.com/{user}/{repo}/branches/{branch}
@@ -212,7 +212,7 @@ Location: https://github.com/...
  - `t`を押すとファイルの検索インターフェイスが起動する。
  - `w`を押すとブランチ選択インターフェイスが起動する。
  - `s`を押すとコマンド・バーにフォーカスが当たる。
- - イシュー画面で`l`を押すとラベルの編集インターフェイスが開かれる。
+ - issue画面で`l`を押すとラベルの編集インターフェイスが開かれる。
  - __ファイルを参照している時__（例: `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)に`y`を押すと、参照している時の状態で固定されるURLに変更される。つまりそのファイルのコードが後に変化したとしても、そのURLでは今とまったく同じ状態で表示されるということだ。
 
 `?`を押すとそのページで使える全ショートカットが表示されるだろう。
@@ -232,28 +232,28 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
-### コミットからイシューを閉じる
-あるコミットでイシューを解決した場合、コミットメッセージで`fix/fixes/fixed`や`close/closes/closed`、`resolve/resolves/resolved`に続けてイシュー番号を指定すると、そのコミットがmasterブランチにpushされると同時に指定イシューが閉じられるだろう。
+### コミットからissueを閉じる
+あるコミットでissueを解決した場合、コミットメッセージで`fix/fixes/fixed`や`close/closes/closed`、`resolve/resolves/resolved`に続けてissue番号を指定すると、そのコミットがmasterブランチにpushされると同時に指定issueが閉じられるだろう。
 
 ```bash
 $ git commit -m "Fix screwup, fixes #12"
 ```
 
-こうするとイシュー#12が閉じられ、閉じたイシューにはそのコミットへの参照が自動的に追加される。
+こうするとissue#12が閉じられ、閉じたissueにはそのコミットへの参照が自動的に追加される。
 
 ![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
 
-[*コミット・メッセージからイシューを閉じる方法についてもっと詳しく*](https://help.github.com/articles/closing-issues-via-commit-messages)
+[*コミット・メッセージからissueを閉じる方法についてもっと詳しく*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
-### イシューの相互リンク
-同じリポジトリの違うイシューへリンクを張り参照させたい場合、`#`に続けてイシュー番号を指定する。そうすると自動的にリンクが作成されるだろう。
+### issueの相互リンク
+同じリポジトリの違うissueへリンクを張り参照させたい場合、`#`に続けてissue番号を指定する。そうすると自動的にリンクが作成されるだろう。
 
-別のリポジトリのイシューの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
+別のリポジトリのissueの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
-### プルリクエストでのCI結果の表示
-適切に設定を行えばプルリクエストを受け取るたびに、通常のコミットと同じように[Travis CI](https://travis-ci.org/)がそのプルリクエストをビルドするだろう。どう設定するかは[Travis CI: Getting started](http://docs.travis-ci.com/user/getting-started/)を読むと良い。
+### pull requestでのCI結果の表示
+適切に設定を行えばpull requestを受け取るたびに、通常のコミットと同じように[Travis CI](https://travis-ci.org/)がそのpull requestをビルドするだろう。どう設定するかは[Travis CI: Getting started](http://docs.travis-ci.com/user/getting-started/)を読むと良い。
 
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
@@ -283,7 +283,7 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 [*GitHub Flavored Markdownについてもっと詳しく*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emoji
-Emojiはプルリクエストやイシュー、READMEなどで`:name_of_emoji:`と書くと利用できる:
+Emojiはpull requestやissue、READMEなどで`:name_of_emoji:`と書くと利用できる:
 
 ```
 :smile:
@@ -326,7 +326,7 @@ GitHub Wikiで画像を追加する方法がいくつかある。通常のMarkdo
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
 ### 素早く引用
-イシューのスレッドで他の人のコメントを引用してコメントしたい場合、引用したい文章を選択した状態で`r`を押すと、ブロック引用の記法を使ってテキストエリアにコピーされる。
+issueのスレッドで他の人のコメントを引用してコメントしたい場合、引用したい文章を選択した状態で`r`を押すと、ブロック引用の記法を使ってテキストエリアにコピーされる。
 
 ![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
@@ -346,7 +346,7 @@ GitHub上でリポジトリを作成する時、あらかじめ設定されて�
 [*オープンソース・ライセンスについてもっと詳しく*](https://help.github.com/articles/open-source-licensing)
 
 ### タスクリスト
-イシューやプルリクエストでは以下のように（空白に注意）書くとチェックボックスを作成することができる:
+issueやpull requestでは以下のように（空白に注意）書くとチェックボックスを作成することができる:
 
 ```
 - [ ] Be awesome
@@ -426,7 +426,7 @@ GitHubでは`.csv`（カンマ区切り）と`.tsv`（タブ区切り）の形�
 
 ### 差分の表示
 #### レンダリング済みの差分表示
-コミットやプルリクエストにGitHubでレンダリングされて表示されるもの（例: Markdown）が含まれる場合、その*ソース*と*レンダリング済み*の両方の差分を見ることができる。
+コミットやpull requestにGitHubでレンダリングされて表示されるもの（例: Markdown）が含まれる場合、その*ソース*と*レンダリング済み*の両方の差分を見ることができる。
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
@@ -437,7 +437,7 @@ GitHubでは`.csv`（カンマ区切り）と`.tsv`（タブ区切り）の形�
 [*レンダリング済みの差分表示についてもっと詳しく*](https://github.com/blog/1784-rendered-prose-diffs)
 
 #### マップ差分の可視化
-コミットやプルリクエストにジオデータの変更が含まれている場合はいつも、GitHubではそのジオデータの変化を可視化してくれるだろう。
+コミットやpull requestにジオデータの変更が含まれている場合はいつも、GitHubではそのジオデータの変化を可視化してくれるだろう。
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
@@ -450,8 +450,8 @@ GitHubでは`.csv`（カンマ区切り）と`.tsv`（タブ区切り）の形�
 
 [*差分表示の前後を表示についてもっと詳しく*](https://github.com/blog/1705-expanding-context-in-diffs)
 
-#### プルリクエストの内容をDIFFまたはPATCH形式で取得
-プルリクエストによる差分はそのURLの末尾に`.diff`または`.patch`を追加すると、それぞれの形式で取得することができる。例えば:
+#### pull requestの内容をDIFFまたはPATCH形式で取得
+pull requestによる差分はそのURLの末尾に`.diff`または`.patch`を追加すると、それぞれの形式で取得することができる。例えば:
 
 ```
 https://github.com/tiimgreen/github-cheat-sheet/pull/15
@@ -506,7 +506,7 @@ $ git clone https://github.com/tiimgreen/toc.git
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
 ### 開発参加のガイドライン
-リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、イシューやプルリクエストを作成しようとした時にそれへのリンクが表示されるようになる。
+リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、issueやpull requestを作成しようとした時にそれへのリンクが表示されるようになる。
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
@@ -562,22 +562,22 @@ $ git stripspace < README.md
 
 [*Gitの`stripspace`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-stripspace)
 
-### プルリクエストのチェックアウト
-プルリクエストはGitHubのリポジトリでは特別なブランチであり、様々な方法でローカルに取り込むことができる:
+### pull requestのチェックアウト
+pull requestはGitHubのリポジトリでは特別なブランチであり、様々な方法でローカルに取り込むことができる:
 
-特定のプルリクエストを取り込み、一時的に`FETCH_HEAD`として保存すると、素早く差分を確認してマージすることが可能だ:
+特定のpull requestを取り込み、一時的に`FETCH_HEAD`として保存すると、素早く差分を確認してマージすることが可能だ:
 
 ```bash
 $ git fetch origin refs/pull/[PR-Number]/head
 ```
 
-参照仕様を使うとすべてのプルリクエストをローカル・ブランチとして取り込むことができる:
+参照仕様を使うとすべてのpull requestをローカル・ブランチとして取り込むことができる:
 
 ```bash
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
-リポジトリの`.git/config`に以下の行を追加すれば自動的にプルリクエストを落とすようにもできるだろう:
+リポジトリの`.git/config`に以下の行を追加すれば自動的にpull requestを落とすようにもできるだろう:
 
 ```
 [remote "origin"]
@@ -592,13 +592,13 @@ $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
     fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 ```
 
-フォークされてから送られてきたプルリクエストに対しては、そのプルリクエストを参照するリモート・ブランチから直接ローカル・ブランチとしてチェックアウトすると便利だろう:
+フォークされてから送られてきたpull requestに対しては、そのpull requestを参照するリモート・ブランチから直接ローカル・ブランチとしてチェックアウトすると便利だろう:
 
 ```bash
 $ git checkout pr/42 pr-42
 ```
 
-[*プルリクエストのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
+[*pull requestのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### 空のコミット :trollface:
 `--allow-empty`オプションを付けると、コードの変化がなくてもコミットを作成することができる:
