@@ -16,8 +16,8 @@
   - [Git.io](#gitio)
   - [キーボード・ショートカット](#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88)
   - [コードの指定行の強調](#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF)
-  - [コミットからイシューを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
-  - [イシューの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
+  - [issueの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
   - [プルリクエストでのCI結果の表示](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
   - [Markdownファイルでの構文強調](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF)
   - [Emoji](#emoji)
@@ -212,7 +212,7 @@ Location: https://github.com/...
  - `t`を押すとファイルの検索インターフェイスが起動する。
  - `w`を押すとブランチ選択インターフェイスが起動する。
  - `s`を押すとコマンド・バーにフォーカスが当たる。
- - イシュー画面で`l`を押すとラベルの編集インターフェイスが開かれる。
+ - issue画面で`l`を押すとラベルの編集インターフェイスが開かれる。
  - __ファイルを参照している時__（例: `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)に`y`を押すと、参照している時の状態で固定されるURLに変更される。つまりそのファイルのコードが後に変化したとしても、そのURLでは今とまったく同じ状態で表示されるということだ。
 
 `?`を押すとそのページで使える全ショートカットが表示されるだろう。
@@ -232,23 +232,23 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
-### コミットからイシューを閉じる
-あるコミットでイシューを解決した場合、コミットメッセージで`fix/fixes/fixed`や`close/closes/closed`、`resolve/resolves/resolved`に続けてイシュー番号を指定すると、そのコミットがmasterブランチにpushされると同時に指定イシューが閉じられるだろう。
+### コミットからissueを閉じる
+あるコミットでissueを解決した場合、コミットメッセージで`fix/fixes/fixed`や`close/closes/closed`、`resolve/resolves/resolved`に続けてissue番号を指定すると、そのコミットがmasterブランチにpushされると同時に指定issueが閉じられるだろう。
 
 ```bash
 $ git commit -m "Fix screwup, fixes #12"
 ```
 
-こうするとイシュー#12が閉じられ、閉じたイシューにはそのコミットへの参照が自動的に追加される。
+こうするとissue#12が閉じられ、閉じたissueにはそのコミットへの参照が自動的に追加される。
 
 ![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
 
-[*コミット・メッセージからイシューを閉じる方法についてもっと詳しく*](https://help.github.com/articles/closing-issues-via-commit-messages)
+[*コミット・メッセージからissueを閉じる方法についてもっと詳しく*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
-### イシューの相互リンク
-同じリポジトリの違うイシューへリンクを張り参照させたい場合、`#`に続けてイシュー番号を指定する。そうすると自動的にリンクが作成されるだろう。
+### issueの相互リンク
+同じリポジトリの違うissueへリンクを張り参照させたい場合、`#`に続けてissue番号を指定する。そうすると自動的にリンクが作成されるだろう。
 
-別のリポジトリのイシューの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
+別のリポジトリのissueの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -283,7 +283,7 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 [*GitHub Flavored Markdownについてもっと詳しく*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emoji
-Emojiはプルリクエストやイシュー、READMEなどで`:name_of_emoji:`と書くと利用できる:
+Emojiはプルリクエストやissue、READMEなどで`:name_of_emoji:`と書くと利用できる:
 
 ```
 :smile:
@@ -326,7 +326,7 @@ GitHub Wikiで画像を追加する方法がいくつかある。通常のMarkdo
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
 ### 素早く引用
-イシューのスレッドで他の人のコメントを引用してコメントしたい場合、引用したい文章を選択した状態で`r`を押すと、ブロック引用の記法を使ってテキストエリアにコピーされる。
+issueのスレッドで他の人のコメントを引用してコメントしたい場合、引用したい文章を選択した状態で`r`を押すと、ブロック引用の記法を使ってテキストエリアにコピーされる。
 
 ![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
@@ -346,7 +346,7 @@ GitHub上でリポジトリを作成する時、あらかじめ設定されて�
 [*オープンソース・ライセンスについてもっと詳しく*](https://help.github.com/articles/open-source-licensing)
 
 ### タスクリスト
-イシューやプルリクエストでは以下のように（空白に注意）書くとチェックボックスを作成することができる:
+issueやプルリクエストでは以下のように（空白に注意）書くとチェックボックスを作成することができる:
 
 ```
 - [ ] Be awesome
@@ -506,7 +506,7 @@ $ git clone https://github.com/tiimgreen/toc.git
 [![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
 
 ### 開発参加のガイドライン
-リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、イシューやプルリクエストを作成しようとした時にそれへのリンクが表示されるようになる。
+リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、issueやプルリクエストを作成しようとした時にそれへのリンクが表示されるようになる。
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
