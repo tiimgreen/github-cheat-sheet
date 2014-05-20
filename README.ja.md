@@ -68,7 +68,7 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 [*GitHubの秘密についてもっと詳しく*](https://github.com/blog/967-github-secrets)
 
 ### タブ幅の調節
-差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には効果を発揮しない。
+差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されない。
 
 例えば[Goのソースファイル](https://github.com/pengwynn/flint/blob/master/flint/flint.go)を表示している時、`?ts=4`を追加する前はこのように表示されるが:
 
@@ -110,7 +110,7 @@ https://github.com/{user}/{repo}/branches
 
 ![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
 
-しかしながら`master`以外(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
+しかしながら`master`以外、(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
 
 ```
 https://github.com/{user}/{repo}/branches/{branch}
