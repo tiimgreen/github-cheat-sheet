@@ -48,6 +48,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
   - [Merged Branches](#merged-branches)
+  - [Fixup and Autosquash](#fixup-and-autosquash)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
   - [Git Configurations](#git-configurations)
     - [Aliases](#aliases)
@@ -636,6 +637,15 @@ $ git branch --no-merged
 Will give you a list of branches that have not been merged into your current branch.
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
+
+### Fixup and Autosquash
+If there is something wrong with a previous commit (can be one or more from HEAD), for example `abcde`, run the following command after you've amended the problem:
+```bash
+$ git commit --fixup=abcde
+$ git rebase abcde^ --autosquash -i
+```
+[*Read more about the Git `commit` command.*](http://git-scm.com/docs/git-commit)
+[*Read more about the Git `rebase` command.*](http://git-scm.com/docs/git-rebase)
 
 ### Web Server for Browsing Local Repositories
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
