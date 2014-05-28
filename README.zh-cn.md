@@ -9,6 +9,7 @@
   - [调整Tab字符所代表的空格数](#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0)
   - [查看某个用户的Commit历史](#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2)
   - [克隆某个仓库](#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93)
+  - [将某个分支与其他所有分支进行对比](#%e5%b0%86%e6%9f%90%e4%b8%aa%e5%88%86%e6%94%af%e4%b8%8e%e5%85%b6%e4%bb%96%e6%89%80%e6%9c%89%e5%88%86%e6%94%af%e8%bf%9b%e8%a1%8c%e5%af%b9%e6%af%94)
   - [比较分支](#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF)
   - [比较不同派生库的分支](#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF)
   - [Gists](#gists)
@@ -95,6 +96,33 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
 [*更多对 Git `clone` 命令的介绍.*](http://git-scm.com/docs/git-clone)
+
+###将某个分支与其他所有分支进行对比
+
+当你点击某个仓库的分支（Branches）选项卡时
+
+```
+https://github.com/{user}/{repo}/branches
+```
+你会看到一个包含所有未合并的分支的列表。
+
+你可以在这里查看比较（Compare）页面或点击删除某个分支。
+
+![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
+
+有的时候我们需要将多个分支与一个非主分支（master）进行对比，此时可以通过在URL后加入要比较的分支名来实现：
+
+```
+https://github.com/{user}/{repo}/branches/{branch}
+```
+
+![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
+
+可以在URL后加上`?merged=1`来查看已经合并了的分支。
+
+![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
+
+你可以使用这个界面来替代命令行直接删除分支。
 
 ### 比较分支
 
