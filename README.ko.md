@@ -343,7 +343,7 @@ puts table.to_s
 
 #### Embedding Images in GitHub Wiki
 
-이미지를 위키 페이지ㅇ넣는 방법은 여럿 있습니다. 위에 보이는 일반 마크다운 문법도 있지만, 이미지에 높이와 넓이를 지정할 수 있는 문법도 있습니다.
+이미지를 위키 페이지에넣는 방법은 여럿 있습니다. 위에 보이는 일반 마크다운 문법도 있지만, 이미지에 높이와 넓이를 지정할 수 있는 문법도 있습니다.
 
 ```markdown
 [[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
@@ -425,7 +425,7 @@ puts table.to_s
 
 ### Relative Links
 
-상대 경로 링크는 마크다운 파일이 내부 건탠츠로 링크될 때 추천합니다.
+상대 경로 링크는 마크다운 파일이 내부 컨텐츠로 링크될 때 추천합니다.
 
 ```markdown
 [Link to a header](#awesome-section)
