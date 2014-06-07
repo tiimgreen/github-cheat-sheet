@@ -35,6 +35,7 @@
     - [可变化地图](#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE)
     - [在diff中折叠与扩展代码](#%E5%9C%A8diff%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%B8%8E%E6%89%A9%E5%B1%95%E4%BB%A3%E7%A0%81)
     - [查看Pull Request的diff和patch](#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch)
+    - [渲染图像发生的变动](%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8)
   - [Hub](#hub)
   - [贡献内容的自动检查](#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5)
   - [贡献者指南](#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97)
@@ -466,6 +467,12 @@ index 88fcf69..8614873 100644
 
 (...)
 ```
+#### 渲染图像发生的变动
+GitHub可以显示包括PNG、JPG、GIF、PSD在内的多种图片格式并提供了几种方式来比较这些格式的图片文件版本间的不同。
+
+[![Diffable PSD](https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif)](https://github.com/blog/1845-psd-viewing-diffing)
+
+[*查看更多关于渲染图像变动的内容*](https://help.github.com/articles/rendering-and-diffing-images)
 
 ### Hub
 [Hub](https://github.com/github/hub)是一个对Git进行了封装的命令行工具，可以帮助你更方便的使用Github。
