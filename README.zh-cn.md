@@ -26,6 +26,7 @@
   - [快速引用](#%E5%BF%AB%E9%80%9F%E5%BC%95%E7%94%A8)
   - [快速添加许可证](#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%AE%B8%E5%8F%AF%E8%AF%81)
   - [任务列表](#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8)
+    - [Markdown文件中的任务列表](#Markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8)
   - [相对链接](#%E7%9B%B8%E5%AF%B9%E9%93%BE%E6%8E%A5)
   - [GitHub Pages的元数据与插件支持](#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81)
   - [查看YAML格式的元数据](#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE)
@@ -378,6 +379,31 @@ Issues和Pull requests里可以添加复选框，语法如下（注意空白符�
 ```
 
 [*进一步了解任务列表.*](https://help.github.com/articles/writing-on-github#task-lists)
+
+####Markdown文件中的任务列表
+
+在完全适配Markdown语法的文件中可以使用以下语法加入一个**只读**的任务列表
+
+
+```
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+  - [x] Moon
+- [x] Mars
+  - [ ] Deimos
+  - [ ] Phobos
+```
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+  - [x] Moon
+- [x] Mars
+  - [ ] Deimos
+  - [ ] Phobos
+
+[*进一步了解Markdown文件中的任务列表*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
 ### 相对链接
 Markdown文件里链接到内部内容时推荐使用相对链接。
