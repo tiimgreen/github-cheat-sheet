@@ -40,6 +40,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
+    - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
@@ -524,7 +525,15 @@ index 88fcf69..8614873 100644
 (...)
 ```
 
-### Hub - Git Wrapper
+#### Rendering and diffing images
+
+깃허브는 PNG, JPG, GIF, PSD를 포함한 여러 일반 적인 이미지 형식을 표시할 수 있습니다. 추가적으로 이미지 형식의 diff를 표시하는 여러 방법을 제공합니다.
+
+[![Diffable PSD](https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif)](https://github.com/blog/1845-psd-viewing-diffing
+
+[*이미지 diff에 대해 더 읽어 보세요.*](https://help.github.com/articles/rendering-and-diffing-images)
+
+### Hub
 
 [Hub](https://github.com/github/hub)는 깃허브를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.
 
