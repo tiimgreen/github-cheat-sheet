@@ -191,6 +191,15 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
+This means you can also modify and update Gists:
+
+```bash
+$ git commit
+$ Username for 'https://gist.github.com': 
+$ Password for 'https://tiimgreen@gist.github.com': 
+```
+
+
 [*进一步了解如何创建 gists.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
