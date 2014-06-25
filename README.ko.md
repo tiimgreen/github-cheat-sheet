@@ -200,6 +200,14 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
+This means you also can modify and push updates to Gists:
+
+```bash
+$ git commit
+$ Username for 'https://gist.github.com': 
+$ Password for 'https://tiimgreen@gist.github.com': 
+```
+
 [*gist를 만드는 법에 대해 더 읽어보세요.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
