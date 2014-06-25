@@ -11,9 +11,10 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
-  - [Comparing Branches](#comparing-branches)
-  - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+  - [Branch](#branch) 
+    - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
+    - [Comparing Branches](#comparing-branches)
+    - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
   - [Git.io](#gitio)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
@@ -33,6 +34,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
+  - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
@@ -100,7 +102,8 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
 
-### Compare all Branches to Another Branch
+###Branch
+#### Compare all Branches to Another Branch
 
 If you go to the repo's [Branches](https://github.com/tiimgreen/github-cheat-sheet/branches) page, next to the Commits button:
 
@@ -128,7 +131,7 @@ To see the merged branches, append `?merged=1` to the URL.
 
 This view allows you to delete branches easily from the page, without using the command-line.
 
-### Comparing Branches
+#### Comparing Branches
 To use GitHub to compare branches, change the URL to look like this:
 
 ```
@@ -160,7 +163,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 [*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time)
 
-### Compare Branches across Forked Repositories
+#### Compare Branches across Forked Repositories
 To use GitHub to compare branches across forked repositories, change the URL to look like this:
 
 ```
@@ -432,6 +435,15 @@ GitHub supports rendering tabular data in the form of `.csv` (comma-separated) a
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
 [*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
+
+###Revert a Pull Request
+After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request. 
+
+You can revert it by clicking the **Revert** button on the right side of a commit in the pull request page to create a pull request with reverted changes to this specific pull request.
+
+![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
+
+[*Read more about Revert pull request](https://github.com/blog/1857-introducing-the-revert-button)
 
 ### Diffs
 #### Rendered Prose Diffs
