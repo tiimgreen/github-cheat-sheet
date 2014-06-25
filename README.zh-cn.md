@@ -9,9 +9,10 @@
   - [调整Tab字符所代表的空格数](#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0)
   - [查看某个用户的Commit历史](#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2)
   - [克隆某个仓库](#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93)
-  - [将某个分支与其他所有分支进行对比](#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94)
-  - [比较分支](#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF)
-  - [比较不同派生库的分支](#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF)
+  - [分支](#%E5%88%86%E6%94%AF) 
+   - [将某个分支与其他所有分支进行对比](#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94)
+   - [比较分支](#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF)
+   - [比较不同派生库的分支](#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF)
   - [Gists](#gists)
   - [Git.io](#gitio)
   - [键盘快捷键](#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE)
@@ -99,7 +100,8 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*更多对 Git `clone` 命令的介绍.*](http://git-scm.com/docs/git-clone)
 
-###将某个分支与其他所有分支进行对比
+###分支
+####将某个分支与其他所有分支进行对比
 
 当你点击某个仓库的分支（Branches）选项卡时
 
@@ -126,7 +128,7 @@ https://github.com/{user}/{repo}/branches/{branch}
 
 你可以使用这个界面来替代命令行直接删除分支。
 
-### 比较分支
+#### 比较分支
 
 如果我们想要比较两个分支，可以像下面一样修改URL：
 
@@ -159,7 +161,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 [*了解更多关于比较跨时间段的提交记录.*](https://help.github.com/articles/comparing-commits-across-time)
 
-### 比较不同派生库的分支
+#### 比较不同派生库的分支
 
 想要对派生仓库（Forked Repository）之间的分支进行比较，可以像下面这样修改URL实现：
 
