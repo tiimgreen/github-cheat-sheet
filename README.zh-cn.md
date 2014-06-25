@@ -32,6 +32,7 @@
   - [GitHub Pages的元数据与插件支持](#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81)
   - [查看YAML格式的元数据](#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE)
   - [渲染表格数据](#%E6%B8%B2%E6%9F%93%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE)
+  - [撤销Pull Request](#%E6%92%A4%E9%94%80pull-request)
   - [Diffs](#diffs)
     - [可渲染文档的Diffs](#%E5%8F%AF%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E7%9A%84diffs)
     - [可变化地图](#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE)
@@ -439,6 +440,14 @@ GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染�
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
 [*进一步了解渲染表格数据.*](https://github.com/blog/1601-see-your-csvs)
+
+### 撤销Pull Request
+
+可以通过Pull Request中的Revert按钮来撤销一个已合并的Pull Request中的commit。按下按钮后会自动生成一个进行逆向操作的Pull Request。
+
+![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
+
+[*进一步了解“撤销”按钮](https://github.com/blog/1857-introducing-the-revert-button)
 
 ### Diffs
 #### 可渲染文档的Diffs
