@@ -441,6 +441,10 @@ After a pull request is merged, you may find it does not help anything or it was
 
 You can revert it by clicking the **Revert** button on the right side of a commit in the pull request page to create a pull request with reverted changes to this specific pull request.
 
+![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
+
+[*Read more about Revert pull request](https://github.com/blog/1857-introducing-the-revert-button)
+
 ### Diffs
 #### Rendered Prose Diffs
 Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views.
