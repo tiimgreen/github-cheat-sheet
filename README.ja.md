@@ -53,6 +53,7 @@
   - [Gitログのスタイリング](#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [コミットログの検索](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2)
   - [マージ済みブランチ](#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
+  - [FixupとAutosquash](#fixup%E3%81%A8autosquash)
   - [ローカル・リポジトリを参照するウェブサーバー](#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC)
   - [Gitの設定](#git%E3%81%AE%E8%A8%AD%E5%AE%9A)
     - [エイリアス](#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9)
@@ -716,6 +717,17 @@ $ git branch --no-merged
 こうするとまだマージされていないブランチが表示されるだろう。
 
 [*Gitの`branch`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-branch)
+
+### FixupとAutosquash
+これまでのコミット(HEADの直前でなくても構わない)、例えば`abcde`というチェックサムのコミットで何か問題を見つけた場合、以下の様なコマンドで問題の修正を行うことができる:
+
+```bash
+$ git commit --fixup=abcde
+$ git rebase abcde^ --autosquash -i
+```
+
+[*Gitの`commit`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-commit)
+[*Gitの`rebase`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-rebase)
 
 ### ローカル・リポジトリを参照するウェブサーバー
 Gitの`instaweb`コマンドを利用すると、自分の作業リポジトリを`gitweb`で参照することができる。このコマンドは`gitweb`とウェブサーバーをセットアップしてローカル・リポジトリをブラウザーで開けるようにする簡単なスクリプトだ。
