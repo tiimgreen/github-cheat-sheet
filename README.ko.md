@@ -13,9 +13,10 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
-  - [Comparing Branches](#comparing-branches)
-  - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+  - [Branch](#branch) 
+    - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
+    - [Comparing Branches](#comparing-branches)
+    - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
   - [Git.io](#gitio)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
@@ -35,6 +36,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
+  - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
     - [Rendered prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
@@ -55,6 +57,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
   - [Merged Branches](#merged-branches)
+  - [Fixup and Autosquash](#fixup-and-autosquash)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
   - [Git Configurations](#git-configurations)
     - [Aliases](#aliases)
@@ -107,7 +110,8 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*깃 `clone` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-clone)
 
-### Compare all Branches to Another Branch
+###Branch
+#### Compare all Branches to Another Branch
 
 저장소의 [브랜치](https://github.com/tiimgreen/github-cheat-sheet/branches) 페이지는, 커밋 버튼의 뒤에 있습니다.
 
@@ -135,7 +139,7 @@ https://github.com/{user}/{repo}/branches/{branch}
 
 이 것을 확인함으로써 커맨드 라인을 사용하지 않은 페이지에서의 브랜치 삭제가 더 쉬워집니다.
 
-### Comparing Branches
+#### Comparing Branches
 
 깃허브에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.
 
@@ -168,7 +172,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 [*시간으로 커밋을 비교하는 법에 대해 더 읽어 보세요.*](https://help.github.com/articles/comparing-commits-across-time)
 
-### Compare branches across forked repositories
+#### Compare branches across forked repositories
 
 포크된 저장소간의 브랜치를 비교하려면 URL을 이렇게 변경하세요.
 
@@ -200,7 +204,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
-This means you also can modify and push updates to Gists:
+이는 Gists에서도 수정하고 업데이트를 부쉬할 수 있다는 의미입니다.
 
 ```bash
 $ git commit
@@ -471,8 +475,18 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 [*표 데이타 표시에 대해 더 읽어 보세요.*](https://github.com/blog/1601-see-your-csvs)
 
-### Diffs
+###Revert a Pull Request
 
+풀 리퀘스트가 머지된 후에, 아무 도움이 안되거나 머지가 잘못된 결정이었다는 걸
+눈치 챌 때가 있습니다.
+
+풀 리퀘스트 페이지의 커밋의 오른 쪽에 있는 **Revert** 버튼을 클릭하면 이 풀리퀘스트를 되돌리는 풀리퀘스트를 만들어 되돌릴 수 있습니다.
+
+![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
+
+[*Read more about Revert pull request](https://github.com/blog/1857-introducing-the-revert-button)
+
+### Diffs
 #### Rendered Prose Diffs
 
 산문(prose) 파일이 있는 커밋과 풀 리퀘스트는 *source*와 *rendered* 뷰 기능을 사용할 수 있습니다.
@@ -762,6 +776,18 @@ $ git branch --no-merged
 이 명령어는 현재 브랜치에 머지되지 않은 브랜치의 목록을 보여줍니다.
 
 [*깃 `branch` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-branch)
+
+### Fixup and Autosquash
+
+이전(HEAD의 한개 이상 전의) 커밋에 잘못된 부분이 있다면, 예를들어 `abcde`라면,
+문제를 수정하고 밑의 커맨드를 입력해 고칠 수 있습니다.
+
+```bash
+$ git commit --fixup=abcde
+$ git rebase abcde^ --autosquash -i
+```
+[*깃 `commit` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-commit)
+[*깃 `rebase` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-rebase)
 
 ### Web Server for Browsing Local Repositories
 
