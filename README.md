@@ -632,6 +632,22 @@ For Fork-based Pull Request contributions, it's useful to `checkout` a remote br
 $ git checkout pr/42 pr-42
 ```
 
+Or should you work on more repositories, you can globally configure fetching pull requests in the global git config instead.
+
+```bash
+git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
+```
+
+This way, you can use the following short commands in all your repositories:
+
+```bash
+git fetch origin
+```
+
+```bash
+git checkout pr/42
+```
+
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### Empty Commits :trollface:
