@@ -634,6 +634,23 @@ $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 $ git checkout pr/42 pr-42
 ```
 
+操作多个仓库的时候，可以在Git中设置获取Pull Request的全局选项。
+
+```
+ git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
+```
+
+此时可以在任意仓库中使用以下命令：
+
+```
+ git fetch origin
+```
+
+```
+git checkout pr/42
+```
+
+
 [*进一步了解如何检出pull request到本地.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### 提交空改动 :trollface: 
