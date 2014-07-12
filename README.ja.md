@@ -627,6 +627,22 @@ $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 $ git checkout pr/42 pr-42
 ```
 
+もしくは様々なリポジトリで作業をするのなら、代わりにグローバルのGit設定で行うことにより、pull requestの取得をグローバルに設定すると良いだろう。
+
+```bash
+git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
+```
+
+こうすると以下の様な短いコマンドを利用することが可能になる:
+
+```bash
+git fetch origin
+```
+
+```bash
+git checkout pr/42
+```
+
 [*pull requestのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### 空のコミット :trollface:
