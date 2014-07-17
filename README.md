@@ -36,7 +36,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Rendering Tabular Data](#rendering-tabular-data)
   - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
-    - [Rendered prose Diffs](#rendered-prose-diffs)
+    - [Rendered Prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
@@ -300,7 +300,7 @@ GitHub uses [Linguist](https://github.com/github/linguist) to perform language d
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emojis
-Emojis can added to on Pull Requests, Issues, commit messages, Markdown files, etc. using `:name_of_emoji:`:
+Emojis can be added to Pull Requests, Issues, commit messages, Markdown files, etc. using `:name_of_emoji:`:
 
 ```
 :smile:
@@ -350,7 +350,7 @@ When on a comment thread and you want to quote something someone previously said
 [*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
 
 ### Quick Licensing
-When creating a repository GitHub gives you the options of adding in a pre-made license:
+When creating a repository, GitHub gives you the option of adding in a pre-made license:
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
@@ -452,11 +452,11 @@ You can revert it by clicking the **Revert** button on the right side of a commi
 
 ![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
 
-[*Read more about Revert pull request](https://github.com/blog/1857-introducing-the-revert-button)
+[*Read more about reverting pull requests*](https://github.com/blog/1857-introducing-the-revert-button)
 
 ### Diffs
 #### Rendered Prose Diffs
-Commits and pull requests including rendered documents supported by GitHub (e.g. Markdown) feature *source* and *rendered* views.
+Commits and pull requests, including rendered documents supported by GitHub (e.g. Markdown), feature *source* and *rendered* views.
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
@@ -551,7 +551,7 @@ Adding a `CONTRIBUTING` file to the root of your repository will add a link to y
 | GitHub Explore | https://github.com/explore |
 | GitHub Blog | https://github.com/blog |
 | GitHub Help | https://help.github.com/ |
-| GitHub Training | http://training.github.com/ |
+| GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 
 #### GitHub Talks
@@ -859,7 +859,7 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
-| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
+| Git for Designers | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
