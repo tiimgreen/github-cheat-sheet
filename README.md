@@ -562,6 +562,8 @@ Adding a `CONTRIBUTING` file to the root of your repository will add a link to y
 ### Octicons
 GitHubs icons (Octicons) have now been open sourced.
 
+![Octicons](https://og.github.com/octicons/octicons@1200x630.png)
+
 [*Read more about GitHub's Octicons*](https://octicons.github.com)
 
 
