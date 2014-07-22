@@ -21,6 +21,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
   - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
+  - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
@@ -268,6 +269,18 @@ If you want to link to another issue in the same repository, simple type hash `#
 To link to an issue in another repository, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
+
+### Locking Conversations
+Pull Requests and Issues can now be locked by owners or collaborators of the repo.
+
+![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
+
+This means that users who are not collaborators on the proejct will no longer be able to comment.
+
+![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
+
+[*Read more about locking conversations.*](https://github.com/blog/1847-locking-conversations)
+
 
 ### CI Status on Pull Requests
 If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
