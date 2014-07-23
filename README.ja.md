@@ -19,6 +19,7 @@
   - [コードの指定行の強調](#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF)
   - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
   - [issueの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [コメントのロック](#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E3%83%AD%E3%83%83%E3%82%AF)
   - [pull requestでのCI結果の表示](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
   - [Markdownファイルでの構文強調](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF)
   - [Emoji](#emoji)
@@ -42,6 +43,7 @@
   - [Hub](#hub)
   - [共同開発者との摩擦の軽減](#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B)
   - [開発参加のガイドライン](#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
+  - [Octicons](#octicons)
   - [GitHub情報](#github%E6%83%85%E5%A0%B1)
     - [GitHub Talks](#github-talks)
 - [Git](#git)
@@ -265,6 +267,17 @@ $ git commit -m "Fix screwup, fixes #12"
 別のリポジトリのissueの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
+
+### コメントのロック
+リポジトリのオーナーや共同開発者ならば、pull requestやissueへのコメントをロックできるようになった。
+
+![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
+
+つまりそのプロジェクトの共同開発者ではユーザーはコメントをすることができないということだ。
+
+![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
+
+[*コメントのロックについてもっと詳しく*](https://github.com/blog/1847-locking-conversations)
 
 ### pull requestでのCI結果の表示
 適切に設定を行えばpull requestを受け取るたびに、通常のコミットと同じように[Travis CI](https://travis-ci.org/)がそのpull requestをビルドするだろう。どう設定するかは[Travis CI: Getting started](http://docs.travis-ci.com/user/getting-started/)を読むと良い。
@@ -540,6 +553,13 @@ $ git clone https://github.com/tiimgreen/toc.git
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
 [*開発参加のガイドラインについてもっと詳しく*](https://github.com/blog/1184-contributing-guidelines)
+
+### Octicons
+GitHubで使われているアイコン（Octicons）はオープンソース化された。
+
+![Octicons](https://og.github.com/octicons/octicons@1200x630.png)
+
+[*GitHubのOcticonsについてもっと詳しく*](https://octicons.github.com)
 
 ### GitHub Resources
 | Title | Link |
