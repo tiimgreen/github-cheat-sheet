@@ -891,7 +891,7 @@ $ git config --global color.ui 1
 | ----- | ---- |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
 | Pro Git | http://git-scm.com/book |
-| Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
+| Git Internals PluralSight | https://github.com/pluralsight/git-internals-pdf |
 | Git in the Trenches | http://cbx33.github.com/gitt/ |
 | Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
