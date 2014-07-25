@@ -356,6 +356,13 @@ Which produces:
 
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
+#### Using Raw GitHub Images
+Raw images from the repo can be used by calling them directly.:
+
+```
+![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+```
+
 ### Quick Quoting
 When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
 
