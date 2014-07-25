@@ -692,6 +692,8 @@ Some use-cases for this (that make sense), include:
  - Communicating with people using your repository.
  - The first commit of a repo, as the first commit cannot be rebased later: `git commit -m "init repo" --allow-empty`.
 
+![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
+
 ### Styled Git Status
 Running:
 
