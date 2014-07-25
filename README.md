@@ -341,6 +341,12 @@ Images and GIFs can be added to comments, READMEs etc.:
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
+Raw images from the repo can be used by calling them directly.:
+
+```
+![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+```
+
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
