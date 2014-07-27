@@ -331,6 +331,12 @@ Github上使用最多的5个表情符号是：
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
+仓库中的原始图片可以被直接调用：
+
+```
+![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+```
+
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 所有图片都缓存在Gitub，不用担心你的站点不能访问时就看不到图片了。
