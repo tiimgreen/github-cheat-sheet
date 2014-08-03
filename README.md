@@ -8,6 +8,8 @@ GitやGtihubの便利な使い方をまとめたられた[Github cheat sheet](ht
 - 日本語翻訳レポジトリ
  - [sota0805/github-cheat-sheet](https://github.com/sota0805/github-cheat-sheet/tree/feature-japanese)
 
+<b>今後ここに書いてあることがどういった場面で有効なのかのベストプラクティスについてオリジナルで加えていきます。</b>
+
 ## 概要
 このチートシートは、[Zach Holman](https://github.com/holman)さんがAloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets))で発表された[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) と WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))で発表された彼の[More Git and GitHub Secrets](https://vimeo.com/72955426)に触発されまとめました。
 
@@ -120,7 +122,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-日付を指定るすることによって、何日前のものや特定のmasterブランチと比較をすることができます
+日付を指定することによって、何日前のものや特定のmasterブランチと比較をすることができます
 
 [*時間によってcommitメッセージを比較することに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/comparing-commits-across-time)
 
@@ -146,7 +148,7 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 ![Gist](http://i.imgur.com/VkKI1LC.png?1)
 
-Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
+[このよう](https://gist.github.com/tiimgreen/10545817.pibb)にGist URLの最後に`.pibb`をつけることによって他のWebサイトに埋め込み可能なHTMLバージョンを得ることができます。
 
 Gistsはレポジトリと同じようにクローンをすることができます：
 
@@ -294,7 +296,7 @@ Githubで使える絵文字のリストは [emoji-cheat-sheet.com](http://www.em
 
 #### Github Wikiに画像を埋め込む
 
-Wikiページに画像を埋め込む方法はいくつかあります。主な方法としては以下のような基本的なマークダウンの記法があります。画像の幅や高さを指定する方法があります。
+Wikiページに画像を埋め込む方法はいくつかあります。主な方法としては上記のような基本的なマークダウンの記法があります。また画像の幅や高さを指定できる記法もあります。
 
 
 ```markdown
@@ -321,7 +323,7 @@ Wikiページに画像を埋め込む方法はいくつかあります。主な�
 
 ![License](http://i.imgur.com/fTjQict.png)
 
-`.gitigonre`でも同様のことができます
+`.gitignore`でも同様のことができます
 
 [*オープンソースライセンスに関してのより詳しい内容はこちらを参照してください*](https://help.github.com/articles/open-source-licensing)
 
