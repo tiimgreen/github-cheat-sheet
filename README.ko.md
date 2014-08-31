@@ -23,6 +23,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
   - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
+  - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
@@ -38,7 +39,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Rendering Tabular Data](#rendering-tabular-data)
   - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
-    - [Rendered prose Diffs](#rendered-prose-diffs)
+    - [Rendered Prose Diffs](#rendered-prose-diffs)
     - [Diffable Maps](#diffable-maps)
     - [Expanding Context in Diffs](#expanding-context-in-diffs)
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
@@ -46,6 +47,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Hub](#hub)
   - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
+  - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
  - [Git](#git)
@@ -284,6 +286,18 @@ $ git commit -m "Fix screwup, fixes #12"
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
+### Locking Conversations
+
+풀 리퀘스트와 이슈는 레포지터리의 주인이나 협업자에 의해 잠글 수 있습니다.
+
+![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
+
+이는 프로젝트의 협업자가 아닌 사람은 더이상 커맨트를 달 수 없게된다는 말입니다.
+
+![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
+
+[*대화 잠그기에 대해 더 읽어 보세요.*](https://github.com/blog/1847-locking-conversations)
+
 ### CI Status on Pull Requests
 
 정확히 설정되었다면, 풀 리퀘스트를 받거나 풀 리퀘스트에 새로운 커밋을 할 때 마다, [Travis CI](https://travis-ci.org/)가 풀 리퀘스트를 빌드 할 것입니다. [Travis CI 시작하기](http://docs.travis-ci.com/user/getting-started/)를 좀 더 읽어보세요.
@@ -318,7 +332,7 @@ puts table.to_s
 
 ### Emojis
 
-에모지는 풀 리퀘스트, 이슈, 커밋 메세지, README등등에서 `:에모지의_이름:`으로 만들 수 있습니다.
+에모지는 풀 리퀘스트, 이슈, 커밋 메세지, README등에 `:에모지의_이름:`으로 넣을 수 있습니다.
 
 ```
 :smile:
@@ -348,6 +362,12 @@ puts table.to_s
 
 ```
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+```
+
+저장소에 있는 이미지는 직접 불러서 사용할 수 있습니다.
+
+```
+![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -475,7 +495,7 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 [*표 데이타 표시에 대해 더 읽어 보세요.*](https://github.com/blog/1601-see-your-csvs)
 
-###Revert a Pull Request
+### Revert a Pull Request
 
 풀 리퀘스트가 머지된 후에, 아무 도움이 안되거나 머지가 잘못된 결정이었다는 걸
 눈치 챌 때가 있습니다.
@@ -484,12 +504,12 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 ![Revert button](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)
 
-[*Read more about Revert pull request](https://github.com/blog/1857-introducing-the-revert-button)
+[*풀 리퀘스트 되돌리기에 대해 더 읽어 보세요.*](https://github.com/blog/1857-introducing-the-revert-button)
 
 ### Diffs
 #### Rendered Prose Diffs
 
-산문(prose) 파일이 있는 커밋과 풀 리퀘스트는 *source*와 *rendered* 뷰 기능을 사용할 수 있습니다.
+GitHub에서 지원하는 산문(prose) 파일(예를 들어 Markdown)이 있는 커밋과 풀 리퀘스트에서는 *source*와 *rendered* 뷰 기능을 사용할 수 있습니다.
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
@@ -585,6 +605,14 @@ $ hub clone tiimgreen/toc
 
 [*기여하기에 대해 더 읽어 보세요.*](https://github.com/blog/1184-contributing-guidelines)
 
+### Octicons
+
+깃허브 아이콘(옥티콘)이 이제 오픈소스가 되었습니다.
+
+![Octicons](https://og.github.com/octicons/octicons@1200x630.png)
+
+[*깃 허브의 옥티콘에 대해 더 읽어보세요.*](https://octicons.github.com)
+
 ### GitHub Resources
 
 | Title | Link |
@@ -592,7 +620,7 @@ $ hub clone tiimgreen/toc
 | GitHub Explore | https://github.com/explore |
 | GitHub Blog | https://github.com/blog |
 | GitHub Help | https://help.github.com/ |
-| GitHub Training | http://training.github.com/ |
+| GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 
 #### GitHub Talks
@@ -688,6 +716,22 @@ $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 $ git checkout pr/42 pr-42
 ```
 
+여러 저장소를 다루어야 한다면, 전역 깃 설정에서 풀 리퀘스트를 받을(fetching) 수 있도록 설정 할 수 도 있습니다.
+
+```bash
+git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
+```
+
+이렇게 하면 모든 저장소에서 짧은 명령어를 사용 할 수 있습니다.
+
+```bash
+git fetch origin
+```
+
+```bash
+git checkout pr/42
+```
+
 [*풀 리퀘스트를 로컬로 체크아웃 하는 방법에 대해 더 읽어 보세요.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
 ### Empty Commits :trollface:
@@ -704,6 +748,8 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 코드와 관련없는 프로젝트 수정을 할때 주석으로 사용
  - 저장소를 사용하는 사람과의 대화
  - 나중에 리베이스하지 않을 저장소의 첫 커밋으로 사용 `git commit -m "init repo" --allow-empty`.
+
+![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
 
 ### Styled Git Status
 
@@ -907,7 +953,7 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
-| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
+| Git for Designers | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
@@ -918,7 +964,7 @@ $ git config --global color.ui 1
 | ----- | ---- |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
 | Pro Git | http://git-scm.com/book |
-| Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
+| Git Internals PluralSight | https://github.com/pluralsight/git-internals-pdf |
 | Git in the Trenches | http://cbx33.github.com/gitt/ |
 | Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
