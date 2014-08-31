@@ -337,6 +337,12 @@ GitHubで使われているEmojiのトップ5は以下の通りだ:
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
+リポジトリにある画像も直接参照することが出来る:
+
+```
+![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+```
+
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 あらゆる画像はGitHubでキャッシュされるので、画像のホスティング先が落ちていたとしても変わらず表示されるだろう。
@@ -679,6 +685,8 @@ $ git commit -m "Big-ass commit" --allow-empty
  - リポジトリを利用して誰かと連絡を取りたい時
  - リポジトリへの最初のコミットをやり直しできるようにしたい時: `git commit -m "init repo" --allow-empty`.
 
+![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
+
 ### Gitステータスのスタイリング
 普通に実行すると:
 
@@ -874,16 +882,17 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
-| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
+| Git for Designers | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
+| GitHub Training Kit | http://training.github.com/kit |
 
 #### Git Books
 | Title | Link |
 | ----- | ---- |
 | Pragmatic Version Control Using Git | http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
 | Pro Git | http://git-scm.com/book |
-| Git Internals Peepcode | http://peepcode.com/products/git-internals-pdf |
+| Git Internals PluralSight | https://github.com/pluralsight/git-internals-pdf |
 | Git in the Trenches | http://cbx33.github.com/gitt/ |
 | Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
