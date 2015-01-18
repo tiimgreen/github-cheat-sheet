@@ -44,7 +44,6 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
     - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
-  - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
   - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
@@ -181,7 +180,7 @@ Gists can be treated as a full repository so they can be cloned like any other:
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
 This means you also can modify and push updates to Gists:
 
@@ -535,15 +534,6 @@ $ hub clone tiimgreen/toc
 
 [*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
 
-### Decreasing Contributor Friction
-If you want people to use and contribute to your project, you need to start by answering their most basic questions. What does the project do? How do I use it? How am I allowed to use it? How do I contribute? How do I get up and running in development? How do I make sure my new features didn't break old functionality?
-
-[Friction](https://github.com/rafalchmiel/friction) is a command line script that will check your project for common [answers to these questions](https://github.com/rafalchmiel/friction/wiki). This is some example output:
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
-*Friction supports MRI 2.1.0, MRI 2.0.0, and MRI 1.9.3.*
-
 ### Contributing Guidelines
 Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
 
@@ -689,7 +679,7 @@ $ git status
 
 Produces:
 
-![git status](http://i.imgur.com/o3PEHAA.png)
+![git status](http://i.imgur.com/qjPyvXb.png)
 
 By adding `-sb`:
 
@@ -699,7 +689,7 @@ $ git status -sb
 
 This is produced:
 
-![git status -sb](http://i.imgur.com/xNI1bT0.png)
+![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
 [*Read more about the Git `status` command.*](http://git-scm.com/docs/git-status)
 
@@ -712,7 +702,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 Produces:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
 Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
 
