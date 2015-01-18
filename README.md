@@ -118,21 +118,7 @@ https://github.com/{user}/{repo}/branches
 
 From here you can access the compare page or delete a branch with a click of a button.
 
-![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
-
-However, often you need to compare branches to a branch other than `master` (e.g. `development`). To do this, append the URL with the name of the branch like so:
-
-```
-https://github.com/{user}/{repo}/branches/{branch}
-```
-
-![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
-
-To see the merged branches, append `?merged=1` to the URL.
-
-![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
-
-This view allows you to delete branches easily from the page, without using the command-line.
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### Comparing Branches
 To use GitHub to compare branches, change the URL to look like this:
@@ -170,7 +156,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 To use GitHub to compare branches across forked repositories, change the URL to look like this:
 
 ```
-https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
 ```
 
 For example:
