@@ -11,7 +11,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Branch](#branch) 
+  - [Branch](#branch)
     - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
     - [Comparing Branches](#comparing-branches)
     - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
@@ -28,6 +28,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Images/GIFs](#imagesgifs)
     - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
   - [Quick Quoting](#quick-quoting)
+  - [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
   - [Quick Licensing](#quick-licensing)
   - [Task Lists](#task-lists)
     - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
@@ -354,6 +355,13 @@ When on a comment thread and you want to quote something someone previously said
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
 [*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
+
+### Pasting Clipboard Image to Comments
+After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4`), you can simply paste (`cmd-v / ctrl-v`) the image into the comment section and it will be auto-uploaded to github.
+
+![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
+
+[*Read more about issue attachments.*](https://help.github.com/articles/issue-attachments)
 
 ### Quick Licensing
 When creating a repository, GitHub gives you the option of adding in a pre-made license:
