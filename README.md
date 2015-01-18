@@ -75,7 +75,7 @@ Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabli
 [*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
 
 ### Adjust Tab Space
-Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views.
+Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
 
 Here is a Go source file [before](https://github.com/pengwynn/flint/blob/master/flint/flint.go) adding `?ts=4`:
 
