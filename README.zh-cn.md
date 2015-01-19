@@ -40,7 +40,6 @@
     - [查看Pull Request的diff和patch](#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch)
     - [渲染图像发生的变动](#%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8)
   - [Hub](#hub)
-  - [贡献内容的自动检查](#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5)
   - [贡献者指南](#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97)
   - [GitHub资源](#github%E8%B5%84%E6%BA%90)
     - [GitHub讨论](#github%E8%AE%A8%E8%AE%BA)
@@ -192,7 +191,7 @@ Gists还可以像任何标准仓库一样被克隆。
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
 这意味着你可以像 Github 仓库一样修改和更新 Gists : 
 
@@ -537,15 +536,6 @@ $ hub clone tiimgreen/toc
 
 [*查看更多Hub提供的超酷命令.*](https://github.com/github/hub#commands)
 
-### 贡献内容的自动检查
-假设你想人们使用你的项目并给你的项目做出贡献，你往往需要回答他们常见问题。这个项目是干什么用的？我如何使用它？允许我怎样使用？我如何为项目出力？我怎样配置开发环境？我怎么能保证新功能不会破坏已有的功能？
-
-[Friction](https://github.com/rafalchmiel/friction)是一个命令行脚本，用来检查你的项目是否[回答了这些问题](https://github.com/rafalchmiel/friction/wiki)。下面是示例输出：
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
-*Friction 支持 MRI 2.1.0, MRI 2.0.0 和 MRI 1.9.3.*
-
 ### 贡献者指南
 
 在你的仓库的根目录添加一个名为 `CONTRIBUTING` 的文件后，贡献者在新建Issue或Pull Request时会看到这个文件的链接。
@@ -668,10 +658,10 @@ $ git commit -m "Big-ass commit" --allow-empty
 
 这样做在如下几种情况下是有意义的：
 
- - 标记一批工作或一个新功能的开始。
- - 记录你对项目进行了跟代码无关的改动。
+ - 标记新的工作或一个新功能的开始。
+ - 记录对项目的跟代码无关的改动。
  - 跟使用你仓库的其他人交流。
- - 作为仓库的第一次提交，因为第一次提交日后是不能被rebase的： `git commit -m "init repo" --allow-empty`.
+ - 作为仓库的第一次提交，因为第一次提交后不能被rebase： `git commit -m "init repo" --allow-empty`.
 
 ### 更直观的Git Status
 在命令行输入如下命令:
