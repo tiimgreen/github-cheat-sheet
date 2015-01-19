@@ -339,7 +339,7 @@ Github上使用最多的5个表情符号是：
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
-所有图片都缓存在Gitub，不用担心你的站点不能访问时就看不到图片了。
+所有图片都缓存在Github，不用担心你的站点不能访问时就看不到图片了。
 
 #### 在GitHub Wiki中嵌入图片
 有多种方法可以在Wiki页面里嵌入图片。既可以像上一条里那样使用标准的Markdown语法，也可以像下面这样指定图片的高度或宽度：
