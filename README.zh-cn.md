@@ -352,7 +352,7 @@ Github上使用最多的5个表情符号是：
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
 ### 快速引用
-在注释话题里引用之前某个人所说的，只需选中文本，然后按 `r`键，想要的就会以引用的形式复制到你的输入框里。
+在主题评论中引用之前某个人所说的，只需选中文本，然后按 `r`键，想要的就会以引用的形式复制到你的输入框里。
 
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
@@ -690,7 +690,7 @@ $ git status
 $ git status -sb
 ```
 
-这回得到:
+这会得到:
 
 ![git status -sb](http://i.imgur.com/xNI1bT0.png)
 
@@ -749,7 +749,7 @@ $ git branch --no-merged
 [*进一步了解 Git `branch` 命令.*](http://git-scm.com/docs/git-branch)
 
 ### 使用网页查看本地仓库
-使用Git的 `instaweb` 可以立即在 `gitweb`中浏览你的工作仓库。这个命令是个简单的脚步，配置了`gitweb`和用来浏览本地仓库的Web服务器。*（译者注：默认需要lighttpd支持）*
+使用Git的 `instaweb` 可以立即在 `gitweb`中浏览你的工作仓库。这个命令是个简单的脚本，配置了`gitweb`和用来浏览本地仓库的Web服务器。*（译者注：默认需要lighttpd支持）*
 
 ```bash
 $ git instaweb
