@@ -194,7 +194,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/dULZXXo.png)
 
-This means you can also modify and update Gists:
+这意味着你可以像 Github 仓库一样修改和更新 Gists : 
 
 ```bash
 $ git commit
@@ -450,7 +450,7 @@ Jemoji和jekyll-mentions插件为你的Jekyll文章和页面增加了[emoji](#em
 
 ### 渲染表格数据
 
-GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染成表格数据。
+GitHub支持将 `.csv` (逗号分隔)和`.tsv` (制表符分隔)格式的文件渲染成表格数据。
 
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
@@ -478,7 +478,7 @@ GitHub支持将 `.csv` (comma分隔)和`.tsv` (tab分隔)格式的文件渲染�
 [*进一步了解渲染纯文本视图Diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
 #### 可变化地图
-当你在GitHub上查看一个包含地理数据的提交或pull request时，Github可以显示数据变动的视觉表示。
+当你在GitHub上查看一个包含地理数据的提交或pull request时，Github 将以可视化的方式对比版本之间的差异。
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
