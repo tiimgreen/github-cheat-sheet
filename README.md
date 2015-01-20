@@ -325,6 +325,12 @@ Raw images from the repo can be used by calling them directly.:
 ![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
 ```
 
+If you're linking an image in the same repo as the README, you can simply provide a relative path.:
+
+```
+![Alt Text](/screenshots/image.png)
+```
+
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 All images are cached on GitHub, so if your host goes down, the image will remain available.
