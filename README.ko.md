@@ -13,7 +13,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Branch](#branch) 
+  - [Branch](#branch)
     - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
     - [Comparing Branches](#comparing-branches)
     - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
@@ -30,6 +30,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Images/GIFs](#imagesgifs)
     - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
   - [Quick Quoting](#quick-quoting)
+  - [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
   - [Quick Licensing](#quick-licensing)
   - [Task Lists](#task-lists)
     - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
@@ -45,7 +46,6 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
     - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
-  - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
   - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
@@ -80,13 +80,13 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
 ### Adjust Tab Space
 
-diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. `ts`뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일에는 적용 되지 않습니다.
+diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. `ts`뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일 보기에는 적용 되지 않습니다만, [크롬 익스텐션](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)으로 자동화 할 수 있습니다.
 
-여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 [전에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go) 이렇습니다.
+여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 전에는 이렇습니다.
 
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
-그리고 `?ts=4`를 붙인 [다음에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) 이렇게 됩니다.
+그리고 `?ts=4`를 붙인 다음에는 이렇게 됩니다.
  --allow-empty
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
@@ -98,7 +98,7 @@ diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값�
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
-![DHH commit history](http://i.imgur.com/mDWwuaY.png)
+![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
 [*커밋 뷰간의 차이에 대해 더 읽어보세요.*](https://help.github.com/articles/differences-between-commit-views)
 
@@ -125,21 +125,7 @@ https://github.com/{user}/{repo}/branches
 
 여기에서 버튼 클릭으로 비교 페이지나 브랜치 삭제를 하실 수 있습니다.
 
-![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
-
-하지만, 보통 `master`보다는 다른브랜치(예를 들어 `development`)를 더 자주 비교 합니다. 이렇게 하려면 URL에 브랜치 이름을 붙여줄 필요가 있습니다.
-
-```
-https://github.com/{user}/{repo}/branches/{branch}
-```
-
-![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
-
-머지된 브랜치들을 보려면 URL에 `?merged=1`를 붙이세요.
-
-![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
-
-이 것을 확인함으로써 커맨드 라인을 사용하지 않은 페이지에서의 브랜치 삭제가 더 쉬워집니다.
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### Comparing Branches
 
@@ -157,7 +143,7 @@ https://github.com/user/repo/compare/{range}
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
+![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
 
 `{range}` 는 이렇게 적을 수도 있습니다.
 
@@ -179,7 +165,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 포크된 저장소간의 브랜치를 비교하려면 URL을 이렇게 변경하세요.
 
 ```
-https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
 ```
 
 예를 들면
@@ -204,9 +190,9 @@ Gists는 본격적인 저장소처럼 취급할 수 있고 클론도 됩니다.
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
-이는 Gists에서도 수정하고 업데이트를 부쉬할 수 있다는 의미입니다.
+이는 Gists에서도 수정하고 업데이트를 푸쉬할 수 있다는 의미입니다.
 
 ```bash
 $ git commit
@@ -332,19 +318,7 @@ puts table.to_s
 
 ### Emojis
 
-에모지는 풀 리퀘스트, 이슈, 커밋 메세지, README등에 `:에모지의_이름:`으로 넣을 수 있습니다.
-
-```
-:smile:
-:poop:
-:shipit:
-:+1:
-```
-
-:smile:
-:poop:
-:shipit:
-:+1:
+에모지는 풀 리퀘스트, 이슈, 커밋 메세지등에 `:에모지의_이름:`으로 넣을 수 있습니다.
 
 깃허브에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
 
@@ -393,6 +367,14 @@ puts table.to_s
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
 [*빠른 인용에 대해 더 읽어 보세요.*](https://github.com/blog/1399-quick-quotes)
+
+### Pasting Clipboard Image to Comments
+
+스크린샷을 찍고 클립보드에 있는 경우 (mac: `cmd-ctrl-shift-4`), 간단히 이미지를 커맨트 색션에 붙여넣기(`cmd-v / ctrl-v`)할 수 있고 이는 자동으로 깃허브에 업로드 됩니다.
+
+![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
+
+[*issue attachments에 대해 더 읽어 보세요.*](https://help.github.com/articles/issue-attachments)
 
 ### Quick Licensing
 
@@ -587,16 +569,6 @@ $ hub clone tiimgreen/toc
 
 [*Hub가 제공하는 더 멋진 기능들을 확인해 보세요.*](https://github.com/github/hub#commands)
 
-### Decreasing Contributor Friction
-
-사람들이 사용하고 기여할 수 있는 프로젝트를 만드려면, 가장 기본적인 질문에 대답할 수 있어야합니다. 이 프로젝트는 무엇입니까? 어떻게 사용합니까? 어디까지 허용됩니까? 어떻게 기여합니까? 어떻게 개발하고 실행해야 합니까? 어떻게 새로운 기능이 이전 기능을 손상되지 않았는지 확인해야 합니까?
-
-[Friction](https://github.com/rafalchmiel/friction)은 이러한 일반적인 [질문들의 답](https://github.com/rafalchmiel/friction/wiki)이 프로젝트 안에 있는지 확인하는 커맨드 라인 스크립트 입니다. 다음은 샘플 출력 입니다.
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
-*Friction 은 MRI 2.1.0, MRI 2.0.0, MRI 1.9.3을 지원합니다.*
-
 ### Contributing Guidelines
 
 저장소의 제일 위에 `CONTRIBUTING` 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.
@@ -757,7 +729,7 @@ $ git commit -m "Big-ass commit" --allow-empty
 $ git status
 ```
 
-![git status](http://i.imgur.com/o3PEHAA.png)
+![git status](http://i.imgur.com/qjPyvXb.png)
 
 이렇게 바뀝니다.
 
@@ -765,7 +737,7 @@ $ git status
 $ git status -sb
 ```
 
-![git status -sb](http://i.imgur.com/xNI1bT0.png)
+![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
 [*깃 `status` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-status)
 
@@ -779,7 +751,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 이렇게 보입니다.
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
 [Palesz](http://stackoverflow.com/users/88355/palesz)님 고맙습니다.
 
