@@ -186,8 +186,9 @@ This means you also can modify and push updates to Gists:
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+$ git push
+Username for 'https://gist.github.com': 
+Password for 'https://tiimgreen@gist.github.com': 
 ```
 
 [*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
