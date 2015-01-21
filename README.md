@@ -124,7 +124,7 @@ From here you can access the compare page or delete a branch with a click of a b
 To use GitHub to compare branches, change the URL to look like this:
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 Where `{range} = master...4-1-stable`
