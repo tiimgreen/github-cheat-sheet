@@ -307,11 +307,11 @@ The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.c
 
 The top 5 used Ejmojis on GitHub are:
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### Images/GIFs
 Images and GIFs can be added to comments, READMEs etc.:
