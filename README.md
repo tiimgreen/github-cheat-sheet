@@ -86,7 +86,7 @@ Here is a Go source file before adding `?ts=4`:
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
-To view all commits on a repo by author add `?author=username` to the URL.
+To view all commits on a repo by author add `?author={user}` to the URL.
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -254,7 +254,7 @@ This closes the issue and references the closing commit.
 ### Cross-Link Issues
 If you want to link to another issue in the same repository, simple type hash `#` then the issue number, it will be auto-linked.
 
-To link to an issue in another repository, `user_name/repo_name#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
+To link to an issue in another repository, `{user}/{repo}#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -323,7 +323,7 @@ Images and GIFs can be added to comments, READMEs etc.:
 Raw images from the repo can be used by calling them directly.:
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
