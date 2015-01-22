@@ -305,7 +305,7 @@ Emojis can be added to Pull Requests, Issues, commit messages, etc. using `:name
 
 The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
 
-The top 5 used Ejmojis on GitHub are:
+The top 5 used Emojis on GitHub are:
 
 1. `:shipit:`
 2. `:sparkles:`
