@@ -81,7 +81,7 @@
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### 查看某个用户的Commit历史
-查看某个用户的所有提交历史，只需在commits页面URL后加上`?author=username`。
+查看某个用户的所有提交历史，只需在commits页面URL后加上`?author={user}`。
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -133,7 +133,7 @@ https://github.com/{user}/{repo}/branches/{branch}
 如果我们想要比较两个分支，可以像下面一样修改URL：
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 其中`{range} = master...4-1-stable`
@@ -197,8 +197,8 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
 
@@ -268,7 +268,7 @@ $ git commit -m "Fix screwup, fixes #12"
 ### 链接其他仓库的Issue
 如果你想引用到同一个仓库中的一个Issue，只需使用井号 `#` 加上Issue号，这样就会自动创建到此Issue的链接。
 
-要链接到其他仓库的Issue，就使用`user_name/repo_name#ISSUE_NUMBER`的方式，例如`tiimgreen/toc#12`。
+要链接到其他仓库的Issue，就使用`{user}/{repo}#ISSUE_NUMBER`的方式，例如`tiimgreen/toc#12`。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -317,11 +317,11 @@ Github支持的完整表情符号列表详见[emoji-cheat-sheet.com](http://www.
 
 Github上使用最多的5个表情符号是：
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### 静态与动态图片
 注释和README等文件里也可以使用图片和GIF动画：
@@ -333,7 +333,7 @@ Github上使用最多的5个表情符号是：
 仓库中的原始图片可以被直接调用：
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)

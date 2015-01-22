@@ -92,7 +92,7 @@ diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값�
 
 ### Commit History by Author
 
-특정 커미터가 한 모든 커밋을 보고 싶다면 URL에 `?author=username`를 추가하세요.
+특정 커미터가 한 모든 커밋을 보고 싶다면 URL에 `?author={user}`를 추가하세요.
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -132,7 +132,7 @@ https://github.com/{user}/{repo}/branches
 깃허브에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 `{range}`는 `master...4-1-stable`식으로 적습니다.
@@ -196,8 +196,8 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
 [*gist를 만드는 법에 대해 더 읽어보세요.*](https://help.github.com/articles/creating-gists)
@@ -268,7 +268,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 같은 저장소의 다른 이슈를 링크하기 원한다면, `#`뒤에 이슈 번호만 입력하시면 자동으로 링크됩니다.
 
-다른 저장소의 이슈를 링크하고 싶다면 `사람_이름/저장소_이름#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
+다른 저장소의 이슈를 링크하고 싶다면 `{user}/{repo}#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -324,11 +324,11 @@ puts table.to_s
 
 깃허브에서 많이 사용하는 에모지 탑 5위는 이렇습니다.
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### Images/GIFs
 
@@ -341,7 +341,7 @@ puts table.to_s
 저장소에 있는 이미지는 직접 불러서 사용할 수 있습니다.
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -369,6 +369,8 @@ puts table.to_s
 [*빠른 인용에 대해 더 읽어 보세요.*](https://github.com/blog/1399-quick-quotes)
 
 ### Pasting Clipboard Image to Comments
+
+_(크롬에서만 동작합니다)_
 
 스크린샷을 찍고 클립보드에 있는 경우 (mac: `cmd-ctrl-shift-4`), 간단히 이미지를 커맨트 색션에 붙여넣기(`cmd-v / ctrl-v`)할 수 있고 이는 자동으로 깃허브에 업로드 됩니다.
 
