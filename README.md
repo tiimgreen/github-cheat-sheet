@@ -263,7 +263,7 @@ Pull Requests and Issues can now be locked by owners or collaborators of the rep
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
 
-This means that users who are not collaborators on the proejct will no longer be able to comment.
+This means that users who are not collaborators on the project will no longer be able to comment.
 
 ![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
 
