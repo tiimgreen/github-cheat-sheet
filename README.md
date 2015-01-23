@@ -174,7 +174,7 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
 
-Gists can be treated as a full repository so they can be cloned like any other:
+Gists can be treated as a repository so they can be cloned like any other:
 
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
@@ -191,7 +191,8 @@ Username for 'https://gist.github.com':
 Password for 'https://tiimgreen@gist.github.com': 
 ```
 
-[*Read more about creating gists.*](https://help.github.com/articles/creating-gists)
+However, Gists do not support directories. All files need to be added to the repository root.  
+[*Read more about creating Gists.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
 [Git.io](http://git.io) is a simple URL shortener for GitHub.
