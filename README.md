@@ -252,7 +252,7 @@ This closes the issue and references the closing commit.
 [*Read more about closing Issues via commit messages.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
 ### Cross-Link Issues
-If you want to link to another issue in the same repository, simple type hash `#` then the issue number, it will be auto-linked.
+If you want to link to another issue in the same repository, simply type hash `#` then the issue number, and it will be auto-linked.
 
 To link to an issue in another repository, `{user}/{repo}#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
 
