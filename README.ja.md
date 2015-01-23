@@ -85,7 +85,7 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### 特定のユーザーによるコミット履歴
-特定のユーザーによるあるリポジトリへのコミット履歴のみを参照したい場合は、`?author=username`をURLの末尾に付ける。
+特定のユーザーによるあるリポジトリへのコミット履歴のみを参照したい場合は、`?author={user}`をURLの末尾に付ける。
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -135,7 +135,7 @@ https://github.com/{user}/{repo}/branches/{branch}
 GitHubのブランチ比較は以下のようなURLで提供されている:
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 `{range}`を`master...4-1-stable`に変更する。
@@ -196,8 +196,8 @@ This means you also can modify and push updates to Gists:
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
 
@@ -264,7 +264,7 @@ $ git commit -m "Fix screwup, fixes #12"
 ### issueの相互リンク
 同じリポジトリの違うissueへリンクを張り参照させたい場合、`#`に続けてissue番号を指定する。そうすると自動的にリンクが作成されるだろう。
 
-別のリポジトリのissueの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
+別のリポジトリのissueの場合は`{user}/{repo}#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -324,11 +324,11 @@ GitHubでサポートされているEmojiの完全なリストは[Emoji cheat sh
 
 GitHubで使われているEmojiのトップ5は以下の通りだ:
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### 画像及びアニメーションGIF
 画像やアニメーションGIFはコミットのコメントやREADMEなどで利用できる:
@@ -340,7 +340,7 @@ GitHubで使われているEmojiのトップ5は以下の通りだ:
 リポジトリにある画像も直接参照することが出来る:
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
