@@ -699,7 +699,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
 
 这要归功于[Palesz](http://stackoverflow.com/users/88355/palesz)在stackoverflow的回答。
 
-*这个命令可以被用作别名，详细做法见[这里](https://github.com/tiimgreen/github-cheat-sheet#aliases)。*
+*这个命令可以被用作别名，详细做法见[这里](#git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D)。*
 
 [*进一步了解 Git `log` 命令.*](http://git-scm.com/docs/git-log)
 
