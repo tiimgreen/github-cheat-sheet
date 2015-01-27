@@ -223,7 +223,7 @@ When on a repository page, keyboard shortcuts allow you to navigate easily.
 
  - Pressing `t` will bring up a file explorer.
  - Pressing `w` will bring up the branch selector.
- - Pressing `s` will select the Command Bar.
+ - Pressing `s` will focus the search field for the current repository. Pressing Backspace to delete the “This repository” pill changes the field to search all of GitHub.
  - Pressing `l` will edit labels on existing Issues.
  - Pressing `y` **when looking at a file** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
@@ -231,7 +231,7 @@ To see all of the shortcuts for the current page press `?`:
 
 ![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
-[*Read more about using the Command Bar.*](https://help.github.com/articles/using-the-command-bar)
+[Read more about search syntax you can use.](https://help.github.com/articles/search-syntax/)
 
 ### Line Highlighting in Repositories
 Either adding `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
