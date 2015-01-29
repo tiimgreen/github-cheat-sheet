@@ -1,7 +1,7 @@
-# GitHub Cheat Sheet
-Une collection de cool fonctionnalités connu et moins connu pour Git et Github. Cette feuille de triche a été inspiré par le discours sur [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) de [Zach Holman](https://github.com/holman) à la Aloha Ruby Conference 2012 ([diapositives](https://speakerdeck.com/holman/git-and-github-secrets)) et son discours [More Git and GitHub Secrets](https://vimeo.com/72955426) au WDCNZ 2013 ([diapositives](https://speakerdeck.com/holman/more-git-and-github-secrets)).
+# Aide mémoire GitHub 
+Une collection d'astuces connues et moins connues pour Git et Github. Cette feuille aide mémoire a été inspirée par le discours sur [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) de [Zach Holman](https://github.com/holman) à la Aloha Ruby Conference 2012 ([diapositives](https://speakerdeck.com/holman/git-and-github-secrets)) et son discours [More Git and GitHub Secrets](https://vimeo.com/72955426) au WDCNZ 2013 ([diapositives](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
-*Shortlink: [`http://git.io/sheet`](http://git.io/sheet)*
+*Lien court: [`http://git.io/sheet`](http://git.io/sheet)*
 
 *Lire ceci dans une autre langue: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [Français](README.fr.md).*
 
@@ -18,10 +18,10 @@ Une collection de cool fonctionnalités connu et moins connu pour Git et Github.
   - [Gists](#gists)
   - [Git.io](#gitio)
   - [Raccourcis clavier](#keyboard-shortcuts)
-  - [Mise en évidence de ligne dans les dépôts](#line-highlighting-in-repositories)
-  - [Fermer des issues via les messages de Commit](#closing-issues-via-commit-messages)
+  - [Surlignage de lignes dans les dépôts](#line-highlighting-in-repositories)
+  - [Fermer des bogues via les messages de Commit](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
-  - [Verouillage de conversations](#locking-conversations)
+  - [Verrouillage de conversations](#locking-conversations)
   - [Statut des CI dans les Pull Requests](#ci-status-on-pull-requests)
   - [Coloration syntaxique dans les fichiers Markdown](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
@@ -68,7 +68,7 @@ Une collection de cool fonctionnalités connu et moins connu pour Git et Github.
 
 ## GitHub
 ### Ignorer les espaces
-Ajouter `?w=1` à n'importe quelle URL d'un diff supprimera tous les changements lié à des espaces, vous permettant de voir seulement le code qui a changé.
+Ajouter `?w=1` à n'importe quelle URL d'un diff supprimera tous les changements liés à des espaces, vous permettant de voir seulement le code qui a changé.
 
 ![Diff sans les espaces](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
@@ -127,7 +127,7 @@ Pour utiliser GitHub afin de comparer les branches, modifier l'URL pour que cett
 https://github.com/{utilisateur}/{depot}/compare/{range}
 ```
 
-où `{range} = master...4-1-stable`
+ou `{range} = master...4-1-stable`
 
 Par exemple:
 
@@ -148,7 +148,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-...ce qui vous permet de voir la différence entre la branche principale jusqu'à un certain temps ou à une date spécifique.
+...ce qui vous permet de voir la différence d'avec la branche principale jusqu'à une temps indiqué ou à une date spécifique.
 
 [*En savoir plus sur la comparaison des commits dans le temps.*](https://help.github.com/articles/comparing-commits-across-time)
 
@@ -218,7 +218,7 @@ Sur la page d'un dépôt, les raccourcis clavier vous permettent de naviguer fac
  - Appuyer sur `w` fera apparaître le sélecteur de branche.
  - Appuyer sur `s` sélectionnera la barre de commandes.
  - Appuyer sur `l` va éditer les labels sur les issues existantes.
- - Appuyer sur `y` **lorsque vous regardez un fichier** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) changera votre URL actuel vers une URL gêlant la page que vous êtes entrain de regarder. Si ce code change, vous serez toujours en mesure de voir ce que vous avez vu au moment de cette action.
+ - Appuyer sur `y` **lorsque vous regardez un fichier** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) changera votre URL actuel vers une URL gelant la page que vous êtes en train de regarder. Si ce code change, vous serez toujours en mesure de voir ce que vous avez vu au moment de cette action.
 
 Pour voir tous les raccourcis pour la page courante, pressez `?`:
 
@@ -226,10 +226,10 @@ Pour voir tous les raccourcis pour la page courante, pressez `?`:
 
 [*En savoir plus sur l'utilisation de la barre de commandes.*](https://help.github.com/articles/using-the-command-bar)
 
-### Mise en évidence de ligne dans les dépôts
+### Surlignage de lignes dans les dépôts
 En ajoutant `#L52` à la fin de l'URL d'un fichier de code ou en cliquant simplement le numéro de ligne mettra cette dernière en évidence.
 
-Cela fonctionne aussi avec les sélections multiples, ex. `#L53-L60`, pour effectuer une sélection multiple, maintenez `shift` et cliquez sur deux lignes:
+Cela fonctionne aussi avec les sélections multiples, ex. `#L53-L60`, pour effectuer une sélection multiple, maintenez la touche `majuscule` et cliquez sur deux lignes:
 
 ```
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
@@ -237,27 +237,27 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 ![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
 
-### Fermer des issues via les messages de Commit
-Si un commit particulier corrige une issue, l'utilisation des mots-clés `fix/fixes/fixed`, `close/closes/closed` ou `resolve/resolves/resolved`, suivi du numéro de l'issue, fermera l'issue une fois committé sur la branche principale.
+### Fermer des bogues via les messages de Commit
+Si un commit particulier corrige un bogue, l'utilisation des mots-clés `fix/fixes/fixed`, `close/closes/closed` ou `resolve/resolves/resolved`, suivi du numéro de bogue, fermera le bogue une fois commité sur la branche principale.
 
 ```bash
 $ git commit -m "Fix screwup, fixes #12"
 ```
 
-Cela ferme l'issue et fait référence au commit associé.
+Cela ferme le bogue et fait référence au commit associé.
 
 ![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
 
 [*En savoir plus sur la fermeture des issues via les messages de Commit.*](https://help.github.com/articles/closing-issues-via-commit-messages)
 
 ### Cross-Link Issues
-Pour créer un lien vers une issue d'un même dépôt, taper simplement `#` puis le numéro de l'issue, elle sera auto-lié.
+Pour créer un lien vers un bogue d'un même dépôt, taper simplement `#` puis le numéro de bogue, il sera auto-lié.
 
-Pour lier vers une issue d'un autre dépôt, `user_name/repo_name#ISSUE_NUMBER` ex. `tiimgreen/toc#12`.
+Pour lier vers un bogue d'un autre dépôt, `user_name/repo_name#ISSUE_NUMBER` ex. `tiimgreen/toc#12`.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
-### Locking Conversations
+### Verrouillage de conversation
 Pull Requests and Issues can now be locked by owners or collaborators of the repo.
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
