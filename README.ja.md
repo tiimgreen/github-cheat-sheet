@@ -26,6 +26,7 @@
   - [画像及びアニメーションGIF](#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif)
     - [GitHub Wikiへの画像の添付](#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98)
   - [素早く引用](#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8)
+  - [コメントへのクリップボードの画像の追加](#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%B8%E3%81%AE%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E8%BF%BD%E5%8A%A0)
   - [設定済みライセンスの追加](#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0)
   - [タスクリスト](#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
     - [Markdownファイルでのタスクリスト](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
@@ -74,13 +75,13 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 [*GitHubの秘密についてもっと詳しく*](https://github.com/blog/967-github-secrets)
 
 ### タブ幅の調節
-差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されない。
+差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されないが、[Chrome](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)と[Operaの拡張](https://addons.opera.com/en/extensions/details/github-tab-size/)をインストールすることにより、対応することができる。
 
-例えば[Goのソースファイル](https://github.com/pengwynn/flint/blob/master/flint/flint.go)を表示している時、`?ts=4`を追加する前はこのように表示されるが:
+例えばGoのソースファイルを表示している時、`?ts=4`を追加する前はこのように表示されるが:
 
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
-`?ts=4`を[追加すると](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4)このように表示される:
+`?ts=4`を追加するとこのように表示される:
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
@@ -90,7 +91,7 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
-![DHH commit history](http://i.imgur.com/mDWwuaY.png)
+![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
 [*コミット・ビューの違いについてもっと詳しく*](https://help.github.com/articles/differences-between-commit-views)
 
@@ -115,21 +116,7 @@ https://github.com/{user}/{repo}/branches
 
 このページからボタンをクリックしてブランチ比較ページへ移動したりブランチを削除することができる。
 
-![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
-
-しかしながら`master`以外、(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
-
-```
-https://github.com/{user}/{repo}/branches/{branch}
-```
-
-![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
-
-マージ済みのブランチを表示するには`?merged=1`をURLに追加する。
-
-![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
-
-このビューでは、コマンドラインを使うことなく簡単にページ上でブランチを削除することができるだろう。
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### ブランチ同士の比較
 GitHubのブランチ比較は以下のようなURLで提供されている:
@@ -145,7 +132,7 @@ https://github.com/{user}/{repo}/compare/{range}
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
-![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
+![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
 
 `{range}`には以下のように変更することもできる:
 
@@ -158,7 +145,12 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-するとmasterブランチと特定の期間または日時との比較が行えるだろう。
+`diff`や`patch`のビューでもブランチを利用して比較することができる:
+
+```
+https://github.com/rails/rails/compare/master...4-1-stable.diff
+https://github.com/rails/rails/compare/master...4-1-stable.patch
+```
 
 [*時間を指定してのブランチ比較についてもっと詳しく*](https://help.github.com/articles/comparing-commits-across-time)
 
@@ -184,22 +176,24 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 GistのURLの最後に`.pibb`を付ける([例](https://gist.github.com/hail2u/9477708.pibb))と*HTMLのみ*のバージョンが表示されるので、そのソースは他のウェブサイトに貼り付けるにはもってこいだろう。
 
-簡単なものとはいえ、完全なGitリポジトリとして機能するため、以下のようにすれば普通のGitリポジトリと同じようにクローンすることができる:
+簡単なものとはいえ、Gitリポジトリとして機能するため、以下のようにすれば普通のGitリポジトリと同じようにクローンすることができる:
 
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
 This means you also can modify and push updates to Gists:
 
 ```bash
 $ git commit
+$ git push
 Username for 'https://gist.github.com':
 Password for 'https://tiimgreen@gist.github.com':
 ```
 
+しかしながら、Gistではディレクトリーがサポートされていない。全てのファイルはリポジトリーのルートに置かれている必要がある。
 
 [*Gistの作成についてもっと詳しく*](https://help.github.com/articles/creating-gists)
 
@@ -227,7 +221,7 @@ Location: https://github.com/...
 
  - `t`を押すとファイルの検索インターフェイスが起動する。
  - `w`を押すとブランチ選択インターフェイスが起動する。
- - `s`を押すとコマンド・バーにフォーカスが当たる。
+ - `s`を押すと現在閲覧しているリポジトリーから検索するフォームにフォーカスが当たる。ここでBackspaceを押し「This repository」という文字列を消すことでGitHub全体からの検索へと切り替えることができる
  - issue画面で`l`を押すとラベルの編集インターフェイスが開かれる。
  - __ファイルを参照している時__（例: `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)に`y`を押すと、参照している時の状態で固定されるURLに変更される。つまりそのファイルのコードが後に変化したとしても、そのURLでは今とまったく同じ状態で表示されるということだ。
 
@@ -235,7 +229,7 @@ Location: https://github.com/...
 
 ![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
-[*コマンドバーについてもっと詳しく*](https://help.github.com/articles/using-the-command-bar)
+[*検索機能についてもっと詳しく*](https://help.github.com/articles/search-syntax/)
 
 ### コードの指定行の強調
 コードのURLの末尾に`#L52`と付けるか行番号をクリックすると、その行が強調表示される。
@@ -312,14 +306,6 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 ### Emoji
 Emojiはpull requestやissue、READMEなどで`:name_of_emoji:`と書くと利用できる:
 
-```
-:smile:
-```
-
-こう書くと以下のように表示される:
-
-:smile:
-
 GitHubでサポートされているEmojiの完全なリストは[Emoji cheat sheet for Campfire and GitHub](http://www.emoji-cheat-sheet.com/)か[All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)で確認できる。
 
 GitHubで使われているEmojiのトップ5は以下の通りだ:
@@ -364,6 +350,16 @@ issueのスレッドで他の人のコメントを引用してコメントした
 ![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
 [*素早く引用する方法についてもっと詳しく*](https://github.com/blog/1399-quick-quotes)
+
+### コメントへのクリップボードの画像の追加
+
+_(Chrome系のブラウザーのみで動作)_
+
+スクリーンショットをクリップボードに保存(mac: `cmd-ctrl-shift-4`)した後、その画像はコメント投稿フォームで貼り付け(`cmd-v`または`ctrl-v`)ることができ、自動的にGitHubへアップロードされます。
+
+![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
+
+[*コメントへのクリップボードの画像の追加についてもっと詳しく*](https://help.github.com/articles/issue-attachments)
 
 ### 設定済みライセンスの追加
 GitHub上でリポジトリを作成する時、あらかじめ設定されているライセンスを追加することもできる:
@@ -546,13 +542,6 @@ $ git clone https://github.com/tiimgreen/toc.git
 
 [*Hubが提供する便利な機能についてもっと詳しく*](https://github.com/github/hub#commands)
 
-### 共同開発者との摩擦の軽減
-もし誰かに自分のプロジェクトの利用またはその開発に参加してもらいたい場合、まずはよくある質問に答えることから始めなければならないだろう。このプロジェクトはどういうものなのか？どうやって使うのか？どのように使っても良いのか？どうやれば開発に参加できるのか？どうやれば開発環境を用意できるのか？どうやって自分の加えた機能が既存の機能を破壊しないことが確認できるのか？
-
-[Friction](https://github.com/rafalchmiel/friction)はこういった[一般的な質問に対しての答え](https://github.com/rafalchmiel/friction/wiki)が用意されているかをチェックしてくれるコマンドライン・ツールだ。例えば以下のような出力を得られる:
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
 ### 開発参加のガイドライン
 リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、issueやpull requestを作成しようとした時にそれへのリンクが表示されるようになる。
 
@@ -696,7 +685,7 @@ $ git status
 
 このように表示されるが:
 
-![git status](http://i.imgur.com/o3PEHAA.png)
+![git status](http://i.imgur.com/qjPyvXb.png)
 
 `-sb`を追加することによって:
 
@@ -706,7 +695,7 @@ $ git status -sb
 
 このように表示することもできる:
 
-![git status -sb](http://i.imgur.com/xNI1bT0.png)
+![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
 [*Gitの`status`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-status)
 
@@ -719,7 +708,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 このように表示される:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
 この設定は[Palesz](http://stackoverflow.com/users/88355/palesz)が考えたものだ。
 
@@ -833,6 +822,7 @@ $ git config --global alias.ac 'add -A . && commit'
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 | `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
+| `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
 | `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 | `git lg` | `git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --` | `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"` |
