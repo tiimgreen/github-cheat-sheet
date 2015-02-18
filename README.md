@@ -307,7 +307,7 @@ GitHub uses [Linguist](https://github.com/github/linguist) to perform language d
 [*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emojis
-Emojis can be added to Pull Requests, Issues, commit messages, etc. using `:name_of_emoji:`
+Emojis can be added to Pull Requests, Issues, commit messages, repository descriptions, etc. using `:name_of_emoji:`.
 
 The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
 
