@@ -6,6 +6,7 @@
 # 目录
  - [GitHub](#github)
   - [忽略空白字符变化](#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0)
+  - [删除所有已删除文件](#%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E5%B7%B2%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6)
   - [调整Tab字符所代表的空格数](#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0)
   - [查看某个用户的Commit历史](#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2)
   - [克隆某个仓库](#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93)
@@ -68,6 +69,12 @@
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
 [*详见 GitHub secrets.*](https://github.com/blog/967-github-secrets)
+
+### 删除所有已删除文件
+
+在删除文件过多时，可以使用如下命令,免除一个个删除的麻烦
+
+`git rm $(git ls-files --deleted)`
 
 ### 调整Tab字符所代表的空格数
 在diff或者file页面的URL后面加上`?ts=4`，这样当显示tab字符的长度时就会是4个空格的长度，不再是默认的8个空格。`ts`后面的数字还可以根据你个人的偏好进行修改。不过，这个小诀窍在Gists页面和raw file页面不起作用。
