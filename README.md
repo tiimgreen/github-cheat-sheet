@@ -53,7 +53,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Previous Branch](#previous-branch)
   - [Stripspace](#stripspace)
   - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [Empty Commits :trollface:](#empty-commits-trollface)
+  - [Empty Commits](#empty-commits)
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
@@ -692,7 +692,7 @@ git checkout pr/42
 
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### Empty Commits :trollface:
+### Empty Commits
 Commits can be pushed with no code changes by adding `--allow-empty`:
 
 ```bash
