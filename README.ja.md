@@ -48,10 +48,11 @@
   - [GitHub情報](#github%E6%83%85%E5%A0%B1)
     - [GitHub Talks](#github-talks)
 - [Git](#git)
+  - [すべての削除済みファイルをワーキング・ツリーから削除する](#%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E5%89%8A%E9%99%A4%E6%B8%88%E3%81%BF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%84%E3%83%AA%E3%83%BC%E3%81%8B%E3%82%89%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B)
   - [直前のブランチ](#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
   - [空白の削除](#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4)
   - [pull requestのチェックアウト](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
-  - [空のコミット :trollface:](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface)
+  - [空のコミット](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88)
   - [Gitステータスのスタイリング](#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [Gitログのスタイリング](#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [コミットログの検索](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2)
@@ -304,7 +305,7 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 [*GitHub Flavored Markdownについてもっと詳しく*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emoji
-Emojiはpull requestやissue、READMEなどで`:name_of_emoji:`と書くと利用できる:
+Emojiはpull requestやissue、コミット・メッセージ、リポジトリーの概要などで`:name_of_emoji:`と書くと利用できる:
 
 GitHubでサポートされているEmojiの完全なリストは[Emoji cheat sheet for Campfire and GitHub](http://www.emoji-cheat-sheet.com/)か[All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)で確認できる。
 
@@ -575,6 +576,33 @@ GitHubで使われているアイコン（Octicons）はオープンソース化
 | More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
+### すべての削除済みファイルをワーキング・ツリーから削除する
+例えば`/bin/rm`を使って大量のファイルを削除した場合、以下のコマンドを使えばワーキング・ツリー、そしてインデックスからも削除することができ、ファイルごとにそれぞれGitコマンドを実行する必要がなくなる:
+
+```bash
+$ git rm $(git ls-files -d)
+```
+
+例えば以下のように実行される:
+
+```bash
+$ git status
+On branch master
+Changes not staged for commit:
+	deleted:    a
+	deleted:    c
+	
+$ git rm $(git ls-files -d)
+rm 'a'
+rm 'c'
+
+$ git status
+On branch master
+Changes to be committed:
+	deleted:    a
+	deleted:    c
+```
+
 ### 直前のブランチ
 Gitで直前のブランチへ移動するには:
 
@@ -660,7 +688,7 @@ git checkout pr/42
 
 [*pull requestのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### 空のコミット :trollface:
+### 空のコミット
 `--allow-empty`オプションを付けると、コードの変化がなくてもコミットを作成することができる:
 
 ```bash
@@ -877,6 +905,7 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
+| Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 
 #### Git Books
 | Title | Link |
