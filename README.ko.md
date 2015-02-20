@@ -51,10 +51,11 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
  - [Git](#git)
+  - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
   - [Previous Branch](#previous-branch)
   - [Stripspace](#stripspace)
   - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [Empty Commits :trollface:](#empty-commits-trollface)
+  - [Empty Commits](#empty-commits)
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
@@ -324,7 +325,7 @@ puts table.to_s
 
 ### Emojis
 
-에모지는 풀 리퀘스트, 이슈, 커밋 메세지등에 `:에모지의_이름:`으로 넣을 수 있습니다.
+에모지는 풀 리퀘스트, 이슈, 커밋 메세지, 저장소 설명등에 `:에모지의_이름:`으로 넣을 수 있습니다.
 
 깃허브에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
 
@@ -615,6 +616,34 @@ $ hub clone tiimgreen/toc
 
 ## Git
 
+### Remove All Deleted Files from the Working Tree
+
+`/bin/rm`을 사용해 대량의 파일을 지울 때, 하나씩 제거할 필요 없이 밑의 명령어를 사용해 작업 디렉터리와 인덱스에서 지울 수 있습니다.
+
+```bash
+$ git rm $(git ls-files -d)
+```
+
+예를 들어
+
+```bash
+$ git status
+On branch master
+Changes not staged for commit:
+       deleted:    a
+       deleted:    c
+
+$ git rm $(git ls-files -d)
+rm 'a'
+rm 'c'
+
+$ git status
+On branch master
+Changes to be committed:
+       deleted:    a
+       deleted:    c
+```
+
 ### Previous Branch
 
 커맨드 라인에서 이전 디렉터리로 이동하려면 이렇게 합니다.
@@ -714,7 +743,7 @@ git checkout pr/42
 
 [*풀 리퀘스트를 로컬로 체크아웃 하는 방법에 대해 더 읽어 보세요.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### Empty Commits :trollface:
+### Empty Commits
 
 `--allow-empty`를 추가하시면 코드의 변경 없이 커밋을 넣을 수 있습니다.
 
@@ -938,6 +967,7 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
+| Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 
 #### Git Books
 
