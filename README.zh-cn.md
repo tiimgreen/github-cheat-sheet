@@ -85,8 +85,8 @@ Git 和 Github 秘籍，灵感来自于 [Zach Holman](https://github.com/holman)
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
-### 查看某个用户的 Commit 历史
-在 Commits 页面 URL 后加上 `?author={user}` 查看某个用户的所有提交。
+### 查看用户的全部 Commit 历史
+在 Commits 页面 URL 后加上 `?author={user}` 查看用户全部的提交。
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
@@ -179,7 +179,7 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 ![Gist](http://i.imgur.com/VkKI1LC.png?1)
 
-Gist 的 URL 后加上 `.pibb`，比如 [like this](https://gist.github.com/tiimgreen/10545817.pibb) ，方便嵌入到其他网站。
+Gist 的 URL 后加上 `.pibb`（[像这样](https://gist.github.com/tiimgreen/10545817.pibb)）可以得到便于嵌入到其他网站 的 HTML 代码。
 
 Gists 可以像任何标准仓库一样被克隆。
 
@@ -558,7 +558,7 @@ $ hub clone tiimgreen/toc
 
 ### 贡献者指南
 
-在你的仓库的根目录添加一个名为 `CONTRIBUTING` 的文件后，贡献者在新建 Issue 或 Pull Request 时会看到这个文件的链接。
+在仓库的根目录添加一个名为 `CONTRIBUTING` 的文件后，贡献者在新建 Issue 或 Pull Request 时会看到一个指向这个文件的链接。
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
@@ -916,6 +916,8 @@ $ git config --global color.ui 1
 | Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
+| GitHub Training Kit | http://training.github.com/kit |
+| Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 
 #### Git 参考书籍
 | Title | Link |
