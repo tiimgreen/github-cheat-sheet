@@ -268,7 +268,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
 
-つまりそのプロジェクトの共同開発者ではユーザーはコメントをすることができないということだ。
+つまりそのプロジェクトの共同開発者ではないユーザーはコメントをすることができないということだ。
 
 ![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
 
