@@ -57,6 +57,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
+  - [Git Grep](#git-grep)
   - [Merged Branches](#merged-branches)
   - [Fixup and Autosquash](#fixup-and-autosquash)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
@@ -763,6 +764,32 @@ $ git show :/typo
 ![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 *Press `q` to quit.*
+
+
+### Git Grep
+Grep pattern under your git versioned folder. 
+
+Running:
+```
+git grep aliases
+```
+will show all the files containing the string *aliases*.
+
+![git grep aliases](http://i.imgur.com/q3WkUgl.png?1)
+
+*Press `q` to quit.*
+
+We can also use multiple flags for more advanced search. For example:
+
+ * `-e` The next parameter is the pattern (including regex)
+ * `--and` Combine multiple patterns.
+
+Use it like this:
+```
+ git grep -e pattern --and -e anotherpattern
+```
+
+[*Read more about the Git `grep` command.*](http://git-scm.com/docs/git-grep)
 
 ### Merged Branches
 Running:
