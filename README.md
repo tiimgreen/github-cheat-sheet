@@ -145,7 +145,7 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*Dates are in the format `YYYY-DD-MM`*
+*Dates are in the format `YYYY-MM-DD`*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
