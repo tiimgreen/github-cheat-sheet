@@ -153,7 +153,7 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*날짜는 `YYYY-DD-MM`형식으로 적습니다*
+*날짜는 `YYYY-MM-DD`형식으로 적습니다*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
