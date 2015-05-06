@@ -36,6 +36,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
+  - [Rendering PDF](#rendering-pdf)
   - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
     - [Rendered Prose Diffs](#rendered-prose-diffs)
@@ -193,11 +194,11 @@ This means you also can modify and push updates to Gists:
 ```bash
 $ git commit
 $ git push
-Username for 'https://gist.github.com': 
-Password for 'https://tiimgreen@gist.github.com': 
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
-However, Gists do not support directories. All files need to be added to the repository root.  
+However, Gists do not support directories. All files need to be added to the repository root.
 [*Read more about creating Gists.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
@@ -461,8 +462,16 @@ GitHub supports rendering tabular data in the form of `.csv` (comma-separated) a
 
 [*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
 
+### Rendering PDF
+
+GitHub supports rendering PDF:
+
+![PDF](https://cloud.githubusercontent.com/assets/1000669/7492902/f8493160-f42e-11e4-8cea-1cb4f02757e7.png)
+
+[*Read more about rendering PDF.*](https://github.com/blog/1974-pdf-viewing)
+
 ###Revert a Pull Request
-After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request. 
+After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request.
 
 You can revert it by clicking the **Revert** button on the right side of a commit in the pull request page to create a pull request with reverted changes to this specific pull request.
 
@@ -594,7 +603,7 @@ On branch master
 Changes not staged for commit:
 	deleted:    a
 	deleted:    c
-	
+
 $ git rm $(git ls-files -d)
 rm 'a'
 rm 'c'
