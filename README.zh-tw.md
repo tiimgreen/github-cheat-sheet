@@ -1,7 +1,7 @@
 # GitHub秘笈
 Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman) 在 2012 年 Aloha Ruby Conference 和 2013 年 WDCNZ 上所做的演講：[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)([slides](https://speakerdeck.com/holman/git-and-github-secrets)) 和 [More Git and GitHub Secrets](https://vimeo.com/72955426)([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))。
 
-*其他語言版本: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [簡體中文](README.zh-cn.md), [繁體中文](README.zh-tw.md).*
+*其他語言版本: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [簡體中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
 # 目錄
   - [GitHub](#github)
