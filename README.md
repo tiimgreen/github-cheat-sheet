@@ -52,6 +52,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
   - [Previous Branch](#previous-branch)
   - [Stripspace](#stripspace)
+  - [SSH keys](#ssh-keys)
   - [Checking out Pull Requests](#checking-out-pull-requests)
   - [Empty Commits](#empty-commits)
   - [Styled Git Status](#styled-git-status)
@@ -636,6 +637,18 @@ $ git stripspace < README.md
 ```
 
 [*Read more about the Git `stripspace` command.*](http://git-scm.com/docs/git-stripspace)
+
+### SSH keys
+
+You can get a list of public ssh keys in plain text format by visiting:
+
+```
+https://github.com/{user}.keys
+```
+
+e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
+
+[Read more about accessing public ssh keys...](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
 ### Checking out Pull Requests
 
