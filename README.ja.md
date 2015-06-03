@@ -142,7 +142,7 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*日付の形式は`YYYY-DD-MM`だ。*
+*日付の形式は`YYYY-MM-DD`だ。*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
