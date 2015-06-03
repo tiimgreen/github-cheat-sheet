@@ -38,6 +38,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
+  - [Rendering PDF](#rendering-pdf)
   - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
     - [Rendered Prose Diffs](#rendered-prose-diffs)
@@ -54,11 +55,13 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
   - [Previous Branch](#previous-branch)
   - [Stripspace](#stripspace)
+  - [SSH keys](#ssh-keys)
   - [Checking out Pull Requests](#checking-out-pull-requests)
   - [Empty Commits](#empty-commits)
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
+  - [Git Grep](#git-grep)
   - [Merged Branches](#merged-branches)
   - [Fixup and Autosquash](#fixup-and-autosquash)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
@@ -486,6 +489,14 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 [*표 데이타 표시에 대해 더 읽어 보세요.*](https://github.com/blog/1601-see-your-csvs)
 
+### Rendering PDF
+
+깃허브에서 PDF를 렌더링할 수 있습니다.
+
+![PDF](https://cloud.githubusercontent.com/assets/1000669/7492902/f8493160-f42e-11e4-8cea-1cb4f02757e7.png)
+
+[*PDF 렌더링에 대해 더 읽어 보세요.*](https://github.com/blog/1974-pdf-viewing)
+
 ### Revert a Pull Request
 
 풀 리퀘스트가 머지된 후에, 아무 도움이 안되거나 머지가 잘못된 결정이었다는 걸
@@ -683,6 +694,18 @@ $ git stripspace < README.md
 
 [*깃 `stripspace` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-stripspace)
 
+### SSH keys
+
+밑의 주소를 방문하면 공개 ssh 키의 목록을 일반 텍스트 형식으로 볼 수 있습니다.
+
+```
+https://github.com/{user}.keys
+```
+
+e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
+
+[*공개 ssh 키 접근에 대해 더 읽어 보세요.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
+
 ### Checking out Pull Requests
 
 풀 리퀘스트는 깃허브 저장소에서 사용하는 특별한 브랜치로 여러 방법으로 로컬로
@@ -813,6 +836,32 @@ $ git show :/typo
 ![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 NOTE: 나오려면 `q`를 누르세요.
+
+### Git Grep
+
+Git Grep은 패턴에 매치하는 줄의 목록을 반환합니다.
+
+다음 명령을 실행해 보세요.
+```bash
+$ git grep aliases
+```
+*aliases* 문자열이 포함된 모든 파일을 보여줍니다.
+
+![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
+
+*나오려면 `q`를 누르세요.*
+
+여러 플레그를 이용해서 좀 더 복잡한 검색을 할 수 있습니다. 예를 들면,
+
+ * `-e` 다음 파라미터는 패턴 (e.g. regex)
+ * `--and`, `--or`, `--not` 으로 여러 패턴을 조합
+
+이렇게 사용할 수 있습니다.
+```bash
+ $ git grep -e pattern --and -e anotherpattern
+```
+
+[*깃 `grep` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-grep)
 
 ### Merged Branches
 
