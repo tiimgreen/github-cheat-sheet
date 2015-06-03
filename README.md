@@ -789,26 +789,27 @@ $ git show :/typo
 
 
 ### Git Grep
-Grep pattern under your git versioned folder. 
+
+Git Grep will return a list of lines matching a pattern.
 
 Running:
-```
-git grep aliases
+```bash
+$ git grep aliases
 ```
 will show all the files containing the string *aliases*.
 
-![git grep aliases](http://i.imgur.com/q3WkUgl.png?1)
+![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
 
 *Press `q` to quit.*
 
-We can also use multiple flags for more advanced search. For example:
+You can also use multiple flags for more advanced search. For example:
 
- * `-e` The next parameter is the pattern (including regex)
- * `--and` Combine multiple patterns.
+ * `-e` The next parameter is the pattern (e.g. regex)
+ * `--and`, `--or` and `--not` Combine multiple patterns.
 
 Use it like this:
-```
- git grep -e pattern --and -e anotherpattern
+```bash
+ $ git grep -e pattern --and -e anotherpattern
 ```
 
 [*Read more about the Git `grep` command.*](http://git-scm.com/docs/git-grep)
