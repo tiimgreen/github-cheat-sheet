@@ -657,7 +657,7 @@ https://github.com/{user}.keys
 
 e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
-[Read more about accessing public ssh keys...](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
+[*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
 ### Checking out Pull Requests
 
