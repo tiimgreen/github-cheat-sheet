@@ -23,8 +23,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Cross-Link Issues](#cross-link-issues)
   - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
-  - [Negative filters in Issues](#negative-filters-in-issues)
-  - [Merged pull requests filter](#merged-pull-requests-filter)
+  - [Filters](#filters)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
   - [Images/GIFs](#imagesgifs)
@@ -286,7 +285,7 @@ If set up correctly, every time you receive a Pull Request, [Travis CI](https://
 
 [*Read more about the commit status API.*](https://github.com/blog/1227-commit-status-api)
 
-### Negative filters in Issues
+### Filters
 
 Both issues and pull requests allow filtering in the user interface.
 
@@ -301,10 +300,6 @@ But, you can also find all issues that are NOT labeled activerecord:
 Additionally, this also works for pull requests:
 
 `is:pr -label:activerecord`
-
-[*Read more about searching issues.*](https://help.github.com/articles/searching-issues)
-
-### Merged pull requests filter
 
 Github has tabs for displaying open or closed issues and pull requests but you
 can also see merged pull requests.  Just put the following in the filter:
