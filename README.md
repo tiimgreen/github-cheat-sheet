@@ -308,6 +308,14 @@ can also see merged pull requests.  Just put the following in the filter:
 
 [*Read more about searching issues.*](https://help.github.com/articles/searching-issues)
 
+Finally, github now allows you to filter by the Status API's status.
+
+Pull requests with only successful statuses:
+
+`status:success`
+
+[*Read more about searching on the Status API.*](https://github.com/blog/2014-filter-pull-requests-by-status)
+
 ### Syntax Highlighting in Markdown Files
 For example, to syntax highlight Ruby code in your Markdown files write:
 
