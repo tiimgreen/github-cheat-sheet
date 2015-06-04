@@ -1,6 +1,8 @@
 # GitHubカンニング・ペーパー
 これはGitやGitHubの隠された機能やよく知られていない機能の一覧だ。[Zach Holman](https://github.com/holman)によるAloha Ruby Conference 2012での[Git and GitHub Secrets](https://github.com/tiimgreen/github-cheat-sheet)（[スライド](https://github.com/tiimgreen/github-cheat-sheet)）とWDCNZ 2013での[More Git and GitHub Secrets](https://vimeo.com/72955426)（[スライド](https://speakerdeck.com/holman/more-git-and-github-secrets)）の二つのトークを元にしている。
 
+*短縮URL: [`http://git.io/sheet`](http://git.io/sheet)*
+
 *Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
 # 目次
@@ -42,7 +44,6 @@
     - [pull requestの内容をDIFFまたはPATCH形式で取得](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97)
     - [画像の表示とDIFF](#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff)
   - [Hub](#hub)
-  - [共同開発者との摩擦の軽減](#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B)
   - [開発参加のガイドライン](#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
   - [Octicons](#octicons)
   - [GitHub情報](#github%E6%83%85%E5%A0%B1)
@@ -452,7 +453,7 @@ GitHubでは`.csv`（カンマ区切り）と`.tsv`（タブ区切り）の形�
 
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
-[*表形式のデーター表示についてもっと詳しく*](https://github.com/blog/1601-see-your-csvs)
+[*表形式のデータ表示についてもっと詳しく*](https://github.com/blog/1601-see-your-csvs)
 
 ### pull requestの取り消し
 pull requestをマージした後、意味がなかったことがわかったり、そのpull requestをマージしたのは間違いだったことがわかることもあるだろう。
