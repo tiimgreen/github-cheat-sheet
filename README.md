@@ -23,6 +23,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Cross-Link Issues](#cross-link-issues)
   - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
+  - [Filters](#filters)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
   - [Images/GIFs](#imagesgifs)
@@ -286,6 +287,37 @@ If set up correctly, every time you receive a Pull Request, [Travis CI](https://
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*Read more about the commit status API.*](https://github.com/blog/1227-commit-status-api)
+
+### Filters
+
+Both issues and pull requests allow filtering in the user interface.
+
+For the Rails repo: https://github.com/rails/rails/issues, the following filter is built by selecting the label "activerecord":
+
+`is:issue label:activerecord`
+
+But, you can also find all issues that are NOT labeled activerecord:
+
+`is:issue -label:activerecord`
+
+Additionally, this also works for pull requests:
+
+`is:pr -label:activerecord`
+
+Github has tabs for displaying open or closed issues and pull requests but you
+can also see merged pull requests.  Just put the following in the filter:
+
+`is:merged`
+
+[*Read more about searching issues.*](https://help.github.com/articles/searching-issues)
+
+Finally, github now allows you to filter by the Status API's status.
+
+Pull requests with only successful statuses:
+
+`status:success`
+
+[*Read more about searching on the Status API.*](https://github.com/blog/2014-filter-pull-requests-by-status)
 
 ### Syntax Highlighting in Markdown Files
 For example, to syntax highlight Ruby code in your Markdown files write:
