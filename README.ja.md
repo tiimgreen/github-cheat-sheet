@@ -342,6 +342,7 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 Emojiはpull requestやissue、コミット・メッセージ、リポジトリーの概要などで`:name_of_emoji:`と書くと利用できる:
 
 GitHubでサポートされているEmojiの完全なリストは[Emoji cheat sheet for Campfire and GitHub](http://www.emoji-cheat-sheet.com/)か[All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)で確認できる。
+素敵なemojiの検索は[emoji.muan.co](http://emoji.muan.co/)。
 
 GitHubで使われているEmojiのトップ5は以下の通りだ:
 
