@@ -612,6 +612,7 @@ GitHubs icons (Octicons) have now been open sourced.
 | GitHub Help | https://help.github.com/ |
 | GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
+| Github Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
 
 #### GitHub Talks
 | Title | Link |
