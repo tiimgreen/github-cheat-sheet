@@ -1,4 +1,4 @@
-# GitHub秘笈
+# GitHub秘笈 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman) 在 2012 年 Aloha Ruby Conference 和 2013 年 WDCNZ 上所做的演講：[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)([slides](https://speakerdeck.com/holman/git-and-github-secrets)) 和 [More Git and GitHub Secrets](https://vimeo.com/72955426)([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))。
 
 *其他語言版本: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [簡體中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
@@ -189,7 +189,7 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 ![Gists](http://i.imgur.com/BcFzabp.png)
 
-這意味著你可以像 Github 倉庫一樣修改和更新 Gists : 
+這意味著你可以像 Github 倉庫一樣修改和更新 Gists :
 
 ```bash
 $ git commit
@@ -605,7 +605,7 @@ On branch master
 Changes not staged for commit:
 	deleted:    a
 	deleted:    c
-	
+
 $ git rm $(git ls-files -d)
 rm 'a'
 rm 'c'
@@ -782,7 +782,7 @@ $ git show :/typo
 $ git branch --merged
 ```
 
-這會顯示所有已經合併到你當前分支的分支列表。 
+這會顯示所有已經合併到你當前分支的分支列表。
 
 相反地：
 
