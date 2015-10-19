@@ -370,8 +370,8 @@ Ceci fonctionne également pour `.gitignore`.
 
 [*Plus d'information sur les licences open source (En anglais).*](https://help.github.com/articles/open-source-licensing)
 
-### Task Lists
-In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
+### Liste de tâches
+Dans les bogues et les pull requests, des boîtes à cocher peuvent être ajoutées en utilisant la syntaxe suivante (remarquez l'espace) :
 
 ```
 - [ ] Be awesome
@@ -384,7 +384,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 
 ![Task List](http://i.imgur.com/jJBXhsY.png)
 
-When they are clicked, they will be updated in the pure Markdown:
+Lorsqu'un utilisateur clique sur une tâche, elle est mise à jour dans le format Markdown :
 
 ```
 - [x] Be awesome
@@ -395,10 +395,10 @@ When they are clicked, they will be updated in the pure Markdown:
 - [ ] Sleep
 ```
 
-[*Read more about task lists.*](https://help.github.com/articles/writing-on-github#task-lists)
+[*Plus d'informations sur les listes de tâches (En anglais).*](https://help.github.com/articles/writing-on-github#task-lists)
 
-#### Task Lists in Markdown Documents
-In full Markdown documents **read-only** checklists can now be added using the following syntax:
+#### Listes de tâches dans les documents Markdown
+Dans les documents Markdown, il est maintenant possible d'ajouter des listes de boîtes à cocher en **lecture seule** en utilisant la syntaxe suivante :
 
 ```
 - [ ] Mercury
@@ -418,7 +418,7 @@ In full Markdown documents **read-only** checklists can now be added using the f
   - [ ] Deimos
   - [ ] Phobos
 
-[*Read more about task lists in markdown documents.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+[*Plus d'informations sur les listes de tâches dans les documents Markdown (En anglais)*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
 ### Relative Links
 Relative links are recommended in your Markdown files when linking to internal content.
