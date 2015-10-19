@@ -1,10 +1,10 @@
-# 깃허브 치트 시트
+# 깃허브 치트 시트 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by [Zach Holman](https://github.com/holman)'s [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets)) and his [More Git and GitHub Secrets](https://vimeo.com/72955426) talk at WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
 *Shortlink: [`http://git.io/sheet`](http://git.io/sheet)*
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md).*
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
 # 목록
 
@@ -13,7 +13,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
-  - [Branch](#branch) 
+  - [Branch](#branch)
     - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
     - [Comparing Branches](#comparing-branches)
     - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
@@ -30,6 +30,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Images/GIFs](#imagesgifs)
     - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
   - [Quick Quoting](#quick-quoting)
+  - [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
   - [Quick Licensing](#quick-licensing)
   - [Task Lists](#task-lists)
     - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
@@ -37,6 +38,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
   - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
   - [Rendering Tabular Data](#rendering-tabular-data)
+  - [Rendering PDF](#rendering-pdf)
   - [Revert a Pull Request](#revert-a-pull-request)
   - [Diffs](#diffs)
     - [Rendered Prose Diffs](#rendered-prose-diffs)
@@ -45,19 +47,21 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
     - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
-  - [Decreasing Contributor Friction](#decreasing-contributor-friction)
   - [Contributing Guidelines](#contributing-guidelines)
   - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
  - [Git](#git)
+  - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
   - [Previous Branch](#previous-branch)
   - [Stripspace](#stripspace)
+  - [SSH keys](#ssh-keys)
   - [Checking out Pull Requests](#checking-out-pull-requests)
-  - [Empty Commits :trollface:](#empty-commits-trollface)
+  - [Empty Commits](#empty-commits)
   - [Styled Git Status](#styled-git-status)
   - [Styled Git Log](#styled-git-log)
   - [Git Query](#git-query)
+  - [Git Grep](#git-grep)
   - [Merged Branches](#merged-branches)
   - [Fixup and Autosquash](#fixup-and-autosquash)
   - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
@@ -80,25 +84,25 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
 ### Adjust Tab Space
 
-diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. `ts`뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일에는 적용 되지 않습니다.
+diff나 파일 URL에 `?ts=4`를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. `ts`뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일 보기에는 적용 되지 않습니다만, [크롬 익스텐션](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)이나 [오페라 익스텐션](https://addons.opera.com/en/extensions/details/github-tab-size/)으로 자동화 할 수 있습니다.
 
-여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 [전에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go) 이렇습니다.
+여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 전에는 이렇습니다.
 
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
-그리고 `?ts=4`를 붙인 [다음에는](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4) 이렇게 됩니다.
+그리고 `?ts=4`를 붙인 다음에는 이렇게 됩니다.
  --allow-empty
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
 
-특정 커미터가 한 모든 커밋을 보고 싶다면 URL에 `?author=username`를 추가하세요.
+특정 커미터가 한 모든 커밋을 보고 싶다면 URL에 `?author={user}`를 추가하세요.
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
-![DHH commit history](http://i.imgur.com/mDWwuaY.png)
+![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
 [*커밋 뷰간의 차이에 대해 더 읽어보세요.*](https://help.github.com/articles/differences-between-commit-views)
 
@@ -125,28 +129,14 @@ https://github.com/{user}/{repo}/branches
 
 여기에서 버튼 클릭으로 비교 페이지나 브랜치 삭제를 하실 수 있습니다.
 
-![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
-
-하지만, 보통 `master`보다는 다른브랜치(예를 들어 `development`)를 더 자주 비교 합니다. 이렇게 하려면 URL에 브랜치 이름을 붙여줄 필요가 있습니다.
-
-```
-https://github.com/{user}/{repo}/branches/{branch}
-```
-
-![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
-
-머지된 브랜치들을 보려면 URL에 `?merged=1`를 붙이세요.
-
-![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
-
-이 것을 확인함으로써 커맨드 라인을 사용하지 않은 페이지에서의 브랜치 삭제가 더 쉬워집니다.
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### Comparing Branches
 
 깃허브에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 `{range}`는 `master...4-1-stable`식으로 적습니다.
@@ -157,7 +147,7 @@ https://github.com/user/repo/compare/{range}
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
+![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
 
 `{range}` 는 이렇게 적을 수도 있습니다.
 
@@ -166,11 +156,16 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*날짜는 `YYYY-DD-MM`형식으로 적습니다*
+*날짜는 `YYYY-MM-DD`형식으로 적습니다*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-이렇게 하면 특정 날짜나 한 시간 전의 마스터 브랜치의 차이를 확인할 수 있습니다.
+브랜치는 `diff`나 `patch`뷰로도 확인할 수 있습니다.
+
+```
+https://github.com/rails/rails/compare/master...4-1-stable.diff
+https://github.com/rails/rails/compare/master...4-1-stable.patch
+```
 
 [*시간으로 커밋을 비교하는 법에 대해 더 읽어 보세요.*](https://help.github.com/articles/comparing-commits-across-time)
 
@@ -179,7 +174,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 포크된 저장소간의 브랜치를 비교하려면 URL을 이렇게 변경하세요.
 
 ```
-https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
 ```
 
 예를 들면
@@ -198,23 +193,24 @@ https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
 
 [이렇게](https://gist.github.com/tiimgreen/10545817.pibb) Gist URL뒤에 `.pibb`를 넣으면 다른 사이트에 넣을수 있는 *HTML 온리* 버전을 만들 수 있습니다.
 
-Gists는 본격적인 저장소처럼 취급할 수 있고 클론도 됩니다.
+Gists는 저장소처럼 취급할 수 있고 클론도 됩니다.
 
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
-이는 Gists에서도 수정하고 업데이트를 부쉬할 수 있다는 의미입니다.
+이는 Gists에서도 수정하고 업데이트를 푸쉬할 수 있다는 의미입니다.
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
-[*gist를 만드는 법에 대해 더 읽어보세요.*](https://help.github.com/articles/creating-gists)
+하지만, Gists는 디랙토리를 지원하지 않습니다. 모든 파일은 저장소의 루트에 넣을 필요가 있습니다.
+[*Gist를 만드는 법에 대해 더 읽어보세요.*](https://help.github.com/articles/creating-gists)
 
 ### Git.io
 
@@ -242,7 +238,7 @@ Location: https://github.com/...
 
  - `t`를 누르면 파일 탐색 페이지로 이동합니다.
  - `w`를 누르면 브렌치 선택 페이지로 이동합니다.
- - `s`를 누르면 커맨드 창으로 이동합니다.
+ - `s`를 누르면 지금 저장소의 검색창이 포커스됩니다. 백스페이스를 누르면 채워져 있는 "This repository"를 지워 GitHub전체에서 검색할 수 있게 됩니다.
  - `l`를 누르면 있는 이슈의 라벨을 수정할 수 있습니다.
  - __파일을 보고 있을 때__ (예를 들어 `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) `y`를 누르면 URL을 지금 보고 있는 페이지를 사실상 고정하도록 합니다. 코드가 바뀐다고 해도 이번에 본 내용을 다시 볼 수 있습니다.
 
@@ -250,7 +246,7 @@ Location: https://github.com/...
 
 ![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
-[*커맨드 바의 사용법을 더 읽어 보세요.*](https://help.github.com/articles/using-the-command-bar)
+[*사용할 수 있는 검색 문법에 대해 더 읽어 보세요.*](https://help.github.com/articles/search-syntax/)
 
 ### Line Highlighting in Repos
 
@@ -282,7 +278,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 같은 저장소의 다른 이슈를 링크하기 원한다면, `#`뒤에 이슈 번호만 입력하시면 자동으로 링크됩니다.
 
-다른 저장소의 이슈를 링크하고 싶다면 `사람_이름/저장소_이름#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
+다른 저장소의 이슈를 링크하고 싶다면 `{user}/{repo}#이슈_번호`로 할 수 있습니다. (예 `tiimgreen/toc#12`)
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -292,7 +288,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
 
-이는 프로젝트의 협업자가 아닌 사람은 더이상 커맨트를 달 수 없게된다는 말입니다.
+이는 프로젝트의 협업자가 아닌 사람은 더 이상 커맨트를 달 수 없게된다는 말입니다.
 
 ![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
 
@@ -332,29 +328,17 @@ puts table.to_s
 
 ### Emojis
 
-에모지는 풀 리퀘스트, 이슈, 커밋 메세지, README등에 `:에모지의_이름:`으로 넣을 수 있습니다.
-
-```
-:smile:
-:poop:
-:shipit:
-:+1:
-```
-
-:smile:
-:poop:
-:shipit:
-:+1:
+에모지는 풀 리퀘스트, 이슈, 커밋 메세지, 저장소 설명등에 `:에모지의_이름:`으로 넣을 수 있습니다.
 
 깃허브에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
 
 깃허브에서 많이 사용하는 에모지 탑 5위는 이렇습니다.
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### Images/GIFs
 
@@ -367,7 +351,7 @@ puts table.to_s
 저장소에 있는 이미지는 직접 불러서 사용할 수 있습니다.
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -393,6 +377,16 @@ puts table.to_s
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
 [*빠른 인용에 대해 더 읽어 보세요.*](https://github.com/blog/1399-quick-quotes)
+
+### Pasting Clipboard Image to Comments
+
+_(크롬에서만 동작합니다)_
+
+스크린샷을 찍고 클립보드에 있는 경우 (mac: `cmd-ctrl-shift-4`), 간단히 이미지를 커맨트 색션에 붙여넣기(`cmd-v / ctrl-v`)할 수 있고 이는 자동으로 깃허브에 업로드 됩니다.
+
+![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
+
+[*issue attachments에 대해 더 읽어 보세요.*](https://help.github.com/articles/issue-attachments)
 
 ### Quick Licensing
 
@@ -495,6 +489,14 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 [*표 데이타 표시에 대해 더 읽어 보세요.*](https://github.com/blog/1601-see-your-csvs)
 
+### Rendering PDF
+
+깃허브에서 PDF를 렌더링할 수 있습니다.
+
+![PDF](https://cloud.githubusercontent.com/assets/1000669/7492902/f8493160-f42e-11e4-8cea-1cb4f02757e7.png)
+
+[*PDF 렌더링에 대해 더 읽어 보세요.*](https://github.com/blog/1974-pdf-viewing)
+
 ### Revert a Pull Request
 
 풀 리퀘스트가 머지된 후에, 아무 도움이 안되거나 머지가 잘못된 결정이었다는 걸
@@ -587,16 +589,6 @@ $ hub clone tiimgreen/toc
 
 [*Hub가 제공하는 더 멋진 기능들을 확인해 보세요.*](https://github.com/github/hub#commands)
 
-### Decreasing Contributor Friction
-
-사람들이 사용하고 기여할 수 있는 프로젝트를 만드려면, 가장 기본적인 질문에 대답할 수 있어야합니다. 이 프로젝트는 무엇입니까? 어떻게 사용합니까? 어디까지 허용됩니까? 어떻게 기여합니까? 어떻게 개발하고 실행해야 합니까? 어떻게 새로운 기능이 이전 기능을 손상되지 않았는지 확인해야 합니까?
-
-[Friction](https://github.com/rafalchmiel/friction)은 이러한 일반적인 [질문들의 답](https://github.com/rafalchmiel/friction/wiki)이 프로젝트 안에 있는지 확인하는 커맨드 라인 스크립트 입니다. 다음은 샘플 출력 입니다.
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
-*Friction 은 MRI 2.1.0, MRI 2.0.0, MRI 1.9.3을 지원합니다.*
-
 ### Contributing Guidelines
 
 저장소의 제일 위에 `CONTRIBUTING` 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.
@@ -634,6 +626,34 @@ $ hub clone tiimgreen/toc
 | More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
+
+### Remove All Deleted Files from the Working Tree
+
+`/bin/rm`을 사용해 대량의 파일을 지울 때, 하나씩 제거할 필요 없이 밑의 명령어를 사용해 작업 디렉터리와 인덱스에서 지울 수 있습니다.
+
+```bash
+$ git rm $(git ls-files -d)
+```
+
+예를 들어
+
+```bash
+$ git status
+On branch master
+Changes not staged for commit:
+       deleted:    a
+       deleted:    c
+
+$ git rm $(git ls-files -d)
+rm 'a'
+rm 'c'
+
+$ git status
+On branch master
+Changes to be committed:
+       deleted:    a
+       deleted:    c
+```
 
 ### Previous Branch
 
@@ -673,6 +693,18 @@ $ git stripspace < README.md
 ```
 
 [*깃 `stripspace` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-stripspace)
+
+### SSH keys
+
+밑의 주소를 방문하면 공개 ssh 키의 목록을 일반 텍스트 형식으로 볼 수 있습니다.
+
+```
+https://github.com/{user}.keys
+```
+
+e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
+
+[*공개 ssh 키 접근에 대해 더 읽어 보세요.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
 ### Checking out Pull Requests
 
@@ -734,7 +766,7 @@ git checkout pr/42
 
 [*풀 리퀘스트를 로컬로 체크아웃 하는 방법에 대해 더 읽어 보세요.*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### Empty Commits :trollface:
+### Empty Commits
 
 `--allow-empty`를 추가하시면 코드의 변경 없이 커밋을 넣을 수 있습니다.
 
@@ -757,7 +789,7 @@ $ git commit -m "Big-ass commit" --allow-empty
 $ git status
 ```
 
-![git status](http://i.imgur.com/o3PEHAA.png)
+![git status](http://i.imgur.com/qjPyvXb.png)
 
 이렇게 바뀝니다.
 
@@ -765,7 +797,7 @@ $ git status
 $ git status -sb
 ```
 
-![git status -sb](http://i.imgur.com/xNI1bT0.png)
+![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
 [*깃 `status` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-status)
 
@@ -779,7 +811,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 이렇게 보입니다.
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
 [Palesz](http://stackoverflow.com/users/88355/palesz)님 고맙습니다.
 
@@ -804,6 +836,32 @@ $ git show :/typo
 ![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 NOTE: 나오려면 `q`를 누르세요.
+
+### Git Grep
+
+Git Grep은 패턴에 매치하는 줄의 목록을 반환합니다.
+
+다음 명령을 실행해 보세요.
+```bash
+$ git grep aliases
+```
+*aliases* 문자열이 포함된 모든 파일을 보여줍니다.
+
+![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
+
+*나오려면 `q`를 누르세요.*
+
+여러 플레그를 이용해서 좀 더 복잡한 검색을 할 수 있습니다. 예를 들면,
+
+ * `-e` 다음 파라미터는 패턴 (e.g. regex)
+ * `--and`, `--or`, `--not` 으로 여러 패턴을 조합
+
+이렇게 사용할 수 있습니다.
+```bash
+ $ git grep -e pattern --and -e anotherpattern
+```
+
+[*깃 `grep` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-grep)
 
 ### Merged Branches
 
@@ -899,6 +957,7 @@ $ git config --global alias.ac 'add -A . && commit'
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 | `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
+| `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 | `git lg` | `git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --` | `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"` |
 
@@ -957,6 +1016,7 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
+| Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 
 #### Git Books
 

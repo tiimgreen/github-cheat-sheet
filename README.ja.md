@@ -1,7 +1,9 @@
-# GitHubカンニング・ペーパー
+# GitHubカンニング・ペーパー [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 これはGitやGitHubの隠された機能やよく知られていない機能の一覧だ。[Zach Holman](https://github.com/holman)によるAloha Ruby Conference 2012での[Git and GitHub Secrets](https://github.com/tiimgreen/github-cheat-sheet)（[スライド](https://github.com/tiimgreen/github-cheat-sheet)）とWDCNZ 2013での[More Git and GitHub Secrets](https://vimeo.com/72955426)（[スライド](https://speakerdeck.com/holman/more-git-and-github-secrets)）の二つのトークを元にしている。
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md).*
+*短縮URL: [`http://git.io/sheet`](http://git.io/sheet)*
+
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
 # 目次
 - [GitHub](#github)
@@ -9,7 +11,7 @@
   - [タブ幅の調節](#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80)
   - [特定のユーザーによるコミット履歴](#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4)
   - [リポジトリのクローン](#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3)
-  - [ブランチ](#%E3%83%96%E3%83%A9%E3%83)
+  - [ブランチ](#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
     - [全ブランチを別のブランチと比較](#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83)
     - [ブランチ同士の比較](#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83)
     - [フォークされたリポジトリ間でのブランチ比較](#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83)
@@ -17,15 +19,17 @@
   - [Git.io](#gitio)
   - [キーボード・ショートカット](#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88)
   - [コードの指定行の強調](#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF)
-  - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
-  - [issueの相互リンク](#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
+  - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89issue%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
+  - [issueの相互リンク](#issue%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF)
   - [コメントのロック](#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E3%83%AD%E3%83%83%E3%82%AF)
-  - [pull requestでのCI結果の表示](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
+  - [pull requestでのCI結果の表示](#pull-request%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA)
+  - [絞り込み検索](#%E7%B5%9E%E3%82%8A%E8%BE%BC%E3%81%BF%E6%A4%9C%E7%B4%A2)
   - [Markdownファイルでの構文強調](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF)
   - [Emoji](#emoji)
   - [画像及びアニメーションGIF](#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif)
     - [GitHub Wikiへの画像の添付](#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98)
   - [素早く引用](#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8)
+  - [コメントへのクリップボードの画像の追加](#%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%B8%E3%81%AE%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E8%BF%BD%E5%8A%A0)
   - [設定済みライセンスの追加](#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0)
   - [タスクリスト](#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
     - [Markdownファイルでのタスクリスト](#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
@@ -33,27 +37,30 @@
   - [GitHub Pagesでのメタデータとプラグインのサポート](#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88)
   - [文書内のYAMLメタデータ](#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF)
   - [表形式のデータ表示](#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E8%A1%A8%E7%A4%BA)
-  - [pull requestの取り消し](#pull+request%E3%81%AE%E5%8F%96%E3%82%8A%E6%B6%88%E3%81%97)
+  - [PDF表示](#pdf%E8%A1%A8%E7%A4%BA)
+  - [pull requestの取り消し](#pull-request%E3%81%AE%E5%8F%96%E3%82%8A%E6%B6%88%E3%81%97)
   - [差分の表示](#%E5%B7%AE%E5%88%86%E3%81%AE%E8%A1%A8%E7%A4%BA)
-    - [レンダリング済みの差分](#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86)
+    - [レンダリング済みの差分表示](#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA)
     - [マップ差分の可視化](#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96)
     - [差分表示の前後を表示](#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA)
-    - [pull requestの内容をDIFFまたはPATCH形式で取得](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97)
+    - [pull requestの内容をDIFFまたはPATCH形式で取得](#pull-request%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97)
     - [画像の表示とDIFF](#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff)
   - [Hub](#hub)
-  - [共同開発者との摩擦の軽減](#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B)
   - [開発参加のガイドライン](#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3)
   - [Octicons](#octicons)
   - [GitHub情報](#github%E6%83%85%E5%A0%B1)
     - [GitHub Talks](#github-talks)
 - [Git](#git)
+  - [すべての削除済みファイルをワーキング・ツリーから削除する](#%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E5%89%8A%E9%99%A4%E6%B8%88%E3%81%BF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%84%E3%83%AA%E3%83%BC%E3%81%8B%E3%82%89%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B)
   - [直前のブランチ](#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
   - [空白の削除](#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4)
-  - [pull requestのチェックアウト](#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
-  - [空のコミット :trollface:](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface)
+  - [SSH公開鍵](#ssh%E5%85%AC%E9%96%8B%E9%8D%B5)
+  - [pull requestのチェックアウト](#pull-request%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88)
+  - [空のコミット](#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88)
   - [Gitステータスのスタイリング](#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [Gitログのスタイリング](#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0)
   - [コミットログの検索](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2)
+  - [Git Grep](#git-grep)
   - [マージ済みブランチ](#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81)
   - [FixupとAutosquash](#fixup%E3%81%A8autosquash)
   - [ローカル・リポジトリを参照するウェブサーバー](#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC)
@@ -74,23 +81,23 @@ GitHub上で差分ページを表示している時、そのURLに`?w=1`を加�
 [*GitHubの秘密についてもっと詳しく*](https://github.com/blog/967-github-secrets)
 
 ### タブ幅の調節
-差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されない。
+差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されないが、[Chrome](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)と[Operaの拡張](https://addons.opera.com/en/extensions/details/github-tab-size/)をインストールすることにより、対応することができる。
 
-例えば[Goのソースファイル](https://github.com/pengwynn/flint/blob/master/flint/flint.go)を表示している時、`?ts=4`を追加する前はこのように表示されるが:
+例えばGoのソースファイルを表示している時、`?ts=4`を追加する前はこのように表示されるが:
 
 ![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
 
-`?ts=4`を[追加すると](https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4)このように表示される:
+`?ts=4`を追加するとこのように表示される:
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
 ### 特定のユーザーによるコミット履歴
-特定のユーザーによるあるリポジトリへのコミット履歴のみを参照したい場合は、`?author=username`をURLの末尾に付ける。
+特定のユーザーによるあるリポジトリへのコミット履歴のみを参照したい場合は、`?author={user}`をURLの末尾に付ける。
 
 ```
 https://github.com/rails/rails/commits/master?author=dhh
 ```
-![DHH commit history](http://i.imgur.com/mDWwuaY.png)
+![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
 [*コミット・ビューの違いについてもっと詳しく*](https://help.github.com/articles/differences-between-commit-views)
 
@@ -115,27 +122,13 @@ https://github.com/{user}/{repo}/branches
 
 このページからボタンをクリックしてブランチ比較ページへ移動したりブランチを削除することができる。
 
-![Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches](http://i.imgur.com/gKWPe8a.png)
-
-しかしながら`master`以外、(例えば`development`)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:
-
-```
-https://github.com/{user}/{repo}/branches/{branch}
-```
-
-![Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master](http://i.imgur.com/jpc6Urb.png)
-
-マージ済みのブランチを表示するには`?merged=1`をURLに追加する。
-
-![Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1](http://i.imgur.com/KmYyCVh.png)
-
-このビューでは、コマンドラインを使うことなく簡単にページ上でブランチを削除することができるだろう。
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
 
 #### ブランチ同士の比較
 GitHubのブランチ比較は以下のようなURLで提供されている:
 
 ```
-https://github.com/user/repo/compare/{range}
+https://github.com/{user}/{repo}/compare/{range}
 ```
 
 `{range}`を`master...4-1-stable`に変更する。
@@ -145,7 +138,7 @@ https://github.com/user/repo/compare/{range}
 ```
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
-![Rails branch compare example](http://i.imgur.com/0Z52X5Y.png)
+![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
 
 `{range}`には以下のように変更することもできる:
 
@@ -154,11 +147,16 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*日付の形式は`YYYY-DD-MM`だ。*
+*日付の形式は`YYYY-MM-DD`だ。*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
-するとmasterブランチと特定の期間または日時との比較が行えるだろう。
+`diff`や`patch`のビューでもブランチを利用して比較することができる:
+
+```
+https://github.com/rails/rails/compare/master...4-1-stable.diff
+https://github.com/rails/rails/compare/master...4-1-stable.patch
+```
 
 [*時間を指定してのブランチ比較についてもっと詳しく*](https://help.github.com/articles/comparing-commits-across-time)
 
@@ -184,22 +182,24 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 GistのURLの最後に`.pibb`を付ける([例](https://gist.github.com/hail2u/9477708.pibb))と*HTMLのみ*のバージョンが表示されるので、そのソースは他のウェブサイトに貼り付けるにはもってこいだろう。
 
-簡単なものとはいえ、完全なGitリポジトリとして機能するため、以下のようにすれば普通のGitリポジトリと同じようにクローンすることができる:
+簡単なものとはいえ、Gitリポジトリとして機能するため、以下のようにすれば普通のGitリポジトリと同じようにクローンすることができる:
 
 ```bash
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/dULZXXo.png)
+![Gists](http://i.imgur.com/BcFzabp.png)
 
 This means you also can modify and push updates to Gists:
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+$ git push
+Username for 'https://gist.github.com':
+Password for 'https://tiimgreen@gist.github.com':
 ```
 
+しかしながら、Gistではディレクトリーがサポートされていない。全てのファイルはリポジトリーのルートに置かれている必要がある。
 
 [*Gistの作成についてもっと詳しく*](https://help.github.com/articles/creating-gists)
 
@@ -227,7 +227,7 @@ Location: https://github.com/...
 
  - `t`を押すとファイルの検索インターフェイスが起動する。
  - `w`を押すとブランチ選択インターフェイスが起動する。
- - `s`を押すとコマンド・バーにフォーカスが当たる。
+ - `s`を押すと現在閲覧しているリポジトリーから検索するフォームにフォーカスが当たる。ここでBackspaceを押し「This repository」という文字列を消すことでGitHub全体からの検索へと切り替えることができる
  - issue画面で`l`を押すとラベルの編集インターフェイスが開かれる。
  - __ファイルを参照している時__（例: `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`)に`y`を押すと、参照している時の状態で固定されるURLに変更される。つまりそのファイルのコードが後に変化したとしても、そのURLでは今とまったく同じ状態で表示されるということだ。
 
@@ -235,7 +235,7 @@ Location: https://github.com/...
 
 ![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
 
-[*コマンドバーについてもっと詳しく*](https://help.github.com/articles/using-the-command-bar)
+[*検索機能についてもっと詳しく*](https://help.github.com/articles/search-syntax/)
 
 ### コードの指定行の強調
 コードのURLの末尾に`#L52`と付けるか行番号をクリックすると、その行が強調表示される。
@@ -264,7 +264,7 @@ $ git commit -m "Fix screwup, fixes #12"
 ### issueの相互リンク
 同じリポジトリの違うissueへリンクを張り参照させたい場合、`#`に続けてissue番号を指定する。そうすると自動的にリンクが作成されるだろう。
 
-別のリポジトリのissueの場合は`user_name/repo_name#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
+別のリポジトリのissueの場合は`{user}/{repo}#ISSUE_NUMBER`とすれば良い（例: `tiimgreen/toc#12`）。
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -273,7 +273,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
 
-つまりそのプロジェクトの共同開発者ではユーザーはコメントをすることができないということだ。
+つまりそのプロジェクトの共同開発者ではないユーザーはコメントをすることができないということだ。
 
 ![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
 
@@ -285,6 +285,35 @@ $ git commit -m "Fix screwup, fixes #12"
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
 [*コミット・ステータスAPIについてもっと詳しく*](https://github.com/blog/1227-commit-status-api)
+
+### 絞り込み検索
+issueとpull requestの検索インターフェイスでは、絞り込みをかけることが可能だ。
+
+例えば[Railsのリポジトリー](https://github.com/rails/rails/issues)では、以下の様な絞り込み検索により"activerecord"というラベルがついたissueのみを表示することができる:
+
+`is:issue label:activerecord`
+
+逆に"activerecord"というラベルが*ついていない*issueのみを表示することもできる:
+
+`is:issue -label:activerecord`
+
+そして、この絞り込み検索はpull requestに対しても行うことができる:
+
+`is:pr -label:activerecord`
+
+GitHubでは開かれているissueやpull requestのみを表示するタブ、または既に閉じられたそれらのみを表示するタブが用意されているが、絞り込み検索によってマージ済みのpull requestのみを表示することもできる。以下のようなフィルターを使えば良いだろう:
+
+`is:merged`
+
+[*issueの検索についてもっと詳しく*](https://help.github.com/articles/searching-issues)
+
+そしてGitHubはStatus APIの結果を使ってフィルターすることもできるようになった。
+
+Status APIでsuccessが設定されたpull requestのみ:
+
+`status:success`
+
+[*Status APIを使った絞り込み検索についてもっと詳しく*](https://github.com/blog/2014-filter-pull-requests-by-status)
 
 ### Markdownファイルでの構文強調
 例えばMarkdownファイルでRubyのコードを構文強調したいならば以下のようにする:
@@ -310,25 +339,18 @@ GitHubでは[Linguist](https://github.com/github/linguist)を使って言語を�
 [*GitHub Flavored Markdownについてもっと詳しく*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emoji
-Emojiはpull requestやissue、READMEなどで`:name_of_emoji:`と書くと利用できる:
-
-```
-:smile:
-```
-
-こう書くと以下のように表示される:
-
-:smile:
+Emojiはpull requestやissue、コミット・メッセージ、リポジトリーの概要などで`:name_of_emoji:`と書くと利用できる:
 
 GitHubでサポートされているEmojiの完全なリストは[Emoji cheat sheet for Campfire and GitHub](http://www.emoji-cheat-sheet.com/)か[All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)で確認できる。
+素敵なemojiの検索は[emoji.muan.co](http://emoji.muan.co/)。
 
 GitHubで使われているEmojiのトップ5は以下の通りだ:
 
-1. :shipit: - `:shipit:`
-2. :sparkles: - `:sparkles:`
-3. :-1: - `:-1:`
-4. :+1: - `:+1:`
-5. :clap: - `:clap:`
+1. `:shipit:`
+2. `:sparkles:`
+3. `:-1:`
+4. `:+1:`
+5. `:clap:`
 
 ### 画像及びアニメーションGIF
 画像やアニメーションGIFはコミットのコメントやREADMEなどで利用できる:
@@ -340,7 +362,7 @@ GitHubで使われているEmojiのトップ5は以下の通りだ:
 リポジトリにある画像も直接参照することが出来る:
 
 ```
-![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
+![Alt Text](https://github.com/{user}/{repo}/raw/master/path/to/image.gif)
 ```
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -364,6 +386,16 @@ issueのスレッドで他の人のコメントを引用してコメントした
 ![Quick Quote](http://i.imgur.com/TzpMIOA.png)
 
 [*素早く引用する方法についてもっと詳しく*](https://github.com/blog/1399-quick-quotes)
+
+### コメントへのクリップボードの画像の追加
+
+_(Chrome系のブラウザーのみで動作)_
+
+スクリーンショットをクリップボードに保存(mac: `cmd-ctrl-shift-4`)した後、その画像はコメント投稿フォームで貼り付け(`cmd-v`または`ctrl-v`)ることができ、自動的にGitHubへアップロードされます。
+
+![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
+
+[*コメントへのクリップボードの画像の追加についてもっと詳しく*](https://help.github.com/articles/issue-attachments)
 
 ### 設定済みライセンスの追加
 GitHub上でリポジトリを作成する時、あらかじめ設定されているライセンスを追加することもできる:
@@ -455,7 +487,14 @@ GitHubでは`.csv`（カンマ区切り）と`.tsv`（タブ区切り）の形�
 
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
-[*表形式のデーター表示についてもっと詳しく*](https://github.com/blog/1601-see-your-csvs)
+[*表形式のデータ表示についてもっと詳しく*](https://github.com/blog/1601-see-your-csvs)
+
+### PDF表示
+GitHubではPDFの表示をサポートしている:
+
+![PDF](https://cloud.githubusercontent.com/assets/1000669/7492902/f8493160-f42e-11e4-8cea-1cb4f02757e7.png)
+
+[*PDF表示についてもっと詳しく*](https://github.com/blog/1974-pdf-viewing)
 
 ### pull requestの取り消し
 pull requestをマージした後、意味がなかったことがわかったり、そのpull requestをマージしたのは間違いだったことがわかることもあるだろう。
@@ -546,13 +585,6 @@ $ git clone https://github.com/tiimgreen/toc.git
 
 [*Hubが提供する便利な機能についてもっと詳しく*](https://github.com/github/hub#commands)
 
-### 共同開発者との摩擦の軽減
-もし誰かに自分のプロジェクトの利用またはその開発に参加してもらいたい場合、まずはよくある質問に答えることから始めなければならないだろう。このプロジェクトはどういうものなのか？どうやって使うのか？どのように使っても良いのか？どうやれば開発に参加できるのか？どうやれば開発環境を用意できるのか？どうやって自分の加えた機能が既存の機能を破壊しないことが確認できるのか？
-
-[Friction](https://github.com/rafalchmiel/friction)はこういった[一般的な質問に対しての答え](https://github.com/rafalchmiel/friction/wiki)が用意されているかをチェックしてくれるコマンドライン・ツールだ。例えば以下のような出力を得られる:
-
-[![Friction output](http://i.imgur.com/4EgpWo4.png)](https://github.com/rafalchmiel/friction)
-
 ### 開発参加のガイドライン
 リポジトリのルートに`CONTRIBUTING`という名前のファイルを置くと、issueやpull requestを作成しようとした時にそれへのリンクが表示されるようになる。
 
@@ -567,7 +599,7 @@ GitHubで使われているアイコン（Octicons）はオープンソース化
 
 [*GitHubのOcticonsについてもっと詳しく*](https://octicons.github.com)
 
-### GitHub Resources
+### GitHub情報
 | Title | Link |
 | ----- | ---- |
 | GitHub Explore | https://github.com/explore |
@@ -586,6 +618,33 @@ GitHubで使われているアイコン（Octicons）はオープンソース化
 | More Git and GitHub Secrets | https://www.youtube.com/watch?v=p50xsL-iVgU |
 
 ## Git
+### すべての削除済みファイルをワーキング・ツリーから削除する
+例えば`/bin/rm`を使って大量のファイルを削除した場合、以下のコマンドを使えばワーキング・ツリー、そしてインデックスからも削除することができ、ファイルごとにそれぞれGitコマンドを実行する必要がなくなる:
+
+```bash
+$ git rm $(git ls-files -d)
+```
+
+例えば以下のように実行される:
+
+```bash
+$ git status
+On branch master
+Changes not staged for commit:
+	deleted:    a
+	deleted:    c
+
+$ git rm $(git ls-files -d)
+rm 'a'
+rm 'c'
+
+$ git status
+On branch master
+Changes to be committed:
+	deleted:    a
+	deleted:    c
+```
+
 ### 直前のブランチ
 Gitで直前のブランチへ移動するには:
 
@@ -616,6 +675,17 @@ $ git stripspace < README.md
 ```
 
 [*Gitの`stripspace`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-stripspace)
+
+### SSH公開鍵
+以下のURLにアクセスすることで、SSH公開鍵の一覧をテキスト形式で取得することができる:
+
+```
+https://github.com/{user}.keys
+```
+
+例: [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
+
+[*SSH公開鍵についてもっと詳しく*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
 ### pull requestのチェックアウト
 pull requestはGitHubのリポジトリでは特別なブランチであり、様々な方法でローカルに取り込むことができる:
@@ -671,7 +741,7 @@ git checkout pr/42
 
 [*pull requestのチェックアウトについてもっと詳しく*](https://help.github.com/articles/checking-out-pull-requests-locally)
 
-### 空のコミット :trollface:
+### 空のコミット
 `--allow-empty`オプションを付けると、コードの変化がなくてもコミットを作成することができる:
 
 ```bash
@@ -696,7 +766,7 @@ $ git status
 
 このように表示されるが:
 
-![git status](http://i.imgur.com/o3PEHAA.png)
+![git status](http://i.imgur.com/qjPyvXb.png)
 
 `-sb`を追加することによって:
 
@@ -706,7 +776,7 @@ $ git status -sb
 
 このように表示することもできる:
 
-![git status -sb](http://i.imgur.com/xNI1bT0.png)
+![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
 [*Gitの`status`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-status)
 
@@ -719,7 +789,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 このように表示される:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/EARRQyJ.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
 この設定は[Palesz](http://stackoverflow.com/users/88355/palesz)が考えたものだ。
 
@@ -742,6 +812,34 @@ $ git show :/typo
 ![git show :/query](http://i.imgur.com/icaGiNt.png)
 
 注: 終了するには`q`を押す。
+
+### Git Grep
+Git Grepは指定したパターンに一致する行の一覧を返してくれる。
+
+実行すると:
+
+```bash
+$ git grep aliases
+```
+
+*aliases*という文字を含むファイルを全て表示することだろう。
+
+![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
+
+注: 終了するには`q`を押す。
+
+複数のフラグを組み合わせることで、より高度な検索を行うことができる。例えば:
+
+ * `-e` 次のパラメーターをパターンとする (例: regex)
+ * `--and`、`--or`と`--not` 複数のパターンを組み合わせる
+
+以下のようにして使う:
+
+```bash
+$ git grep -e pattern --and -e anotherpattern
+```
+
+[*Gitの`grep`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-grep)
 
 ### マージ済みブランチ
 以下のように実行すると:
@@ -833,6 +931,8 @@ $ git config --global alias.ac 'add -A . && commit'
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 | `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
+| `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
+| `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 | `git lg` | `git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --` | `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"` |
 
@@ -871,7 +971,7 @@ $ git config --global color.ui 1
 
 [*Gitの`config`コマンドについてもっと詳しく*](http://git-scm.com/docs/git-config)
 
-### Git Resources
+### Git情報
 | Title | Link |
 | ----- | ---- |
 | Official Git Site | http://git-scm.com/ |
@@ -886,6 +986,7 @@ $ git config --global color.ui 1
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
+| Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 
 #### Git Books
 | Title | Link |

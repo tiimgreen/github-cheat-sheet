@@ -1,4 +1,4 @@
-# Aide mémoire GitHub 
+# Aide mémoire GitHub
 Une collection d'astuces connues et moins connues pour Git et Github. Cette feuille aide mémoire a été inspirée par le discours sur [Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets) de [Zach Holman](https://github.com/holman) à la Aloha Ruby Conference 2012 ([diapositives](https://speakerdeck.com/holman/git-and-github-secrets)) et son discours [More Git and GitHub Secrets](https://vimeo.com/72955426) au WDCNZ 2013 ([diapositives](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
 *Lien court: [`http://git.io/sheet`](http://git.io/sheet)*
@@ -29,7 +29,7 @@ Une collection d'astuces connues et moins connues pour Git et Github. Cette feui
     - [L'intégration d'images dans le Wiki GitHub](#embedding-images-in-github-wiki)
   - [Citation rapide](#quick-quoting)
   - [Coller une image du Presse-papier dans les commentaires](#pasting-clipboard-image-to-comments)
-  - [Quick Licensing](#quick-licensing)
+  - [Intégration rapide d'une licence](#quick-licensing)
   - [Listes de tâches](#task-lists)
     - [Listes de tâches dans les documents Markdown](#task-lists-in-markdown-documents)
   - [Liens relatifs](#relative-links)
@@ -186,8 +186,8 @@ Cela signifie que vous pouvez également modifier et pousser des mises à jour v
 
 ```bash
 $ git commit
-$ Username for 'https://gist.github.com': 
-$ Password for 'https://tiimgreen@gist.github.com': 
+$ Username for 'https://gist.github.com':
+$ Password for 'https://tiimgreen@gist.github.com':
 ```
 
 [*En savoir plus sur la création de gists.*](https://help.github.com/articles/creating-gists)
@@ -258,27 +258,28 @@ Pour lier vers un bogue d'un autre dépôt, `user_name/repo_name#ISSUE_NUMBER` e
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
 ### Verrouillage de conversation
-Pull Requests and Issues can now be locked by owners or collaborators of the repo.
+Les Pull Requests et les issues peuvent maintenant être verrouillés par les propriétaires et les collaborateurs du dépot.
 
 ![Lock conversation](https://cloud.githubusercontent.com/assets/2723/3221693/bf54dd44-f00d-11e3-8eb6-bb51e825bc2c.png)
 
-This means that users who are not collaborators on the proejct will no longer be able to comment.
+Cela implique que les personnes qui ne sont pas collaborateurs ne pourront plus ajouter de commentaire.
 
 ![Comments locked](https://cloud.githubusercontent.com/assets/2723/3221775/d6e513b0-f00e-11e3-9721-2131cb37c906.png)
 
-[*Read more about locking conversations.*](https://github.com/blog/1847-locking-conversations)
+[*Plus d'information sur le verrouillage (En anglais)*](https://github.com/blog/1847-locking-conversations)
 
 
-### CI Status on Pull Requests
-If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
+### Statut des CI dans les Pull Requests
+Si la configuration de [Travis CI](https://travis-ci.org/) a été effectuée correctement, à chaque
+pull request effectué, [Travis CI](https://travis-ci.org/) tentera de générer le projet comme s'il s'agit de
+l'un de vos propres commits. Plus d'information sur cette page : [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
 
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
-[*Read more about the commit status API.*](https://github.com/blog/1227-commit-status-api)
+[*Plus d'information sur l'API associé au statut du commit (En anglais).*](https://github.com/blog/1227-commit-status-api)
 
-### Syntax Highlighting in Markdown Files
-For example, to syntax highlight Ruby code in your Markdown files write:
-
+### Coloration syntaxique dans les fichiers Markdown
+Par exemple, pour effectuer une coloration syntaxique pour un code ruby, écrivez dans le fichier markdown ceci :
     ```ruby
     require 'tabbit'
     table = Tabbit.new('Name', 'Email')
@@ -286,7 +287,7 @@ For example, to syntax highlight Ruby code in your Markdown files write:
     puts table.to_s
     ```
 
-This will produce:
+Ceci va produire :
 
 ```ruby
 require 'tabbit'
@@ -295,16 +296,18 @@ table.add_row('Tim Green', 'tiimgreen@gmail.com')
 puts table.to_s
 ```
 
-GitHub uses [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing the [languages YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
+GitHub se basent sur [Linguist](https://github.com/github/linguist) pour déterminer le language
+utilisé et effectuer la coloration syntaxique. Vous pouvez savoir quels sont les identifiants de
+langages valides dans le [fichier de languages YAML](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
-[*Read more about GitHub Flavored Markdown.*](https://help.github.com/articles/github-flavored-markdown)
+[*Plus d'informations sur le format Markdown GitHub (GitHub Flavored Markdown) (En anglais).*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emojis
-Emojis can be added to Pull Requests, Issues, commit messages, etc. using `:name_of_emoji:`
+Les Emojis peuvent être insérés dans les Pull Requests, les Issues, les messages de commit , etc. en utilisant la syntaxe `:name_of_emoji:`
 
-The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
+La liste complète des Emojis proposés sur GitHub est disponible sur [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) ou [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
 
-The top 5 used Ejmojis on GitHub are:
+Les top 5 des Emojis utilisés sur GitHub sont :
 
 1. :shipit: - `:shipit:`
 2. :sparkles: - `:sparkles:`
@@ -313,13 +316,13 @@ The top 5 used Ejmojis on GitHub are:
 5. :clap: - `:clap:`
 
 ### Images/GIFs
-Images and GIFs can be added to comments, READMEs etc.:
+Les Images et GIFs peuvent être intégrés dans les commentaires, README, etc. :
 
 ```
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
-Raw images from the repo can be used by calling them directly.:
+Les images présentes dans un dépôt peuvent être utilisées directement :
 
 ```
 ![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
@@ -327,48 +330,48 @@ Raw images from the repo can be used by calling them directly.:
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
-All images are cached on GitHub, so if your host goes down, the image will remain available.
+L'ensemble des images sont sauvegardés par GitHub. Ainsi, même si l'accès à l'image originale est perdu, le rendu n'est pas affecté.
 
-#### Embedding Images in GitHub Wiki
-There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax (shown above). But there's also a syntax that allows things like specifying the height or width of the image:
+#### L'intégration d'images dans le Wiki GitHub
+Il ya plusieurs moyens d'intégrés des images dans les pages Wiki. Tout d'abord, il y a la syntaxe standard Markdown (illustré ci-dessus). Une syntaxe plus évoluée est également présente. Elle permet d'imposer la longueur et la largeur de l'image :
 
 ```markdown
 [[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
 ```
 
-Which produces:
+qui produit
 
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
-### Quick Quoting
-When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
+### Citation rapide
+Si vous souhaitez citer quelquechose écrit par quelqu'un précédemment, lorsque vous écrivez un commentaire, surlignez le texte et pressez la touche `r`. Ceci aura pour effet de copier le texte et de le formatter pour effectuer la citation.
 
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
-[*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
+[*Plus d'informations sur la citation rapide (En anglais).*](https://github.com/blog/1399-quick-quotes)
 
-### Pasting Clipboard Image to Comments
-After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4`), you can simply paste (`cmd-v / ctrl-v`) the image into the comment section and it will be auto-uploaded to github.
+### Coller une image du Presse-papier dans les commentaires
+Après avoir effectué une capture d'écran et l'avoir ajouté au presse-papier (mac: `cmd-ctrl-shift-4`), il vous suffit de coller (`cmd-v / ctrl-v`) l'image dans le commentaire. L'image sera alors automatique mise en ligne sur GitHub.
 
 ![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
 
-[*Read more about issue attachments.*](https://help.github.com/articles/issue-attachments)
+[*Plus d'informations sur les pièces jointes des issues (En anglais).*](https://help.github.com/articles/issue-attachments)
 
-### Quick Licensing
-When creating a repository, GitHub gives you the option of adding in a pre-made license:
+### Intégration rapide d'une licence
+Lors de la création d'un dépôt, GitHub vous permet d'ajouter un fichier de licence prédéfini :
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
-You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
+Vous pouvez également les ajouter à un dépôt existant en créant un nouveau fichier via l'interface web. Si le nom du fichier est `LICENSE` vous aurez alors la possibilité d'utiliser un fichier de licence prédéfini :
 
 ![License](http://i.imgur.com/fTjQict.png)
 
-Also works for `.gitignore`.
+Ceci fonctionne également pour `.gitignore`.
 
-[*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
+[*Plus d'information sur les licences open source (En anglais).*](https://help.github.com/articles/open-source-licensing)
 
-### Task Lists
-In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
+### Liste de tâches
+Dans les bogues et les pull requests, des boîtes à cocher peuvent être ajoutées en utilisant la syntaxe suivante (remarquez l'espace) :
 
 ```
 - [ ] Be awesome
@@ -381,7 +384,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 
 ![Task List](http://i.imgur.com/jJBXhsY.png)
 
-When they are clicked, they will be updated in the pure Markdown:
+Lorsqu'un utilisateur clique sur une tâche, elle est mise à jour dans le format Markdown :
 
 ```
 - [x] Be awesome
@@ -392,10 +395,10 @@ When they are clicked, they will be updated in the pure Markdown:
 - [ ] Sleep
 ```
 
-[*Read more about task lists.*](https://help.github.com/articles/writing-on-github#task-lists)
+[*Plus d'informations sur les listes de tâches (En anglais).*](https://help.github.com/articles/writing-on-github#task-lists)
 
-#### Task Lists in Markdown Documents
-In full Markdown documents **read-only** checklists can now be added using the following syntax:
+#### Listes de tâches dans les documents Markdown
+Dans les documents Markdown, il est maintenant possible d'ajouter des listes de boîtes à cocher en **lecture seule** en utilisant la syntaxe suivante :
 
 ```
 - [ ] Mercury
@@ -415,7 +418,7 @@ In full Markdown documents **read-only** checklists can now be added using the f
   - [ ] Deimos
   - [ ] Phobos
 
-[*Read more about task lists in markdown documents.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+[*Plus d'informations sur les listes de tâches dans les documents Markdown (En anglais)*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
 ### Relative Links
 Relative links are recommended in your Markdown files when linking to internal content.
@@ -451,7 +454,7 @@ GitHub supports rendering tabular data in the form of `.csv` (comma-separated) a
 [*Read more about rendering tabular data.*](https://github.com/blog/1601-see-your-csvs)
 
 ###Revert a Pull Request
-After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request. 
+After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request.
 
 You can revert it by clicking the **Revert** button on the right side of a commit in the pull request page to create a pull request with reverted changes to this specific pull request.
 
