@@ -269,7 +269,7 @@ Cela implique que les personnes qui ne sont pas collaborateurs ne pourront plus 
 [*Plus d'information sur le verrouillage (En anglais)*](https://github.com/blog/1847-locking-conversations)
 
 
-### Status CI dans les Pull request
+### Statut des CI dans les Pull Requests
 Si la configuration de [Travis CI](https://travis-ci.org/) a été effectuée correctement, à chaque
 pull request effectué, [Travis CI](https://travis-ci.org/) tentera de générer le projet comme s'il s'agit de
 l'un de vos propres commits. Plus d'information sur cette page : [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
@@ -322,7 +322,7 @@ Les Images et GIFs peuvent être intégrés dans les commentaires, README, etc. 
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ```
 
-Les images présentes dans un dépôt peuvent être utilisés directement :
+Les images présentes dans un dépôt peuvent être utilisées directement :
 
 ```
 ![Alt Text](https://github.com/(user)/(repo)/raw/master/path/to/image.gif)
@@ -330,25 +330,25 @@ Les images présentes dans un dépôt peuvent être utilisés directement :
 
 ![Peter don't care](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
-All images are cached on GitHub, so if your host goes down, the image will remain available.
+L'ensemble des images sont sauvegardés par GitHub. Ainsi, même si l'accès à l'image originale est perdu, le rendu n'est pas affecté.
 
-#### Embedding Images in GitHub Wiki
-There are multiple ways of embedding images in Wiki pages. There's the standard Markdown syntax (shown above). But there's also a syntax that allows things like specifying the height or width of the image:
+#### L'intégration d'images dans le Wiki GitHub
+Il ya plusieurs moyens d'intégrés des images dans les pages Wiki. Tout d'abord, il y a la syntaxe standard Markdown (illustré ci-dessus). Une syntaxe plus évoluée est également présente. Elle permet d'imposer la longueur et la largeur de l'image :
 
 ```markdown
 [[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
 ```
 
-Which produces:
+qui produit
 
 ![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
 
-### Quick Quoting
-When on a comment thread and you want to quote something someone previously said, highlight the text and press `r`, this will copy it into your text box in the block-quote format.
+### Citation rapide
+Si vous souhaitez citer quelquechose écrit par quelqu'un précédemment, lorsque vous écrivez un commentaire, surlignez le texte et pressez la touche `r`. Ceci aura pour effet de copier le texte et de le formatter pour effectuer la citation.
 
 ![Quick Quote](https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif)
 
-[*Read more about quick quoting.*](https://github.com/blog/1399-quick-quotes)
+[*Plus d'informations sur la citation rapide (En anglais).*](https://github.com/blog/1399-quick-quotes)
 
 ### Pasting Clipboard Image to Comments
 After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4`), you can simply paste (`cmd-v / ctrl-v`) the image into the comment section and it will be auto-uploaded to github.
