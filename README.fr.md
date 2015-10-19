@@ -29,7 +29,7 @@ Une collection d'astuces connues et moins connues pour Git et Github. Cette feui
     - [L'intégration d'images dans le Wiki GitHub](#embedding-images-in-github-wiki)
   - [Citation rapide](#quick-quoting)
   - [Coller une image du Presse-papier dans les commentaires](#pasting-clipboard-image-to-comments)
-  - [Quick Licensing](#quick-licensing)
+  - [Intégration rapide d'une licence](#quick-licensing)
   - [Listes de tâches](#task-lists)
     - [Listes de tâches dans les documents Markdown](#task-lists-in-markdown-documents)
   - [Liens relatifs](#relative-links)
@@ -350,25 +350,25 @@ Si vous souhaitez citer quelquechose écrit par quelqu'un précédemment, lorsqu
 
 [*Plus d'informations sur la citation rapide (En anglais).*](https://github.com/blog/1399-quick-quotes)
 
-### Pasting Clipboard Image to Comments
-After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4`), you can simply paste (`cmd-v / ctrl-v`) the image into the comment section and it will be auto-uploaded to github.
+### Coller une image du Presse-papier dans les commentaires
+Après avoir effectué une capture d'écran et l'avoir ajouté au presse-papier (mac: `cmd-ctrl-shift-4`), il vous suffit de coller (`cmd-v / ctrl-v`) l'image dans le commentaire. L'image sera alors automatique mise en ligne sur GitHub.
 
 ![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
 
-[*Read more about issue attachments.*](https://help.github.com/articles/issue-attachments)
+[*Plus d'informations sur les pièces jointes des issues (En anglais).*](https://help.github.com/articles/issue-attachments)
 
-### Quick Licensing
-When creating a repository, GitHub gives you the option of adding in a pre-made license:
+### Intégration rapide d'une licence
+Lors de la création d'un dépôt, GitHub vous permet d'ajouter un fichier de licence prédéfini :
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
-You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
+Vous pouvez également les ajouter à un dépôt existant en créant un nouveau fichier via l'interface web. Si le nom du fichier est `LICENSE` vous aurez alors la possibilité d'utiliser un fichier de licence prédéfini :
 
 ![License](http://i.imgur.com/fTjQict.png)
 
-Also works for `.gitignore`.
+Ceci fonctionne également pour `.gitignore`.
 
-[*Read more about open source licensing.*](https://help.github.com/articles/open-source-licensing)
+[*Plus d'information sur les licences open source (En anglais).*](https://help.github.com/articles/open-source-licensing)
 
 ### Task Lists
 In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
