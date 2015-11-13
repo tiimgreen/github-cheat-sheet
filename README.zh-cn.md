@@ -1,7 +1,7 @@
 # GitHub秘籍
 本秘籍收录了一些Git和Github非常酷同时又少有人知的功能。灵感来自于[Zach Holman](https://github.com/holman)在2012年Aloha Ruby Conference和2013年WDCNZ上所做的演讲：[Git and GitHub Secrets](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)([slides](https://speakerdeck.com/holman/git-and-github-secrets))和[More Git and GitHub Secrets](https://vimeo.com/72955426)([slides](https://speakerdeck.com/holman/more-git-and-github-secrets))。
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md).*
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [简体中文](README.zh-cn.md).*
 
 # 目录
  - [GitHub](#github)
