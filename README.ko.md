@@ -4,7 +4,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
 *Shortlink: [`http://git.io/sheet`](http://git.io/sheet)*
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md).*
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [简体中文](README.zh-cn.md).*
 
 # 목록
 
