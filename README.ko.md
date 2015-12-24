@@ -1,6 +1,6 @@
-# Github 치트 시트 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# GitHub 치트 시트 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Git과 Github에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)의  ([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))와 WDCNZ 2013에서 발표한 [Git과 Github에 대한 더 많은 비밀들](https://vimeo.com/72955426)의 ([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
+Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)의  ([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))와 WDCNZ 2013에서 발표한 [Git과 GitHub에 대한 더 많은 비밀들](https://vimeo.com/72955426)의 ([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
 
 *단축주소: [`http://git.io/sheet`](http://git.io/sheet)*
 
@@ -25,6 +25,7 @@ Git과 Github에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
   - [Cross-Link Issues](#cross-link-issues)
   - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
+  - [Filters](#filters)
   - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
   - [Emojis](#emojis)
   - [Images/GIFs](#imagesgifs)
@@ -80,7 +81,7 @@ Git과 Github에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
-[*깃허브의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
+[*GitHub의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
 
 ### Adjust Tab Space
 
@@ -133,7 +134,7 @@ https://github.com/{user}/{repo}/branches
 
 #### Comparing Branches
 
-깃허브에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.
+GitHub에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.
 
 ```
 https://github.com/{user}/{repo}/compare/{range}
@@ -214,7 +215,7 @@ Password for 'https://tiimgreen@gist.github.com':
 
 ### Git.io
 
-[Git.io](http://git.io)는 깃허브를 위한 간단한 URL 단축기입니다.
+[Git.io](http://git.io)는 GitHub를 위한 간단한 URL 단축기입니다.
 
 ![Git.io](http://i.imgur.com/6JUfbcG.png?1)
 
@@ -302,6 +303,38 @@ $ git commit -m "Fix screwup, fixes #12"
 
 [*커밋 상태 API에 대해 좀 더 읽어보세요.*](https://github.com/blog/1227-commit-status-api)
 
+### Filters
+
+이슈, 풀 리퀘스트 둘 다 유저 인터페이스에서 필터링이 가능합니다.
+
+레일즈 저장소 <https://github.com/rails/rails/issues> 에서, 다음 필터는
+"activerecord" 라벨을 선택하여 만들어 집니다.
+
+`is:issue label:activerecord`
+
+하지만, activerecord 라벨이 없는 모든 이슈를 찾을 수도 있습니다.
+
+`is:issue -label:activerecord`
+
+덧붙여, 풀 리퀘스트에도 동작합니다.
+
+`is:pr -label:activerecord`
+
+GitHub는 열리거나 닫힌 이슈와 풀리퀘스트를 위한 탭이 있습니다만 머지된
+풀리퀘스트도 볼 수 있습니다. 다음 필터를 입력하기만 하면 됩니다.
+
+`is:merged`
+
+[*이슈 검색에 대해 좀 더 읽어보세요.*](https://help.github.com/articles/searching-issues)
+
+마지막으로 이제 상태 API의 상태에 의한 필터도 가능해졌습니다.
+
+성공 상태의 풀 리퀘스트는 이렇게 검색합니다.
+
+`status:success`
+
+[*상태 API 검색에 대해 좀 더 읽어보세요.*](https://github.com/blog/2014-filter-pull-requests-by-status)
+
 ### Syntax Highlighting in Markdown Files
 
 마크다운에서 예를 들어, 루비 코드를 신텍스 하이라이트 하려면 이렇게 합니다.
@@ -322,17 +355,18 @@ table.add_row('Tim Green', 'tiimgreen@gmail.com')
 puts table.to_s
 ```
 
-깃허브는 [Linguist](https://github.com/github/linguist)를 사용해 언어를 감지하고 신텍스를 하이라이트합니다. [언어 YAML 파일](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)을 정독하시면 어떤 키워드가 유효한지 확인하실 수 있습니다.
+GitHub는 [Linguist](https://github.com/github/linguist)를 사용해 언어를 감지하고 신텍스를 하이라이트합니다. [언어 YAML 파일](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)을 정독하시면 어떤 키워드가 유효한지 확인하실 수 있습니다.
 
-[*깃허브 Flavored 마크다운에 대해 더 읽어 보세요.*](https://help.github.com/articles/github-flavored-markdown)
+[*GitHub Flavored 마크다운에 대해 더 읽어 보세요.*](https://help.github.com/articles/github-flavored-markdown)
 
 ### Emojis
 
 에모지는 풀 리퀘스트, 이슈, 커밋 메세지, 저장소 설명등에 `:에모지의_이름:`으로 넣을 수 있습니다.
 
-깃허브에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons)에서 확인하실 수 있습니다.
+GitHub에서 사용 가능한 에모지의 전 목록은 [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) 나 [scotch-io/All-GitHub-Emoji-Icons](https://github.com/scotch-io/All-GitHub-Emoji-Icons)에서 확인하실 수 있습니다.
+편리한 에모지 검색 엔진은 [emoji.muan.co](http://emoji.muan.co/)에 있습니다.
 
-깃허브에서 많이 사용하는 에모지 탑 5위는 이렇습니다.
+GitHub에서 많이 사용하는 에모지 탑 5위는 이렇습니다.
 
 1. `:shipit:`
 2. `:sparkles:`
@@ -382,7 +416,7 @@ puts table.to_s
 
 _(크롬에서만 동작합니다)_
 
-스크린샷을 찍고 클립보드에 있는 경우 (mac: `cmd-ctrl-shift-4`), 간단히 이미지를 커맨트 색션에 붙여넣기(`cmd-v / ctrl-v`)할 수 있고 이는 자동으로 깃허브에 업로드 됩니다.
+스크린샷을 찍고 클립보드에 있는 경우 (mac: `cmd-ctrl-shift-4`), 간단히 이미지를 커맨트 색션에 붙여넣기(`cmd-v / ctrl-v`)할 수 있고 이는 자동으로 GitHub에 업로드 됩니다.
 
 ![Pasting Clipboard Image to Comments](https://cloud.githubusercontent.com/assets/39191/5794265/39c9b65a-9f1b-11e4-9bc7-04e41f59ea5f.png)
 
@@ -390,7 +424,7 @@ _(크롬에서만 동작합니다)_
 
 ### Quick Licensing
 
-저장소를 만들 때, 깃허브는 만들어진 저작권을 추가할 수 있는 옵션을 제공합니다.
+저장소를 만들 때, GitHub는 만들어진 저작권을 추가할 수 있는 옵션을 제공합니다.
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
@@ -471,11 +505,11 @@ _(크롬에서만 동작합니다)_
 
 Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis)와 [@mentions](https://github.com/blog/821)을 지킬 포스트와 페이지에서 사용하게 합니다.
 
-[*저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
+[*저장소 메타 데이타와 GitHub 페이지의 플러그인 지원에 대해 더 읽어 보세요.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
 ### Viewing YAML Metadata in your Documents
 
-[Jekyll](http://jekyllrb.com/)이나 [GitHub Pages](http://pages.github.com/)같은 많은 블로그에서 포스트의 처음에 YAML 포멧의 메타데이터를 필요로 합니다. 깃허브는 이 메타 정보를 읽기 편하게 테이블로 표시해 줍니다.
+[Jekyll](http://jekyllrb.com/)이나 [GitHub Pages](http://pages.github.com/)같은 많은 블로그에서 포스트의 처음에 YAML 포멧의 메타데이터를 필요로 합니다. GitHub는 이 메타 정보를 읽기 편하게 테이블로 표시해 줍니다.
 
 ![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
 
@@ -483,7 +517,7 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 ### Rendering Tabular Data
 
-깃허브는 `.csv` (comma-separated) 와 `.tsv` (tab-separated)파일에 대해 표(tabular) 데이터 보기를 지원합니다.
+GitHub는 `.csv` (comma-separated) 와 `.tsv` (tab-separated)파일에 대해 표(tabular) 데이터 보기를 지원합니다.
 
 ![Tabular data](https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67)
 
@@ -491,7 +525,7 @@ Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 [emoji](#emojis
 
 ### Rendering PDF
 
-깃허브에서 PDF를 렌더링할 수 있습니다.
+GitHub에서 PDF를 렌더링할 수 있습니다.
 
 ![PDF](https://cloud.githubusercontent.com/assets/1000669/7492902/f8493160-f42e-11e4-8cea-1cb4f02757e7.png)
 
@@ -523,7 +557,7 @@ GitHub에서 지원하는 산문(prose) 파일(예를 들어 Markdown)이 있는
 
 #### Diffable Maps
 
-지오데이타가 포함된 커밋이나 풀 리퀘스트를 볼 때마다 깃허브는 무엇이 변경 되었는지 시각적으로 보여줍니다.
+지오데이타가 포함된 커밋이나 풀 리퀘스트를 볼 때마다 GitHub는 무엇이 변경 되었는지 시각적으로 보여줍니다.
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
@@ -531,7 +565,7 @@ GitHub에서 지원하는 산문(prose) 파일(예를 들어 Markdown)이 있는
 
 #### Expanding Context in Diffs
 
-diff의 닫아둔 곳의 *펼침* 버튼을 클릭하면, 문맥을 더 볼 수 있습니다. 전채 파일을 표시할때까지 계속 *펼칠* 수 있으며, 깃허브에서 diff가 표시되는 장소라면 어디서든 사용가능합니다.
+diff의 닫아둔 곳의 *펼침* 버튼을 클릭하면, 문맥을 더 볼 수 있습니다. 전채 파일을 표시할때까지 계속 *펼칠* 수 있으며, GitHub에서 diff가 표시되는 장소라면 어디서든 사용가능합니다.
 
 ![Expanding Context in Diffs](https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif)
 
@@ -571,7 +605,7 @@ index 88fcf69..8614873 100644
 
 #### Rendering and diffing images
 
-깃허브는 PNG, JPG, GIF, PSD를 포함한 여러 일반 적인 이미지 형식을 표시할 수 있습니다. 추가적으로 이미지 형식의 diff를 표시하는 여러 방법을 제공합니다.
+GitHub는 PNG, JPG, GIF, PSD를 포함한 여러 일반 적인 이미지 형식을 표시할 수 있습니다. 추가적으로 이미지 형식의 diff를 표시하는 여러 방법을 제공합니다.
 
 [![Diffable PSD](https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif)](https://github.com/blog/1845-psd-viewing-diffing
 
@@ -579,7 +613,7 @@ index 88fcf69..8614873 100644
 
 ### Hub
 
-[Hub](https://github.com/github/hub)는 깃허브를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.
+[Hub](https://github.com/github/hub)는 GitHub를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.
 
 이렇게 할 수 있습니다.
 
@@ -599,7 +633,7 @@ $ hub clone tiimgreen/toc
 
 ### Octicons
 
-깃허브 아이콘(옥티콘)이 이제 오픈소스가 되었습니다.
+GitHub 아이콘(옥티콘)이 이제 오픈소스가 되었습니다.
 
 ![Octicons](https://og.github.com/octicons/octicons@1200x630.png)
 
@@ -614,6 +648,7 @@ $ hub clone tiimgreen/toc
 | GitHub Help | https://help.github.com/ |
 | GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
+| GitHub Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
 
 #### GitHub Talks
 
@@ -708,7 +743,7 @@ e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 ### Checking out Pull Requests
 
-풀 리퀘스트는 깃허브 저장소에서 사용하는 특별한 브랜치로 여러 방법으로 로컬로
+풀 리퀘스트는 GitHub 저장소에서 사용하는 특별한 브랜치로 여러 방법으로 로컬로
 가져 올수 있습니다.
 
 빠르게 `diff`나 `merge`를 하기위해 특정 풀 리퀘스트를 임시로 `FETCH_HEAD`로
