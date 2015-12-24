@@ -4,7 +4,7 @@ Git과 Github에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 
 *단축주소: [`http://git.io/sheet`](http://git.io/sheet)*
 
-*다른 언어로 보기: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
+*Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
 # 목록
 
