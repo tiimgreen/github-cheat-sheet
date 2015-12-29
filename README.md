@@ -994,6 +994,7 @@ $ git config --global color.ui 1
 | GitHub Training Kit | http://training.github.com/kit |
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
+| A collection of useful .gitignore templates | https://github.com/github/gitignore |
 
 #### Git Books
 | Title | Link |
