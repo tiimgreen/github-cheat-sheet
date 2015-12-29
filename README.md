@@ -70,6 +70,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Color](#color)
   - [Git Resources](#git-resources)
     - [Git Books](#git-books)
+    - [Git Videos](#git-videos)
+    - [Git Articles](#git-articles)
 
 ## GitHub
 ### Ignore Whitespace
@@ -1015,3 +1017,8 @@ $ git config --global color.ui 1
 | Git From the Bits Up | https://www.youtube.com/watch?v=MYP56QJpDr4 |
 | Graphs, Hashes, and Compression, Oh My! | https://www.youtube.com/watch?v=ig5E8CcdM9g |
 | GitHub Training & Guides | https://www.youtube.com/watch?list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&v=FyfwLX4HAxM |
+
+#### Git Articles
+| Title | Link |
+| ----- | ---- |
+| GitHub Flow  | http://scottchacon.com/2011/08/31/github-flow.html |
