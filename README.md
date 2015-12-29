@@ -1005,3 +1005,12 @@ $ git config --global color.ui 1
 | Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
 | Git: Version Control for Everyone | http://www.packtpub.com/git-version-control-for-everyone/book |
+
+#### Git Videos
+| Title | Link |
+| ----- | ---- |
+| Linus Torvalds on Git | https://www.youtube.com/watch?v=4XpnKHJAok8 |
+| Introduction to Git with Scott Chacon | https://www.youtube.com/watch?v=ZDR433b0HJY |
+| Git From the Bits Up | https://www.youtube.com/watch?v=MYP56QJpDr4 |
+| Graphs, Hashes, and Compression, Oh My! | https://www.youtube.com/watch?v=ig5E8CcdM9g |
+| GitHub Training & Guides | https://www.youtube.com/watch?list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&v=FyfwLX4HAxM |
