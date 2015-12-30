@@ -1,0 +1,10 @@
+language: ruby
+
+rvm:
+  - 2.2
+
+before_script:
+  - gem install awesome_bot
+
+script:
+  - awesome_bot README.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*
