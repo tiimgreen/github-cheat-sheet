@@ -70,6 +70,8 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Color](#color)
   - [Git Resources](#git-resources)
     - [Git Books](#git-books)
+    - [Git Videos](#git-videos)
+    - [Git Articles](#git-articles)
 
 ## GitHub
 ### Ignore Whitespace
@@ -993,6 +995,8 @@ $ git config --global color.ui 1
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
+| Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
+| A collection of useful .gitignore templates | https://github.com/github/gitignore |
 
 #### Git Books
 | Title | Link |
@@ -1004,3 +1008,17 @@ $ git config --global color.ui 1
 | Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git |
 | Git: Version Control for Everyone | http://www.packtpub.com/git-version-control-for-everyone/book |
+
+#### Git Videos
+| Title | Link |
+| ----- | ---- |
+| Linus Torvalds on Git | https://www.youtube.com/watch?v=4XpnKHJAok8 |
+| Introduction to Git with Scott Chacon | https://www.youtube.com/watch?v=ZDR433b0HJY |
+| Git From the Bits Up | https://www.youtube.com/watch?v=MYP56QJpDr4 |
+| Graphs, Hashes, and Compression, Oh My! | https://www.youtube.com/watch?v=ig5E8CcdM9g |
+| GitHub Training & Guides | https://www.youtube.com/watch?list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&v=FyfwLX4HAxM |
+
+#### Git Articles
+| Title | Link |
+| ----- | ---- |
+| GitHub Flow  | http://scottchacon.com/2011/08/31/github-flow.html |
