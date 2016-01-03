@@ -817,8 +817,6 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 저장소를 사용하는 사람과의 대화
  - 나중에 리베이스하지 않을 저장소의 첫 커밋으로 사용 `git commit -m "init repo" --allow-empty`.
 
-![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
-
 ### Styled Git Status
 
 ```bash

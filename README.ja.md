@@ -755,8 +755,6 @@ $ git commit -m "Big-ass commit" --allow-empty
  - リポジトリを利用して誰かと連絡を取りたい時
  - リポジトリへの最初のコミットをやり直しできるようにしたい時: `git commit -m "init repo" --allow-empty`.
 
-![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
-
 ### Gitステータスのスタイリング
 普通に実行すると:
 
@@ -982,7 +980,6 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
-| Git for Designers | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |

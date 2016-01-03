@@ -717,8 +717,6 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 跟使用你仓库的其他人交流。
  - 作为仓库的第一次提交，因为第一次提交后不能被 rebase： `git commit -m "init repo" --allow-empty`.
 
- ![It ain't even that trolololol...](http://i.minus.com/il1jaw.gif)
-
 ### 美化 Git Status
 在命令行输入如下命令:
 
@@ -913,7 +911,6 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
-| Git for Designer | http://hoth.entp.com/output/git_for_designers.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
