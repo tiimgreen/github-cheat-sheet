@@ -46,7 +46,10 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
     - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
-  - [Contributing Guidelines](#contributing-guidelines)
+  - [Contribution Guidelines](#contribution-guidelines)
+    - [CONTRIBUTING file](#contributing-file)
+    - [ISSUE_TEMPLATE file](#issue-template-file)
+    - [PULL_REQUEST_TEMPLATE file](#pull-request-template-file)
   - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
@@ -591,12 +594,32 @@ $ hub clone tiimgreen/toc
 
 [*Check out some more cool commands Hub has to offer.*](https://github.com/github/hub#commands)
 
-### Contributing Guidelines
-Adding a `CONTRIBUTING` file to the root of your repository will add a link to your file when a contributor creates an Issue or opens a Pull Request.
+### Contribution Guidelines
+GitHub supports adding 3 different files which help users contribute to your project.
+These files can either be placed in the root of your repository or a `.github` directory under the root.
+
+#### CONTRIBUTING File
+Adding a `CONTRIBUTING` or `CONTRIBUTING.md` file to either the root of your repository or a `.github` directory will add a link to your file when a contributor creates an Issue or opens a Pull Request.
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
 [*Read more about contributing guidelines.*](https://github.com/blog/1184-contributing-guidelines)
+
+#### ISSUE_TEMPLATE file
+You can define a template for all new issues opened in your project. The content of this file will pre-populate the new issue box when users create new issues. Add an `ISSUE_TEMPLATE` or `ISSUE_TEMPLATE.md` file to either the root of your repository or a `.github` directory.
+
+[*Read more about issue templates.*](https://github.com/blog/2111-issue-and-pull-request-templates)
+
+[Issue template file generator](https://www.talater.com/open-source-templates/)
+
+![GitHub Issue template](https://cloud.githubusercontent.com/assets/25792/13120859/733479fe-d564-11e5-8a1f-a03f95072f7a.png)
+
+#### PULL_REQUEST_TEMPLATE file
+You can define a template for all new pull requests opened in your project. The content of this file will pre-populate the text area when users create pull requests. Add a `PULL_REQUEST_TEMPLATE` or `PULL_REQUEST_TEMPLATE.md` file to either the root of your repository or a `.github` directory.
+
+[*Read more about pull request templates.*](https://github.com/blog/2111-issue-and-pull-request-templates)
+
+[Pull request template file generator](https://www.talater.com/open-source-templates/)
 
 ### Octicons
 GitHubs icons (Octicons) have now been open sourced.
