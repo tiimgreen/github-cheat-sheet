@@ -1,6 +1,6 @@
 # GitHub 치트 시트 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets)([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))과 WDCNZ 2013에서 발표한 [Git과 GitHub에 대한 더 많은 비밀들](https://vimeo.com/72955426)([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
+Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://confreaks.tv/videos/aloharuby2012-git-and-github-secrets)([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))과 WDCNZ 2013에서 발표한 [Git과 GitHub에 대한 더 많은 비밀들](https://vimeo.com/72955426)([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
 
 *단축주소: [`http://git.io/sheet`](http://git.io/sheet)*
 
@@ -48,7 +48,10 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
     - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
     - [Rendering and diffing images](#rendering-and-diffing-images)
   - [Hub](#hub)
-  - [Contributing Guidelines](#contributing-guidelines)
+  - [Contribution Guidelines](#contribution-guidelines)
+    - [CONTRIBUTING file](#contributing-file)
+    - [ISSUE_TEMPLATE file](#issue_template-file)
+    - [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
   - [Octicons](#octicons)
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
@@ -620,7 +623,7 @@ GitHub는 PNG, JPG, GIF, PSD를 포함한 여러 일반적인 이미지 형식�
 
 ### Hub
 
-[Hub](https://github.com/github/hub)는 GitHub를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.
+[Hub](https://github.com/github/hub)는 GitHub를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 Git 래퍼입니다.
 
 이렇게 할 수 있습니다.
 
@@ -630,13 +633,36 @@ $ hub clone tiimgreen/toc
 
 [*Hub가 제공하는 더 멋진 기능들을 확인해 보세요.*](https://github.com/github/hub#commands)
 
-### Contributing Guidelines
+### Contribution Guidelines
 
-저장소의 제일 위에 `CONTRIBUTING` 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.
+GitHub는 프로젝트에 기여하는 사용자를 위한 세 가지 각기 다른 파일을 지원합니다.
+이 파일은 저장소의 제일 위나 그 아래의 `.github` 디렉터리에 위치할 수 있습니다.
+
+### CONTRIBUTING File
+
+저장소의 제일 위나 그 아래의 `.github` 디렉터리에 `CONTRIBUTING`이나 `CONTRIBUTING.md` 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.
 
 ![Contributing Guidelines](https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067)
 
 [*기여하기에 대해 더 읽어 보세요.*](https://github.com/blog/1184-contributing-guidelines)
+
+### ISSUE_TEMPLATE file
+
+프로젝트의 새로운 이슈에 사용될 템플릿을 지정할 수 있습니다. 사용자가 새 이슈를 생성하면 이슈 창이 이 파일의 내용으로 채워집니다. 저장소의 제일 위나 그 아래의 `.github` 디렉터리에 `ISSUE_TEMPLATE`이나 `ISSUE_TEMPLATE.md` 파일을 넣어 두세요.
+
+[*이슈 템플릿에 대해 더 읽어 보세요.*](https://github.com/blog/2111-issue-and-pull-request-templates)
+
+[이슈 템플릿 파일 생성기](https://www.talater.com/open-source-templates/)
+
+![GitHub Issue template](https://cloud.githubusercontent.com/assets/25792/13120859/733479fe-d564-11e5-8a1f-a03f95072f7a.png)
+
+### PULL_REQUEST_TEMPLATE file
+
+프로젝트의 새로운 풀 리퀘스트에 사용될 템플릿을 지정할 수 있습니다. 사용자가 새 풀 리퀘스트를 생성하면 텍스트 영역이 이 파일의 내용으로 채워집니다. 저장소의 제일 위나 `.github` 디렉터리에 `PULL_REQUEST_TEMPLATE`이나 `PULL_REQUEST_TEMPLATE.md` 파일을 넣어 두세요.
+
+[*풀 리퀘스트 템플릿에 대해 더 읽어 보세요.*](https://github.com/blog/2111-issue-and-pull-request-templates)
+
+[풀 리퀘스트 템플릿 파일 생성기](https://www.talater.com/open-source-templates/)
 
 ### Octicons
 
@@ -644,7 +670,7 @@ GitHub 아이콘(옥티콘)이 이제 오픈소스가 되었습니다.
 
 ![Octicons](https://og.github.com/octicons/octicons@1200x630.png)
 
-[*깃 허브의 옥티콘에 대해 더 읽어보세요.*](https://octicons.github.com)
+[*GitHub 옥티콘에 대해 더 읽어보세요.*](https://octicons.github.com)
 
 ### GitHub Resources
 
@@ -784,7 +810,7 @@ $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 $ git checkout pr/42 pr-42
 ```
 
-여러 저장소를 다루어야 한다면, 전역 깃 설정에서 풀 리퀘스트를 받을(fetching) 수 있도록 설정 할 수도 있습니다.
+여러 저장소를 다루어야 한다면, 전역 Git 설정에서 풀 리퀘스트를 받을(fetching) 수 있도록 설정 할 수도 있습니다.
 
 ```bash
 git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
@@ -815,7 +841,7 @@ $ git commit -m "Big-ass commit" --allow-empty
  - 한 뭉치의 일을 시작하기 전에 주석으로 사용
  - 코드와 관련없는 프로젝트 수정을 할때 주석으로 사용
  - 저장소를 사용하는 사람과의 대화
- - 나중에 리베이스하지 않을 저장소의 첫 커밋으로 사용 `git commit -m "init repo" --allow-empty`.
+ - 저장소의 첫 커밋으로 사용 `git commit -m "Initial commit" --allow-empty`
 
 ### Styled Git Status
 
@@ -928,8 +954,8 @@ $ git branch --no-merged
 $ git commit --fixup=abcde
 $ git rebase abcde^ --autosquash -i
 ```
-[*깃 `commit` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-commit)
-[*깃 `rebase` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-rebase)
+[*Git `commit` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-commit)
+[*Git `rebase` 커맨드에 대해 더 읽어 보세요.*](http://git-scm.com/docs/git-rebase)
 
 ### Web Server for Browsing Local Repositories
 
@@ -1030,7 +1056,7 @@ $ git comit -m "Message"
 
 #### Color
 
-깃 커맨드 라인에 색을 넣으려면 이렇게 하세요.
+Git 커맨드 라인에 색을 넣으려면 이렇게 하세요.
 
 ```bash
 $ git config --global color.ui 1
@@ -1070,6 +1096,7 @@ $ git config --global color.ui 1
 | Git: Version Control for Everyone | http://www.packtpub.com/git-version-control-for-everyone/book |
 
 #### Git Videos
+
 | Title | Link |
 | ----- | ---- |
 | Linus Torvalds on Git | https://www.youtube.com/watch?v=4XpnKHJAok8 |
@@ -1079,6 +1106,7 @@ $ git config --global color.ui 1
 | GitHub Training & Guides | https://www.youtube.com/watch?list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&v=FyfwLX4HAxM |
 
 #### Git Articles
+
 | Title | Link |
 | ----- | ---- |
 | GitHub Flow  | http://scottchacon.com/2011/08/31/github-flow.html |
