@@ -51,6 +51,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [ISSUE_TEMPLATE file](#issue_template-file)
     - [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
   - [Octicons](#octicons)
+  - [GitHub Student Developer Pack](#gitHub-student-developer-pack)
   - [GitHub Resources](#github-resources)
     - [GitHub Talks](#github-talks)
  - [Git](#git)
@@ -628,6 +629,13 @@ GitHubs icons (Octicons) have now been open sourced.
 
 [*Read more about GitHub's Octicons*](https://octicons.github.com)
 
+### GitHub Student Developer Pack
+
+If you are a student you will be eligible for the GitHub Student Developer Pack. This gives you free credit, free trials and early access to software that will help you when developing.
+
+![GitHub Student Developer Pack](http://i.imgur.com/9ru3K43.png)
+
+[*Read more about GitHub's Student Developer Pack](https://education.github.com/pack)
 
 ### GitHub Resources
 | Title | Link |
