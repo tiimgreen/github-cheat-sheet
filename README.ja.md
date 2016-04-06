@@ -73,12 +73,6 @@
 - [訳注](#%E8%A8%B3%E6%B3%A8)
 
 ## GitHub
-### 空白の無視
-GitHub上で差分ページを表示している時、そのURLに`?w=1`を加えると、空白の変化によるできた差分は表示されなくなり、コード上の変化だけを参照することができる。
-
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
-
-[*GitHubの秘密についてもっと詳しく*](https://github.com/blog/967-github-secrets)
 
 ### タブ幅の調節
 差分やファイルを表示している時、URLに`?ts=4`を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。`ts`に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されないが、[Chrome](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)と[Operaの拡張](https://addons.opera.com/en/extensions/details/github-tab-size/)をインストールすることにより、対応することができる。
