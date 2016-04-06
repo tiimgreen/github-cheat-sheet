@@ -5,7 +5,6 @@ Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman)
 
 # 目錄
   - [GitHub](#github)
-    - [不比較空白字串](#不比較空白字串)
     - [調整 Tab 字串所代表的空格數](#調整-tab-字串所代表的空格數)
     - [查看某個使用者的 Commit 歷史](#查看某個使用者的-commit-歷史)
     - [倉庫複製](#倉庫複製)
@@ -68,13 +67,6 @@ Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman)
       - [Git 參考書籍](#git-參考書籍)
 
 ## GitHub
-### 不比較空白字串
-
-在任意 diff 頁面的 UR L後加上 `?w=1`，可以去掉那些隻是空白字串的改動，使你能更專註於代碼改動。
-
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
-
-[*詳見 GitHub secrets.*](https://github.com/blog/967-github-secrets)
 
 ### 調整 Tab 字串所代表的空格數
 在 diff 或文件的 URL 後面加上 `?ts=4` ，這樣當顯示 tab 字串的長度時就會是 4 個空格的長度，不再是默認的 8 個空格。 `ts` 後面的數字還可以根據你個人的偏好進行修改。這個技巧不適用於 Gists，或者以 Raw 格式查看文件， 但有瀏覽器擴展插件可以幫你自動調整: [Chrome 擴展](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn) ， [Opera 擴展](https://addons.opera.com/en/extensions/details/github-tab-size/)。
