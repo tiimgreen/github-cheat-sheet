@@ -9,7 +9,6 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 # 목록
 
  - [GitHub](#github)
-  - [Ignore Whitespace](#ignore-whitespace)
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
