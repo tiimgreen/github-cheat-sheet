@@ -7,7 +7,6 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
 ## Table of Contents
  - [GitHub](#github)
-  - [Ignore Whitespace](#ignore-whitespace)
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
