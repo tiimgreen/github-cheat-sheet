@@ -78,14 +78,6 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 
 ## GitHub
 
-### Ignore Whitespace
-
-`?w=1`를 diff URL에 추가하면 변경된 코드만 볼 수 있도록, 공백만 바뀐 수정을 제거할 수 있습니다.
-
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
-
-[*GitHub의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
-
 ### Adjust Tab Space
 
 diff나 파일 URL에 `?ts=4`를 덧붙이면 탭 문자의 크기를 기본값인 공백 8개 대신 4개로 보여줍니다. `ts` 뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw 파일 보기에는 적용 되지 않습니다만, [크롬 확장 프로그램](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)이나 [오페라 확장 프로그램](https://addons.opera.com/en/extensions/details/github-tab-size/)으로 자동화 할 수 있습니다.
