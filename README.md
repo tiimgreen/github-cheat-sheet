@@ -1025,6 +1025,7 @@ $ git config --global color.ui 1
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
 | A collection of useful .gitignore templates | https://github.com/github/gitignore |
+| Create useful .gitignore files for your project | https://www.gitignore.io/ |
 
 #### Git Books
 | Title | Link |
