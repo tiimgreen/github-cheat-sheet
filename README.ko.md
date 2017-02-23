@@ -9,7 +9,6 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 # 목록
 
  - [GitHub](#github)
-  - [Ignore Whitespace](#ignore-whitespace)
   - [Adjust Tab Space](#adjust-tab-space)
   - [Commit History by Author](#commit-history-by-author)
   - [Cloning a Repository](#cloning-a-repository)
@@ -77,14 +76,6 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
     - [Git Books](#git-books)
 
 ## GitHub
-
-### Ignore Whitespace
-
-`?w=1`를 diff URL에 추가하면 변경된 코드만 볼 수 있도록, 공백만 바뀐 수정을 제거할 수 있습니다.
-
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
-
-[*GitHub의 비밀을 더 읽어 보세요.*](https://github.com/blog/967-github-secrets)
 
 ### Adjust Tab Space
 
