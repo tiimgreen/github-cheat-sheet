@@ -116,7 +116,7 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
 
-###Branch
+### Branch
 #### Compare all Branches to Another Branch
 
 If you go to the repo's [Branches](https://github.com/tiimgreen/github-cheat-sheet/branches) page, next to the Commits button:
@@ -511,7 +511,7 @@ GitHub supports rendering PDF:
 
 [*Read more about rendering PDF.*](https://github.com/blog/1974-pdf-viewing)
 
-###Revert a Pull Request
+### Revert a Pull Request
 After a pull request is merged, you may find it does not help anything or it was a bad decision to merge the pull request.
 
 You can revert it by clicking the **Revert** button on the right side of a commit in the pull request page to create a pull request with reverted changes to this specific pull request.
