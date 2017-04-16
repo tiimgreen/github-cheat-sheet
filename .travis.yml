@@ -7,8 +7,9 @@ before_script:
   - gem install awesome_bot
 
 script:
-  - awesome_bot README.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/
-  - awesome_bot README.ko.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/
-  - awesome_bot README.ja.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/
-  - awesome_bot README.zh-cn.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/
-  - awesome_bot README.zh-tw.md --allow-dupe --allow-redirect --white-list https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/...,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/
+  - wl=https://github.com/rails/rails/compare/master@,http://git.io/abc123,https://github.com/..,youtube,chrome.google.com/webstore,https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*,https://github.com/user/repo/compare/,vimeo
+  - awesome_bot README.md       --allow-dupe --allow-redirect --white-list $wl
+  - awesome_bot README.ko.md    --allow-dupe --allow-redirect --white-list $wl
+  - awesome_bot README.ja.md    --allow-dupe --allow-redirect --white-list $wl
+  - awesome_bot README.zh-cn.md --allow-dupe --allow-redirect --white-list $wl
+  - awesome_bot README.zh-tw.md --allow-dupe --allow-redirect --white-list $wl
