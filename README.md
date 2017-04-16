@@ -21,6 +21,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
   - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
   - [Cross-Link Issues](#cross-link-issues)
+  - [Trending Projects Discovery](#trending-projects-discovery)
   - [Locking Conversations](#locking-conversations)
   - [CI Status on Pull Requests](#ci-status-on-pull-requests)
   - [Filters](#filters)
@@ -286,6 +287,10 @@ This means that users who are not collaborators on the project will no longer be
 
 [*Read more about locking conversations.*](https://github.com/blog/1847-locking-conversations)
 
+### Trending Projects Discovery
+Languages displayed on the right sidebar on Github's [Trending repositories](https://github.com/trending) section are based on [your starred repositories](https://github.com/stars).
+
+![](https://cloud.githubusercontent.com/assets/11040069/16779809/b09d6990-4828-11e6-95f7-386407ad5483.png)
 
 ### CI Status on Pull Requests
 If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
