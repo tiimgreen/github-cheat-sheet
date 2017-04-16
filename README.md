@@ -79,7 +79,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
 
 ## GitHub
 ### Ignore Whitespace
-Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only that code that has changed.
+Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
 
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
@@ -138,7 +138,7 @@ To use GitHub to compare branches, change the URL to look like this:
 https://github.com/{user}/{repo}/compare/{range}
 ```
 
-Where `{range} = master...4-1-stable`
+where `{range} = master...4-1-stable`
 
 For example:
 
@@ -155,7 +155,7 @@ https://github.com/rails/rails/compare/master@{1.day.ago}...master
 https://github.com/rails/rails/compare/master@{2014-10-04}...master
 ```
 
-*Dates are in the format `YYYY-MM-DD`*
+*Here, dates are in the format `YYYY-MM-DD`*
 
 ![Another compare example](http://i.imgur.com/5dtzESz.png)
 
@@ -188,7 +188,7 @@ https://github.com/rails/rails/compare/byroot:master...master
 
 ![Gist](http://i.imgur.com/VkKI1LC.png?1)
 
-Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML only* version suitable for embedding in any other site.
+Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML-only* version suitable for embedding in any other site.
 
 Gists can be treated as a repository so they can be cloned like any other:
 
@@ -236,7 +236,7 @@ When on a repository page, keyboard shortcuts allow you to navigate easily.
  - Pressing `w` will bring up the branch selector.
  - Pressing `s` will focus the search field for the current repository. Pressing Backspace to delete the “This repository” pill changes the field to search all of GitHub.
  - Pressing `l` will edit labels on existing Issues.
- - Pressing `y` **when looking at a file** (e.g. `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+ - Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`:
 
@@ -245,9 +245,9 @@ To see all of the shortcuts for the current page press `?`:
 [Read more about search syntax you can use.](https://help.github.com/articles/search-syntax/)
 
 ### Line Highlighting in Repositories
-Either adding `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
+Either adding, e.g., `#L52` to the end of a code file URL or simply clicking the line number will highlight that line number.
 
-It also works with ranges, e.g. `#L53-L60`, to select ranges, hold `shift` and click two lines:
+It also works with ranges, e.g., `#L53-L60`, to select ranges, hold `shift` and click two lines:
 
 ```
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
@@ -271,7 +271,7 @@ This closes the issue and references the closing commit.
 ### Cross-Link Issues
 If you want to link to another issue in the same repository, simply type hash `#` then the issue number, and it will be auto-linked.
 
-To link to an issue in another repository, `{user}/{repo}#ISSUE_NUMBER` e.g. `tiimgreen/toc#12`.
+To link to an issue in another repository, `{user}/{repo}#ISSUE_NUMBER`, e.g., `tiimgreen/toc#12`.
 
 ![Cross-Link Issues](https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67)
 
@@ -478,7 +478,7 @@ Relative links are recommended in your Markdown files when linking to internal c
 [Link to a file](docs/readme)
 ```
 
-Absolute links have to be updated whenever the URL changes (e.g. repository renamed, username changed, project forked). Using relative links makes your documentation easily stand on its own.
+Absolute links have to be updated whenever the URL changes (e.g., repository renamed, username changed, project forked). Using relative links makes your documentation easily stand on its own.
 
 [*Read more about relative links.*](https://help.github.com/articles/relative-links-in-readmes/)
 
@@ -522,7 +522,7 @@ You can revert it by clicking the **Revert** button on the right side of a commi
 
 ### Diffs
 #### Rendered Prose Diffs
-Commits and pull requests, including rendered documents supported by GitHub (e.g. Markdown), feature *source* and *rendered* views.
+Commits and pull requests, including rendered documents supported by GitHub (e.g., Markdown), feature *source* and *rendered* views.
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
@@ -731,7 +731,7 @@ $ git stripspace < README.md
 
 Pull Requests are special branches on the GitHub repository which can be retrieved locally in several ways:
 
-Retrieve a specific Pull Request and store it temporarily in `FETCH_HEAD` for quickly `diff`ing or `merge`ing:
+Retrieve a specific Pull Request and store it temporarily in `FETCH_HEAD` for quickly `diff`-ing or `merge`-ing:
 
 ```bash
 $ git fetch origin refs/pull/[PR-Number]/head
@@ -803,7 +803,7 @@ Running:
 $ git status
 ```
 
-Produces:
+produces:
 
 ![git status](http://i.imgur.com/qjPyvXb.png)
 
@@ -813,7 +813,7 @@ By adding `-sb`:
 $ git status -sb
 ```
 
-This is produced:
+this is produced:
 
 ![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
@@ -826,7 +826,7 @@ Running:
 $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
-Produces:
+produces:
 
 ![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
@@ -843,7 +843,7 @@ A Git query allows you to search all your previous commit messages and find the 
 $ git show :/query
 ```
 
-Where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
+where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
 ```bash
 $ git show :/typo
@@ -869,7 +869,7 @@ will show all the files containing the string *aliases*.
 
 You can also use multiple flags for more advanced search. For example:
 
- * `-e` The next parameter is the pattern (e.g. regex)
+ * `-e` The next parameter is the pattern (e.g., regex)
  * `--and`, `--or` and `--not` Combine multiple patterns.
 
 Use it like this:
@@ -886,7 +886,7 @@ Running:
 $ git branch --merged
 ```
 
-Will give you a list of all branches that have been merged into your current branch.
+will give you a list of all branches that have been merged into your current branch.
 
 Conversely:
 
@@ -894,7 +894,7 @@ Conversely:
 $ git branch --no-merged
 ```
 
-Will give you a list of branches that have not been merged into your current branch.
+will give you a list of branches that have not been merged into your current branch.
 
 [*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
 
@@ -914,7 +914,7 @@ Use the Git `instaweb` command to instantly browse your working repository in `g
 $ git instaweb
 ```
 
-Opens:
+opens:
 
 ![Git instaweb](http://i.imgur.com/Dxekmqc.png)
 
