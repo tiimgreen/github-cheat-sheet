@@ -782,6 +782,30 @@ git checkout pr/42
 
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally/)
 
+#### A Quick Way to Fetch Single Pull Request
+
+This way you don't need to add any others remote or fetch all PRs, just fetch single PR to test and merge.
+
+``` bash
+git fetch upstream refs/pull/[PR Number]/head:[Your Local Branch Name]
+git checkout [Your Local Branch Name]
+```
+
+Use as a global command, create this file to `/usr/local/bin/get-pr`.
+
+``` bash
+#!/usr/bin/env bash
+git fetch $1 refs/pull/$2/head:pr-$2
+```
+
+Now type this command in your project to quick fetch a PR to test.
+
+``` bash
+cd /your/project
+get-pr upstream [PR Number]
+git checkout pr-[PR Number]
+```
+
 ### Empty Commits
 Commits can be pushed with no code changes by adding `--allow-empty`:
 
