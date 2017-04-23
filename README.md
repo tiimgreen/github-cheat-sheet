@@ -640,11 +640,13 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 ### GitHub Resources
 | Title | Link |
 | ----- | ---- |
+| GitHub Guides | https://guides.github.com/ |
 | GitHub Explore | https://github.com/explore |
 | GitHub Blog | https://github.com/blog |
 | GitHub Help | https://help.github.com/ |
 | GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
+| GitHub Engineering Team Blog | https://githubengineering.com/ |
 | Github Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
 
 #### GitHub Talks
