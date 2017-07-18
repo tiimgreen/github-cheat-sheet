@@ -1,7 +1,7 @@
 # GitHub Cheat Sheet [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by [Zach Holman](https://github.com/holman)'s [Git and GitHub Secrets](http://confreaks.tv/videos/aloharuby2012-git-and-github-secrets) talk at Aloha Ruby Conference 2012 ([slides](https://speakerdeck.com/holman/git-and-github-secrets)) and his [More Git and GitHub Secrets](https://vimeo.com/72955426) talk at WDCNZ 2013 ([slides](https://speakerdeck.com/holman/more-git-and-github-secrets)).
 
-*Shortlink: [`http://git.io/sheet`](http://git.io/sheet)*
+*Shortlink: [`https://git.io//sheet`](http://git.io/sheet)*
 
 *Read this in other languages: [English](README.md), [한국어](README.ko.md), [日本語](README.ja.md), [简体中文](README.zh-cn.md), [正體中文](README.zh-tw.md).*
 
@@ -114,7 +114,7 @@ When cloning a repository the `.git` can be left off the end.
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
-[*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
+[*Read more about the Git `clone` command.*](https://git-scm.com/docs/git-clone)
 
 ### Branch
 #### Compare all Branches to Another Branch
@@ -178,7 +178,7 @@ https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
 For example:
 
 ```
-https://github.com/rails/rails/compare/byroot:master...master
+https://github.com/byroot/rails/compare/master...rails:master
 ```
 
 ![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
@@ -288,7 +288,7 @@ This means that users who are not collaborators on the project will no longer be
 
 
 ### CI Status on Pull Requests
-If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](http://docs.travis-ci.com/user/getting-started/).
+If set up correctly, every time you receive a Pull Request, [Travis CI](https://travis-ci.org/) will build that Pull Request just like it would every time you make a new commit. Read more about how to [get started with Travis CI](https://docs.travis-ci.com/user/getting-started/).
 
 [![Travis CI status](https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png)](https://github.com/octokit/octokit.rb/pull/452)
 
@@ -351,8 +351,8 @@ GitHub uses [Linguist](https://github.com/github/linguist) to perform language d
 ### Emojis
 Emojis can be added to Pull Requests, Issues, commit messages, repository descriptions, etc. using `:name_of_emoji:`.
 
-The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
-A handy emoji search engine can be found at [emoji.muan.co](http://emoji.muan.co/).
+The full list of supported Emojis on GitHub can be found at [emoji-cheat-sheet.com](http://www.webpagefx.com/tools/emoji-cheat-sheet/) or [scotch-io/All-Github-Emoji-Icons](https://github.com/scotch-io/All-Github-Emoji-Icons).
+A handy emoji search engine can be found at [emoji.muan.co](http://lightspeed1.nsnet.net/access/web?id=b0947b85-6bd7-11e7-8b13-00e0ed148814).
 
 The top 5 used Emojis on GitHub are:
 
@@ -552,8 +552,8 @@ extension to the end of the URL. For example:
 
 ```
 https://github.com/tiimgreen/github-cheat-sheet/pull/15
-https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
-https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+https://patch-diff.githubusercontent.com/raw/tiimgreen/github-cheat-sheet/pull/15.diff
+https://patch-diff.githubusercontent.com/raw/tiimgreen/github-cheat-sheet/pull/15.patch
 ```
 
 The `.diff` extension would give you this in plain text:
@@ -643,7 +643,7 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 | GitHub Explore | https://github.com/explore |
 | GitHub Blog | https://github.com/blog |
 | GitHub Help | https://help.github.com/ |
-| GitHub Training | https://training.github.com/ |
+| GitHub Training | https://services.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 | Github Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
 
@@ -666,7 +666,7 @@ https://github.com/{user}.keys
 
 e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
-[*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
+[*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users)
 
 ## Git
 ### Remove All Deleted Files from the Working Tree
@@ -710,7 +710,7 @@ $ git checkout -
 # Switched to branch 'master'
 ```
 
-[*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
+[*Read more about Git branching.*](https://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
 ### Stripspace
 
@@ -725,7 +725,7 @@ A file must be passed when calling the command, e.g.:
 $ git stripspace < README.md
 ```
 
-[*Read more about the Git `stripspace` command.*](http://git-scm.com/docs/git-stripspace)
+[*Read more about the Git `stripspace` command.*](https://git-scm.com/docs/git-stripspace)
 
 ### Checking out Pull Requests
 
@@ -817,7 +817,7 @@ this is produced:
 
 ![git status -sb](http://i.imgur.com/K0OY3nm.png)
 
-[*Read more about the Git `status` command.*](http://git-scm.com/docs/git-status)
+[*Read more about the Git `status` command.*](https://git-scm.com/docs/git-status)
 
 ### Styled Git Log
 Running:
@@ -830,11 +830,11 @@ produces:
 
 ![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
 
-Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
+Credit to [Palesz](https://stackoverflow.com/users/88355/palesz)
 
 *This can be aliased using the instructions found [here](https://github.com/tiimgreen/github-cheat-sheet#aliases).*
 
-[*Read more about the Git `log` command.*](http://git-scm.com/docs/git-log)
+[*Read more about the Git `log` command.*](https://git-scm.com/docs/git-log)
 
 ### Git Query
 A Git query allows you to search all your previous commit messages and find the most recent one matching the query.
@@ -877,7 +877,7 @@ Use it like this:
  $ git grep -e pattern --and -e anotherpattern
 ```
 
-[*Read more about the Git `grep` command.*](http://git-scm.com/docs/git-grep)
+[*Read more about the Git `grep` command.*](https://git-scm.com/docs/git-grep)
 
 ### Merged Branches
 Running:
@@ -896,7 +896,7 @@ $ git branch --no-merged
 
 will give you a list of branches that have not been merged into your current branch.
 
-[*Read more about the Git `branch` command.*](http://git-scm.com/docs/git-branch)
+[*Read more about the Git `branch` command.*](https://git-scm.com/docs/git-branch)
 
 ### Fixup and Autosquash
 If there is something wrong with a previous commit (can be one or more from HEAD), for example `abcde`, run the following command after you've amended the problem:
@@ -904,8 +904,8 @@ If there is something wrong with a previous commit (can be one or more from HEAD
 $ git commit --fixup=abcde
 $ git rebase abcde^ --autosquash -i
 ```
-[*Read more about the Git `commit` command.*](http://git-scm.com/docs/git-commit)
-[*Read more about the Git `rebase` command.*](http://git-scm.com/docs/git-rebase)
+[*Read more about the Git `commit` command.*](https://git-scm.com/docs/git-commit)
+[*Read more about the Git `rebase` command.*](https://git-scm.com/docs/git-rebase)
 
 ### Web Server for Browsing Local Repositories
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
@@ -918,7 +918,7 @@ opens:
 
 ![Git instaweb](http://i.imgur.com/Dxekmqc.png)
 
-[*Read more about the Git `instaweb` command.*](http://git-scm.com/docs/git-instaweb)
+[*Read more about the Git `instaweb` command.*](https://git-scm.com/docs/git-instaweb)
 
 ### Git Configurations
 Your `.gitconfig` file contains all your Git configurations.
@@ -1006,22 +1006,22 @@ To add more color to your Git output:
 $ git config --global color.ui 1
 ```
 
-[*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
+[*Read more about the Git `config` command.*](https://git-scm.com/docs/git-config)
 
 ### Git Resources
 | Title | Link |
 | ----- | ---- |
 | Official Git Site | http://git-scm.com/ |
-| Official Git Video Tutorials | http://git-scm.com/videos |
-| Code School Try Git | http://try.github.com/ |
-| Introductory Reference & Tutorial for Git | http://gitref.org/ |
-| Official Git Tutorial | http://git-scm.com/docs/gittutorial |
-| Everyday Git | http://git-scm.com/docs/everyday |
+| Official Git Video Tutorials | https://git-scm.com/videos |
+| Code School Try Git | http://try.github.io/ |
+| Introductory Reference & Tutorial for Git | https://services.github.com/ |
+| Official Git Tutorial | https://git-scm.com/docs/gittutorial |
+| Everyday Git | https://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Ry's Git Tutorial | http://rypress.com/tutorials/git/index |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
-| GitHub Training Kit | https://training.github.com/kit/ |
+| GitHub Training Kit | https://services.github.com/kit/ |
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
 | A collection of useful .gitignore templates | https://github.com/github/gitignore |
@@ -1031,10 +1031,10 @@ $ git config --global color.ui 1
 | Title | Link |
 | ----- | ---- |
 | Pragmatic Version Control Using Git | https://pragprog.com/titles/tsgit/pragmatic-version-control-using-git |
-| Pro Git | http://git-scm.com/book |
+| Pro Git | https://git-scm.com/book |
 | Git Internals PluralSight | https://github.com/pluralsight/git-internals-pdf |
 | Git in the Trenches | http://cbx33.github.io/gitt/ |
-| Version Control with Git | http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
+| Version Control with Git | https://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387 |
 | Pragmatic Guide to Git | https://pragprog.com/titles/pg_git/pragmatic-guide-to-git |
 | Git: Version Control for Everyone | https://www.packtpub.com/application-development/git-version-control-everyone |
 
