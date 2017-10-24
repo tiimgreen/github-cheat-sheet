@@ -105,8 +105,8 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*更多对 Git `clone` 命令的介绍.*](http://git-scm.com/docs/git-clone)
 
-###分支
-####将某个分支与其他所有分支进行对比
+### 分支
+#### 将某个分支与其他所有分支进行对比
 
 当你查看某个仓库的分支（Branches）页面（紧挨着 Commits 链接）时
 
