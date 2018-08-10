@@ -1023,7 +1023,6 @@ $ git config --global color.ui 1
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
 | Git God | https://github.com/gorosgobe/git-god |
-| Ry's Git Tutorial | http://rypress.com/tutorials/git/index |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | https://training.github.com/kit/ |
