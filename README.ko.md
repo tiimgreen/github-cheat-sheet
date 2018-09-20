@@ -88,7 +88,7 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
 
 ### Adjust Tab Space
 
-diff나 파일 URL에 `?ts=4`를 덧붙이면 탭 문자의 크기를 기본값인 공백 8개 대신 4개로 보여줍니다. `ts` 뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw 파일 보기에는 적용 되지 않습니다만, [크롬 확장 프로그램](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)이나 [오페라 확장 프로그램](https://addons.opera.com/en/extensions/details/github-tab-size/)으로 자동화 할 수 있습니다.
+diff나 파일 URL에 `?ts=4`를 덧붙이면 탭 문자의 크기를 기본값인 공백 8개 대신 4개로 보여줍니다. `ts` 뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw 파일 보기에는 적용 되지 않습니다만, [크롬 확장 프로그램](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)이나 으로 자동화 할 수 있습니다.
 
 여기에 있는 Go 소스 파일은 `?ts=4`를 붙이기 전에는 이렇습니다.
 
