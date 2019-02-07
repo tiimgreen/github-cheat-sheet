@@ -13,3 +13,4 @@ script:
   - awesome_bot README.ja.md    --allow-dupe --allow-redirect --white-list $wl
   - awesome_bot README.zh-cn.md --allow-dupe --allow-redirect --white-list $wl
   - awesome_bot README.zh-tw.md --allow-dupe --allow-redirect --white-list $wl
+https://github.com/oscarg933/github-cheat-sheet/tree/https/github.com/oscarg933/github-cheat-sheet/tree/master
