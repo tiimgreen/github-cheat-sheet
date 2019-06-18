@@ -55,7 +55,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [GitHub Resources](#github-resources)
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
-    - [Repository Templates](#repository-templates) 
+    - [Repository Templates](#repository-templates)
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
     - [Previous Branch](#previous-branch)
@@ -77,7 +77,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
       - [Git Books](#git-books)
       - [Git Videos](#git-videos)
       - [Git Articles](#git-articles)
-     
+
 
 ## GitHub
 ### Ignore Whitespace
@@ -673,9 +673,8 @@ e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 ### Repository Templates
 
-You can set your repository to template which allows anyone to copy the files and structure and allowing them to instantly use the files (e.g. for a tutorial or if writing boilerplate code). 
+You can enable templating on your repository which allows anyone to copy the directory structure and files, allowing them to instantly use the files (e.g. for a tutorial or if writing boilerplate code). This can be enabled in the settings of your repository.
 
-This is done by going into settings for your repository and changing it to a template one
 ![Convert](https://i.postimg.cc/hGCrVm9F/Template.gif)
 
 Changing to a template repository will give a new URL endpoint which can be shared and instantly allows users to use your repository as a template. Alternatively, they can go to your repository and click the 'Use as template' button.
