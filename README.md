@@ -55,6 +55,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [GitHub Resources](#github-resources)
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
+    - [Repository Templates](#repository-templates) 
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
     - [Previous Branch](#previous-branch)
@@ -76,7 +77,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
       - [Git Books](#git-books)
       - [Git Videos](#git-videos)
       - [Git Articles](#git-articles)
-     -[Repository Templates](#repository-templates) 
+     
 
 ## GitHub
 ### Ignore Whitespace
