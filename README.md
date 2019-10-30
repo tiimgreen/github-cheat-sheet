@@ -978,6 +978,8 @@ Some useful aliases include:
 | --- | --- | --- |
 | `git cm` | `git commit` | `git config --global alias.cm commit` |
 | `git co` | `git checkout` | `git config --global alias.co checkout` |
+| `git sw` | `git switch` | `git config --global alias.sw switch` |
+| `git r` | `git restore` | `git config --global alias.r resore` |
 | `git ac` | `git add . -A` `git commit` | `git config --global alias.ac '!git add -A && git commit'` |
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 | `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
