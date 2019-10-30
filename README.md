@@ -727,6 +727,14 @@ $ git checkout -
 
 [*Read more about Git branching.*](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 
+On newer Git versions (2.23 or newer) you can use `switch` instead of `checkout` to switch between branches:
+
+```bash
+$ git switch -
+```
+
+[*Read more about switch.*](https://git-scm.com/docs/git-switch)
+
 ### Stripspace
 
 Git Stripspace:
