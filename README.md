@@ -61,6 +61,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [Previous Branch](#previous-branch)
     - [Stripspace](#stripspace)
     - [Checking out Pull Requests](#checking-out-pull-requests)
+    - [Get changes from another branch](#get-changes-from-another-branch)
     - [Empty Commits](#empty-commits)
     - [Styled Git Status](#styled-git-status)
     - [Styled Git Log](#styled-git-log)
@@ -796,6 +797,22 @@ git checkout pr/42
 ```
 
 [*Read more about checking out pull requests locally.*](https://help.github.com/articles/checking-out-pull-requests-locally/)
+
+### Get changes from another branch
+
+Sometimes we need to get some changes from another branch but we don't want to do a merge an get the whole set of changes.
+
+In this case, `cherry-pick` comes really handy.
+
+In orther to do it, first we need to identify the commit with the changes we want, for example `abcde`. Then, in the destination branch we just need to do:
+
+```bash
+git cherry-pick abcde
+```
+
+With this, and after fixing any conflicts that may arise, the changes will be in the current branch.
+
+[*Read more about cherry-pick.*](https://git-scm.com/docs/git-cherry-pick)
 
 ### Empty Commits
 Commits can be pushed with no code changes by adding `--allow-empty`:
