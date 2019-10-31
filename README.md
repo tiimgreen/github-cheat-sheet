@@ -812,7 +812,9 @@ git cherry-pick abcde
 
 With this, and after fixing any conflicts that may arise, the changes will be in the current branch.
 
-[*Read more about cherry-pick.*](https://git-scm.com/docs/git-cherry-pick)
+*There is a short alias for `cherry-pick` in the instructions found [here](#aliases).*
+
+[*Read more about Git `cherry-pick`.*](https://git-scm.com/docs/git-cherry-pick)
 
 ### Empty Commits
 Commits can be pushed with no code changes by adding `--allow-empty`:
@@ -1002,6 +1004,7 @@ Some useful aliases include:
 | `git cleanup` | `git branch --merged \| grep -v '*' \| xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged \| grep -v '*' \| xargs git branch -d"` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 | `git lg` | `git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --` | `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"` |
+| `git cp` | `git cherry-pick` | `git config --global alias.cp cherry-pick` |
 
 *Some Aliases are taken from [@mathiasbynens](https://github.com/mathiasbynens) dotfiles: https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig*
 
