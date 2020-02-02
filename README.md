@@ -648,7 +648,6 @@ If you are a student you will be eligible for the GitHub Student Developer Pack.
 | GitHub Training | https://training.github.com/ |
 | GitHub Developer | https://developer.github.com/ |
 | Github Education (Free Micro Account and other stuff for students) | https://education.github.com/ |
-| GitHub Top 10 Best Practices | [Best Practices List](https://datree.io/blog/top-10-github-best-practices/) |
 
 #### GitHub Talks
 | Title | Link |
