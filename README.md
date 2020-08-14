@@ -55,6 +55,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
     - [GitHub Resources](#github-resources)
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
+    - [Profile Image](#profile-image)
     - [Repository Templates](#repository-templates)
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
@@ -670,6 +671,16 @@ https://github.com/{user}.keys
 e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 [*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
+
+### Profile Image
+
+You can get a user's profile image by visiting:
+
+```
+https://github.com/{user}.png
+```
+
+e.g. [https://github.com/tiimgreen.png](https://github.com/tiimgreen.png)
 
 ### Repository Templates
 
