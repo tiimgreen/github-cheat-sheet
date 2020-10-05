@@ -1,6 +1,6 @@
 # GitHub 치트 시트 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://confreaks.tv/videos/aloharuby2012-git-and-github-secrets)([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))과 WDCNZ 2013에서 발표한 [Git과 GitHub에 대한 더 많은 비밀들](https://vimeo.com/72955426)([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
+Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다룹니다. 이 치트 시트는 [Zach Holman](https://github.com/holman)이 Aloha Ruby Conference 2012에서 발표한 [Git과 GitHub의 비밀들](http://confreaks.tv/videos/aloharuby2012-git-and-github-secrets) ([슬라이드](https://speakerdeck.com/holman/git-and-github-secrets))과 WDCNZ 2013에서 발표한 [Git과 GitHub에 대한 더 많은 비밀들](https://vimeo.com/72955426) ([슬라이드](https://speakerdeck.com/holman/more-git-and-github-secrets))에서 영감을 받아 작성되었습니다.
 
 *단축주소: [`http://git.io/sheet`](http://git.io/sheet)*
 
@@ -1077,7 +1077,6 @@ $ git config --global color.ui 1
 | Git Immersion | http://gitimmersion.com/ |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
-| GitHub Training Kit | https://training.github.com/kit/ |
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
 | A collection of useful .gitignore templates | https://github.com/github/gitignore |

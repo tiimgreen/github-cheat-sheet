@@ -1051,7 +1051,6 @@ $ git config --global color.ui 1
 | Git God | https://github.com/gorosgobe/git-god |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
-| GitHub Training Kit | https://training.github.com/kit/ |
 | Git Visualization Playground | http://onlywei.github.io/explain-git-with-d3/#freeplay |
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
 | A collection of useful .gitignore templates | https://github.com/github/gitignore |
