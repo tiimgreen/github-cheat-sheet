@@ -1037,6 +1037,19 @@ $ git config --global color.ui 1
 ```
 
 [*Read more about the Git `config` command.*](http://git-scm.com/docs/git-config)
+Web Server for Browsing Local Repositories
+Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
+
+```bash
+$ git instaweb
+```
+
+opens:
+
+![Git instaweb](http://i.imgur.com/Dxekmqc.png)
+
+[*Read more about the Git `instaweb` command.*](http://git-scm.com/docs/git-instaweb)
+
 
 ### Git Resources
 | Title | Link |
