@@ -709,8 +709,8 @@ $ git rm $(git ls-files -d)
 $ git status
 On branch master
 Changes not staged for commit:
-	deleted:    a
-	deleted:    c
+  deleted:    a
+  deleted:    c
 
 $ git rm $(git ls-files -d)
 rm 'a'
@@ -719,8 +719,18 @@ rm 'c'
 $ git status
 On branch master
 Changes to be committed:
-	deleted:    a
-	deleted:    c
+  deleted:    a
+  deleted:    c
+```
+
+### Removing a directory/file from a repository
+만약 .gitignore에 파일이나 폴더를 적어넣는걸 까먹었을땐,
+이 커맨드들로 이미 push나 merge된걸 지울수 있습니다.
+대부분 node_modules이나 bower_components를 적는걸 까먹었을때 이걸 씁니다
+```
+git rm -r --cached node_modules
+  git commit -m 'Removed cached folder'
+  git push origin master
 ```
 
 ### Previous Branch
