@@ -56,6 +56,7 @@ A collection of cool hidden and not so hidden features of Git and GitHub. This c
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
     - [Profile Image](#profile-image)
+    - [Profile README](#profile-readme)
     - [Repository Templates](#repository-templates)
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
@@ -681,6 +682,14 @@ https://github.com/{user}.png
 ```
 
 e.g. [https://github.com/tiimgreen.png](https://github.com/tiimgreen.png)
+
+### Profile README
+
+You can create a own profile README by create file `README.md` in a public repository with a name that matches your GitHub username. GitHub shows your profile README at the top of your profile page.
+
+For example see [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme).
+
+[*Read more about Profile README*](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme)
 
 ### Repository Templates
 
