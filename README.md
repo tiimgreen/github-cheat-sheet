@@ -1080,4 +1080,8 @@ $ git config --global color.ui 1
 | Title | Link |
 | ----- | ---- |
 | GitHub Flow  | http://scottchacon.com/2011/08/31/github-flow.html |
-| Migrating to Git Large File Storate (Git LFS) | http://vooban.com/en/tips-articles-geek-stuff/migrating-to-git-lfs-for-developing-deep-learning-applications-with-large-files/ |
+| Migrating to Git Large File Storate (Git LFS) | http://vooban.com/en/tips-articles-geek-stuff/migrating-to-git-lfs-for-developing-deep-learning-applications-with-large-files/ | Git Rebase vs Merge |https://www.loginradius.com/blog/async/git-rebase-vs-git-merge/|
+| Git useful commands|https://www.loginradius.com/blog/async/git-commands/|
+| How Git local repository workds |https://www.loginradius.com/blog/async/how-git-local-repository-works/|
+| Git force pull|https://www.loginradius.com/blog/async/git-pull-force/| 
+| What is Git cherry pick |https://www.loginradius.com/blog/async/git-cherry-pick/|
