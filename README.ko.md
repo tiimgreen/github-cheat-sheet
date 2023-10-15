@@ -18,7 +18,6 @@ Git과 GitHub에서 꽤 유용하지만 숨겨져 있는 기능들에 대해 다
     - [Comparing Branches](#comparing-branches)
     - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
   - [Gists](#gists)
-  - [Git.io](#gitio)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
   - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
@@ -217,26 +216,6 @@ Password for 'https://tiimgreen@gist.github.com':
 
 하지만, Gists는 디렉터리를 지원하지 않습니다. 모든 파일은 저장소의 루트에 넣을 필요가 있습니다.
 [*Gist를 만드는 법에 대해 더 읽어보세요.*](https://help.github.com/articles/creating-gists)
-
-### Git.io
-
-[Git.io](http://git.io)는 GitHub를 위한 간단한 URL 단축기입니다.
-
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
-
-Curl으로 순수 HTTP를 통해 사용하실 수도 있습니다.
-
-```bash
-$ curl -i http://git.io -F "url=https://github.com/..."
-HTTP/1.1 201 Created
-Location: http://git.io/abc123
-
-$ curl -i http://git.io/abc123
-HTTP/1.1 302 Found
-Location: https://github.com/...
-```
-
-[*Git.io에 대해 더 읽어 보세요.*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ### Keyboard Shortcuts
 

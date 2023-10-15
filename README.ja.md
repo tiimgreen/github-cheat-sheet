@@ -16,7 +16,6 @@
     - [ブランチ同士の比較](#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83)
     - [フォークされたリポジトリ間でのブランチ比較](#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83)
   - [Gists](#gists)
-  - [Git.io](#gitio)
   - [キーボード・ショートカット](#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88)
   - [コードの指定行の強調](#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF)
   - [コミットからissueを閉じる](#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89issue%E3%82%92%E9%96%89%E3%81%98%E3%82%8B)
@@ -202,25 +201,6 @@ Password for 'https://tiimgreen@gist.github.com':
 しかしながら、Gistではディレクトリーがサポートされていない。全てのファイルはリポジトリーのルートに置かれている必要がある。
 
 [*Gistの作成についてもっと詳しく*](https://help.github.com/articles/creating-gists)
-
-### Git.io
-[Git.io](http://git.io)はGitHubの提供するGitHub専用のシンプルな短縮URLサービスだ。
-
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
-
-cURLを使って利用することができる:
-
-```bash
-$ curl -i http://git.io -F "url=https://github.com/..."
-HTTP/1.1 201 Created
-Location: http://git.io/abc123
-
-$ curl -i http://git.io/abc123
-HTTP/1.1 302 Found
-Location: https://github.com/...
-```
-
-[*Git.ioについてもっと詳しく*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ### キーボード・ショートカット
 リポジトリをブラウザーで開いている時は、ショートカットを利用して様々な機能ヘ簡単にアクセスできるようになっている。
