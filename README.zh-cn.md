@@ -68,7 +68,7 @@ Git 和 Github 秘籍，灵感来自于 [Zach Holman](https://github.com/holman)
 ## GitHub
 ### 不比较空白字符
 
-在任意 diff 页面的 UR L后加上 `?w=1`，可以去掉那些只是空白字符的改动，使你能更专注于代码改动。
+在任意 diff 页面的 URL 后加上 `?w=1`，可以去掉那些只是空白字符的改动，使你能更专注于代码改动。
 
 ![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
 
@@ -332,7 +332,7 @@ Github 上使用最多的5个表情符号是：
 5. `:clap:`
 
 ### 图片 / GIF 动画
-注释和README等文件里也可以使用图片和 GIF 动画：
+注释和 README 等文件里也可以使用图片和 GIF 动画：
 
 ```
 ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
@@ -377,7 +377,7 @@ _（仅适用于 Chrome 浏览器）_
 
 
 ### 快速添加许可证文件
-创建一个仓库时，Github会为你提供一个预置的软件许可列表：
+创建一个仓库时，Github 会为你提供一个预置的软件许可列表：
 
 ![License](http://i.imgur.com/Chqj4Fg.png)
 
@@ -418,7 +418,7 @@ Issues 和 Pull requests 里可以添加复选框，语法如下（注意空白�
 
 #### Markdown 文件中的任务列表
 
-在完全适配Markdown语法的文件中可以使用以下语法加入一个**只读**的任务列表
+在完全适配 Markdown 语法的文件中可以使用以下语法加入一个**只读**的任务列表
 
 
 ```
@@ -442,7 +442,7 @@ Issues 和 Pull requests 里可以添加复选框，语法如下（注意空白�
 [*进一步了解 Markdown 文件中的任务列表*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
 ### 相对链接
-Markdown文件里链接到内部内容时推荐使用相对链接。
+Markdown 文件里链接到内部内容时推荐使用相对链接。
 
 ```markdown
 [Link to a header](#awesome-section)
@@ -455,12 +455,12 @@ Markdown文件里链接到内部内容时推荐使用相对链接。
 ### GitHub Pages 的元数据与插件支持
 在 Jekyll 页面和文章里，仓库信息可在 `site.github` 命名空间下找到，也可以显示出来，例如，使用 `{{ site.github.project_title }}`显示项目标题。
 
-Jemoji 和 jekyll-mentions 插件为你的 Jekyll 文章和页面增加了[emoji](#emojis)和[@mentions](https://github.com/blog/821)功能。
+Jemoji 和 jekyll-mentions 插件为你的 Jekyll 文章和页面增加了 [emoji](#emojis) 和 [@mentions](https://github.com/blog/821) 功能。
 
 [*了解更多 GitHub Pages 的元数据和插件支持.*](https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages)
 
 ### 查看 YAML 格式的元数据
-许多博客站点，比如基于 [Jekyll](http://jekyllrb.com/)的[GitHub Pages](http://pages.github.com/) ，都依赖于一些文章头部的 YAML 格式的元数据。 Github 会将其渲染成一个水平表格，方便阅读。
+许多博客站点，比如基于 [Jekyll](http://jekyllrb.com/) 的 [GitHub Pages](http://pages.github.com/) ，都依赖于一些文章头部的 YAML 格式的元数据。 Github 会将其渲染成一个水平表格，方便阅读。
 
 ![YAML metadata](https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67)
 
@@ -484,9 +484,9 @@ GitHub 支持将 `.csv` (逗号分隔)和 `.tsv` (制表符分隔)格式的文�
 [*进一步了解“撤销”按钮](https://github.com/blog/1857-introducing-the-revert-button)
 
 ### Diffs
-#### 可渲染文档的Diffs
+#### 可渲染文档的 Diffs
 
-Commit 和 Pull Request 里包含有 Github 支持的可渲染文档（比如 Markdown）会提供*source* 和 *rendered* 两个视图功能。
+Commit 和 Pull Request 里包含有 Github 支持的可渲染文档（比如 Markdown）会提供 *source* 和 *rendered* 两个视图功能。
 
 ![Source / Rendered view](https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png)
 
@@ -497,7 +497,7 @@ Commit 和 Pull Request 里包含有 Github 支持的可渲染文档（比如 Ma
 [*进一步了解渲染纯文本视图Diffs.*](https://github.com/blog/1784-rendered-prose-diffs)
 
 #### 可比较的地图数据
-当你在GitHub上查看一个包含地理数据的 commit 或 pull request时，Github 将以可视化的方式对比版本之间的差异。
+当你在 GitHub 上查看一个包含地理数据的 commit 或 pull request 时，Github 将以可视化的方式对比版本之间的差异。
 
 [![Diffable Maps](https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif)](https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5)
 
