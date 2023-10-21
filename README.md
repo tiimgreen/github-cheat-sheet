@@ -57,7 +57,9 @@ GitHub Cheat Sheet is sponsored by [Snapshot: create interactive professional-qu
     - [GitHub Resources](#github-resources)
       - [GitHub Talks](#github-talks)
     - [SSH keys](#ssh-keys)
+    - [GPG keys](#gpg-keys)
     - [Profile Image](#profile-image)
+    - [User RSS feed](#user-rss-feed)
     - [Repository Templates](#repository-templates)
   - [Git](#git)
     - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
@@ -674,6 +676,16 @@ e.g. [https://github.com/tiimgreen.keys](https://github.com/tiimgreen.keys)
 
 [*Read more about accessing public ssh keys.*](https://changelog.com/github-exposes-public-ssh-keys-for-its-users/)
 
+### GPG keys
+
+You can get a list of public gpg keys in plain text format by visiting:
+
+```
+https://github.com/{user}.gpg
+```
+
+e.g. [https://github.com/tiimgreen.gpg](https://github.com/tiimgreen.gpg)
+
 ### Profile Image
 
 You can get a user's profile image by visiting:
@@ -683,6 +695,16 @@ https://github.com/{user}.png
 ```
 
 e.g. [https://github.com/tiimgreen.png](https://github.com/tiimgreen.png)
+
+### User RSS feed
+
+You can get an activity feed for a user is RSS format by visiting:
+
+```
+https://github.com/{user}.atom
+```
+
+e.g. [https://github.com/tiimgreen.atom](https://github.com/tiimgreen.atom)
 
 ### Repository Templates
 
