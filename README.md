@@ -1057,6 +1057,8 @@ $ git config --global color.ui 1
 | Learn Git Branching | http://pcottle.github.io/learnGitBranching/ |
 | A collection of useful .gitignore templates | https://github.com/github/gitignore |
 | Unixorn's git-extra-commands collection of git scripts | https://github.com/unixorn/git-extra-commands |
+| Working with Branches in Git Cheat Sheet | https://www.git-tower.com/learn/cheat-sheets/git-branches |
+| Visual Git Cheat Sheet | https://www.git-tower.com/learn/cheat-sheets/git |
 
 #### Git Books
 | Title | Link |
