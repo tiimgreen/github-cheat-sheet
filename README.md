@@ -1004,7 +1004,7 @@ Some useful aliases include:
 #### Auto-Correct
 Git gives suggestions for misspelled commands and if auto-correct is enabled the command can be fixed and executed automatically. Auto-correct is enabled by specifying an integer which is the delay in tenths of a second before git will run the corrected command. Zero is the default value where no correcting will take place, and a negative value will run the corrected command with no delay.
 
-For example, if you type `git comit` you will get this:
+For example, if you type `git commit` you will get this:
 
 ```bash
 $ git comit -m "Message"
