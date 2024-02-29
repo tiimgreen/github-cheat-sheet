@@ -14,7 +14,6 @@ Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman)
       - [比較分支](#比較分支)
       - [比較不同派生庫的分支](#比較不同派生庫的分支)
     - [Gists](#gists)
-    - [Git.io](#gitio)
     - [鍵盤快捷鍵](#鍵盤快捷鍵)
     - [整行高亮](#整行高亮)
     - [用 Commit 訊息關閉 Issue](#用-commit-訊息關閉-issue)
@@ -202,25 +201,6 @@ Password for 'https://tiimgreen@gist.github.com':
 
 但是， Gists 不支持目錄。所有文件都必須添加在倉庫的根目錄下。
 [*進一步了解如何建立 Gists.*](https://help.github.com/articles/creating-gists)
-
-### Git.io
-[Git.io](http://git.io)是 Github 的短網址服務。
-
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
-
-你可以通過 Curl 命令以普通 HTTP 協議使用它：
-
-```bash
-$ curl -i http://git.io -F "url=https://github.com/..."
-HTTP/1.1 201 Created
-Location: http://git.io/abc123
-
-$ curl -i http://git.io/abc123
-HTTP/1.1 302 Found
-Location: https://github.com/...
-```
-
-[*進一步了解 Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ### 鍵盤快捷鍵
 
