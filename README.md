@@ -18,7 +18,6 @@ GitHub Cheat Sheet is sponsored by [Snapshot: create interactive professional-qu
       - [Comparing Branches](#comparing-branches)
       - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
     - [Gists](#gists)
-    - [Git.io](#gitio)
     - [Keyboard Shortcuts](#keyboard-shortcuts)
     - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
     - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
@@ -214,25 +213,6 @@ Password for 'https://tiimgreen@gist.github.com':
 
 However, Gists do not support directories. All files need to be added to the repository root.
 [*Read more about creating Gists.*](https://help.github.com/articles/creating-gists/)
-
-### Git.io
-[Git.io](http://git.io) is a simple URL shortener for GitHub.
-
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
-
-You can also use it via pure HTTP using Curl:
-
-```bash
-$ curl -i http://git.io -F "url=https://github.com/..."
-HTTP/1.1 201 Created
-Location: http://git.io/abc123
-
-$ curl -i http://git.io/abc123
-HTTP/1.1 302 Found
-Location: https://github.com/...
-```
-
-[*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
 
 ### Keyboard Shortcuts
 When on a repository page, keyboard shortcuts allow you to navigate easily.
